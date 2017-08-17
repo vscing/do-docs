@@ -7,10 +7,6 @@ title: Getting Started
 支持平台: iOS7.0, Android
 说明: 用于执行http或https请求。这个是非常基础的组件,所有和服务端web交互都需要使用,通常使用的方式就是构建一个do_Http对象,然后设置它的属性,最后通过request方法或其它方法触发请求.
 
-<span id = "top">目录</span>
-
-[TOC]
-
 #### 1. 属性
 
 ###### 1.1 **body**: post请求的内容
