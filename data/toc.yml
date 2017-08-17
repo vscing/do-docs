@@ -51,3 +51,6 @@ Chapters:
 Appendices:
   Resources:
     - Glossary
+
+  Shadow DOM:
+    - Removing Shadow DOM styles
