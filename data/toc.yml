@@ -1,9 +1,7 @@
 Chapters:
-  Getting Started:
-    - Why Atom mr?
-    - Installing Atom
-    - Atom Basics
-    - Summary
+  入门:
+    - 概述
+    - Hello World
 
   Using Atom:
     - Atom Packages
@@ -49,15 +47,3 @@ Chapters:
     - Maintaining Your Packages
     - How Atom Uses Chromium Snapshots
     - Summary
-
-Appendices:
-  Resources:
-    - Glossary
-
-  Shadow DOM:
-    - Removing Shadow DOM styles
-
-  Upgrading to 1.0 APIs:
-    - Upgrading Your Package
-    - Upgrading Your UI Theme Or Package Selectors
-    - Upgrading Your Syntax Theme
