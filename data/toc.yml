@@ -3,25 +3,31 @@ Chapters:
     - 概述
     - Hello World
 
-  Using Atom:
-    - Atom Packages
-    - Moving in Atom
-    - Atom Selections
-    - Editing and Deleting Text
-    - Find and Replace
-    - Snippets
-    - Autocomplete
-    - Folding
-    - Panes
-    - Pending Pane Items
-    - Grammar
-    - Version Control in Atom
-    - GitHub package
-    - Writing in Atom
-    - Basic Customization
-    - Summary
+  应用开发:
+    - IDE安装和使用
+    - 组件概述
+    - 文件管理
+    - 数据共享和传递
+    - 页面跳转
+    - 构建UI
+    - JS使用
+    - 代码调试
+    - 数据绑定
+    - 模板机制
+    - 网络传输(Http)
+    - 项目文件结构
+    - 屏幕状态栏
+    - 屏幕适配
+    - App闪退及问题定位
+    - 手机调试连接不上的解决办法
+    - 屏幕事件穿透和拦截
+    - 应用签名
+    - 应用加密
+    - 应用升级
+    - 新闻示例App
+    - 常见问题
 
-  Hacking Atom:
+  组件API:
     - Tools of the Trade
     - The Init File
     - "Package: Word Count"
@@ -37,20 +43,11 @@ Chapters:
     - Contributing to Official Atom Packages
     - Summary
 
-  Behind Atom:
-    - Configuration API
-    - Keymaps In-Depth
-    - Scoped Settings, Scopes and Scope Descriptors
-    - Serialization in Atom
-    - Developing Node Modules
-    - Interacting With Other Packages Via Services
-    - Maintaining Your Packages
-    - How Atom Uses Chromium Snapshots
-    - Summary
-
-Appendices:
-  Resources:
-    - Glossary
-
-  Shadow DOM:
-    - Removing Shadow DOM styles
+  组件开发:
+    - 使用Eclipse开发第一个Android组件
+    - 使用Android Studio开发第一个Andoird组件
+    - 使用XCode和Object C开发第一个iOS组件
+    - Android类参考
+    - iOS类参考
+    - Android常见问题
+    - iOS常见问题
