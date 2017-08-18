@@ -74,13 +74,39 @@ hr {
   clear: both;
 }
 
+.top{
+    background:#363334;
+    padding:12px 0;
+    overflow: hidden;
+}
+.top .logo {
+    margin: 4px 0 0 70px;
+    display: inline-block;
+    padding: 0;
+    float: left;
+    width: 40px;
+    height: 40px;
+    @include background-image-retina('../images/logo-small', 'png', 40px, 40px);
+}
+.top .title {
+    padding: 4px 0 0 12px;
+    font: 30px "微软雅黑";
+    width: 200px;
+    float: left;
+    margin: 0;
+}
+.top .title a{
+    color:#fff2e2;
+    text-decoration: none;
+}
+
 .top-bar {
   text-align: left;
   padding: 5px 0;
-  background-color: #584b4f;
+  background-color: #363334;
   color: $beigeMedium;
   font-size: 14px;
-  height: 43px;
+  height: 70px;
 
   h1 {
     font-size: inherit;
