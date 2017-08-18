@@ -1,7 +1,7 @@
 ---
-title: Atom Packages
+title: IDE安装和使用
 ---
-### Atom Packages
+### IDE安装和使用
 
 First we'll start with the Atom package system. As we mentioned previously, Atom itself is a very basic core of functionality that ships with a number of useful packages that add new features like the [Tree View](https://github.com/atom/tree-view) and the [Settings View](https://github.com/atom/settings-view).
 
@@ -89,6 +89,6 @@ $ apm view build-coffee
 > ├── Atom Build provider for coffee, compiles CoffeeScript
 > ├── 1152 downloads
 > └── 2 stars
-> 
+>
 > Run `apm install build-coffee` to install this package.
 ```

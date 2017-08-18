@@ -194,7 +194,8 @@ $margin: 15px;
     width: 100%;
     overflow: auto;
     display: block;
-
+    border-collapse:collapse;
+    border-spacing:0;
     th {
       font-weight: bold;
     }
@@ -202,6 +203,10 @@ $margin: 15px;
     th, td {
       border: 1px solid #ddd;
       padding: 6px 13px;
+    }
+
+    th:last-child {
+      width:30%;
     }
 
     tr {
