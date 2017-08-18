@@ -2,7 +2,7 @@
 
 <% toc.chapters.each_with_index do |chapter, index| %>
   <<%= @heading %>>
-    <a href="/<%= chapter.name %>">Chapter <%= 1 + index %>: <%= chapter.name %></a>
+    <a href="/<%= chapter.name %>">章节 <%= 1 + index %>: <%= chapter.name %></a>
   </<%= @heading %>>
   <ul>
     <% chapter.section_names.each do |name| %>
