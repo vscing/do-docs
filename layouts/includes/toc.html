@@ -6,7 +6,7 @@
   </<%= @heading %>>
   <ul>
     <% chapter.section_names.each do |name| %>
-      <li class="<%= @item[:filename].include?(name) ? 'selected' : 'unselected'%>">
+      <li class="<%= @item[:filename].end_with?(name+".md") ? 'selected' : 'unselected'%>">
         <a href="/<%= chapter.name + '/sections/' + name %>"><%= name %></a>
       </li>
     <% end %>

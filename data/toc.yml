@@ -27,9 +27,6 @@ Chapters:
     - 新闻示例App
     - 常见问题
 
-  组件API:
-    - do_Http
-
   组件开发:
     - 使用Eclipse开发第一个Android组件
     - 使用Android Studio开发第一个Andoird组件
@@ -38,3 +35,144 @@ Chapters:
     - iOS类参考
     - Android常见问题
     - iOS常见问题
+
+  UI组件API:
+    - do_ALayout
+    - do_BaiduMapView
+    - do_BaiduPanoramaView
+    - do_BarcodeView
+    - do_BorderView
+    - do_Button
+    - do_Calendar
+    - do_Canvas
+    - do_CheckBox
+    - do_ComboBox
+    - do_CountDownLabel
+    - do_CoverFlowView
+    - do_DataTable
+    - do_DraggableGridView
+    - do_ExpandableListView
+    - M0011_ExtBarcodeView
+    - do_FragmentView
+    - do_FrameAnimationView
+    - do_GestureView
+    - do_GridView
+    - do_IconFont
+    - do_ImageBrowserView
+    - do_ImageCropView
+    - do_ImageCropView1
+    - do_ImageView
+    - do_IndexListView
+    - do_Label
+    - do_LinearLayout
+    - do_ListView
+    - do_MarqueeLabel
+    - do_MultiSelectComboBox
+    - M3242_NVDeviceView
+    - do_PainterView
+    - do_PDFView
+    - do_Picker
+    - do_ProgressBar
+    - do_ProgressBar1
+    - do_ProgressBar2
+    - do_RichLabel
+    - do_RichLabel1
+    - do_ScrollView
+    - do_SeekBar
+    - do_SegmentView
+    - do_SlideListView
+    - do_SlideView
+    - do_SwitchView
+    - do_TencentWebView
+    - do_TextBox
+    - do_TextField
+    - M0011_TXLiveView
+    - do_VerticalMarqueeLabel
+    - do_VerticalSlideView
+    - do_VideoRecord
+    - do_VideoView
+    - do_ViewShower
+    - do_WebView
+
+  MM组件API:
+    - do_Animation
+    - do_Animator
+    - do_Bitmap
+    - do_Bluetooth
+    - do_HashData
+    - do_Http
+    - do_ListData
+    - do_MultiAudio
+    - do_Socket
+    - do_SQLite
+    - do_Timer
+    - do_UdpSocket
+    - do_WapsAd
+    - do_WebSocket
+
+  SM组件API:
+    - do_3DTouch
+    - do_AccelerometerSensor
+    - do_Album
+    - do_Algorithm
+    - do_Alipay
+    - do_Alipay1
+    - do_App
+    - do_AppleIAP
+    - do_AssistiveTouch
+    - do_Audio
+    - do_BaiduLocation
+    - do_BaiduNavigate
+    - do_BaiduPush
+    - do_CacheManager
+    - do_Camera
+    - do_Contact
+    - do_DataCache
+    - do_DateTimePicker
+    - do_Device
+    - do_Dialog
+    - M0011_Easemob1
+    - do_Easemob
+    - do_External
+    - do_FingerPrintRecognition
+    - do_GestureCipher
+    - do_Global
+    - do_GyroSensor
+    - do_HuanXinIM
+    - do_iFlyVoice
+    - do_ImageBrowser
+    - do_InitData
+    - M0011_IvrjackUHF
+    - do_JPush
+    - LePlayerLive
+    - LePlayerVod
+    - do_LocalNotification
+    - M3506_MobileRTC
+    - do_Network
+    - M0011_NibiruVRVideoPlayer
+    - do_Notification
+    - do_Page
+    - M0011_PanoramaGL
+    - do_Pedometer
+    - do_Polyv
+    - do_Qiniu
+    - do_QRCode
+    - do_RongCloud
+    - do_SangforVPN
+    - do_Seekcy
+    - do_Sensor
+    - do_SinaWeiBo
+    - do_SMSVerificationCode
+    - do_SocketServer
+    - do_Storage
+    - do_SysCalendar
+    - M0011_TencentLive
+    - do_TencentQQ
+    - M3194_TencentVoiceLive
+    - do_TouchID
+    - do_UMengAnalytics
+    - do_Unionpay
+    - do_VideoPlayer
+    - do_TencentWX
+    - XmturuiOCR
+    - M0011_ZoomVideo
