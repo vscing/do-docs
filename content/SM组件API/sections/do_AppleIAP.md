@@ -4,8 +4,8 @@ title: do_AppleIAP 组件
 
 ### do_AppleIAP 组件
 
-* 支持平台: iOS,Android
-用户通过传入商品ID，数量可以调起Apple支付界面，同时支持商品重复购买更新
+ 支持平台: iOS,Android
+ 用户通过传入商品ID，数量可以调起Apple支付界面，同时支持商品重复购买更新
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

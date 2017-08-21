@@ -4,8 +4,8 @@ title: do_TencentWX 组件
 
 ### do_TencentWX 组件
 
-* 支持平台: iOS7.0,Android4.0
-接入微信开放平台，可使用微信登录、分享和支付功能
+ 支持平台: iOS7.0,Android4.0
+ 接入微信开放平台，可使用微信登录、分享和支付功能
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

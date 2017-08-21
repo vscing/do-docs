@@ -4,8 +4,8 @@ title: M0011_NibiruVRVideoPlayer 组件
 
 ### M0011_NibiruVRVideoPlayer 组件
 
-* 支持平台: iOS,Android4.0
-播放支持8个场景模式，2DNormal 2D180 2D360 2DSphere 3DNormal 3D180 3D360 3DSphere
+ 支持平台: iOS,Android4.0
+ 播放支持8个场景模式，2DNormal 2D180 2D360 2DSphere 3DNormal 3D180 3D360 3DSphere
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

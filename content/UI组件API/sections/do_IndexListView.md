@@ -4,8 +4,8 @@ title: do_IndexListView 组件
 
 ### do_IndexListView 组件
 
-* 支持平台: iOS7.0,Android4.0
-IndexListView实际上是一个界面右边带索引的ListView，可以绑定一个HashData数据源，按下滑动右边的索引，可以快速定位到该索引下的首条数据，主要应用于通讯录，歌曲播放器等界面
+ 支持平台: iOS7.0,Android4.0
+ IndexListView实际上是一个界面右边带索引的ListView，可以绑定一个HashData数据源，按下滑动右边的索引，可以快速定位到该索引下的首条数据，主要应用于通讯录，歌曲播放器等界面
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

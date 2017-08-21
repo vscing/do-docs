@@ -4,8 +4,8 @@ title: do_Picker 组件
 
 ### do_Picker 组件
 
-* 支持平台: iOS7.0,Android4.0
-可上下滑动选择的单选控件，停留在中间即为选中项
+ 支持平台: iOS7.0,Android4.0
+ 可上下滑动选择的单选控件，停留在中间即为选中项
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_ListData 组件
 
 ### do_ListData 组件
 
-* 支持平台: iOS7.0,Android4.0
-ListData作为一个内存数据源 ,可以参考ListView的bindItems方法。也可以作为ListView，GridView的Item的数据集。它本质上是一个可变数组,可以增删改查.
+ 支持平台: iOS7.0,Android4.0
+ ListData作为一个内存数据源 ,可以参考ListView的bindItems方法。也可以作为ListView，GridView的Item的数据集。它本质上是一个可变数组,可以增删改查.
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

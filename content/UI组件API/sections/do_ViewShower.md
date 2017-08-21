@@ -4,8 +4,8 @@ title: do_ViewShower 组件
 
 ### do_ViewShower 组件
 
-* 支持平台: iOS7.0,Android4.0
-ViewShower是一个包含多个子VIew的UI容器组件，每个子View的大小和容器大小一致，切换每个View可以添加动画效果，并且可以保持每个View的最后显示状态，支持动态的添加或删除。因为每一个子View在内存里都有对应的对象，所以用户不能在这个容器里添加太多子View。通常这个组件用于整个App的主界面，和底部一个BottomBar结合使用，点击底部按钮，切换不同的视图。
+ 支持平台: iOS7.0,Android4.0
+ ViewShower是一个包含多个子VIew的UI容器组件，每个子View的大小和容器大小一致，切换每个View可以添加动画效果，并且可以保持每个View的最后显示状态，支持动态的添加或删除。因为每一个子View在内存里都有对应的对象，所以用户不能在这个容器里添加太多子View。通常这个组件用于整个App的主界面，和底部一个BottomBar结合使用，点击底部按钮，切换不同的视图。
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_HuanXinIM 组件
 
 ### do_HuanXinIM 组件
 
-* 支持平台: iOS7.0,Android4.0
-环信即时通讯IM
+ 支持平台: iOS7.0,Android4.0
+ 环信即时通讯IM
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

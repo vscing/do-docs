@@ -4,8 +4,8 @@ title: do_Polyv 组件
 
 ### do_Polyv 组件
 
-* 支持平台: iOS7.0,Android4.0
-保利威视提供网络播放、本地播放、视频下载、视频上传、视频拍摄等功能，不支持windows平台
+ 支持平台: iOS7.0,Android4.0
+ 保利威视提供网络播放、本地播放、视频下载、视频上传、视频拍摄等功能，不支持windows平台
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

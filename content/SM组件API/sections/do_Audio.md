@@ -4,8 +4,8 @@ title: do_Audio 组件
 
 ### do_Audio 组件
 
-* 支持平台: iOS7.0,Android4.0
-播放音频，能支持播放mp3、amr（iOS 4.0系统后不支持）、aac格式的本地和网络音频，录制音频可支持mp3、amr、aac格式输出
+ 支持平台: iOS7.0,Android4.0
+ 播放音频，能支持播放mp3、amr（iOS 4.0系统后不支持）、aac格式的本地和网络音频，录制音频可支持mp3、amr、aac格式输出
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

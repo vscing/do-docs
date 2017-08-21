@@ -4,8 +4,8 @@ title: do_Animation 组件
 
 ### do_Animation 组件
 
-* 支持平台: iOS7.0,Android4.0
-所有UI组件缩放，移动，透明度变化，旋转都支持动画效果。这个类就是用来定义动画所有属性值的集合，作为UI的animate方法的参数
+ 支持平台: iOS7.0,Android4.0
+ 所有UI组件缩放，移动，透明度变化，旋转都支持动画效果。这个类就是用来定义动画所有属性值的集合，作为UI的animate方法的参数
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_ScrollView 组件
 
 ### do_ScrollView 组件
 
-* 支持平台: iOS7.0,Android4.0
-滚动视图，支持上下和左右滚动两种类型，只有在滚动视图内容宽、高度超过自身定义的宽、高度时才可以滚动，滚动视图只能包含一个子组件，通常都是一个ALayout或LinearLayout
+ 支持平台: iOS7.0,Android4.0
+ 滚动视图，支持上下和左右滚动两种类型，只有在滚动视图内容宽、高度超过自身定义的宽、高度时才可以滚动，滚动视图只能包含一个子组件，通常都是一个ALayout或LinearLayout
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

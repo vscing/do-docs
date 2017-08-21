@@ -4,8 +4,8 @@ title: do_InitData 组件
 
 ### do_InitData 组件
 
-* 支持平台: iOS7.0,Android4.0
-DeviceOne定义了自己的文件URI，用户可以利用InitData类来处理initdata://开头的只读目录区文件，目前暂时不支持中文目录和中文文件名
+ 支持平台: iOS7.0,Android4.0
+ DeviceOne定义了自己的文件URI，用户可以利用InitData类来处理initdata://开头的只读目录区文件，目前暂时不支持中文目录和中文文件名
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

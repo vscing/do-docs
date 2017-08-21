@@ -4,8 +4,8 @@ title: do_DateTimePicker 组件
 
 ### do_DateTimePicker 组件
 
-* 支持平台: iOS7.0,Android4.0
-弹出时间，日期选择窗口来选择时间，时间格式都是long型时间戳格式，windows平台不支持long型
+ 支持平台: iOS7.0,Android4.0
+ 弹出时间，日期选择窗口来选择时间，时间格式都是long型时间戳格式，windows平台不支持long型
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

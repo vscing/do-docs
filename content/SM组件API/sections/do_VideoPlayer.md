@@ -4,8 +4,8 @@ title: do_VideoPlayer 组件
 
 ### do_VideoPlayer 组件
 
-* 支持平台: iOS7.0,Android4.0
-支持边下边播，视频播放宽高比例为16:9，自动横屏
+ 支持平台: iOS7.0,Android4.0
+ 支持边下边播，视频播放宽高比例为16:9，自动横屏
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

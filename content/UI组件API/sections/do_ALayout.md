@@ -4,8 +4,8 @@ title: do_ALayout 组件
 
 ### do_ALayout 组件
 
-* 支持平台: iOS7.0,Android4.0
-UI组件，绝对布局,通过设置x,y来设置控件的绝对位置。这是DeviceOne平台提供的一个核心组件也是最重要的组件之一。
+ 支持平台: iOS7.0,Android4.0
+ UI组件，绝对布局,通过设置x,y来设置控件的绝对位置。这是DeviceOne平台提供的一个核心组件也是最重要的组件之一。
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

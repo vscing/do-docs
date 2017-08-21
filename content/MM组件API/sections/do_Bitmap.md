@@ -4,8 +4,8 @@ title: do_Bitmap 组件
 
 ### do_Bitmap 组件
 
-* 支持平台: iOS7.0,Android4.0
-图片的处理组件，通过加载source对应路径的图片到内存中，不再需要使用该位图资源必须调用MM组件基类方法release()来释放该使用内存，Android平台仅支持jpg和JEPG格式
+ 支持平台: iOS7.0,Android4.0
+ 图片的处理组件，通过加载source对应路径的图片到内存中，不再需要使用该位图资源必须调用MM组件基类方法release()来释放该使用内存，Android平台仅支持jpg和JEPG格式
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

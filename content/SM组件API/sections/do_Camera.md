@@ -4,8 +4,8 @@ title: do_Camera 组件
 
 ### do_Camera 组件
 
-* 支持平台: iOS7.0,Android4.0
-启动系统的相机拍照获取照片
+ 支持平台: iOS7.0,Android4.0
+ 启动系统的相机拍照获取照片
 
 
 #### <font color ='#40A977'>**1.**</font> 属性

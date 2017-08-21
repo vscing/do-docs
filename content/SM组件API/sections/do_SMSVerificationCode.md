@@ -4,8 +4,8 @@ title: do_SMSVerificationCode 组件
 
 ### do_SMSVerificationCode 组件
 
-* 支持平台: iOS8.0,Android
-短信验证码组件,给用户手机号码发送验证码并验证
+ 支持平台: iOS8.0,Android
+ 短信验证码组件,给用户手机号码发送验证码并验证
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

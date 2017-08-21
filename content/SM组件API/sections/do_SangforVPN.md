@@ -4,8 +4,8 @@ title: do_SangforVPN 组件
 
 ### do_SangforVPN 组件
 
-* 支持平台: iOS7.0,Android4.0
-使用深信服科技公司提供的VPN服务访问服务器资源，提供VPN登录，VPN注销登录的功能，仅支持android平台
+ 支持平台: iOS7.0,Android4.0
+ 使用深信服科技公司提供的VPN服务访问服务器资源，提供VPN登录，VPN注销登录的功能，仅支持android平台
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_RichLabel1 组件
 
 ### do_RichLabel1 组件
 
-* 支持平台: iOS7.0,Android14
-富文本签框，设置字体高亮颜色、字体样式
+ 支持平台: iOS7.0,Android14
+ 富文本签框，设置字体高亮颜色、字体样式
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

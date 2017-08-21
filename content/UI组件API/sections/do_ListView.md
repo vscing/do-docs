@@ -4,8 +4,8 @@ title: do_ListView 组件
 
 ### do_ListView 组件
 
-* 支持平台: iOS7.0,Android4.0
-List视图是最常用的UI组件，由很多个Cell组成。它可以通过bind一个ListData来构造视图的数据Model，修改数据来更新视图。android平台不支持在cell中放TextFiled、TextBox组件
+ 支持平台: iOS7.0,Android4.0
+ List视图是最常用的UI组件，由很多个Cell组成。它可以通过bind一个ListData来构造视图的数据Model，修改数据来更新视图。android平台不支持在cell中放TextFiled、TextBox组件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

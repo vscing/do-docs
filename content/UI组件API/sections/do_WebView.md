@@ -4,8 +4,8 @@ title: do_WebView 组件
 
 ### do_WebView 组件
 
-* 支持平台: iOS7.0,Android4.0
-可以加载html网页，同时在网页中可以使用DeviceOne提供的js SDK实现跨webview的交互
+ 支持平台: iOS7.0,Android4.0
+ 可以加载html网页，同时在网页中可以使用DeviceOne提供的js SDK实现跨webview的交互
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

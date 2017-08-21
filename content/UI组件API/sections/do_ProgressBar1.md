@@ -4,8 +4,8 @@ title: do_ProgressBar1 组件
 
 ### do_ProgressBar1 组件
 
-* 支持平台: iOS7.0,Android4.0
- 横向一组圆点样式的进度条
+ 支持平台: iOS7.0,Android4.0
+  横向一组圆点样式的进度条
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

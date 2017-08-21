@@ -4,8 +4,8 @@ title: do_FingerPrintRecognition 组件
 
 ### do_FingerPrintRecognition 组件
 
-* 支持平台: iOS8.0,Android6.0
-指纹识别组件,iOS为基于系统touchID和密码识别验证,需要iPhone5s设备搭载iOS8以上系统,IOS touchID识别策略(系统原生框架识别策略,不可修改,可以对照支付宝查看。警告！：touchID验证为设备公用功能(设备解锁和所有app)，不要随意故意错误验证，多次错误验证失败后，设备将会被锁，而且锁定时间越来越长，最终可能导致设备永久锁定!!!。): Android系统要求大于6.0. Android是连续验证失败5次之后30秒内不能继续验证.
+ 支持平台: iOS8.0,Android6.0
+ 指纹识别组件,iOS为基于系统touchID和密码识别验证,需要iPhone5s设备搭载iOS8以上系统,IOS touchID识别策略(系统原生框架识别策略,不可修改,可以对照支付宝查看。警告！：touchID验证为设备公用功能(设备解锁和所有app)，不要随意故意错误验证，多次错误验证失败后，设备将会被锁，而且锁定时间越来越长，最终可能导致设备永久锁定!!!。): Android系统要求大于6.0. Android是连续验证失败5次之后30秒内不能继续验证.
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

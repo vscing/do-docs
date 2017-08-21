@@ -4,8 +4,8 @@ title: do_WebSocket 组件
 
 ### do_WebSocket 组件
 
-* 支持平台: iOS7.0,Android4.0
-通过WebSocket协议与服务器建立网络连接，进行通信
+ 支持平台: iOS7.0,Android4.0
+ 通过WebSocket协议与服务器建立网络连接，进行通信
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

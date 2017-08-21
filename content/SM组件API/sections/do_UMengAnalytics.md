@@ -4,8 +4,8 @@ title: do_UMengAnalytics 组件
 
 ### do_UMengAnalytics 组件
 
-* 支持平台: iOS7.0,Android4.0
-关于计数事件与计算事件的详细文档http://dev.umeng.com/analytics/functions/numekv#1_1_1
+ 支持平台: iOS7.0,Android4.0
+ 关于计数事件与计算事件的详细文档http://dev.umeng.com/analytics/functions/numekv#1_1_1
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

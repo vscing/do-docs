@@ -4,8 +4,8 @@ title: do_Button 组件
 
 ### do_Button 组件
 
-* 支持平台: iOS7.0,Android4.0
-按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。abc
+ 支持平台: iOS7.0,Android4.0
+ 按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。abc
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: M3242_NVDeviceView 组件
 
 ### M3242_NVDeviceView 组件
 
-* 支持平台: iOS7.0,Android4.0
-广州宏视流媒体(一个可以远程访问摄像头进行实时监控的组件)
+ 支持平台: iOS7.0,Android4.0
+ 广州宏视流媒体(一个可以远程访问摄像头进行实时监控的组件)
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

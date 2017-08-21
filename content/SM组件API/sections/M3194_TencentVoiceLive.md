@@ -4,8 +4,8 @@ title: M3194_TencentVoiceLive 组件
 
 ### M3194_TencentVoiceLive 组件
 
-* 支持平台: iOS8.0,Android4.0
-
+ 支持平台: iOS8.0,Android4.0
+ 
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

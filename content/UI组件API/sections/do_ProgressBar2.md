@@ -4,8 +4,8 @@ title: do_ProgressBar2 组件
 
 ### do_ProgressBar2 组件
 
-* 支持平台: iOS7.0,Android4.0
-环行进度条，进度条大小为组件最大内接圆，居中显示在组件范围内
+ 支持平台: iOS7.0,Android4.0
+ 环行进度条，进度条大小为组件最大内接圆，居中显示在组件范围内
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

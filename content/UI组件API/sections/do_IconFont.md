@@ -4,8 +4,8 @@ title: do_IconFont 组件
 
 ### do_IconFont 组件
 
-* 支持平台: iOSiOS 7.0,Android4.0
-支持从http://www.iconfont.cn/plus网站下载的ttf格式图标
+ 支持平台: iOSiOS 7.0,Android4.0
+ 支持从http://www.iconfont.cn/plus网站下载的ttf格式图标
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

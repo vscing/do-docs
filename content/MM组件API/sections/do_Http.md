@@ -4,8 +4,8 @@ title: do_Http 组件
 
 ### do_Http 组件
 
-* 支持平台: iOS7.0,Android4.0
-支持http/https请求服务
+ 支持平台: iOS7.0,Android4.0
+ 支持http/https请求服务
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

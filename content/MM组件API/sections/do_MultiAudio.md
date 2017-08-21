@@ -4,8 +4,8 @@ title: do_MultiAudio 组件
 
 ### do_MultiAudio 组件
 
-* 支持平台: iOS7.0,Android4.0
-多音频播放，能支持播放mp3、amr（iOS平台不支持）、aac格式的本地和网络音频
+ 支持平台: iOS7.0,Android4.0
+ 多音频播放，能支持播放mp3、amr（iOS平台不支持）、aac格式的本地和网络音频
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

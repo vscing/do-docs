@@ -4,8 +4,8 @@ title: do_SeekBar 组件
 
 ### do_SeekBar 组件
 
-* 支持平台: iOS7.0,Android4.0
-可以拖动的进度条，取值范围为0~100
+ 支持平台: iOS7.0,Android4.0
+ 可以拖动的进度条，取值范围为0~100
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

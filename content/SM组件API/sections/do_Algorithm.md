@@ -4,8 +4,8 @@ title: do_Algorithm 组件
 
 ### do_Algorithm 组件
 
-* 支持平台: iOS7.0,Android4.0
-包含一些常用的算法实现，包括md5算法、3DES算法、sha1安全哈希算法和Base64算法
+ 支持平台: iOS7.0,Android4.0
+ 包含一些常用的算法实现，包括md5算法、3DES算法、sha1安全哈希算法和Base64算法
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_Pedometer 组件
 
 ### do_Pedometer 组件
 
-* 支持平台: iOS7.0,Android4.0
-可获取并记录步数；iOS平台仅支持iPhone5S及以后产品
+ 支持平台: iOS7.0,Android4.0
+ 可获取并记录步数；iOS平台仅支持iPhone5S及以后产品
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_VideoRecord 组件
 
 ### do_VideoRecord 组件
 
-* 支持平台: iOS7.0,Android
-录制视频，输出MP4格式
+ 支持平台: iOS7.0,Android
+ 录制视频，输出MP4格式
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_WapsAd 组件
 
 ### do_WapsAd 组件
 
-* 支持平台: iOS7.0,Android4.0
-支持条幅广告，不支持windows平台
+ 支持平台: iOS7.0,Android4.0
+ 支持条幅广告，不支持windows平台
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

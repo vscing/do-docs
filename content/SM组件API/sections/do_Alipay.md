@@ -4,8 +4,8 @@ title: do_Alipay 组件
 
 ### do_Alipay 组件
 
-* 支持平台: iOS7.0,Android4.0
-调用手机支付宝客户端，完成支付功能
+ 支持平台: iOS7.0,Android4.0
+ 调用手机支付宝客户端，完成支付功能
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

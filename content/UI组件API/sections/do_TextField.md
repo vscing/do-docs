@@ -4,8 +4,8 @@ title: do_TextField 组件
 
 ### do_TextField 组件
 
-* 支持平台: iOS7.0,Android4.0
-通常只允许输入一行
+ 支持平台: iOS7.0,Android4.0
+ 通常只允许输入一行
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

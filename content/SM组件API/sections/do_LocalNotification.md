@@ -4,8 +4,8 @@ title: do_LocalNotification 组件
 
 ### do_LocalNotification 组件
 
-* 支持平台: iOS7,Android14
-
+ 支持平台: iOS7,Android14
+ 
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

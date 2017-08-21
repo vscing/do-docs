@@ -4,8 +4,8 @@ title: do_Bluetooth 组件
 
 ### do_Bluetooth 组件
 
-* 支持平台: iOS,Android
-使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；不支持windows平台，iOS系统必须8.0以上
+ 支持平台: iOS,Android
+ 使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；不支持windows平台，iOS系统必须8.0以上
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

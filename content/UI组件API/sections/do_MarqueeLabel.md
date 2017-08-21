@@ -4,8 +4,8 @@ title: do_MarqueeLabel 组件
 
 ### do_MarqueeLabel 组件
 
-* 支持平台: iOS7.0,Android4.0
-文字能滚动播出的文本标签框
+ 支持平台: iOS7.0,Android4.0
+ 文字能滚动播出的文本标签框
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

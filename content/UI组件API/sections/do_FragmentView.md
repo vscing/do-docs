@@ -4,8 +4,8 @@ title: do_FragmentView 组件
 
 ### do_FragmentView 组件
 
-* 支持平台: iOS7.0,Android14
-支持从最左侧或右侧边缘滑出视图，整体侧滑视图带有缩放和渐变效果；
+ 支持平台: iOS7.0,Android14
+ 支持从最左侧或右侧边缘滑出视图，整体侧滑视图带有缩放和渐变效果；
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

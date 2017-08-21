@@ -4,8 +4,8 @@ title: do_Easemob 组件
 
 ### do_Easemob 组件
 
-* 支持平台: iOS7,Android16
-环信即时通讯IM
+ 支持平台: iOS7,Android16
+ 环信即时通讯IM
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

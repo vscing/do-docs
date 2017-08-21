@@ -4,8 +4,8 @@ title: do_BaiduLocation 组件
 
 ### do_BaiduLocation 组件
 
-* 支持平台: iOS7.0,Android4.0
-利用设备当前的GPS信息（GPS定位），基站信息（基站定位）和Wi-Fi信息（Wi-Fi定位）完成定位，根据设备当前的实际情况（如是否开启GPS，是否连接网络，是否扫描到Wi-Fi信息等）进行定位
+ 支持平台: iOS7.0,Android4.0
+ 利用设备当前的GPS信息（GPS定位），基站信息（基站定位）和Wi-Fi信息（Wi-Fi定位）完成定位，根据设备当前的实际情况（如是否开启GPS，是否连接网络，是否扫描到Wi-Fi信息等）进行定位
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

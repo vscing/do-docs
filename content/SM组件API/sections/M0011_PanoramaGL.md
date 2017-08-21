@@ -4,8 +4,8 @@ title: M0011_PanoramaGL 组件
 
 ### M0011_PanoramaGL 组件
 
-* 支持平台: iOS,Android4.0
-不支持Windows平台
+ 支持平台: iOS,Android4.0
+ 不支持Windows平台
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

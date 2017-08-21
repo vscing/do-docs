@@ -4,8 +4,8 @@ title: do_FrameAnimationView 组件
 
 ### do_FrameAnimationView 组件
 
-* 支持平台: iOS7.0,Android4.0
-加载gif动图的视图，也可以将多张图片组合设置为动图效果；gifSource:和imagesSource属性不会同时起作用，两个属性同时设置时以imagesSource为准
+ 支持平台: iOS7.0,Android4.0
+ 加载gif动图的视图，也可以将多张图片组合设置为动图效果；gifSource:和imagesSource属性不会同时起作用，两个属性同时设置时以imagesSource为准
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

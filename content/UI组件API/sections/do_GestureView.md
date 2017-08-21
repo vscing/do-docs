@@ -4,8 +4,8 @@ title: do_GestureView 组件
 
 ### do_GestureView 组件
 
-* 支持平台: iOS7.0,Android4.0
-手势组件，缺省是透明的，windowsPC不支持
+ 支持平台: iOS7.0,Android4.0
+ 手势组件，缺省是透明的，windowsPC不支持
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

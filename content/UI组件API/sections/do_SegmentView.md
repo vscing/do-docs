@@ -4,8 +4,8 @@ title: do_SegmentView 组件
 
 ### do_SegmentView 组件
 
-* 支持平台: iOS7.0,Android4.0
-分段选择视图，支持手势滑动和点击选中一个index，通常和do_SlideView结合在一起使用，互相联动；当height=-1时，表示自动宽度
+ 支持平台: iOS7.0,Android4.0
+ 分段选择视图，支持手势滑动和点击选中一个index，通常和do_SlideView结合在一起使用，互相联动；当height=-1时，表示自动宽度
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

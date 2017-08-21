@@ -4,8 +4,8 @@ title: do_ImageCropView 组件
 
 ### do_ImageCropView 组件
 
-* 支持平台: iOS7.0,Android4.0
-图片裁剪视图，能设置view的基本属性，宽高等
+ 支持平台: iOS7.0,Android4.0
+ 图片裁剪视图，能设置view的基本属性，宽高等
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

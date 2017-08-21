@@ -4,8 +4,8 @@ title: do_Contact 组件
 
 ### do_Contact 组件
 
-* 支持平台: iOS7.0,Android4.0
-针对通讯录的增删查改
+ 支持平台: iOS7.0,Android4.0
+ 针对通讯录的增删查改
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

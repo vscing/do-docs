@@ -4,8 +4,8 @@ title: do_SQLite 组件
 
 ### do_SQLite 组件
 
-* 支持平台: iOS7.0,Android4.0
-提供SQLite3数据库的访问接口
+ 支持平台: iOS7.0,Android4.0
+ 提供SQLite3数据库的访问接口
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

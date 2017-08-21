@@ -4,8 +4,8 @@ title: do_SysCalendar 组件
 
 ### do_SysCalendar 组件
 
-* 支持平台: iOS7,Android14
-可以获取系统日历的日程以及添加日程,修改和删除日程
+ 支持平台: iOS7,Android14
+ 可以获取系统日历的日程以及添加日程,修改和删除日程
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

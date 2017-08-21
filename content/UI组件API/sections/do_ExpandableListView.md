@@ -4,8 +4,8 @@ title: do_ExpandableListView 组件
 
 ### do_ExpandableListView 组件
 
-* 支持平台: iOS7.0,Android4.0
-一个可分组可展开的List视图
+ 支持平台: iOS7.0,Android4.0
+ 一个可分组可展开的List视图
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

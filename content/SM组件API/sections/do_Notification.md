@@ -4,8 +4,8 @@ title: do_Notification 组件
 
 ### do_Notification 组件
 
-* 支持平台: iOS7.0,Android4.0
-各种方式提醒和通知用户
+ 支持平台: iOS7.0,Android4.0
+ 各种方式提醒和通知用户
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

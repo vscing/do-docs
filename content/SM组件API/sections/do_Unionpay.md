@@ -4,8 +4,8 @@ title: do_Unionpay 组件
 
 ### do_Unionpay 组件
 
-* 支持平台: iOS7.0,Android4.0
-接入银联SDK，完成支付功能
+ 支持平台: iOS7.0,Android4.0
+ 接入银联SDK，完成支付功能
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

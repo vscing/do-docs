@@ -4,8 +4,8 @@ title: do_VerticalMarqueeLabel 组件
 
 ### do_VerticalMarqueeLabel 组件
 
-* 支持平台: iOS7.0,Android4.0
-多条文字垂直滚动
+ 支持平台: iOS7.0,Android4.0
+ 多条文字垂直滚动
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

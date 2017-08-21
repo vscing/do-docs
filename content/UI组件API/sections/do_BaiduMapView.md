@@ -4,8 +4,8 @@ title: do_BaiduMapView 组件
 
 ### do_BaiduMapView 组件
 
-* 支持平台: iOS7.0,Android4.0
-集成百度地图，实现基本的地图功能，包括设置中心点，添加标记等
+ 支持平台: iOS7.0,Android4.0
+ 集成百度地图，实现基本的地图功能，包括设置中心点，添加标记等
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

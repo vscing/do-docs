@@ -4,8 +4,8 @@ title: do_Network 组件
 
 ### do_Network 组件
 
-* 支持平台: iOS7.0,Android4.0
-能获取当前手机端的网络状态,监听网络状态的变化
+ 支持平台: iOS7.0,Android4.0
+ 能获取当前手机端的网络状态,监听网络状态的变化
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: do_TencentWebView 组件
 
 ### do_TencentWebView 组件
 
-* 支持平台: iOS7.0,Android4.0
-集成了腾讯x5内核,可以加载html网页，拥有强大的视频播放功能
+ 支持平台: iOS7.0,Android4.0
+ 集成了腾讯x5内核,可以加载html网页，拥有强大的视频播放功能
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

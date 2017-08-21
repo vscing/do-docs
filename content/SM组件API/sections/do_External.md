@@ -4,8 +4,8 @@ title: do_External 组件
 
 ### do_External 组件
 
-* 支持平台: iOS7.0,Android4.0
-启动外部应用或系统的一些应用，比如浏览器，短信等
+ 支持平台: iOS7.0,Android4.0
+ 启动外部应用或系统的一些应用，比如浏览器，短信等
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

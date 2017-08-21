@@ -4,8 +4,8 @@ title: M0011_TXLiveView 组件
 
 ### M0011_TXLiveView 组件
 
-* 支持平台: iOS,Android
-详细文档请见https://www.qcloud.com/document/product/267/7977
+ 支持平台: iOS,Android
+ 详细文档请见https://www.qcloud.com/document/product/267/7977
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

@@ -4,8 +4,8 @@ title: LePlayerVod 组件
 
 ### LePlayerVod 组件
 
-* 支持平台: iOS7.0,Android4.0
-乐视云提供的视频点播功能，http://www.lecloud.com/zh-cn/product/vod.html
+ 支持平台: iOS7.0,Android4.0
+ 乐视云提供的视频点播功能，http://www.lecloud.com/zh-cn/product/vod.html
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

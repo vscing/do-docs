@@ -4,8 +4,8 @@ title: do_GestureCipher 组件
 
 ### do_GestureCipher 组件
 
-* 支持平台: iOS7.0,Android4.0
-可以创建九宫格手势密码并且验证是否正确
+ 支持平台: iOS7.0,Android4.0
+ 可以创建九宫格手势密码并且验证是否正确
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

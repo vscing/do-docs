@@ -4,8 +4,8 @@ title: do_ComboBox 组件
 
 ### do_ComboBox 组件
 
-* 支持平台: iOS7.0,Android4.0
-点击控件会弹出一个选择列表，单击选项即可选中
+ 支持平台: iOS7.0,Android4.0
+ 点击控件会弹出一个选择列表，单击选项即可选中
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

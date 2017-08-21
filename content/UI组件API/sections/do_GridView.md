@@ -4,8 +4,8 @@ title: do_GridView 组件
 
 ### do_GridView 组件
 
-* 支持平台: iOS7.0,Android4.0
-GridView是一个二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell，若设置为多模版，需要模板的大小相同
+ 支持平台: iOS7.0,Android4.0
+ GridView是一个二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell，若设置为多模版，需要模板的大小相同
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

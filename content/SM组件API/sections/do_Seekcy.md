@@ -4,8 +4,8 @@ title: do_Seekcy 组件
 
 ### do_Seekcy 组件
 
-* 支持平台: iOS7.0,Android4.0
-
+ 支持平台: iOS7.0,Android4.0
+ 
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

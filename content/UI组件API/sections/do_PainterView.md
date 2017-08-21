@@ -4,8 +4,8 @@ title: do_PainterView 组件
 
 ### do_PainterView 组件
 
-* 支持平台: iOS7.0,Android4.0
-手势滑动时会在view中留下移动痕迹
+ 支持平台: iOS7.0,Android4.0
+ 手势滑动时会在view中留下移动痕迹
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

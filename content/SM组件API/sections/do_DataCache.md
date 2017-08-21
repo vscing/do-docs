@@ -4,8 +4,8 @@ title: do_DataCache 组件
 
 ### do_DataCache 组件
 
-* 支持平台: iOS7.0,Android4.0
-缓存一些数据到本地文件，即使程序退出再进入还能获取到值，要确保设置的value值不要过大
+ 支持平台: iOS7.0,Android4.0
+ 缓存一些数据到本地文件，即使程序退出再进入还能获取到值，要确保设置的value值不要过大
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

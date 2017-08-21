@@ -4,8 +4,8 @@ title: M0011_TencentLive 组件
 
 ### M0011_TencentLive 组件
 
-* 支持平台: iOS,Android
-必须配合服务端使用，服务端文档详见https://www.qcloud.com/document/product/454/6808#2..E4.BF.AE.E6.94.B9.E5.9C.A8.E7.BA.BF.E7.8A.B6.E6.80.81，前端数据以put方式发送
+ 支持平台: iOS,Android
+ 必须配合服务端使用，服务端文档详见https://www.qcloud.com/document/product/454/6808#2..E4.BF.AE.E6.94.B9.E5.9C.A8.E7.BA.BF.E7.8A.B6.E6.80.81，前端数据以put方式发送
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

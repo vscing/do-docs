@@ -4,8 +4,8 @@ title: do_DraggableGridView 组件
 
 ### do_DraggableGridView 组件
 
-* 支持平台: iOS7.0,Android4.0
-DraggableGridView是一个可拖拽的二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell
+ 支持平台: iOS7.0,Android4.0
+ DraggableGridView是一个可拖拽的二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

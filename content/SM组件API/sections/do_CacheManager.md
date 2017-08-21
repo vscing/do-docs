@@ -4,8 +4,8 @@ title: do_CacheManager 组件
 
 ### do_CacheManager 组件
 
-* 支持平台: iOS7.0,Android4.0
-管理应用内缓存，windows平台不支持
+ 支持平台: iOS7.0,Android4.0
+ 管理应用内缓存，windows平台不支持
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

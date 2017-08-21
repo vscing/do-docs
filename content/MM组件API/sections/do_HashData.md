@@ -4,8 +4,8 @@ title: do_HashData 组件
 
 ### do_HashData 组件
 
-* 支持平台: iOS7.0,Android4.0
-HashData作为一个内存数据源，可以给UIModule作为bindData的数据源。可以参考UIModule的bindData方法。它本质上是一个可变key-value键值对,可以增删改查.
+ 支持平台: iOS7.0,Android4.0
+ HashData作为一个内存数据源，可以给UIModule作为bindData的数据源。可以参考UIModule的bindData方法。它本质上是一个可变key-value键值对,可以增删改查.
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

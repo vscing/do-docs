@@ -4,8 +4,8 @@ title: do_Page 组件
 
 ### do_Page 组件
 
-* 支持平台: iOS7.0,Android4.0
-应用程序基本页面类，包括UI布局和逻辑代码。每一个移动应用都是由多个Page一层层的叠加来组成。在当前Page的基础上打开新的Page，新的Page打开后会盖住底部的Page，当新的Page关闭后，又会露出底部的Page。
+ 支持平台: iOS7.0,Android4.0
+ 应用程序基本页面类，包括UI布局和逻辑代码。每一个移动应用都是由多个Page一层层的叠加来组成。在当前Page的基础上打开新的Page，新的Page打开后会盖住底部的Page，当新的Page关闭后，又会露出底部的Page。
 每一个Page都有自己的脚本运行环境，Page内所有的组件都公用这一个脚本环境。
 
 #### <font color ='#40A977'>**1.**</font> 属性

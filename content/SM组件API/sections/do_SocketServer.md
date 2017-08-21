@@ -4,8 +4,8 @@ title: do_SocketServer 组件
 
 ### do_SocketServer 组件
 
-* 支持平台: iOS7.0,Android4.0
-通过Socket建立网络连接，进行通信，TCP协议
+ 支持平台: iOS7.0,Android4.0
+ 通过Socket建立网络连接，进行通信，TCP协议
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

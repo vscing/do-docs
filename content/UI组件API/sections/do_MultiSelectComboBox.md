@@ -4,8 +4,8 @@ title: do_MultiSelectComboBox 组件
 
 ### do_MultiSelectComboBox 组件
 
-* 支持平台: iOS7.0,Android4.0
-多选择框列表，支持选一个或多项功能
+ 支持平台: iOS7.0,Android4.0
+ 多选择框列表，支持选一个或多项功能
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

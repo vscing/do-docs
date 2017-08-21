@@ -4,8 +4,8 @@ title: do_RichLabel 组件
 
 ### do_RichLabel 组件
 
-* 支持平台: iOS7.0,Android4.0
-富文本标签框，用于显示HTML标签内容，设置字体大小、高亮、超链接，默认只支持HTML一些基础标签。<br /><br />支持自定义a标签点击事件，href要以#打头，点击时会触发linkTouch事件，例如：&lt;a href=#my&gt;DeviceOne&lt;a&gt;其他情况则不触发事件；<br /><br />如a标签href属性内容以http:或者https开头，会自动使用外部浏览器打开；以mail:打头，会自动使用外部邮箱打开；如果是tel:打头，会自动使用电话拨号打开<br /><br />Android要支持的标签更少一点，另外不支持css，总之不能把这个组件当成Webview组件来加载任意的html。<br /><br />只支持加载html内容，不支持直接加载一个html文件。<br /><br />Android下支持width，height都为-1，根据内容自动适应大小，ios只支持height为-1.<br />
+ 支持平台: iOS7.0,Android4.0
+ 富文本标签框，用于显示HTML标签内容，设置字体大小、高亮、超链接，默认只支持HTML一些基础标签。<br /><br />支持自定义a标签点击事件，href要以#打头，点击时会触发linkTouch事件，例如：&lt;a href=#my&gt;DeviceOne&lt;a&gt;其他情况则不触发事件；<br /><br />如a标签href属性内容以http:或者https开头，会自动使用外部浏览器打开；以mail:打头，会自动使用外部邮箱打开；如果是tel:打头，会自动使用电话拨号打开<br /><br />Android要支持的标签更少一点，另外不支持css，总之不能把这个组件当成Webview组件来加载任意的html。<br /><br />只支持加载html内容，不支持直接加载一个html文件。<br /><br />Android下支持width，height都为-1，根据内容自动适应大小，ios只支持height为-1.<br />
 
 #### <font color ='#40A977'>**1.**</font> 属性
 

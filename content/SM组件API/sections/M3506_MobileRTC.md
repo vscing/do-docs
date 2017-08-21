@@ -4,8 +4,8 @@ title: M3506_MobileRTC 组件
 
 ### M3506_MobileRTC 组件
 
-* 支持平台: iOS7.0,Android
-集成了zoom的MobileRTC的视频会议组件
+ 支持平台: iOS7.0,Android
+ 集成了zoom的MobileRTC的视频会议组件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
