@@ -71,7 +71,7 @@ IndexListView实际上是一个界面右边带索引的ListView，可以绑定�
 
 >###### <font color ='#e96900'>**touch**</font>: 点击cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']
 - 说明: 点击cell触发
 - 示例:
@@ -85,7 +85,7 @@ IndexListView实际上是一个界面右边带索引的ListView，可以绑定�
 
 >###### <font color ='#e96900'>**longTouch**</font>: 长按cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']
 - 说明: 长按cell触发
 - 示例:

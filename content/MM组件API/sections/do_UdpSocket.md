@@ -86,7 +86,7 @@ title: do_UdpSocket 组件
 
 >###### <font color ='#e96900'>**receive**</font>: 接收数据
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 接收到的16进制数据
 - 说明: 接收数据
 - 示例:

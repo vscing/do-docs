@@ -83,7 +83,7 @@ title: do_MultiAudio 组件
 
 >###### <font color ='#e96900'>**playFinished**</font>: 音频播放结束后触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 音频播放结束后触发
 - 示例:
@@ -97,7 +97,7 @@ title: do_MultiAudio 组件
 
 >###### <font color ='#e96900'>**error**</font>: 音频播放错误时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 音频播放错误时触发
 - 示例:
@@ -111,7 +111,7 @@ title: do_MultiAudio 组件
 
 >###### <font color ='#e96900'>**playProgress**</font>: 
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回音频总时间和当前播放时间{currentTime,totalTime}，单位为毫秒
 - 说明: 
 - 示例:

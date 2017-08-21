@@ -53,7 +53,7 @@ title: do_VideoRecord 组件
 
 >###### <font color ='#e96900'>**error**</font>: 录制出错事件
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 录制出错事件
 - 示例:
@@ -67,7 +67,7 @@ title: do_VideoRecord 组件
 
 >###### <font color ='#e96900'>**finish**</font>: 完成录制
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{path:'data://temp/do_VideoRecord/20160101101010111.mp4',size:'232342'}，其中path为保存视频的路径，文件名是日期+精确到毫秒时间；size为视频大小，单位为KB
 - 说明: 完成录制
 - 示例:

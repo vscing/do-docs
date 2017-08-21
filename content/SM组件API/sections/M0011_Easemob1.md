@@ -503,7 +503,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**messages**</font>: 接收到新消息触发事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"chatType":"消息类型,包括Chat(单聊),GroupChat(群聊)","messageId": "消息的唯一标识符","conversationId": "所属会话的唯一标识符","from": "发送方","to": "接收方","timestamp": "时间戳","body":{"type":"消息体类型，包括，0.Text(文本),1.Image(图片),2.Location(位置),3.Voice(语音),4.Video(视频),5.File(文件)","text（type为0）": "消息内容","remotePath（type为1）": "大图remote路径","localPath（type为1）": "大图local路径","thumbnailRemotePath（type为1）": "小图remote路径","thumbnailLocalPath（type为1）": "小图local路径","latitude（type为2）": "纬度","longitude（type为2）": "经度","address（type为2）": "地址","remotePath（type为3）": "音频remote路径","localPath（type为3）": "音频local路径","fileLength（type为3）": "音频文件大小","duration（type为3）":"音频的时间长度","remotePath（type为4）": "视频remote路径","localPath（type为4）": "视频local路径","thumbnailRemotePath（type为4）": "第一帧缩略图remote路径","thumbnailLocalPath（type为4）": "第一帧缩略图local路径","fileLength（type为4）": "视频文件大小","duration（type为4）": "视频的时间长度","remotePath（type为5）": "文件remote路径","localPath（type为5）": "文件local路径","fileLength（type为5）": "文件文件大小"}}
 - 说明: 接收到新消息触发事件
 - 示例:
@@ -517,7 +517,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**joinGroup**</font>: 收到进群申请
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 只有用户申请进JoinNeedApproval公开群，Owner收到进群申请，才会触发该事件，{"groupId":"群组id","groupName":"群组名称","applicant":"申请者","reason":"申请者的附属信息"}
 - 说明: 收到进群申请
 - 示例:
@@ -531,7 +531,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**leavedGroup**</font>: 用户被动离开群组，群组被Owner解散或者用户被从群组中移除
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"groupId":"群组id","groupName":"群组名称","reason":"踢出原因"}
 - 说明: 用户被动离开群组，群组被Owner解散或者用户被从群组中移除
 - 示例:
@@ -545,7 +545,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**groupInvitation**</font>: 接收到邀请进群的申请
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"groupId":"群组id","inviter":"邀请者","reason":"邀请者的附属信息"}
 - 说明: 接收到邀请进群的申请
 - 示例:
@@ -559,7 +559,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**autoLogin**</font>: 若登录时设置自动登录，则下次进入自动登录时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 若登录时设置自动登录，则下次进入自动登录时触发
 - 示例:
@@ -573,7 +573,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**connectionStateChanged**</font>: 连接服务器的状态变化时会接收到该回调，有以下几种情况，会触发该事件：1. 登录成功后，手机无法上网时；2. 登录成功后，网络状态变化时
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {state:0 登录成功后，手机无法上网时 | 1 登录成功后，网络状态变化时}
 - 说明: 连接服务器的状态变化时会接收到该回调，有以下几种情况，会触发该事件：1. 登录成功后，手机无法上网时；2. 登录成功后，网络状态变化时
 - 示例:
@@ -587,7 +587,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**logout**</font>: 被动退出登录：1. 正在登录的账号在另一台设备上登录；2. 正在登录的账号被从服务器端删除。主动调用退出方法不会触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {state:0 显示帐号已经被移除 | 1 显示帐号在其他设备登陆}
 - 说明: 被动退出登录：1. 正在登录的账号在另一台设备上登录；2. 正在登录的账号被从服务器端删除。主动调用退出方法不会触发
 - 示例:
@@ -601,7 +601,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**invitationAccpted**</font>: 进群邀请被接受
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {groupId:当前邀请群组,invitee:被邀请人,reason:接受原因}
 - 说明: 进群邀请被接受
 - 示例:
@@ -615,7 +615,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**invitationDeclined**</font>: 进群邀请被拒绝
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {groupId:当前邀请群组,invitee:被邀请人,reason:拒绝原因}
 - 说明: 进群邀请被拒绝
 - 示例:
@@ -629,7 +629,7 @@ title: M0011_Easemob1 组件
 
 >###### <font color ='#e96900'>**revoke**</font>: 对方撤回消息
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 对方撤回消息时会触发该事件
 - 说明: 对方撤回消息
 - 示例:

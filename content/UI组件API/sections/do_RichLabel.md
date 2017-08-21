@@ -36,7 +36,7 @@ title: do_RichLabel 组件
 
 >###### <font color ='#e96900'>**linkTouch**</font>: 链接点击事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 有时候用户需要在点击label里的某一段文字触发一个自定义的动作，比如&lt;a href='#aaa' id='xx'&gt; 点击我&lt;/a&gt; ，注意href的值必须是#开始<br />则用户点击“点击我”这个link的时候会触发一个linkTouch事件，返回的data是一个JSON对象类型<br /><br />{value:'点击我' href:'#aaa', id:'xx'}<br /><br />用户可以根据href的值不同case做不同的操作<br /><br /><pre class="brush: js;toolbar:false;">
 //text的值是<a href="#my">自定义事件</a>
 //通过linkTouch和回调回来的d来确定richlabel里的自定义点击事件

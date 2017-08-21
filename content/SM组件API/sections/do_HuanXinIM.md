@@ -77,7 +77,7 @@ title: do_HuanXinIM 组件
 
 >###### <font color ='#e96900'>**receive**</font>: 接收到新消息触发事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的信息为{ from : '会话用户ID', nick : '会话用户昵称', icon:'会话用户头像', message : '会话消息内容', time : '消息发送时间' , type : '消息类型', tag : '自定义文本'  }
 - 说明: 接收到新消息触发事件
 - 示例:
@@ -91,7 +91,7 @@ title: do_HuanXinIM 组件
 
 >###### <font color ='#e96900'>**connection**</font>: 监听连接状态
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {state:1 显示帐号已经被移除 | 2 显示帐号在其他设备登陆 | 3 连接不到聊天服务器  | 4 当前网络不可用 请检查网络设置 }
 - 说明: 监听连接状态
 - 示例:
@@ -105,7 +105,7 @@ title: do_HuanXinIM 组件
 
 >###### <font color ='#e96900'>**chatStatusChanged**</font>: 聊天状态改变
 
-- 返回值类型 : <font color ='#808000'>**Number**</font>
+- 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 1 : 已进入聊天状态; 0 : 未进入聊天状态
 - 说明: 聊天状态改变
 - 示例:

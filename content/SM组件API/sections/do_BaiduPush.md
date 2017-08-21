@@ -120,7 +120,7 @@ title: do_BaiduPush 组件
 
 >###### <font color ='#e96900'>**bind**</font>: 获取绑定请求的结果，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {errorCode:'绑定接口返回值，0-成功',appId:'',userId:'',channelId:''}
 - 说明: 获取绑定请求的结果，需要注册在app.js或app.lua
 - 示例:
@@ -134,7 +134,7 @@ title: do_BaiduPush 组件
 
 >###### <font color ='#e96900'>**unbind**</font>: 获取解除绑定请求的结果，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {errorCode:'错误码。0表示从云推送解绑定成功；非0表示失败'}
 - 说明: 获取解除绑定请求的结果，需要注册在app.js或app.lua
 - 示例:
@@ -148,7 +148,7 @@ title: do_BaiduPush 组件
 
 >###### <font color ='#e96900'>**notificationClicked**</font>: 接收通知点击触发，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {title:'推送的通知的标题',description:'推送的通知的描述',customContent:'自定义内容，为空或者json字符串'}，iOS不支持title输入，所以也不返回title
 - 说明: 接收通知点击触发，需要注册在app.js或app.lua
 - 示例:
@@ -162,7 +162,7 @@ title: do_BaiduPush 组件
 
 >###### <font color ='#e96900'>**message**</font>: 接收透传消息触发，需要注册在app.js或app.lua，iOS不支持
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {message:'推送的消息',customContent:'自定义内容，为空或者json字符串'}
 - 说明: 接收透传消息触发，需要注册在app.js或app.lua，iOS不支持
 - 示例:
@@ -176,7 +176,7 @@ title: do_BaiduPush 组件
 
 >###### <font color ='#e96900'>**iOSMessage**</font>: 需要注册在app.js或app.lua。分三种情况：1、程序已启动且运行在前台，此时iOS接到推送消息会触发该事件，可在该事件里对推送消息进行处理，否则推送消息只会显示在状态栏中；2、程序已启动但运行在后台，此时只会显示一个横幅的消息提醒，建议用notificationClicked事件处理推送消息；3、程序未运行或者被杀死进程，此时接到推送消息不会触发该事件，而会触发do_Global的launch事件，返回值中type为notification
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {message:'推送的消息',customContent:'自定义内容，为空或者json字符串'}
 - 说明: 需要注册在app.js或app.lua。分三种情况：1、程序已启动且运行在前台，此时iOS接到推送消息会触发该事件，可在该事件里对推送消息进行处理，否则推送消息只会显示在状态栏中；2、程序已启动但运行在后台，此时只会显示一个横幅的消息提醒，建议用notificationClicked事件处理推送消息；3、程序未运行或者被杀死进程，此时接到推送消息不会触发该事件，而会触发do_Global的launch事件，返回值中type为notification
 - 示例:

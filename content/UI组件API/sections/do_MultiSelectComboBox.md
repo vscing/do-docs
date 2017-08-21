@@ -100,7 +100,7 @@ title: do_MultiSelectComboBox 组件
 
 >###### <font color ='#e96900'>**selectChanged**</font>: 选中列表项触发事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回选中数据的索引数组
 - 说明: 选中列表项触发事件
 - 示例:

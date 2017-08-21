@@ -64,7 +64,7 @@ title: do_Qiniu 组件
 
 >###### <font color ='#e96900'>**progress**</font>: 响应进度事件,文件大小和当前上传或者下载的进度
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{fileSize:'23234245',percent:'20'}单位分别为kB和%
 - 说明: 响应进度事件,文件大小和当前上传或者下载的进度
 - 示例:

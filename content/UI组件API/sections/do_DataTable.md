@@ -136,7 +136,7 @@ title: do_DataTable 组件
 
 >###### <font color ='#e96900'>**longTouch**</font>: 长按单元格触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前单元格的位置（不含表头）{row:第几行,column:第几列}
 - 说明: 长按单元格触发
 - 示例:
@@ -150,7 +150,7 @@ title: do_DataTable 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 点击单元格触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前单元格的位置（不含表头）{row:第几行,column:第几列}
 - 说明: 点击单元格触发
 - 示例:

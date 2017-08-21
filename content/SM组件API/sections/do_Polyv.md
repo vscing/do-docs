@@ -144,7 +144,7 @@ title: do_Polyv 组件
 
 >###### <font color ='#e96900'>**downloadProgress**</font>: 下载进度事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前下载进度百分比{progress:20}表示20%
 - 说明: 下载进度事件
 - 示例:
@@ -158,7 +158,7 @@ title: do_Polyv 组件
 
 >###### <font color ='#e96900'>**success**</font>: 请求成功事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值{type:0}，type表示事件类型，0表示下载事件
 - 说明: 请求成功事件
 - 示例:
@@ -172,7 +172,7 @@ title: do_Polyv 组件
 
 >###### <font color ='#e96900'>**fail**</font>: 请求出错事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值{type:0}，type表示事件类型，0表示下载事件
 - 说明: 请求出错事件
 - 示例:

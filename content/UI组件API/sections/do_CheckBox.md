@@ -63,7 +63,7 @@ strikethrough ：删除线
 
 >###### <font color ='#e96900'>**checkChanged**</font>: 选择切换时触发
 
-- 返回值类型 : <font color ='#808000'>**Bool**</font>
+- 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 返回当前控件状态
 - 说明: 选择切换时触发
 - 示例:

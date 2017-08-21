@@ -152,7 +152,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 点击cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的position值和在当前cell的绝对位置y
 - 说明: 点击cell触发
 - 示例:
@@ -166,7 +166,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**longTouch**</font>: 长按cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的position值和在当前cell的绝对位置y
 - 说明: 长按cell触发
 - 示例:
@@ -180,7 +180,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**touch1**</font>: 点击cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的position值和在当前cell的绝对位置y，windows平台不支持
 - 说明: 点击cell触发
 - 示例:
@@ -194,7 +194,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**longTouch1**</font>: 长按cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的position值和在当前cell的绝对位置y，windows平台不支持
 - 说明: 长按cell触发
 - 示例:
@@ -208,7 +208,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**pull**</font>: 下拉headerview事件
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回{state,offset}，其中state表示headerview的状态，offset为headerview下拉的位移量；其中state=0：表示开始下拉headerview，在headerview下拉到headerview复位整个过程中，pull事件会触发很多次；state=1：表示下拉headerview超过headerview的高度，触发一次这个事件，前端开发者接受到这个事件会更新headerview的ui；state=2：下拉超过一定值，触发state=1事件后，松手会触发一次这个事件，前端开发者接受到这个事件会更新headerview的ui，然后开始加载数据，数据加载完后需要调用rebound方法让header复位
 - 说明: 下拉headerview事件
 - 示例:
@@ -222,7 +222,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**push**</font>: 上拉footerview事件
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回{state,offset}，其中state表示headerview的状态，offset为footerview上拉的位移量；state=0,表示一直上拉，当SlideListView的content到SlideListView的底部，从0开始到footerview复位，会多次触发这个事件；state=1，如果超过footerview的高度，这个事件只触发一次，前端接受到这个事件会更新footview的ui；state=2，如果超过footview的高度并松手，这个事件只触发一次，前端接受到这个事件会更新footview的ui，并开始加载数据，加载完后前端开发者需插入新的数据，并调用rebound复位footerview
 - 说明: 上拉footerview事件
 - 示例:
@@ -236,7 +236,7 @@ title: do_SlideListView 组件
 
 >###### <font color ='#e96900'>**scroll**</font>: 滑动事件
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: iOS和Android平台返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置；windows平台返回offset表示滚动的位移
 - 说明: 滑动事件
 - 示例:

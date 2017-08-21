@@ -63,7 +63,7 @@ Windows平台不支持
 
 >###### <font color ='#e96900'>**shake**</font>: 摇一摇
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 摇一摇
 - 示例:
@@ -77,7 +77,7 @@ Windows平台不支持
 
 >###### <font color ='#e96900'>**change**</font>: 加速度变化触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {x:'x轴的加速度',y:'y轴的加速度',z:'z轴的加速度'}
 - 说明: 加速度变化触发
 - 示例:

@@ -30,7 +30,7 @@ title: do_SeekBar 组件
 
 >###### <font color ='#e96900'>**progressChanged**</font>: 第一进度值变化时候触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 第一进度值变化时候触发
 - 示例:

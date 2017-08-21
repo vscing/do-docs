@@ -167,7 +167,7 @@ title: do_BaiduLocation 组件
 
 >###### <font color ='#e96900'>**result**</font>: 接收到定位/更新定位时候触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {latitude:'纬度​'，longitude:'经度', address:'北京市海淀区'}
 - 说明: 接收到定位/更新定位时候触发
 - 示例:

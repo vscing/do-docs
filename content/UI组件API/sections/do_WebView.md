@@ -243,7 +243,7 @@ title: do_WebView 组件
 >##### <font color ='#0092db'>**getContentSize**</font>: 获取加载页面内容尺寸
 
 - 参数: **无**
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回{width,height}
 - 说明: 获取当前加载页面真实内容的宽高，windows平台不支持
 - 示例:
@@ -300,7 +300,7 @@ title: do_WebView 组件
 
 >###### <font color ='#e96900'>**loaded**</font>: 加载结束事件
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回{url}，其中url表示当前操作的url地址，该地址不一定为网络地址，本地html页面跳转也会触发并返回本地路径
 - 说明: 加载结束事件
 - 示例:
@@ -314,7 +314,7 @@ title: do_WebView 组件
 
 >###### <font color ='#e96900'>**start**</font>: 开始加载
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回{url}，其中url表示当前操作的url地址，该地址不一定为网络地址，本地html页面跳转也会触发并返回本地路径
 - 说明: 开始加载
 - 示例:
@@ -328,7 +328,7 @@ title: do_WebView 组件
 
 >###### <font color ='#e96900'>**pull**</font>: 下拉headerview事件
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回{state,offset}，其中state表示headerview的状态，offset为headerview下拉的位移量；其中state=0：表示开始下拉headerview，在headerview下拉到headerview复位整个过程中，pull事件会触发很多次；state=1：表示下拉headerview超过headerview的高度，触发一次这个事件，前端开发者接受到这个事件会更新headerview的ui；state=2：下拉超过一定值，触发state=1事件后，松手会触发一次这个事件，前端开发者接受到这个事件会更新headerview的ui，然后开始加载数据，数据加载完后需要调用rebound方法让header复位
 - 说明: 下拉headerview事件
 - 示例:
@@ -342,7 +342,7 @@ title: do_WebView 组件
 
 >###### <font color ='#e96900'>**failed**</font>: 加载错误事件
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 加载网页失败或加载一个错误的或者不存在的网页时触发，返回错误信息
 - 说明: 加载错误事件
 - 示例:

@@ -98,7 +98,7 @@ title: do_iFlyVoice 组件
 
 >###### <font color ='#e96900'>**begin**</font>: 合成完成，开始播放时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 合成完成，开始播放时触发
 - 示例:
@@ -112,7 +112,7 @@ title: do_iFlyVoice 组件
 
 >###### <font color ='#e96900'>**finished**</font>: 播放完成或播放错误时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 播放完成或播放错误时触发
 - 示例:

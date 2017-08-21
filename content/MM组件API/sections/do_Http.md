@@ -226,7 +226,7 @@ title: do_Http 组件
 
 >###### <font color ='#e96900'>**progress**</font>: 响应请求事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含五个节点{currentSize:'1221',totalSize:'23234245',currentFileSize:'',index:'',taskId:''}单位为kB，其中currentFileSize和index只有调用form方法时返回，分别为当前正在上传文件大小和所在files数据数组中索引，除断点下载其他请求不会返回tastID，断点下载不返回index
 - 说明: 响应请求事件
 - 示例:
@@ -254,7 +254,7 @@ title: do_Http 组件
 
 >###### <font color ='#e96900'>**fail**</font>: 请求出错事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{status:'http错误码' ,message:'错误的信息'}
 - 说明: 请求出错事件
 - 示例:
@@ -268,7 +268,7 @@ title: do_Http 组件
 
 >###### <font color ='#e96900'>**result**</font>: 请求结束事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{status:'http状态码' ,data:'服务端返回信息',taskId:''}，除断点下载其他请求不会返回tastID
 - 说明: 请求结束事件
 - 示例:

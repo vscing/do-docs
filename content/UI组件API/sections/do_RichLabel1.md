@@ -78,7 +78,7 @@ title: do_RichLabel1 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 匹配内容点击事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回匹配到的内容content和tag数据
 - 说明: 匹配内容点击事件
 - 示例:

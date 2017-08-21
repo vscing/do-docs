@@ -88,7 +88,7 @@ PDF阅读器，不支持windows平台
 
 >###### <font color ='#e96900'>**pageChanged**</font>: 页面切换时触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {'total':100,'current':2}
 - 说明: 页面切换时触发
 - 示例:

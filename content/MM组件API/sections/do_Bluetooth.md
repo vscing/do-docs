@@ -190,7 +190,7 @@ title: do_Bluetooth 组件
 
 >###### <font color ='#e96900'>**characteristicChanged**</font>: 特征改变
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 收到BLE终端服务特征写入数据时触发该事件{特征uuid:'28923DE7-2E5D-4E81-8264-86BE1B9C4B51',value:'hello'}
 - 说明: 特征改变
 - 示例:
@@ -204,7 +204,7 @@ title: do_Bluetooth 组件
 
 >###### <font color ='#e96900'>**scan**</font>: 搜索外围设备
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 搜索到外围设备触发该事件，{address:'Android(设备MAC B4:99:4C:25:29:51)'/'IOS(设备UUID)',name:'device1',RSSI:'接收的信号强度指示,单位dBm,127是保留值，标示无效'}
 - 说明: 搜索外围设备
 - 示例:
@@ -218,7 +218,7 @@ title: do_Bluetooth 组件
 
 >###### <font color ='#e96900'>**connectionStateChange**</font>: 连接状态改变
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 监听连接状态，当连接状态发生变化触发该事件，0：断开、1：连接
 - 说明: 连接状态改变
 - 示例:

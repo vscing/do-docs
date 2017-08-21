@@ -183,7 +183,7 @@ title: do_RongCloud 组件
 
 >###### <font color ='#e96900'>**message**</font>: 接收到新消息触发事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的信息为{ conversationType : '所属会话类型', messageId : '消息的唯一id', fromUserId:'发送者id', sendTime : '发送时间', receiveTime : '接收时间' , messageType : '消息类型(text,location,file,image,voice)', messageContent : '消息内容'  }
 - 说明: 接收到新消息触发事件
 - 示例:
@@ -197,7 +197,7 @@ title: do_RongCloud 组件
 
 >###### <font color ='#e96900'>**userPortraitClick**</font>: 头像点击事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的信息为{ conversationType : '当前所属会话类型', userId : '所点击头像的用户id',userName : '所点击头像的用户昵称'  }
 - 说明: 头像点击事件
 - 示例:

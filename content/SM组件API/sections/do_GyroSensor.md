@@ -78,7 +78,7 @@ title: do_GyroSensor 组件
 
 >###### <font color ='#e96900'>**change**</font>: 加速度变化触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {x:'绕x轴旋转的角度’,y:’绕y轴旋转的角度’,z:’绕z轴旋转的角度’}
 - 说明: 加速度变化触发
 - 示例:

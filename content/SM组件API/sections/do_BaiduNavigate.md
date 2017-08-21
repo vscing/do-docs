@@ -39,7 +39,7 @@ title: do_BaiduNavigate 组件
 
 >###### <font color ='#e96900'>**failed**</font>: 导航失败时候触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 导航失败时候触发
 - 示例:
@@ -53,7 +53,7 @@ title: do_BaiduNavigate 组件
 
 >###### <font color ='#e96900'>**begin**</font>: 开始导航
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 开始导航
 - 示例:
@@ -67,7 +67,7 @@ title: do_BaiduNavigate 组件
 
 >###### <font color ='#e96900'>**success**</font>: 成功开启导航
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 成功开启导航
 - 示例:

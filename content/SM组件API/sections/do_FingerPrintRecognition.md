@@ -39,7 +39,7 @@ title: do_FingerPrintRecognition 组件
 
 >###### <font color ='#e96900'>**localizedFallbackButtonClick**</font>: 验证过程中，验证弹框自定义验证按钮点击事件(仅iOS有效，订阅该事件，用户处理自定义验证逻辑步骤)
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 验证过程中，验证弹框自定义验证按钮点击事件(仅iOS有效，订阅该事件，用户处理自定义验证逻辑步骤)
 - 示例:

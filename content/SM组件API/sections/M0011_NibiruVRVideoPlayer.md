@@ -83,7 +83,7 @@ title: M0011_NibiruVRVideoPlayer 组件
 
 >###### <font color ='#e96900'>**finished**</font>: 视频播放完后触发
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 
 - 说明: 视频播放完后触发
 - 示例:

@@ -291,7 +291,7 @@ title: do_BaiduMapView 组件
 
 >###### <font color ='#e96900'>**download**</font>: 下载离线地图触发的事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {'cityID':城市id,'cityName':城市名称,'ratio':下载进度（0~100）100表示下载完成}
 - 说明: 下载离线地图触发的事件
 - 示例:
@@ -305,7 +305,7 @@ title: do_BaiduMapView 组件
 
 >###### <font color ='#e96900'>**regionChange**</font>: 地图区域改变完成后会触发，返回地图区域的中心点坐标
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {latitude:'', longitude:''}
 - 说明: 地图区域改变完成后会触发，返回地图区域的中心点坐标
 - 示例:
@@ -319,7 +319,7 @@ title: do_BaiduMapView 组件
 
 >###### <font color ='#e96900'>**touchMap**</font>: 点击地图时触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前点击的位置坐标{"latitude":"纬度","longitude":"经度"}
 - 说明: 点击地图时触发
 - 示例:
@@ -333,7 +333,7 @@ title: do_BaiduMapView 组件
 
 >###### <font color ='#e96900'>**touchMarker**</font>: 点击标记时触发，iOS平台只有第一次点击mark会触发该事件，之后需要点击弹出的缩略图触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 
 - 说明: 点击标记时触发，iOS平台只有第一次点击mark会触发该事件，之后需要点击弹出的缩略图触发
 - 示例:

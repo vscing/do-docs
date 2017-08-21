@@ -122,7 +122,7 @@ title: do_BaiduPanoramaView 组件
 
 >###### <font color ='#e96900'>**touchMarker**</font>: 点击标记时触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: [{id:标记ID,用户自定义标记唯一ID,latitude:纬度,longitude:经度,type:ImageMark|TextMark,info:当type为ImageMark时返回缩略图地址|当type为TextMark时返回文字标注内容}]
 - 说明: 点击标记时触发
 - 示例:

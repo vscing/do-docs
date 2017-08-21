@@ -36,7 +36,7 @@ SwitchView 是一个带有开关选择的UI组件，只有（开，关）两种�
 
 >###### <font color ='#e96900'>**changed**</font>: 开关状态触发
 
-- 返回值类型 : <font color ='#808000'>**Bool**</font>
+- 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 当前状态
 - 说明: 开关状态触发
 - 示例:

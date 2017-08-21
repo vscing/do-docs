@@ -88,7 +88,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**back**</font>: 点击设备物理或虚拟返回按键触发事件（Android、WindowsPhone有效）
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 点击设备物理或虚拟返回按键触发事件（Android、WindowsPhone有效）
 - 示例:
@@ -102,7 +102,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**menu**</font>: 点击设备物理或虚拟菜单按键触发事件（Android、WindowsPhone有效）
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 点击设备物理或虚拟菜单按键触发事件（Android、WindowsPhone有效）
 - 示例:
@@ -116,7 +116,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**loaded**</font>: 页面加载完触发事件
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 页面加载完触发事件
 - 示例:
@@ -130,7 +130,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**resume**</font>: 回到前台、Page回到顶端时触发或打开当前页面
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 回到前台、Page回到顶端时触发或打开当前页面
 - 示例:
@@ -144,7 +144,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**pause**</font>: 进入后台、被其他Page盖住或关闭当前页面时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 进入后台、被其他Page盖住或关闭当前页面时触发
 - 示例:
@@ -158,7 +158,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**result**</font>: 上层Page关闭时触发
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 上层Page关闭的时候会触发下层Page一个result事件。并返回上层页面关闭时传递过来的数据
 - 说明: 上层Page关闭时触发
 - 示例:
@@ -172,7 +172,7 @@ title: do_Page 组件
 
 >###### <font color ='#e96900'>**keyDown**</font>: 点击设备物理或虚拟返回按键触发事件（Android、WindowsPhone有效）
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {keyCode:对应按键的值}
 - 说明: 点击设备物理或虚拟返回按键触发事件（Android、WindowsPhone有效）
 - 示例:

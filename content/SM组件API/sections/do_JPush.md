@@ -154,7 +154,7 @@ title: do_JPush 组件
 
 >###### <font color ='#e96900'>**didConnect**</font>: 已连接，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 初始化连接成功
 - 说明: 已连接，需要注册在app.js或app.lua
 - 示例:
@@ -168,7 +168,7 @@ title: do_JPush 组件
 
 >###### <font color ='#e96900'>**didClose**</font>: 未连接，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 断开连接，当无网络时会触发或者被极光关闭
 - 说明: 未连接，需要注册在app.js或app.lua
 - 示例:
@@ -182,7 +182,7 @@ title: do_JPush 组件
 
 >###### <font color ='#e96900'>**didLogin**</font>: 返回登陆成功后的RegistrationID，在极光的后台可以根据这个id进行个推，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {registrationID:'1114a89792aa12dfd2c'}
 - 说明: 返回登陆成功后的RegistrationID，在极光的后台可以根据这个id进行个推，需要注册在app.js或app.lua
 - 示例:
@@ -196,7 +196,7 @@ title: do_JPush 组件
 
 >###### <font color ='#e96900'>**message**</font>: 需要注册在app.js或app.lua。分三种情况：1、程序已启动且运行在前台，此时接到推送消息会触发该事件，可在该事件里对推送消息进行处理；2、程序已启动但运行在后台，此时ios只会显示一个横幅的消息提醒，android会在状态栏中显示消息提醒，建议用messageClicked事件处理推送消息；3、程序未运行或者被杀死进程，此时接到推送消息不会触发该事件，而会触发do_Global的launch事件，返回值中type为notification，若消息未读，会在状态栏中显示
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {title:'推送的通知的标题',content:'推送的消息',extra:'自定义内容，为空或者json字符串'}；iOS不支持title输入，所以也不返回title；当android发送推送消息时不填写标题，title则会获取到应用名称
 - 说明: 需要注册在app.js或app.lua。分三种情况：1、程序已启动且运行在前台，此时接到推送消息会触发该事件，可在该事件里对推送消息进行处理；2、程序已启动但运行在后台，此时ios只会显示一个横幅的消息提醒，android会在状态栏中显示消息提醒，建议用messageClicked事件处理推送消息；3、程序未运行或者被杀死进程，此时接到推送消息不会触发该事件，而会触发do_Global的launch事件，返回值中type为notification，若消息未读，会在状态栏中显示
 - 示例:
@@ -210,7 +210,7 @@ title: do_JPush 组件
 
 >###### <font color ='#e96900'>**customMessage**</font>: 自定义推送消息，收到自定义消息并且应用在前台时触发，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {content:'推送的消息',extra:'自定义内容，为空或者json字符串'}
 - 说明: 自定义推送消息，收到自定义消息并且应用在前台时触发，需要注册在app.js或app.lua
 - 示例:
@@ -224,7 +224,7 @@ title: do_JPush 组件
 
 >###### <font color ='#e96900'>**messageClicked**</font>: 点击通知消息触发，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {title:'推送的通知的标题',content:'推送的消息',extra:'自定义内容，为空或者json字符串'}，iOS不支持title输入，所以也不返回title
 - 说明: 点击通知消息触发，需要注册在app.js或app.lua
 - 示例:

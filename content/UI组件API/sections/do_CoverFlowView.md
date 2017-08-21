@@ -78,7 +78,7 @@ title: do_CoverFlowView 组件
 
 >###### <font color ='#e96900'>**indexChanged**</font>: 滑动显示当前视图后触发该事件
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回当前index
 - 说明: 滑动显示当前视图后触发该事件
 - 示例:
@@ -92,7 +92,7 @@ title: do_CoverFlowView 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 点击cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的index值
 - 说明: 点击cell触发
 - 示例:

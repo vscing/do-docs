@@ -48,7 +48,7 @@ title: do_Seekcy 组件
 
 >###### <font color ='#e96900'>**result**</font>: 扫描到Beacon设备,每隔一段时间更新
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: [{"distance":"距离,单位米","mac":"mac地址","major":"主要值","minor":"次要值","power":"电量","rssi":"场强"}]
 - 说明: 扫描到Beacon设备,每隔一段时间更新
 - 示例:

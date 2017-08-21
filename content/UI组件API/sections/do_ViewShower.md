@@ -109,7 +109,7 @@ ViewShower是一个包含多个子VIew的UI容器组件，每个子View的大小
 
 >###### <font color ='#e96900'>**viewChanged**</font>: View切换完成时触发
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回View切换后的id
 - 说明: View切换完成时触发
 - 示例:

@@ -63,7 +63,7 @@ title: do_LocalNotification 组件
 
 >###### <font color ='#e96900'>**message**</font>: 需要注册在app.js或app.lua。分三种情况：1、程序已启动且运行在前台，此时接到推送消息会触发该事件，可在该事件里对推送消息进行处理，否则推送消息只会显示在状态栏中（iOS不显示）；2、程序已启动但运行在后台，此时只会显示一个横幅的消息提醒，建议用messageClicked事件处理推送消息；3、程序未运行或者被杀死进程，此时接到推送消息不会触发该事件，而会触发do_Global的launch事件，返回值中type为locaLNotification
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {contentTitle:'通知标题',contentText:'通知内容',notifyId:'通知id',extra:'自定义内容，为空或者json字符串'}
 - 说明: 需要注册在app.js或app.lua。分三种情况：1、程序已启动且运行在前台，此时接到推送消息会触发该事件，可在该事件里对推送消息进行处理，否则推送消息只会显示在状态栏中（iOS不显示）；2、程序已启动但运行在后台，此时只会显示一个横幅的消息提醒，建议用messageClicked事件处理推送消息；3、程序未运行或者被杀死进程，此时接到推送消息不会触发该事件，而会触发do_Global的launch事件，返回值中type为locaLNotification
 - 示例:
@@ -77,7 +77,7 @@ title: do_LocalNotification 组件
 
 >###### <font color ='#e96900'>**messageClicked**</font>: 接收通知点击触发，需要注册在app.js或app.lua
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {contentTitle:'通知的标题',contentText:'通知的描述',notifyId:'通知id',extra:'自定义内容，为空或者json字符串'}，iOS不支持contentTitle输入，所以也不返回contentTitle
 - 说明: 接收通知点击触发，需要注册在app.js或app.lua
 - 示例:

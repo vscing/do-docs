@@ -73,7 +73,7 @@ title: do_SocketServer 组件
 
 >###### <font color ='#e96900'>**receive**</font>: 接收数据
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值为Node类型,格式为{receiveData:'aa', client:'192.168.1.1:8888'}
 - 说明: 接收数据
 - 示例:
@@ -87,7 +87,7 @@ title: do_SocketServer 组件
 
 >###### <font color ='#e96900'>**listen**</font>: 监听事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 如果有客户端连接上该服务端,则触发该事件,并且返回该客户端的ip和端口号,格式为'192.168.0.95:8080'
 - 说明: 监听事件
 - 示例:
@@ -101,7 +101,7 @@ title: do_SocketServer 组件
 
 >###### <font color ='#e96900'>**error**</font>: 监听异常
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 监听成功后，并且当前已经有客户端连接，断开网络或网络切换时触发该事件（error事件触发并不会影响当前的监听，只是会将当前已连接的客户端移除）
 - 说明: 监听异常
 - 示例:

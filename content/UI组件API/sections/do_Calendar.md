@@ -52,7 +52,7 @@ title: do_Calendar 组件
 
 >###### <font color ='#e96900'>**selectedDate**</font>: 点击日历上的日期触发事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前选中的日期{'year':,'mouth':,'day':,'week':}，年、月、日、星期
 - 说明: 点击日历上的日期触发事件
 - 示例:

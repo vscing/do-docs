@@ -73,7 +73,7 @@ title: do_Socket 组件
 
 >###### <font color ='#e96900'>**receive**</font>: 接收数据
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 接收到的16进制数据
 - 说明: 接收数据
 - 示例:
@@ -87,7 +87,7 @@ title: do_Socket 组件
 
 >###### <font color ='#e96900'>**error**</font>: 链接异常
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 连接成功后断开网络或服务器停止服务时触发，返回错误信息msg
 - 说明: 链接异常
 - 示例:

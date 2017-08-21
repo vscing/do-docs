@@ -38,7 +38,7 @@ title: do_ImageBrowser 组件
 
 >###### <font color ='#e96900'>**longTouch**</font>: 长按预览图片触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前图片的索引值和图片的source，如['index':'','source':'']
 - 说明: 长按预览图片触发
 - 示例:
@@ -52,7 +52,7 @@ title: do_ImageBrowser 组件
 
 >###### <font color ='#e96900'>**result**</font>: 点击关闭预览时触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前预览图片的索引{'index':''}
 - 说明: 点击关闭预览时触发
 - 示例:

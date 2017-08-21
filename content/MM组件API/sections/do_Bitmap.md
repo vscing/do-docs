@@ -18,7 +18,7 @@ title: do_Bitmap 组件
   名称 | 数据类型 |默认值|是否必填|缺省值|说明
   ---- |-------------  |----------|--------------|--------|------
   **source** |<font color ='#808000'>**string**</font> |  | 是||只支持本地文件，支持： data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {'Width':'图像横向像素数','Height':'图像纵向像素数','Make:'相机生产厂家','Model':'型号','ExposureTime':'快门速度','FNumber':'光圈','ISO':'感光度','Date':'拍摄时间2016:01:01 09:00:00','FocalLength','镜头焦距','LensMake':'镜头生产商','LensModel':'镜头型号','MeteringMode':'测光模式','LightSource':'白平衡设定'}
 - 说明: 获取图片拍摄信息
 - 示例:

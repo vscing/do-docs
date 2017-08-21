@@ -281,7 +281,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**MeetingError**</font>: Designated for Meeting Error message.
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {error:错误码,message:错误信息}
 - 说明: Designated for Meeting Error message.
 - 示例:
@@ -295,7 +295,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**MeetingReturn**</font>: Designated for Meeting Response.
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {error:错误码,internalError:内部错误码}
 - 说明: Designated for Meeting Response.
 - 示例:
@@ -309,7 +309,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**MeetingStateChange**</font>: Designated for Meeting State Change.
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {state:0},tell client meeting state chagne.
      //Idle
     MobileRTCMeetingState_Idle        = 0,
@@ -329,7 +329,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**MobileRTCAuthReturn**</font>: Designated for MobileRTC Auth response.
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {code:0} //Auth Success 
     MobileRTCAuthError_Success = 0,
     //Key or Secret is empty
@@ -354,7 +354,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**MobileRTCLoginReturn**</font>: Designated for MobileRTC Login response.
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {code:2} returnValue tell user when the login state changed.
 - 说明: Designated for MobileRTC Login response.
 - 示例:
@@ -368,7 +368,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**MobileRTCLogoutReturn**</font>: Designated for MobileRTC Logout response.
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {code:0}returnValue tell user whether the logout success or not.
 - 说明: Designated for MobileRTC Logout response.
 - 示例:
@@ -382,7 +382,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 >###### <font color ='#e96900'>**onMeetingReady**</font>: Designated for Meeting has been ready.
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 
 - 说明: Designated for Meeting has been ready.
 - 示例:

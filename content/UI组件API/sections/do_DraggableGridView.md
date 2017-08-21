@@ -136,7 +136,7 @@ DraggableGridView是一个可拖拽的二维网格滚动视图，可将数据源
 
 >###### <font color ='#e96900'>**dragged**</font>: cell拖拽到其它cell位置并松开手指后触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {'old':未拖动之前的数据索引,'new':拖动之后的数据索引}
 - 说明: cell拖拽到其它cell位置并松开手指后触发
 - 示例:

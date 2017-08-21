@@ -198,7 +198,7 @@ title: do_VideoView 组件
 
 >###### <font color ='#e96900'>**finished**</font>: 视频播放完后触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 视频播放完后触发
 - 示例:
@@ -212,7 +212,7 @@ title: do_VideoView 组件
 
 >###### <font color ='#e96900'>**error**</font>: 视频播放异常时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 视频播放异常时触发
 - 示例:

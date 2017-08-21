@@ -137,7 +137,7 @@ title: do_TextBox 组件
 
 >###### <font color ='#e96900'>**textChanged**</font>: 文字变化时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 文字变化时触发
 - 示例:
@@ -151,7 +151,7 @@ title: do_TextBox 组件
 
 >###### <font color ='#e96900'>**focusIn**</font>: 进入编辑状态
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回键盘高度，{keybordHeight:'25'}
 - 说明: 进入编辑状态
 - 示例:
@@ -165,7 +165,7 @@ title: do_TextBox 组件
 
 >###### <font color ='#e96900'>**focusOut**</font>: 离开编辑状态
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 离开编辑状态
 - 示例:

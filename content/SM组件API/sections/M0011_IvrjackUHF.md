@@ -101,7 +101,7 @@ title: M0011_IvrjackUHF 组件
 
 >###### <font color ='#e96900'>**result**</font>: 
 
-- 返回值类型 : <font color ='#808000'>**Number**</font>
+- 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: �豸����¼���0��ʾ�豸�򿪳ɹ�
 - 说明: 
 - 示例:
@@ -115,7 +115,7 @@ title: M0011_IvrjackUHF 组件
 
 >###### <font color ='#e96900'>**scan**</font>: 
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: ����һ��ɨ�赽�ı�ǩ�б?{epc:'E2005114 59000020 0002A6DA'}
 - 说明: 
 - 示例:

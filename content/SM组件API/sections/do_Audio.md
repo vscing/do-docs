@@ -155,7 +155,7 @@ title: do_Audio 组件
 
 >###### <font color ='#e96900'>**playFinished**</font>: 音频播放结束后触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 音频播放结束后触发
 - 示例:
@@ -169,7 +169,7 @@ title: do_Audio 组件
 
 >###### <font color ='#e96900'>**recordFinished**</font>: 录音结束后触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {“path”:“返回录音文件保存的路径”,“time”:“本次录音时长，单位为毫秒”,“size”:“返回的录音文件大小，单位为字节”}
 - 说明: 录音结束后触发
 - 示例:
@@ -183,7 +183,7 @@ title: do_Audio 组件
 
 >###### <font color ='#e96900'>**error**</font>: 音频播放、录音错误时触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 音频播放、录音错误时触发
 - 示例:
@@ -197,7 +197,7 @@ title: do_Audio 组件
 
 >###### <font color ='#e96900'>**playProgress**</font>: 
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回音频总时间和当前播放时间{currentTime,totalTime}
 - 说明: 
 - 示例:
@@ -211,7 +211,7 @@ title: do_Audio 组件
 
 >###### <font color ='#e96900'>**recordProgress**</font>: 
 
-- 返回值类型 : <font color ='#808000'>**String**</font>
+- 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回录音总时间totalTime
 - 说明: 
 - 示例:
@@ -225,7 +225,7 @@ title: do_Audio 组件
 
 >###### <font color ='#e96900'>**recordVolume**</font>: 录音音量变化事件
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {“volume”:“实时音量大小”}；Windows平台不支持
 - 说明: 录音音量变化事件
 - 示例:

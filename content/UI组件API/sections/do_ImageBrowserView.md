@@ -57,7 +57,7 @@ title: do_ImageBrowserView 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 点击图片触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前index值,如：{'index':1}
 - 说明: 点击图片触发
 - 示例:
@@ -71,7 +71,7 @@ title: do_ImageBrowserView 组件
 
 >###### <font color ='#e96900'>**longTouch**</font>: 长按图片触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前index值，如:{'index':1}
 - 说明: 长按图片触发
 - 示例:

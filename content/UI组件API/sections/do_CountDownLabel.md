@@ -42,7 +42,7 @@ title: do_CountDownLabel 组件
 
 >###### <font color ='#e96900'>**finish**</font>: 倒计时完成触发
 
-- 返回值类型 : <font color ='#808000'>****</font>
+- 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
 - 说明: 倒计时完成触发
 - 示例:

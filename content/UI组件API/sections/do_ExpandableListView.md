@@ -167,7 +167,7 @@ title: do_ExpandableListView 组件
 
 >###### <font color ='#e96900'>**groupTouch**</font>: 点击group中的cell触发
 
-- 返回值类型 : <font color ='#808000'>**Number**</font>
+- 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前cell的索引值
 - 说明: 点击group中的cell触发
 - 示例:
@@ -181,7 +181,7 @@ title: do_ExpandableListView 组件
 
 >###### <font color ='#e96900'>**childTouch**</font>: 点击child中的cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前group的索引值和cell的索引值,如：{'groupIndex':1,'childIndex':5}
 - 说明: 点击child中的cell触发
 - 示例:
@@ -195,7 +195,7 @@ title: do_ExpandableListView 组件
 
 >###### <font color ='#e96900'>**groupExpand**</font>: group展开触发
 
-- 返回值类型 : <font color ='#808000'>**Number**</font>
+- 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前group中cell的索引值
 - 说明: group展开触发
 - 示例:
@@ -209,7 +209,7 @@ title: do_ExpandableListView 组件
 
 >###### <font color ='#e96900'>**groupCollapse**</font>: group收缩触发
 
-- 返回值类型 : <font color ='#808000'>**Number**</font>
+- 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前group中cell的索引值
 - 说明: group收缩触发
 - 示例:
@@ -223,7 +223,7 @@ title: do_ExpandableListView 组件
 
 >###### <font color ='#e96900'>**scroll**</font>: 滑动事件
 
-- 返回值类型 : <font color ='#808000'>**node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: Android平台返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置；iOS和windows平台返回offset表示滚动的位移
 - 说明: 滑动事件
 - 示例:

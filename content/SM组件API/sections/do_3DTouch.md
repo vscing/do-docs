@@ -60,7 +60,7 @@ title: do_3DTouch 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 点击item触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包括，{'id':'','title':'','subTitle':'','userInfo':''}
 - 说明: 点击item触发
 - 示例:

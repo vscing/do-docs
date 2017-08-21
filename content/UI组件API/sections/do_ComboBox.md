@@ -94,7 +94,7 @@ title: do_ComboBox 组件
 
 >###### <font color ='#e96900'>**selectChanged**</font>: 当数据变化或数据索引变化触发
 
-- 返回值类型 : <font color ='#808000'>**Number**</font>
+- 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 返回选中数据的索引
 - 说明: 当数据变化或数据索引变化触发
 - 示例:

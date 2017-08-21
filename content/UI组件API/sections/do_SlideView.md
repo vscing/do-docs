@@ -150,7 +150,7 @@ title: do_SlideView 组件
 
 >###### <font color ='#e96900'>**touch**</font>: 点击cell触发
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的index值,如：{'index':1}
 - 说明: 点击cell触发
 - 示例:

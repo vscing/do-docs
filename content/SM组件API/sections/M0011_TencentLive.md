@@ -127,7 +127,7 @@ title: M0011_TencentLive 组件
 
 >###### <font color ='#e96900'>**C2P**</font>: 组件触发事件跳到指定的业务逻辑界面
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回参数类型{type:''},type=1标示充值,type=2标示登陆
 - 说明: 组件触发事件跳到指定的业务逻辑界面
 - 示例:
@@ -141,7 +141,7 @@ title: M0011_TencentLive 组件
 
 >###### <font color ='#e96900'>**ShareEvent**</font>: 组件触发事件跳到指定的业务逻辑界面
 
-- 返回值类型 : <font color ='#808000'>**Node**</font>
+- 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {content: '内容',image: '封面地址',scene: '0表示分享给微信好友;1表示分享到朋友圈',title: '标题',url: '直播地址'}
 - 说明: 组件触发事件跳到指定的业务逻辑界面
 - 示例:
