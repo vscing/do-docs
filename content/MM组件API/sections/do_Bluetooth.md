@@ -107,9 +107,9 @@ title: do_Bluetooth 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **address** |<font color ='#808000'>**string**</font> |  | 是||BLE终端设备mac地址/IOS对应设备UUID
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **address** |<font color ='#808000'>**string**</font> |  | 是|BLE终端设备mac地址/IOS对应设备UUID
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: true成功false失败
 - 说明: 根据指定唯一标识（MAC/UUID）连接BLE终端蓝牙设备，连接成功，发现该设备支持的服务
@@ -126,13 +126,13 @@ title: do_Bluetooth 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **data** |<font color ='#808000'>**string**</font> |  | 是||写入数据（不进行任何处理）
-  **sUUID** |<font color ='#808000'>**string**</font> |  | 是||写入服务UUID
-  **cUUID** |<font color ='#808000'>**string**</font> |  | 是||写入特征UUID
-  **length** |<font color ='#808000'>**string**</font> | 20 | 否|20|设备一次性写入多少个字节，Android平台最大字节数为20
-  **type** |<font color ='#808000'>**string**</font> | string | 否|string|支持：binary 二进制数据(用十六进制字符串表示)，string 字符串。默认支持UTF-8编码
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **data** |<font color ='#808000'>**string**</font> |  | 是|写入数据（不进行任何处理）
+  **sUUID** |<font color ='#808000'>**string**</font> |  | 是|写入服务UUID
+  **cUUID** |<font color ='#808000'>**string**</font> |  | 是|写入特征UUID
+  **length** |<font color ='#808000'>**string**</font> | 20 | 否|设备一次性写入多少个字节，Android平台最大字节数为20
+  **type** |<font color ='#808000'>**string**</font> | string | 否|支持：binary 二进制数据(用十六进制字符串表示)，string 字符串。默认支持UTF-8编码
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 往BLE终端蓝牙模块服务特征写入数据，该特征需具备WRITE权限
@@ -149,10 +149,10 @@ title: do_Bluetooth 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **sUUID** |<font color ='#808000'>**string**</font> |  | 是||服务UUID
-  **cUUID** |<font color ='#808000'>**string**</font> |  | 是||特征UUID
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **sUUID** |<font color ='#808000'>**string**</font> |  | 是|服务UUID
+  **cUUID** |<font color ='#808000'>**string**</font> |  | 是|特征UUID
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 0:成功;-1:失败;1:设备不支持;2:服务没找到;3:特征没有找到
 - 说明: 读取BLE终端蓝牙模块服务特征数据，该特征需具备READ权限，调用这个方法会触发characteristicChanged事件，在事件中通过uuid区别是特征通知或者主动read触发
@@ -169,10 +169,10 @@ title: do_Bluetooth 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **sUUID** |<font color ='#808000'>**string**</font> |  | 是||服务UUID
-  **cUUID** |<font color ='#808000'>**string**</font> |  | 是||特征UUID
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **sUUID** |<font color ='#808000'>**string**</font> |  | 是|服务UUID
+  **cUUID** |<font color ='#808000'>**string**</font> |  | 是|特征UUID
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 0:成功;-1:失败;1:设备不支持;2:服务没找到;3:特征没有找到
 - 说明: 注册可以监听的特征,当特征改变的时候,会触发characteristicChanged事件

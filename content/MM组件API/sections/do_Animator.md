@@ -15,11 +15,11 @@ title: do_Animator 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **duration** |<font color ='#808000'>**number**</font> |  | 是||单位为毫秒
-  **props** |<font color ='#808000'>**object**</font> |  | 否||这是一个JSON node节点，包含多个参数，参数集合如下：{'x':10,'y':50,'height':500...}为空时表示状态不变
-  **curve** |<font color ='#808000'>**string**</font> | Linear | 否|Linear|支持四种情况：1.'EaseInOut'动画启动时候慢，中间快，结束的时候慢、2.'EaseIn'动画启动的时候慢、3.'EaseOut'动画结束的时候慢、4.'Linear'动画速度不变
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **duration** |<font color ='#808000'>**number**</font> |  | 是|单位为毫秒
+  **props** |<font color ='#808000'>**object**</font> |  | 否|这是一个JSON node节点，包含多个参数，参数集合如下：{'x':10,'y':50,'height':500...}为空时表示状态不变
+  **curve** |<font color ='#808000'>**string**</font> | Linear | 否|支持四种情况：1.'EaseInOut'动画启动时候慢，中间快，结束的时候慢、2.'EaseIn'动画启动的时候慢、3.'EaseOut'动画结束的时候慢、4.'Linear'动画速度不变
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 创建属性动画

@@ -33,10 +33,10 @@ title: do_IndexListView 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 是||比如{'A':[{'template':0,'text':'a1'},{'template':1,'text':'a2'}],'B':[{'template':0,'text':'b1'},{'template':1,'text':'b2'}]}，其中每个group下第一条数据表示分组信息，不可点击
-  **indexs** |<font color ='#808000'>**object**</font> |  | 否||一个数组列表，按照此列表显示列表数据，可以为空，为空就按照HashData‘随机’显示列表数据
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **data** |<font color ='#808000'>**object**</font> |  | 是|比如{'A':[{'template':0,'text':'a1'},{'template':1,'text':'a2'}],'B':[{'template':0,'text':'b1'},{'template':1,'text':'b2'}]}，其中每个group下第一条数据表示分组信息，不可点击
+  **indexs** |<font color ='#808000'>**object**</font> |  | 否|一个数组列表，按照此列表显示列表数据，可以为空，为空就按照HashData‘随机’显示列表数据
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 为IndeListView绑定数据源，只支持HashData实例，其中每组第一条数据表示分组信息，不可点击

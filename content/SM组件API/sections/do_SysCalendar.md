@@ -32,16 +32,16 @@ title: do_SysCalendar 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **title** |<font color ='#808000'>**string**</font> |  | 是||
-  **description** |<font color ='#808000'>**string**</font> |  | 是||
-  **startTime** |<font color ='#808000'>**string**</font> |  | 是||long型时间
-  **endTime** |<font color ='#808000'>**string**</font> |  | 是||long型时间
-  **location** |<font color ='#808000'>**string**</font> |  | 否||
-  **reminderTime** |<font color ='#808000'>**string**</font> |  | 否||提前提醒时间，单位minute比如设置为60，就是在行程开始时间前一小时提醒，不填则准时提醒
-  **reminderRepeatMode** |<font color ='#808000'>**string**</font> |  | 否||day:每天提醒一次，week:每周提醒一次，month:每月提醒一次，year:每年提醒一次
-  **reminderRepeatEndTime** |<font color ='#808000'>**string**</font> |  | 否||long型时间，reminderRepeatMode设置过后该参数才有效，比如设置重复模式为Day，就是每天提醒，设置该参数后就是截止该时间停止提醒
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **title** |<font color ='#808000'>**string**</font> |  | 是|
+  **description** |<font color ='#808000'>**string**</font> |  | 是|
+  **startTime** |<font color ='#808000'>**string**</font> |  | 是|long型时间
+  **endTime** |<font color ='#808000'>**string**</font> |  | 是|long型时间
+  **location** |<font color ='#808000'>**string**</font> |  | 否|
+  **reminderTime** |<font color ='#808000'>**string**</font> |  | 否|提前提醒时间，单位minute比如设置为60，就是在行程开始时间前一小时提醒，不填则准时提醒
+  **reminderRepeatMode** |<font color ='#808000'>**string**</font> |  | 否|day:每天提醒一次，week:每周提醒一次，month:每月提醒一次，year:每年提醒一次
+  **reminderRepeatEndTime** |<font color ='#808000'>**string**</font> |  | 否|long型时间，reminderRepeatMode设置过后该参数才有效，比如设置重复模式为Day，就是每天提醒，设置该参数后就是截止该时间停止提醒
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回所添加日程的唯一ID
 - 说明: 
@@ -58,14 +58,14 @@ title: do_SysCalendar 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是||
-  **title** |<font color ='#808000'>**string**</font> |  | 否||
-  **description** |<font color ='#808000'>**string**</font> |  | 否||
-  **startTime** |<font color ='#808000'>**string**</font> |  | 否||long型时间
-  **endTime** |<font color ='#808000'>**string**</font> |  | 否||long型时间
-  **location** |<font color ='#808000'>**string**</font> |  | 否||
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **id** |<font color ='#808000'>**string**</font> |  | 是|
+  **title** |<font color ='#808000'>**string**</font> |  | 否|
+  **description** |<font color ='#808000'>**string**</font> |  | 否|
+  **startTime** |<font color ='#808000'>**string**</font> |  | 否|long型时间
+  **endTime** |<font color ='#808000'>**string**</font> |  | 否|long型时间
+  **location** |<font color ='#808000'>**string**</font> |  | 否|
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 修改成功返回true，失败则返回false
 - 说明: 
@@ -82,9 +82,9 @@ title: do_SysCalendar 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是||
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **id** |<font color ='#808000'>**string**</font> |  | 是|
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 删除成功返回true，失败则返回false
 - 说明: 

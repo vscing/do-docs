@@ -17,12 +17,12 @@ title: do_SangforVPN 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **host** |<font color ='#808000'>**string**</font> |  | 是||连接VPN地址
-  **username** |<font color ='#808000'>**string**</font> |  | 是||登录VPN的用户名
-  **password** |<font color ='#808000'>**string**</font> |  | 是||登录VPN的密码
-  **port** |<font color ='#808000'>**number**</font> | 443 | 否|443|连接VPN端口
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **host** |<font color ='#808000'>**string**</font> |  | 是|连接VPN地址
+  **username** |<font color ='#808000'>**string**</font> |  | 是|登录VPN的用户名
+  **password** |<font color ='#808000'>**string**</font> |  | 是|登录VPN的密码
+  **port** |<font color ='#808000'>**number**</font> | 443 | 否|连接VPN端口
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"result":"true 登录成功，false 登录失败","code":"0","msg":""}
 - 说明: 登录VPN

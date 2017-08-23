@@ -17,9 +17,9 @@ title: do_SinaWeiBo 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **appId** |<font color ='#808000'>**string**</font> |  | 是||在微博开发平台上申请的appId
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **appId** |<font color ='#808000'>**string**</font> |  | 是|在微博开发平台上申请的appId
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回用户登录信息{'uid': '2806220780', 'access_token': '2.00UNcuDDswn6rCccbb272dc4SsU7dC', 'refresh_token': '2.00UNcuDDswn6rCa14e51baccu2BzTD','expires_in': '1429210895335'}
 - 说明: 使用sina微博登录获取用户登录的信息
@@ -36,12 +36,12 @@ title: do_SinaWeiBo 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **uid** |<font color ='#808000'>**string**</font> |  | 是||
-  **accessToken** |<font color ='#808000'>**string**</font> |  | 是||
-  **refreshToken** |<font color ='#808000'>**string**</font> |  | 是||
-  **expires** |<font color ='#808000'>**string**</font> |  | 是||
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **uid** |<font color ='#808000'>**string**</font> |  | 是|
+  **accessToken** |<font color ='#808000'>**string**</font> |  | 是|
+  **refreshToken** |<font color ='#808000'>**string**</font> |  | 是|
+  **expires** |<font color ='#808000'>**string**</font> |  | 是|
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回是一个String,里面包含了用户的基本信息，头像，昵称...
 - 说明: 获取用户信息
@@ -73,14 +73,14 @@ title: do_SinaWeiBo 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **appId** |<font color ='#808000'>**string**</font> |  | 是||在微博开发平台上申请的appId
-  **type** |<font color ='#808000'>**number**</font> | 0 | 是|0|0：默认，图文分享；1：网页分享；2：音乐分享；3：视频分享；4：音频分享；
-  **title** |<font color ='#808000'>**string**</font> |  | 是||分享的标题, 最长30个字符
-  **image** |<font color ='#808000'>**string**</font> |  | 是||分享后显示的图片，只支持本地图片data://
-  **url** |<font color ='#808000'>**string**</font> |  | 是||文件的远程链接, 以URL的形式传入
-  **summary** |<font color ='#808000'>**string**</font> |  | 否||分享的消息摘要，最长40个字符
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **appId** |<font color ='#808000'>**string**</font> |  | 是|在微博开发平台上申请的appId
+  **type** |<font color ='#808000'>**number**</font> | 0 | 是|0：默认，图文分享；1：网页分享；2：音乐分享；3：视频分享；4：音频分享；
+  **title** |<font color ='#808000'>**string**</font> |  | 是|分享的标题, 最长30个字符
+  **image** |<font color ='#808000'>**string**</font> |  | 是|分享后显示的图片，只支持本地图片data://
+  **url** |<font color ='#808000'>**string**</font> |  | 是|文件的远程链接, 以URL的形式传入
+  **summary** |<font color ='#808000'>**string**</font> |  | 否|分享的消息摘要，最长40个字符
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: true 分享成功，false 分享失败
 - 说明: 分享到新浪微博

@@ -32,9 +32,9 @@ title: do_GestureCipher 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **patternDisplay** |<font color ='#808000'>**string**</font> | false | 否|false|默认不可见
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **patternDisplay** |<font color ='#808000'>**string**</font> | false | 否|默认不可见
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 验证成功返回true，否则返回false
 - 说明: 验证手势密码是否正确

@@ -15,16 +15,16 @@ title: do_LocalNotification 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **notifyTime** |<font color ='#808000'>**string**</font> |  | 是||通知一次时间格式为yyyy-MM-dd HH:mm:ss，iOS平台因系统限制，不同通知的时间不能重复
-  **notifyId** |<font color ='#808000'>**number**</font> | 通知唯一标示 | 是|通知唯一标示|
-  **contentText** |<font color ='#808000'>**string**</font> |  | 是||
-  **contentTitle** |<font color ='#808000'>**string**</font> |  | 否||iOS平台不支持
-  **extra** |<font color ='#808000'>**object**</font> |  | 否||自定义内容不显示在通知中，只在通知中携带，比如{'key1':'value1'}
-  **repeatMode** |<font color ='#808000'>**string**</font> | None | 否|None|None：默认值按照指定时间执行一次，Minute:每隔一分钟重复执行,Hour:每隔一小时进行重复执行,Day:每隔一天进行重复执行,Week:每隔一周进行重复执行
-  **ringing** |<font color ='#808000'>**string**</font> |  | 否||只支持data://目录；不填时默认用系统通知铃声；iOS平台只支持m4a格式，且若铃声超过30秒则无效
-  **isVibrate** |<font color ='#808000'>**Boolean**</font> | true | 否|true|收到通知时是否震动;iOS平台是否能震动与系统设置相同
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **notifyTime** |<font color ='#808000'>**string**</font> |  | 是|通知一次时间格式为yyyy-MM-dd HH:mm:ss，iOS平台因系统限制，不同通知的时间不能重复
+  **notifyId** |<font color ='#808000'>**number**</font> | 通知唯一标示 | 是|
+  **contentText** |<font color ='#808000'>**string**</font> |  | 是|
+  **contentTitle** |<font color ='#808000'>**string**</font> |  | 否|iOS平台不支持
+  **extra** |<font color ='#808000'>**object**</font> |  | 否|自定义内容不显示在通知中，只在通知中携带，比如{'key1':'value1'}
+  **repeatMode** |<font color ='#808000'>**string**</font> | None | 否|None：默认值按照指定时间执行一次，Minute:每隔一分钟重复执行,Hour:每隔一小时进行重复执行,Day:每隔一天进行重复执行,Week:每隔一周进行重复执行
+  **ringing** |<font color ='#808000'>**string**</font> |  | 否|只支持data://目录；不填时默认用系统通知铃声；iOS平台只支持m4a格式，且若铃声超过30秒则无效
+  **isVibrate** |<font color ='#808000'>**Boolean**</font> | true | 否|收到通知时是否震动;iOS平台是否能震动与系统设置相同
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: iOS平台应用在前台时，震动和自定义铃声无效，只触发message事件
@@ -41,9 +41,9 @@ title: do_LocalNotification 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **notifyIds** |<font color ='#808000'>**object**</font> |  | 否||通知id数组
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **notifyIds** |<font color ='#808000'>**object**</font> |  | 否|通知id数组
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 数组不为空，移除数组里notifyId，数组为空移除所有通知，移除后通知不再触发

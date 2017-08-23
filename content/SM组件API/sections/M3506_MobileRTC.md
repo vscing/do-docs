@@ -81,9 +81,9 @@ title: M3506_MobileRTC 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **dict** |<font color ='#808000'>**object**</font> |  | 是||The dictionary which contains the meeting parameters.
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **dict** |<font color ='#808000'>**object**</font> |  | 是|The dictionary which contains the meeting parameters.
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: A MobileRTCMeetError to tell client whether the meeting started or not.    
     //Success
@@ -131,10 +131,10 @@ title: M3506_MobileRTC 组件
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **meetingNo** |<font color ='#808000'>**string**</font> |  | 是||会议id
-  **displayName** |<font color ='#808000'>**string**</font> |  | 是||显示名字
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **meetingNo** |<font color ='#808000'>**string**</font> |  | 是|会议id
+  **displayName** |<font color ='#808000'>**string**</font> |  | 是|显示名字
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: return A MobileRTCMeetError to tell client whether can join the meeting or not.、
 typedef enum {
@@ -185,9 +185,9 @@ typedef enum {
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **cmd** |<font color ='#808000'>**number**</font> |  | 是||Leave meeting by the command type.
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **cmd** |<font color ='#808000'>**number**</font> |  | 是|Leave meeting by the command type.
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: This method is used to end/leave an ongoing meeting.
@@ -204,10 +204,10 @@ typedef enum {
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **email** |<font color ='#808000'>**string**</font> |  | 是||login email account.
-  **password** |<font color ='#808000'>**string**</font> |  | 是||login password.
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **email** |<font color ='#808000'>**string**</font> |  | 是|login email account.
+  **password** |<font color ='#808000'>**string**</font> |  | 是|login password.
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: return true, if user can login with work email.
 - 说明: Designated for login MobileRTC with work email account.（暂未实现）
@@ -239,9 +239,9 @@ typedef enum {
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **pause** |<font color ='#808000'>**boolean**</font> |  | 是||if true to pause audio; if false to resume audio.
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **pause** |<font color ='#808000'>**boolean**</font> |  | 是|if true to pause audio; if false to resume audio.
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 操作是否成功
 - 说明: This method is used to pause/resume audio in the meeting.
@@ -258,9 +258,9 @@ typedef enum {
 
 - 参数:
 
-  名称 | 数据类型 |默认值|是否必填|缺省值|说明
-  ---- |-------------  |----------|--------------|--------|------
-  **dict** |<font color ='#808000'>**object**</font> |  | 是||The dictionary which contains the meeting parameters.
+  名称 | 类型 |是否必填|缺省值|说明
+  ---- |-------------  |--------------|--------|------
+  **dict** |<font color ='#808000'>**object**</font> |  | 是|The dictionary which contains the meeting parameters.
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: //Success
 MobileRTCMeetError_Success                    = 0,
