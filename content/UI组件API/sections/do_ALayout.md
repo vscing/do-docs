@@ -67,10 +67,11 @@ title: do_ALayout 组件
   **y** |<font color ='#808000'>**string**</font> |  | 否||插入的ui组件相对ALayout的y 坐标,如果没有设置,则是这个ui组件旧的y坐标
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回这个ui文件对应的根节点view的地址
-- 说明: 可以在ALayout控件内在用户指定的x,y坐标上动态插入新的ui文件,实际是add这个ui文件的根节点对应的ui组件.<br>
-这个ui文件可以有自己的脚本代码，但是和这个ui的所在Page共享一个[作用域](../../../应用开发/sections/数据共享和传递).详细用法包括插入的ui和主ui之间的数据交互参考[例子](https://github.com/do-api/docs-example/tree/master/source/view/do_ALayout)<br>
-目前并不支持动态add一个ui对象,只支持add一个ui文件,ui文件本质是一个json字符串,你可以通过网络或其它方式动态生成这个json字符串,然后写入一个临时的ui文件,然后再add.<br>
-add之后的ui可以通过UI组件的基类方法[remove](../index.md)来删除,对应的ui资源会清除,但是add的ui文件对应的ui.js的js资源并不会清空. 如果需要不断的add和remove,可以尝试不使用remove,而是设置visiable为true和false来隐藏和显示.<br>
+- 说明:
+  * 可以在ALayout控件内在用户指定的x,y坐标上动态插入新的ui文件,实际是add这个ui文件的根节点对应的ui组件.
+  * 这个ui文件可以有自己的脚本代码，但是和这个ui的所在Page共享一个[作用域](../../../应用开发/sections/数据共享和传递).详细用法包括插入的ui和主ui之间的数据交互参考[例子](https://github.com/do-api/docs-example/tree/master/source/view/do_ALayout)
+  * 目前并不支持动态add一个ui对象,只支持add一个ui文件,ui文件本质是一个json字符串,你可以通过网络或其它方式动态生成这个json字符串,然后写入一个临时的ui文件,然后再add.
+  * add之后的ui可以通过UI组件的基类方法[remove](../index.md)来删除,对应的ui资源会清除,但是add的ui文件对应的ui.js的js资源并不会清空. 如果需要不断的add和remove,可以尝试不使用remove,而是设置visiable为true和false来隐藏和显示.
 - 示例:
 
   ```javascript
@@ -144,8 +145,7 @@ add之后的ui可以通过UI组件的基类方法[remove](../index.md)来删除,
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
-- 说明: 按下并在alayout范围抬起，触发该事件</br>
-enabled为false的时候无效
+- 说明: 按下并在alayout范围抬起，触发该事件; enabled为false的时候无效
 - 示例:
 
   ```javascript
@@ -161,16 +161,14 @@ enabled为false的时候无效
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
-- 说明: alayout范围内按下即可触发</br>
-必须先订阅toch事件才会有效果</br>
-enabled为false的时候无效
+- 说明: alayout范围内按下即可触发;必须先订阅toch事件才会有效果;enabled为false的时候无效
 - 示例:
 
   ```javascript
   layout.on("touch",function(){
   	//do nothing
   })
-  
+
   layout.on("touchDown",function(){
       deviceone.print("touchDown 触发")
   })
@@ -183,9 +181,7 @@ enabled为false的时候无效
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
-- 说明: 一旦按下，手指离开即触发，不论是否在alayout范围内</br>
-必须先订阅toch事件才会有效果</br>
-enabled为false的时候无效
+- 说明: 一旦按下，手指离开即触发，不论是否在alayout范围内;必须先订阅toch事件才会有效果;enabled为false的时候无效
 - 示例:
 
   ```javascript
@@ -205,9 +201,7 @@ enabled为false的时候无效
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
-- 说明: 长按事件</br>
-必须先订阅toch事件才会有效果</br>
-enabled为false的时候无效
+- 说明: 长按事件;必须先订阅toch事件才会有效果;enabled为false的时候无效
 - 示例:
 
   ```javascript
