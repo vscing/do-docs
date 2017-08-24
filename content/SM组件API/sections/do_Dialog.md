@@ -30,9 +30,9 @@ title: do_Dialog 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**string**</font> |  | 否|在关闭窗口时data参数传递给open方法的回调函数
+  **data** |<font color ='#808000'>**string**</font> | 否 | |在关闭窗口时data参数传递给open方法的回调函数
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -51,11 +51,11 @@ title: do_Dialog 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|支持source和data目录
-  **data** |<font color ='#808000'>**string**</font> |  | 否|传递到Dialog的数据，通过getData方法获取该数据
-  **supportClickClose** |<font color ='#808000'>**Boolean**</font> | true | 否|设置成true时可以通过点击窗口外页面其他空白处关闭当前窗口；为false时则不支持点击关闭
+  **path** |<font color ='#808000'>**string**</font> | 是 | |支持source和data目录
+  **data** |<font color ='#808000'>**string**</font> | 否 | |传递到Dialog的数据，通过getData方法获取该数据
+  **supportClickClose** |<font color ='#808000'>**Boolean**</font> | 否 | true|设置成true时可以通过点击窗口外页面其他空白处关闭当前窗口；为false时则不支持点击关闭
 - 返回值类型 : <font color ='#808000'>**Sting**</font>
 - 返回值描述: 返回close方法的data参数值
 - 说明: 打开的窗口在屏幕中居中显示

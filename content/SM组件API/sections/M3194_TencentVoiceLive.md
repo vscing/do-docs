@@ -30,9 +30,9 @@ title: M3194_TencentVoiceLive 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **isEnable** |<font color ='#808000'>**Boolean**</font> | false | 否|true表示开启，false表示关闭
+  **isEnable** |<font color ='#808000'>**Boolean**</font> | 否 | false|true表示开启，false表示关闭
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 开启或关闭扬声器/耳机。
@@ -49,9 +49,9 @@ title: M3194_TencentVoiceLive 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **isEnable** |<font color ='#808000'>**Boolean**</font> | true | 否|true表示开启，false表示关闭
+  **isEnable** |<font color ='#808000'>**Boolean**</font> | 否 | true|true表示开启，false表示关闭
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 打开/关闭麦
@@ -100,12 +100,12 @@ title: M3194_TencentVoiceLive 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **userId** |<font color ='#808000'>**string**</font> |  | 是|
-  **accountType** |<font color ='#808000'>**string**</font> |  | 是|用户的账号类型
-  **identifier** |<font color ='#808000'>**string**</font> |  | 是|用户名
-  **userSig** |<font color ='#808000'>**string**</font> |  | 是|鉴权Token
+  **userId** |<font color ='#808000'>**string**</font> | 是 | |
+  **accountType** |<font color ='#808000'>**string**</font> | 是 | |用户的账号类型
+  **identifier** |<font color ='#808000'>**string**</font> | 是 | |用户名
+  **userSig** |<font color ='#808000'>**string**</font> | 是 | |鉴权Token
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"returnValue":"错误码，0表示成功，其他表示失败","returnMsg":"错误的描述"}
 - 说明: 使用腾讯云信账号登录，需要自己搭建注册环境，对接云信平台
@@ -122,10 +122,10 @@ title: M3194_TencentVoiceLive 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **roomId** |<font color ='#808000'>**number**</font> |  | 是|房间id 房间唯一标识 建议由业务方后台统一分配
-  **controlRole** |<font color ='#808000'>**string**</font> |  | 是|
+  **roomId** |<font color ='#808000'>**number**</font> | 是 | |房间id 房间唯一标识 建议由业务方后台统一分配
+  **controlRole** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"returnValue":"错误码，0表示成功，其他表示失败","returnMsg":"错误码的描述"}
 - 说明: 创建一个直播，只有在初始化和登录成功之后才能创建直播
@@ -142,10 +142,10 @@ title: M3194_TencentVoiceLive 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **roomId** |<font color ='#808000'>**string**</font> |  | 是|
-  **controlRole** |<font color ='#808000'>**string**</font> | 1 | 否|
+  **roomId** |<font color ='#808000'>**string**</font> | 是 | |
+  **controlRole** |<font color ='#808000'>**string**</font> | 否 | 1|
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"returnValue":"错误码，0表示成功，其他表示失败","returnMsg":"错误码的描述"}
 - 说明: 观众角色调用加入房间接口

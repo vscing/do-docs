@@ -39,9 +39,9 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **points** |<font color ='#808000'>**object**</font> |  | 是|支持点的集合，如：[{x:x坐标,y:y坐标},{x:x1坐标,y:y1坐标}...]
+  **points** |<font color ='#808000'>**object**</font> | 是 | |支持点的集合，如：[{x:x坐标,y:y坐标},{x:x1坐标,y:y1坐标}...]
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 支持画多点
@@ -58,10 +58,10 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **start** |<font color ='#808000'>**object**</font> |  | 是|起始点坐标，如：{x:x坐标,x:y坐标}
-  **end** |<font color ='#808000'>**object**</font> |  | 是|终点坐标，如：{x:x坐标,x:y坐标}
+  **start** |<font color ='#808000'>**object**</font> | 是 | |起始点坐标，如：{x:x坐标,x:y坐标}
+  **end** |<font color ='#808000'>**object**</font> | 是 | |终点坐标，如：{x:x坐标,x:y坐标}
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 传入两点坐标，画一条直线
@@ -78,10 +78,10 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **point** |<font color ='#808000'>**object**</font> |  | 是|圆心坐标，如：{x:x坐标,x:y坐标}
-  **radius** |<font color ='#808000'>**number**</font> |  | 是|圆角半径
+  **point** |<font color ='#808000'>**object**</font> | 是 | |圆心坐标，如：{x:x坐标,x:y坐标}
+  **radius** |<font color ='#808000'>**number**</font> | 是 | |圆角半径
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -98,10 +98,10 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **start** |<font color ='#808000'>**object**</font> |  | 是|左上坐标，如：{x:x坐标,x:y坐标}
-  **end** |<font color ='#808000'>**object**</font> |  | 是|右下坐标，如：{x:x坐标,x:y坐标}
+  **start** |<font color ='#808000'>**object**</font> | 是 | |左上坐标，如：{x:x坐标,x:y坐标}
+  **end** |<font color ='#808000'>**object**</font> | 是 | |右下坐标，如：{x:x坐标,x:y坐标}
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 通过左上坐标与右下坐标定义一个矩形，然后沿着矩形画内切椭圆
 - 说明: 
@@ -118,13 +118,13 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **start** |<font color ='#808000'>**object**</font> |  | 是|左上坐标，如：{x:x坐标,x:y坐标}
-  **end** |<font color ='#808000'>**object**</font> |  | 是|右下坐标，如：{x:x坐标,x:y坐标}
-  **startAngle** |<font color ='#808000'>**number**</font> | 0 | 否|如果为0默认与x轴重合
-  **sweepAngle** |<font color ='#808000'>**number**</font> | 90 | 否|默认为90，以起始角度开始，顺时针扫描90度
-  **useCenter** |<font color ='#808000'>**Boolean**</font> | true | 否|如果为true，这个弧的区域就会包含中心点
+  **start** |<font color ='#808000'>**object**</font> | 是 | |左上坐标，如：{x:x坐标,x:y坐标}
+  **end** |<font color ='#808000'>**object**</font> | 是 | |右下坐标，如：{x:x坐标,x:y坐标}
+  **startAngle** |<font color ='#808000'>**number**</font> | 否 | 0|如果为0默认与x轴重合
+  **sweepAngle** |<font color ='#808000'>**number**</font> | 否 | 90|默认为90，以起始角度开始，顺时针扫描90度
+  **useCenter** |<font color ='#808000'>**Boolean**</font> | 否 | true|如果为true，这个弧的区域就会包含中心点
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -141,10 +141,10 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **start** |<font color ='#808000'>**object**</font> |  | 是|左上坐标，如：{x:x坐标,x:y坐标}
-  **end** |<font color ='#808000'>**object**</font> |  | 是|右下坐标，如：{x:x坐标,x:y坐标}
+  **start** |<font color ='#808000'>**object**</font> | 是 | |左上坐标，如：{x:x坐标,x:y坐标}
+  **end** |<font color ='#808000'>**object**</font> | 是 | |右下坐标，如：{x:x坐标,x:y坐标}
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 通过左上坐标与右下坐标定义一个矩形
 - 说明: 
@@ -161,15 +161,15 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> |  | 是|
-  **coord** |<font color ='#808000'>**object**</font> | {x:0,y:0} | 否|从此坐标开始画，如：{x:x坐标,x:y坐标}
-  **fontStyle** |<font color ='#808000'>**string**</font> | normal | 否|包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）
-  **textFlag** |<font color ='#808000'>**string**</font> | normal | 否|包含3种类型：normal：常规underline ：下划线strikethrough ：删除线
-  **fontSize** |<font color ='#808000'>**number**</font> | 17 | 否|
-  **textAlign** |<font color ='#808000'>**string**</font> | left | 否|对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。
-  **angle** |<font color ='#808000'>**number**</font> | 0 | 否|如果为0默认与x轴重合
+  **text** |<font color ='#808000'>**string**</font> | 是 | |
+  **coord** |<font color ='#808000'>**object**</font> | 否 | {x:0,y:0}|从此坐标开始画，如：{x:x坐标,x:y坐标}
+  **fontStyle** |<font color ='#808000'>**string**</font> | 否 | normal|包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）
+  **textFlag** |<font color ='#808000'>**string**</font> | 否 | normal|包含3种类型：normal：常规underline ：下划线strikethrough ：删除线
+  **fontSize** |<font color ='#808000'>**number**</font> | 否 | 17|
+  **textAlign** |<font color ='#808000'>**string**</font> | 否 | left|对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。
+  **angle** |<font color ='#808000'>**number**</font> | 否 | 0|如果为0默认与x轴重合
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 通过左上坐标与右下坐标定义一个矩形
 - 说明: 
@@ -186,10 +186,10 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **source** |<font color ='#808000'>**string**</font> |  | 是|支持do_Bitmap对象或data://开头的路径的图片地址
-  **coord** |<font color ='#808000'>**object**</font> | {x:0,y:0} | 否|从此坐标开始画，如：{x:x坐标,x:y坐标}
+  **source** |<font color ='#808000'>**string**</font> | 是 | |支持do_Bitmap对象或data://开头的路径的图片地址
+  **coord** |<font color ='#808000'>**object**</font> | 否 | {x:0,y:0}|从此坐标开始画，如：{x:x坐标,x:y坐标}
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 设置一张图片作为背景
 - 说明: 
@@ -238,9 +238,9 @@ title: do_Canvas 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **bitmap** |<font color ='#808000'>**string**</font> |  | 是|
+  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 将整个view保存为一个Btimap

@@ -15,9 +15,9 @@ title: do_RongCloud 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **color** |<font color ='#808000'>**string**</font> |  | 是|
+  **color** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -34,9 +34,9 @@ title: do_RongCloud 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **color** |<font color ='#808000'>**string**</font> |  | 是|
+  **color** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -85,11 +85,11 @@ title: do_RongCloud 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **appKey** |<font color ='#808000'>**string**</font> |  | 是|
-  **token** |<font color ='#808000'>**string**</font> |  | 是|
-  **extraData** |<font color ='#808000'>**string**</font> |  | 否|仅支持Android平台，用来配置Android推送的一些数据，目前用到小米推送，集成后推送整体到达率会大大提升，格式为{'xiaomi':{'appId':'KWSFSKDFBKS','appKey':'DFGHFHFFRT'}}
+  **appKey** |<font color ='#808000'>**string**</font> | 是 | |
+  **token** |<font color ='#808000'>**string**</font> | 是 | |
+  **extraData** |<font color ='#808000'>**string**</font> | 否 | |仅支持Android平台，用来配置Android推送的一些数据，目前用到小米推送，集成后推送整体到达率会大大提升，格式为{'xiaomi':{'appId':'KWSFSKDFBKS','appKey':'DFGHFHFFRT'}}
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 登录成功返回当前登录的用户id,登录失败返回错误信息
 - 说明: 使用token登录
@@ -106,11 +106,11 @@ title: do_RongCloud 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **userId** |<font color ='#808000'>**string**</font> |  | 是|
-  **title** |<font color ='#808000'>**string**</font> |  | 是|通常是用户名
-  **headPortrait** |<font color ='#808000'>**string**</font> |  | 否|支持本地文件,data:// source:// 打头的URI格式和网络图片,不写为默认头像
+  **userId** |<font color ='#808000'>**string**</font> | 是 | |
+  **title** |<font color ='#808000'>**string**</font> | 是 | |通常是用户名
+  **headPortrait** |<font color ='#808000'>**string**</font> | 否 | |支持本地文件,data:// source:// 打头的URI格式和网络图片,不写为默认头像
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 根据用户id打开会话
@@ -142,10 +142,10 @@ title: do_RongCloud 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **title** |<font color ='#808000'>**string**</font> |  | 是|通常是群组名
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **title** |<font color ='#808000'>**string**</font> | 是 | |通常是群组名
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 根据groupId打开会话
@@ -162,10 +162,10 @@ title: do_RongCloud 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **nickName** |<font color ='#808000'>**string**</font> |  | 否|
-  **headPortrait** |<font color ='#808000'>**string**</font> |  | 否|支持本地文件,data:// source:// 打头的URI格式和网络图片,不写为默认头像
+  **nickName** |<font color ='#808000'>**string**</font> | 否 | |
+  **headPortrait** |<font color ='#808000'>**string**</font> | 否 | |支持本地文件,data:// source:// 打头的URI格式和网络图片,不写为默认头像
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 设置成功返回true，失败返回false
 - 说明: 

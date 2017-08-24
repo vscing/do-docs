@@ -65,10 +65,10 @@ title: do_UdpSocket 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **type** |<font color ='#808000'>**string**</font> |  | 是|如果发送的数据是字符串,type指定字符串的编码方式,支持UTF-8,GBK;如果发送的是16进制字符串,type为HEX;如果发送的是文件,type为file
-  **content** |<font color ='#808000'>**string**</font> |  | 是|如果发送的是文件，content指定文件的全路径，iOS平台最大支持9k大小文件
+  **type** |<font color ='#808000'>**string**</font> | 是 | |如果发送的数据是字符串,type指定字符串的编码方式,支持UTF-8,GBK;如果发送的是16进制字符串,type为HEX;如果发送的是文件,type为file
+  **content** |<font color ='#808000'>**string**</font> | 是 | |如果发送的是文件，content指定文件的全路径，iOS平台最大支持9k大小文件
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 数据是否发送成功
 - 说明: 向服务端发送数据

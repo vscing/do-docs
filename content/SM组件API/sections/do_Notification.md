@@ -15,11 +15,11 @@ title: do_Notification 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> |  | 否|
-  **x** |<font color ='#808000'>**number**</font> |  | 否|
-  **y** |<font color ='#808000'>**number**</font> |  | 否|
+  **text** |<font color ='#808000'>**string**</font> | 否 | |
+  **x** |<font color ='#808000'>**number**</font> | 否 | |
+  **y** |<font color ='#808000'>**number**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 支持类似Android的toast的方式，弹出一个提示框，但是很短时间内会自动消隐，x和y都不赋值，即显示默认位置
@@ -38,11 +38,11 @@ title: do_Notification 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> |  | 否|alert窗口的正文
-  **title** |<font color ='#808000'>**string**</font> |  | 否|alert窗口的标题
-  **buttontext** |<font color ='#808000'>**string**</font> | 确定 | 否|按钮的正文
+  **text** |<font color ='#808000'>**string**</font> | 否 | |alert窗口的正文
+  **title** |<font color ='#808000'>**string**</font> | 否 | |alert窗口的标题
+  **buttontext** |<font color ='#808000'>**string**</font> | 否 | 确定|按钮的正文
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 通过alert来提示用户，alert是模态的，只有一个确定按钮
@@ -59,12 +59,12 @@ title: do_Notification 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> |  | 否|confirm窗口的正文
-  **title** |<font color ='#808000'>**string**</font> |  | 否|confirm窗口的标题
-  **button1text** |<font color ='#808000'>**string**</font> | 确定 | 否|左边按钮1的正文
-  **button2text** |<font color ='#808000'>**string**</font> | 取消 | 否|右边按钮2的正文
+  **text** |<font color ='#808000'>**string**</font> | 否 | |confirm窗口的正文
+  **title** |<font color ='#808000'>**string**</font> | 否 | |confirm窗口的标题
+  **button1text** |<font color ='#808000'>**string**</font> | 否 | 确定|左边按钮1的正文
+  **button2text** |<font color ='#808000'>**string**</font> | 否 | 取消|右边按钮2的正文
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 1 表示点击了button1按钮
 2 表示点击了button2按钮

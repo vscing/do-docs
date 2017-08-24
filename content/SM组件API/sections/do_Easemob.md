@@ -30,14 +30,14 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **subject** |<font color ='#808000'>**string**</font> |  | 否|
-  **description** |<font color ='#808000'>**string**</font> |  | 否|
-  **occupants** |<font color ='#808000'>**object**</font> |  | 否|群组成员的IM用户名（不包括创建者自己,是一个数组）
-  **style** |<font color ='#808000'>**number**</font> | 2 | 否|是一个枚举值。0.OnlyOwnerInvite:私有群组，创建完成后，只允许Owner 邀请用户加入；1.MemberCanInvite:私有群组，创建完成后，只允许Owner 和群成员邀请用户加入；2.JoinNeedApproval:公开群组，创建完成后，只允许Owner 邀请用户加入; 非群成员用户需发送入群申请，Owner 同意后才能入组；3.OpenJoin:公开群组，创建完成后，允许非群组成员加入，不需要Owner同意
-  **message** |<font color ='#808000'>**string**</font> |  | 否|邀请成员加入时,附带消息
-  **maxUsersCount** |<font color ='#808000'>**number**</font> | 200 | 否|群组的最大成员数(3 - 2000，默认是200)
+  **subject** |<font color ='#808000'>**string**</font> | 否 | |
+  **description** |<font color ='#808000'>**string**</font> | 否 | |
+  **occupants** |<font color ='#808000'>**object**</font> | 否 | |群组成员的IM用户名（不包括创建者自己,是一个数组）
+  **style** |<font color ='#808000'>**number**</font> | 否 | 2|是一个枚举值。0.OnlyOwnerInvite:私有群组，创建完成后，只允许Owner 邀请用户加入；1.MemberCanInvite:私有群组，创建完成后，只允许Owner 和群成员邀请用户加入；2.JoinNeedApproval:公开群组，创建完成后，只允许Owner 邀请用户加入; 非群成员用户需发送入群申请，Owner 同意后才能入组；3.OpenJoin:公开群组，创建完成后，允许非群组成员加入，不需要Owner同意
+  **message** |<font color ='#808000'>**string**</font> | 否 | |邀请成员加入时,附带消息
+  **maxUsersCount** |<font color ='#808000'>**number**</font> | 否 | 200|群组的最大成员数(3 - 2000，默认是200)
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回群组id{"groupId":""}
 - 说明: 当前创建群组的IM用户为该群的Owner，不建议从客户端创建群，因为从客户端创建的群没有邀请权限，建议用户自己搭建后台调用环信接口创建群，或者直接在唤醒开发者后台创建群
@@ -54,10 +54,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **includeMembersList** |<font color ='#808000'>**boolean**</font> | false | 否|为true时获取群成员列表
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **includeMembersList** |<font color ='#808000'>**boolean**</font> | 否 | false|为true时获取群成员列表
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的信息，和新建群时的参数一致。。。
 - 说明: 
@@ -74,11 +74,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **invitee** |<font color ='#808000'>**object**</font> |  | 是|IM用户名数组
-  **reason** |<font color ='#808000'>**string**</font> |  | 否|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **invitee** |<font color ='#808000'>**object**</font> | 是 | |IM用户名数组
+  **reason** |<font color ='#808000'>**string**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -95,10 +95,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **inviter** |<font color ='#808000'>**string**</font> |  | 否|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **inviter** |<font color ='#808000'>**string**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -115,10 +115,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **inviter** |<font color ='#808000'>**string**</font> |  | 否|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **inviter** |<font color ='#808000'>**string**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -135,10 +135,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **reason** |<font color ='#808000'>**string**</font> |  | 否|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **reason** |<font color ='#808000'>**string**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 用户主动申请加入一个公开群组，群类型只能为JoinNeedApproval或OpenJoin
@@ -155,11 +155,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **groupName** |<font color ='#808000'>**string**</font> |  | 是|
-  **applicant** |<font color ='#808000'>**string**</font> |  | 是|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **groupName** |<font color ='#808000'>**string**</font> | 是 | |
+  **applicant** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 只有群Owner调用该方法才有效
@@ -176,11 +176,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **applicant** |<font color ='#808000'>**string**</font> |  | 是|
-  **reason** |<font color ='#808000'>**string**</font> |  | 否|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **applicant** |<font color ='#808000'>**string**</font> | 是 | |
+  **reason** |<font color ='#808000'>**string**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 只有群Owner调用该方法才有效
@@ -197,9 +197,9 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 群主（Owner）不支持退群操作，只能解散群。退出群组分为主动退群和被动退群。被动退群即为被Owner踢出群组
@@ -216,9 +216,9 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 解散群组需要Owner权限。
@@ -235,11 +235,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **subject** |<font color ='#808000'>**string**</font> |  | 是|
-  **description** |<font color ='#808000'>**string**</font> |  | 否|只支持iOS平台
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **subject** |<font color ='#808000'>**string**</font> | 是 | |
+  **description** |<font color ='#808000'>**string**</font> | 否 | |只支持iOS平台
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 只有Owner有权限修改。修改群的名称和描述
@@ -256,11 +256,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **groupId** |<font color ='#808000'>**string**</font> |  | 是|
-  **occupants** |<font color ='#808000'>**object**</font> |  | 是|要踢出的群组成员的IM用户名（不包括创建者自己,是一个数组）
-  **reason** |<font color ='#808000'>**string**</font> |  | 否|
+  **groupId** |<font color ='#808000'>**string**</font> | 是 | |
+  **occupants** |<font color ='#808000'>**object**</font> | 是 | |要踢出的群组成员的IM用户名（不包括创建者自己,是一个数组）
+  **reason** |<font color ='#808000'>**string**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 只有Owner有权限修改
@@ -279,10 +279,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **conversationId** |<font color ='#808000'>**string**</font> |  | 是|IM用户名username（单聊）、groupID（群聊）
-  **messageId** |<font color ='#808000'>**string**</font> |  | 是|
+  **conversationId** |<font color ='#808000'>**string**</font> | 是 | |IM用户名username（单聊）、groupID（群聊）
+  **messageId** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 撤回是否成功
 - 说明: 
@@ -299,11 +299,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **username** |<font color ='#808000'>**string**</font> |  | 是|
-  **password** |<font color ='#808000'>**string**</font> |  | 是|
-  **autoLogin** |<font color ='#808000'>**boolean**</font> | false | 否|即首次登录成功后，不需要再次调用登录方法，在下次 APP 启动时，SDK 会自动为您登录
+  **username** |<font color ='#808000'>**string**</font> | 是 | |
+  **password** |<font color ='#808000'>**string**</font> | 是 | |
+  **autoLogin** |<font color ='#808000'>**boolean**</font> | 否 | false|即首次登录成功后，不需要再次调用登录方法，在下次 APP 启动时，SDK 会自动为您登录
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 登录是否成功，返回信息为{state:' 0 成功 | 1 失败 ',message:' 回执信息 '}
 - 说明: 使用IM用户信息登录
@@ -320,11 +320,11 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **username** |<font color ='#808000'>**string**</font> |  | 是|单聊时为需要发送消息对象的IM用户名；群聊时为groupId
-  **text** |<font color ='#808000'>**string**</font> |  | 是|发送文本的内容
-  **chatType** |<font color ='#808000'>**string**</font> | Chat | 否|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
+  **username** |<font color ='#808000'>**string**</font> | 是 | |单聊时为需要发送消息对象的IM用户名；群聊时为groupId
+  **text** |<font color ='#808000'>**string**</font> | 是 | |发送文本的内容
+  **chatType** |<font color ='#808000'>**string**</font> | 否 | Chat|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {“messageId”:“消息的唯一标识符”}
 - 说明: 
@@ -341,13 +341,13 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **username** |<font color ='#808000'>**string**</font> |  | 是|
-  **latitude** |<font color ='#808000'>**number**</font> |  | 是|
-  **longitude** |<font color ='#808000'>**number**</font> |  | 是|
-  **address** |<font color ='#808000'>**string**</font> |  | 否|具体位置信息
-  **chatType** |<font color ='#808000'>**string**</font> | Chat | 否|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
+  **username** |<font color ='#808000'>**string**</font> | 是 | |
+  **latitude** |<font color ='#808000'>**number**</font> | 是 | |
+  **longitude** |<font color ='#808000'>**number**</font> | 是 | |
+  **address** |<font color ='#808000'>**string**</font> | 否 | |具体位置信息
+  **chatType** |<font color ='#808000'>**string**</font> | 否 | Chat|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {“messageId”:“消息的唯一标识符”}
 - 说明: 
@@ -364,13 +364,13 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **username** |<font color ='#808000'>**string**</font> |  | 是|
-  **messageType** |<font color ='#808000'>**number**</font> |  | 是|发送消息的类型，是一个枚举，包括0.图片(Image)，1.语音(Voice)，2.视频(Video)，3.文件(File)
-  **path** |<font color ='#808000'>**string**</font> |  | 是|图片，语音，视频的路径，只支持本地data://目录
-  **title** |<font color ='#808000'>**string**</font> |  | 否|
-  **chatType** |<font color ='#808000'>**string**</font> | Chat | 否|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
+  **username** |<font color ='#808000'>**string**</font> | 是 | |
+  **messageType** |<font color ='#808000'>**number**</font> | 是 | |发送消息的类型，是一个枚举，包括0.图片(Image)，1.语音(Voice)，2.视频(Video)，3.文件(File)
+  **path** |<font color ='#808000'>**string**</font> | 是 | |图片，语音，视频的路径，只支持本地data://目录
+  **title** |<font color ='#808000'>**string**</font> | 否 | |
+  **chatType** |<font color ='#808000'>**string**</font> | 否 | Chat|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {“messageId”:“消息的唯一标识符”}
 - 说明: 发送多媒体消息，包括：图片，语音，视频
@@ -402,9 +402,9 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **conversationId** |<font color ='#808000'>**object**</font> |  | 是|会话id数组
+  **conversationId** |<font color ='#808000'>**object**</font> | 是 | |会话id数组
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -421,12 +421,12 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **conversationId** |<font color ='#808000'>**string**</font> |  | 是|
-  **chatType** |<font color ='#808000'>**string**</font> | Chat | 否|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
-  **maxCount** |<font color ='#808000'>**number**</font> | 20 | 否|加载记录的最大消息数
-  **messageId** |<font color ='#808000'>**string**</font> |  | 否|开始查询的起点message的Id，如果不填的话默认从最新的一条开始
+  **conversationId** |<font color ='#808000'>**string**</font> | 是 | |
+  **chatType** |<font color ='#808000'>**string**</font> | 否 | Chat|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
+  **maxCount** |<font color ='#808000'>**number**</font> | 否 | 20|加载记录的最大消息数
+  **messageId** |<font color ='#808000'>**string**</font> | 否 | |开始查询的起点message的Id，如果不填的话默认从最新的一条开始
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: [{messageId: 消息的唯一标识符,conversationId: 所属会话的唯一标识符,from: 发送方,to: 接收方,timestamp: 时间戳,body:{type:消息体类型，包括，0.Text(文本),1.Image(图片),2.Location(位置),3.Voice(语音),4.Video(视频),5.File(文件),text（type为0）: 消息内容,remotePath（type为1）: 大图remote路径,localPath（type为1）: 大图local路径,thumbnailRemotePath（type为1）: 小图remote路径,thumbnailLocalPath（type为1）: 小图local路径,latitude（type为2）: 纬度,longitude（type为2）: 经度,address（type为2）: 地址,remotePath（type为3）: 音频remote路径,localPath（type为3）: 音频local路径,fileLength（type为3）: 音频文件大小,duration（type为3）:音频的时间长度,remotePath（type为4）: 视频remote路径,localPath（type为4）: 视频local路径,thumbnailRemotePath（type为4）: 第一帧缩略图remote路径,thumbnailLocalPath（type为4）: 第一帧缩略图local路径,fileLength（type为4）: 视频文件大小,duration（type为4）: 视频的时间长度,remotePath（type为5）: 文件remote路径,localPath（type为5）: 文件local路径,fileLength（type为5）: 文件文件大小}}]
 - 说明: 
@@ -443,10 +443,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **conversationId** |<font color ='#808000'>**string**</font> |  | 是|
-  **chatType** |<font color ='#808000'>**string**</font> | Chat | 否|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
+  **conversationId** |<font color ='#808000'>**string**</font> | 是 | |
+  **chatType** |<font color ='#808000'>**string**</font> | 否 | Chat|发送会话的类型，是一个枚举值，包括单聊(Chat)，群聊(GroupChat)
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前会话的未读消息数
 - 说明: 
@@ -463,10 +463,10 @@ title: do_Easemob 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **cursor** |<font color ='#808000'>**number**</font> |  | 是|设置起始位置，从1开始计数
-  **pageSize** |<font color ='#808000'>**number**</font> |  | 是|期望返回结果的数量
+  **cursor** |<font color ='#808000'>**number**</font> | 是 | |设置起始位置，从1开始计数
+  **pageSize** |<font color ='#808000'>**number**</font> | 是 | |期望返回结果的数量
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: [{"groupId":"群组id"}]
 - 说明: 获取指定范围内的公开群。

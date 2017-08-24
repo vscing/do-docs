@@ -17,12 +17,12 @@ title: do_QRCode 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> |  | 是|
-  **length** |<font color ='#808000'>**number**</font> | 500 | 否|生成的二维码图片边长
-  **logoPath** |<font color ='#808000'>**string**</font> |  | 否|只支持本地文件data:// source:// 打头的URI格式，不能包含@符号
-  **logoLength** |<font color ='#808000'>**number**</font> | 20 | 否|与图片边长的对比百分比，取值范围为1~100，但建议取值范围为1~30，超过30后可能导致二维码无法被识别；默认值为length值的20%
+  **text** |<font color ='#808000'>**string**</font> | 是 | |
+  **length** |<font color ='#808000'>**number**</font> | 否 | 500|生成的二维码图片边长
+  **logoPath** |<font color ='#808000'>**string**</font> | 否 | |只支持本地文件data:// source:// 打头的URI格式，不能包含@符号
+  **logoLength** |<font color ='#808000'>**number**</font> | 否 | 20|与图片边长的对比百分比，取值范围为1~100，但建议取值范围为1~30，超过30后可能导致二维码无法被识别；默认值为length值的20%
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 生成的二维码图片会保存在data://temp/do_QRCode目录下，并返回生成的二维码图片的路径
 - 说明: 
@@ -39,9 +39,9 @@ title: do_QRCode 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|可设置html链接或本地文件，支持：http:// https:// data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类
+  **path** |<font color ='#808000'>**string**</font> | 是 | |可设置html链接或本地文件，支持：http:// https:// data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回二维码的文本内容
 - 说明: 

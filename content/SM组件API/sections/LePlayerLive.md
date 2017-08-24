@@ -15,9 +15,9 @@ title: LePlayerLive 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|
+  **id** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 创建活动见：http://live.lecloud.com/portal/liveActivity/getView

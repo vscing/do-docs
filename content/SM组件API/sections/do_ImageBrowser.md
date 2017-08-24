@@ -15,10 +15,10 @@ title: do_ImageBrowser 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 是|预览图片传递数据结构[{ source : '', init : ''},{source :'' , init : ''}, ..... ]其中source 为原图，init为缩略图
-  **index** |<font color ='#808000'>**number**</font> | 0 | 是|设置当前预览图片索引值，默认为0
+  **data** |<font color ='#808000'>**object**</font> | 是 | |预览图片传递数据结构[{ source : '', init : ''},{source :'' , init : ''}, ..... ]其中source 为原图，init为缩略图
+  **index** |<font color ='#808000'>**number**</font> | 是 | 0|设置当前预览图片索引值，默认为0
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 打开预览，图片底部显示当前图片索引和总图片数

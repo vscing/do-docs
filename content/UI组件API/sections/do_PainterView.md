@@ -59,11 +59,11 @@ title: do_PainterView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **format** |<font color ='#808000'>**string**</font> | JPEG | 否|支持两种格式：PNG，JPEG
-  **quality** |<font color ='#808000'>**number**</font> | 100 | 否|图片的压缩质量，支持 1-100，windows平台不支持
-  **outPath** |<font color ='#808000'>**string**</font> |  | 否|保存的图片路径支持data://目录，如果为空，缺省返回唯一图片路径，会另存到data://temp/do_PainterView/目录下
+  **format** |<font color ='#808000'>**string**</font> | 否 | JPEG|支持两种格式：PNG，JPEG
+  **quality** |<font color ='#808000'>**number**</font> | 否 | 100|图片的压缩质量，支持 1-100，windows平台不支持
+  **outPath** |<font color ='#808000'>**string**</font> | 否 | |保存的图片路径支持data://目录，如果为空，缺省返回唯一图片路径，会另存到data://temp/do_PainterView/目录下
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回当前保存的图片路径，为空时表示保存失败
 - 说明: 将整个view保存为一个图片
@@ -80,9 +80,9 @@ title: do_PainterView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **bitmap** |<font color ='#808000'>**string**</font> |  | 是|
+  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 将整个view保存为一个Btimap

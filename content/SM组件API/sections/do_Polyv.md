@@ -15,12 +15,12 @@ title: do_Polyv 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|
-  **bitRate** |<font color ='#808000'>**number**</font> | 0 | 否|支持：0是自动根据当前网络环境适应，1表示流畅，2表示高清，3表示超清，默认值
-  **point** |<font color ='#808000'>**number**</font> |  | 否|从视频中的某一点开始播放，毫秒值
-  **isFull** |<font color ='#808000'>**Boolean**</font> | false | 否|iOS平台只支持全屏播放
+  **id** |<font color ='#808000'>**string**</font> | 是 | |
+  **bitRate** |<font color ='#808000'>**number**</font> | 否 | 0|支持：0是自动根据当前网络环境适应，1表示流畅，2表示高清，3表示超清，默认值
+  **point** |<font color ='#808000'>**number**</font> | 否 | |从视频中的某一点开始播放，毫秒值
+  **isFull** |<font color ='#808000'>**Boolean**</font> | 否 | false|iOS平台只支持全屏播放
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 支持全屏和小窗口播放
@@ -82,10 +82,10 @@ title: do_Polyv 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|
-  **bitRate** |<font color ='#808000'>**number**</font> |  | 是|支持：1表示流畅，2表示高清，3表示超清
+  **id** |<font color ='#808000'>**string**</font> | 是 | |
+  **bitRate** |<font color ='#808000'>**number**</font> | 是 | |支持：1表示流畅，2表示高清，3表示超清
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 支持不同码率视频的下载
@@ -104,10 +104,10 @@ title: do_Polyv 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **pageIndex** |<font color ='#808000'>**number**</font> | 0 | 否|
-  **pageSize** |<font color ='#808000'>**number**</font> | 10 | 否|
+  **pageIndex** |<font color ='#808000'>**number**</font> | 否 | 0|
+  **pageSize** |<font color ='#808000'>**number**</font> | 否 | 10|
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回结果列表,是一个数组,每一项是一个字典,包括视频的基本信息：{id:'唯一标识',title:'标题',duration:'时长',imageUrl:'预览图片地址',fileSize:'文件大小(字节)','bitRates':'支持的码率'}
 - 说明: 获取视频列表，支持分页
@@ -124,9 +124,9 @@ title: do_Polyv 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|
+  **id** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {id:'唯一标识',title:'标题',duration:'时长',imageUrl:'预览图片地址',fileSize:'文件大小(字节)','bitRates':'支持的码率'}
 - 说明: 根据视频唯一标识获取视频信息

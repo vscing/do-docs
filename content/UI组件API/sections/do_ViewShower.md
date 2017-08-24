@@ -15,10 +15,10 @@ title: do_ViewShower 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|切换的目标View的 ID
-  **animationType** |<font color ='#808000'>**string**</font> |  | 否|winphone8不支持该动画效果，android和ios支持。
+  **id** |<font color ='#808000'>**string**</font> | 是 | |切换的目标View的 ID
+  **animationType** |<font color ='#808000'>**string**</font> | 否 | |winphone8不支持该动画效果，android和ios支持。
 目前支持以下几种：
 'slide_l2r': 从左至右滑出
 'slide_r2l': 从右至左滑出
@@ -32,7 +32,7 @@ title: do_ViewShower 组件
 'page_curl' : 上翻页
 'page_uncurl' : 下翻页
 'cube' :立体翻转
-  **animationTime** |<font color ='#808000'>**number**</font> | 300 | 否|动画效果持续时间，单位为ms毫秒
+  **animationTime** |<font color ='#808000'>**number**</font> | 否 | 300|动画效果持续时间，单位为ms毫秒
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -49,9 +49,9 @@ title: do_ViewShower 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 是|要增加的View的索引，默认值为增加到最后，如果id已经存在，会覆盖之前的View，结构[{ id : '', path : ''},{id :'' , path : ''}, ..... ]
+  **data** |<font color ='#808000'>**object**</font> | 是 | |要增加的View的索引，默认值为增加到最后，如果id已经存在，会覆盖之前的View，结构[{ id : '', path : ''},{id :'' , path : ''}, ..... ]
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -68,9 +68,9 @@ title: do_ViewShower 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|要删除的View的id
+  **id** |<font color ='#808000'>**string**</font> | 是 | |要删除的View的id
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -87,9 +87,9 @@ title: do_ViewShower 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|要获取的View的id
+  **id** |<font color ='#808000'>**string**</font> | 是 | |要获取的View的id
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 子view对应的ui文件RootView地址
 - 说明: 获取某个子view对应的ui文件RootView地址

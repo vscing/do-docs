@@ -84,9 +84,9 @@ title: do_ListView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 否|
+  **data** |<font color ='#808000'>**object**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 可绑定listData实例
@@ -118,10 +118,10 @@ title: do_ListView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **position** |<font color ='#808000'>**number**</font> | 0 | 否|表示listview的第几行，从0开始计数，缺省值是 0
-  **isSmooth** |<font color ='#808000'>**Boolean**</font> | false | 否|缺省是false表示直接跳转到某一行，没有任何平滑过渡的效果。为true表示平滑到那一行；其中为false的时候是不会触发scroll事件的，为true会触发；windows不支持该效果
+  **position** |<font color ='#808000'>**number**</font> | 否 | 0|表示listview的第几行，从0开始计数，缺省值是 0
+  **isSmooth** |<font color ='#808000'>**Boolean**</font> | 否 | false|缺省是false表示直接跳转到某一行，没有任何平滑过渡的效果。为true表示平滑到那一行；其中为false的时候是不会触发scroll事件的，为true会触发；windows不支持该效果
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 

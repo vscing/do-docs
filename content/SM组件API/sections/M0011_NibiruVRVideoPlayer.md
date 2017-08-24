@@ -30,10 +30,10 @@ title: M0011_NibiruVRVideoPlayer 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|支持本地路径播放
-  **mode** |<font color ='#808000'>**string**</font> | 2DNormal | 否|支持8个场景模式，2DNormal:2d 普通平面， 2D180:2d 180度平面， 2D360:2d 360度平面， 2DSphere:2d 球幕 ，3DNormal:3d 普通平面， 3D180:3d 180度平面，3D360:3d 360度平面， 3DSphere:3d 球幕
+  **path** |<font color ='#808000'>**string**</font> | 是 | |支持本地路径播放
+  **mode** |<font color ='#808000'>**string**</font> | 否 | 2DNormal|支持8个场景模式，2DNormal:2d 普通平面， 2D180:2d 180度平面， 2D360:2d 360度平面， 2DSphere:2d 球幕 ，3DNormal:3d 普通平面， 3D180:3d 180度平面，3D360:3d 360度平面， 3DSphere:3d 球幕
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 

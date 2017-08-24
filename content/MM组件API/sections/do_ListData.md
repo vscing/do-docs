@@ -30,9 +30,9 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **indexs** |<font color ='#808000'>**object**</font> |  | 是|表示需要得到的索引队列;如[0,2,3,4,6]
+  **indexs** |<font color ='#808000'>**object**</font> | 是 | |表示需要得到的索引队列;如[0,2,3,4,6]
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 行数据
 - 说明: indexs数组中的每一个值表示要读取的索引位置，从0开始;其它越界的索引位置都返回null
@@ -49,9 +49,9 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **index** |<font color ='#808000'>**number**</font> |  | 是|
+  **index** |<font color ='#808000'>**number**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 行数据
 - 说明: 根据index获取特定行的数据，从0开始; 如果index参数小于0则取数组第一个元素；如果 index参数越界，则返回数组最后一个元素（如果数据源为空则返回null）
@@ -68,10 +68,10 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **fromIndex** |<font color ='#808000'>**number**</font> |  | 是|从0开始，fromIndex必须小于或等于toIndex
-  **toIndex** |<font color ='#808000'>**number**</font> |  | 否|截止索引位置(可选项)，从0开始; 如果为空，则表示数组的最后一个元素位置
+  **fromIndex** |<font color ='#808000'>**number**</font> | 是 | |从0开始，fromIndex必须小于或等于toIndex
+  **toIndex** |<font color ='#808000'>**number**</font> | 否 | |截止索引位置(可选项)，从0开始; 如果为空，则表示数组的最后一个元素位置
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 从起始索引到截止索引，获取多条数据
@@ -88,10 +88,10 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 是|要插入的数据
-  **index** |<font color ='#808000'>**number**</font> |  | 否|表示要添加的位置，从0开始; 如果 index参数为空或者越界, 就添加到数组最后面
+  **data** |<font color ='#808000'>**object**</font> | 是 | |要插入的数据
+  **index** |<font color ='#808000'>**number**</font> | 否 | |表示要添加的位置，从0开始; 如果 index参数为空或者越界, 就添加到数组最后面
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 在list增加一个或多个数据，index是可选参数，如果该参数不填表示插入到队列最尾
@@ -108,10 +108,10 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 是|向数据集添加一条数据，该数据可为String,Number,Boolean, Array<String|Number|Boolean>, Object<String|Number|Boolean>.(能够被JSON.stringify序列化的类型)
-  **index** |<font color ='#808000'>**number**</font> |  | 否|插入索引
+  **data** |<font color ='#808000'>**object**</font> | 是 | |向数据集添加一条数据，该数据可为String,Number,Boolean, Array<String|Number|Boolean>, Object<String|Number|Boolean>.(能够被JSON.stringify序列化的类型)
+  **index** |<font color ='#808000'>**number**</font> | 否 | |插入索引
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 在list增加一条数据，index是可选参数，表示要添加的位置，从0开始; 如果 index参数为空或者越界, 就添加到数组最后面
@@ -143,10 +143,10 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **fromIndex** |<font color ='#808000'>**number**</font> |  | 是|从0开始，fromIndex必须小于或等于toIndex
-  **toIndex** |<font color ='#808000'>**number**</font> |  | 否|表示要删除的位置，从0开始; 如果为空或者越界，则表示数组的最后一个元素位置
+  **fromIndex** |<font color ='#808000'>**number**</font> | 是 | |从0开始，fromIndex必须小于或等于toIndex
+  **toIndex** |<font color ='#808000'>**number**</font> | 否 | |表示要删除的位置，从0开始; 如果为空或者越界，则表示数组的最后一个元素位置
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 从起始索引到截止索引删除多条数据
@@ -163,9 +163,9 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **indexs** |<font color ='#808000'>**object**</font> |  | 是|
+  **indexs** |<font color ='#808000'>**object**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 根据多个index删除多条数据
@@ -182,10 +182,10 @@ title: do_ListData 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **index** |<font color ='#808000'>**number**</font> |  | 是|
-  **data** |<font color ='#808000'>**string**</font> |  | 是|
+  **index** |<font color ='#808000'>**number**</font> | 是 | |
+  **data** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 更新特定行的数据，index表示要修改的位置，从0开始; 如果index参数为空或者越界就什么都不改

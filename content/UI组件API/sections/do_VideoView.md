@@ -21,9 +21,9 @@ title: do_VideoView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **point** |<font color ='#808000'>**number**</font> |  | 否|从视频中的某一点开始播放，毫秒值
+  **point** |<font color ='#808000'>**number**</font> | 否 | |从视频中的某一点开始播放，毫秒值
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -115,9 +115,9 @@ title: do_VideoView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **isFullScreen** |<font color ='#808000'>**Boolean**</font> | false | 否|为false是表示退出全屏，小窗口播放，若已为小窗口播放则没有变化；为true是表示转为全屏播放，若已为全屏播放则没有变化
+  **isFullScreen** |<font color ='#808000'>**Boolean**</font> | 否 | false|为false是表示退出全屏，小窗口播放，若已为小窗口播放则没有变化；为true是表示转为全屏播放，若已为全屏播放则没有变化
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -134,9 +134,9 @@ title: do_VideoView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **visible** |<font color ='#808000'>**boolean**</font> | true | 否|
+  **visible** |<font color ='#808000'>**boolean**</font> | 否 | true|
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 控制视频上的按钮是否显示
@@ -155,12 +155,12 @@ title: do_VideoView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **time** |<font color ='#808000'>**number**</font> |  | 否|默认取第一帧截图
-  **format** |<font color ='#808000'>**string**</font> | JPEG | 否|支持两种格式：PNG，JPEG
-  **quality** |<font color ='#808000'>**number**</font> | 100 | 否|图片的压缩质量，支持 1-100，windows平台不支持
-  **outPath** |<font color ='#808000'>**string**</font> |  | 否|保存的图片路径支持data://目录，如果为空，缺省返回唯一图片路径，会另存到data://temp/do_VideoView/目录下
+  **time** |<font color ='#808000'>**number**</font> | 否 | |默认取第一帧截图
+  **format** |<font color ='#808000'>**string**</font> | 否 | JPEG|支持两种格式：PNG，JPEG
+  **quality** |<font color ='#808000'>**number**</font> | 否 | 100|图片的压缩质量，支持 1-100，windows平台不支持
+  **outPath** |<font color ='#808000'>**string**</font> | 否 | |保存的图片路径支持data://目录，如果为空，缺省返回唯一图片路径，会另存到data://temp/do_VideoView/目录下
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回当前保存的图片路径，为空时表示保存失败
 - 说明: 将获取的那一帧保存为一个图片,暂不支持网络视频截取
@@ -177,10 +177,10 @@ title: do_VideoView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **bitmap** |<font color ='#808000'>**string**</font> |  | 是|
-  **time** |<font color ='#808000'>**number**</font> |  | 否|默认取第一帧截图
+  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |
+  **time** |<font color ='#808000'>**number**</font> | 否 | |默认取第一帧截图
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 将获取的那一帧保存为一个Btimap,暂不支持网络视频截取

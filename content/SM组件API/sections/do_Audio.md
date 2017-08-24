@@ -15,10 +15,10 @@ title: do_Audio 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|支持data://、source://和网络链接
-  **point** |<font color ='#808000'>**number**</font> |  | 否|从最开始的第几毫秒
+  **path** |<font color ='#808000'>**string**</font> | 是 | |支持data://、source://和网络链接
+  **point** |<font color ='#808000'>**number**</font> | 否 | |从最开始的第几毫秒
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -80,12 +80,12 @@ title: do_Audio 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|要保存的录音文件路径，支持数据区data://，指定到目录
-  **type** |<font color ='#808000'>**string**</font> | mp3 | 否|选择录音输出的格式，支持mp3、amr、aac格式
-  **quality** |<font color ='#808000'>**string**</font> | normal | 否|选择录音输出的质量，支持high、normal、low
-  **limit** |<font color ='#808000'>**number**</font> | -1 | 否|录音的时长限制，以毫秒为单位，-1时表示不限制录音时长
+  **path** |<font color ='#808000'>**string**</font> | 是 | |要保存的录音文件路径，支持数据区data://，指定到目录
+  **type** |<font color ='#808000'>**string**</font> | 否 | mp3|选择录音输出的格式，支持mp3、amr、aac格式
+  **quality** |<font color ='#808000'>**string**</font> | 否 | normal|选择录音输出的质量，支持high、normal、low
+  **limit** |<font color ='#808000'>**number**</font> | 否 | -1|录音的时长限制，以毫秒为单位，-1时表示不限制录音时长
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -134,10 +134,10 @@ title: do_Audio 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|支持data://、source://和网络链接
-  **point** |<font color ='#808000'>**number**</font> |  | 否|从最开始的第几毫秒
+  **path** |<font color ='#808000'>**string**</font> | 是 | |支持data://、source://和网络链接
+  **point** |<font color ='#808000'>**number**</font> | 否 | |从最开始的第几毫秒
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 不可与play方法同时使用，播放网络音频时建议使用该方法，避免卡顿

@@ -81,11 +81,11 @@ title: M0011_ZoomVideo 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **userName** |<font color ='#808000'>**string**</font> |  | 是|加入会议时显示的用户名
-  **meetingPassword** |<font color ='#808000'>**string**</font> |  | 是|会议密码（如果创建时没有设置密码，则随便填写一个都可以加入会议）
-  **meetingNumber** |<font color ='#808000'>**string**</font> |  | 是|
+  **userName** |<font color ='#808000'>**string**</font> | 是 | |加入会议时显示的用户名
+  **meetingPassword** |<font color ='#808000'>**string**</font> | 是 | |会议密码（如果创建时没有设置密码，则随便填写一个都可以加入会议）
+  **meetingNumber** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: A MobileRTCMeetError to tell client whether the meeting started or not.    
     //Success
@@ -133,9 +133,9 @@ title: M0011_ZoomVideo 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **cmd** |<font color ='#808000'>**number**</font> |  | 是|Leave meeting by the command type.
+  **cmd** |<font color ='#808000'>**number**</font> | 是 | |Leave meeting by the command type.
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: This method is used to end/leave an ongoing meeting.
@@ -167,9 +167,9 @@ title: M0011_ZoomVideo 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **pause** |<font color ='#808000'>**boolean**</font> |  | 是|if true to pause audio; if false to resume audio.
+  **pause** |<font color ='#808000'>**boolean**</font> | 是 | |if true to pause audio; if false to resume audio.
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 操作是否成功
 - 说明: This method is used to pause/resume audio in the meeting.
@@ -186,12 +186,12 @@ title: M0011_ZoomVideo 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **userID** |<font color ='#808000'>**string**</font> |  | 是|
-  **userName** |<font color ='#808000'>**string**</font> |  | 是|
-  **userToken** |<font color ='#808000'>**string**</font> |  | 是|
-  **meetingNumber** |<font color ='#808000'>**string**</font> |  | 是|
+  **userID** |<font color ='#808000'>**string**</font> | 是 | |
+  **userName** |<font color ='#808000'>**string**</font> | 是 | |
+  **userToken** |<font color ='#808000'>**string**</font> | 是 | |
+  **meetingNumber** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: //Success
 MobileRTCMeetError_Success                    = 0,
@@ -238,10 +238,10 @@ MobileRTCMeetError_Unknown                    = 102,
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **appKey** |<font color ='#808000'>**string**</font> |  | 是|
-  **appSecret** |<font color ='#808000'>**string**</font> |  | 是|
+  **appKey** |<font color ='#808000'>**string**</font> | 是 | |
+  **appSecret** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: true成功，false失败
 - 说明: 需要在https://zoom.us/developer/ios/credential登录之后，选择iOS或者Android后再选择Credential来查看
@@ -260,10 +260,10 @@ MobileRTCMeetError_Unknown                    = 102,
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **email** |<font color ='#808000'>**string**</font> |  | 是|login email account.
-  **password** |<font color ='#808000'>**string**</font> |  | 是|login password.
+  **email** |<font color ='#808000'>**string**</font> | 是 | |login email account.
+  **password** |<font color ='#808000'>**string**</font> | 是 | |login password.
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: return true, if user can login with work email.目前没有使用场景必须要求登录
 - 说明: Designated for login MobileRTC with work email account.（暂未实现）

@@ -15,9 +15,9 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **path** |<font color ='#808000'>**string**</font> |  | 是|
+  **path** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 无
 - 说明: 打开一个本地数据库链接，只支持data://的路径或者:memory:，其中:memory:表示内存数据库
@@ -49,10 +49,10 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **sql** |<font color ='#808000'>**string**</font> |  | 是|
-  **bind** |<font color ='#808000'>**object**</font> |  | 否|是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
+  **sql** |<font color ='#808000'>**string**</font> | 是 | |
+  **bind** |<font color ='#808000'>**object**</font> | 否 | |是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 执行是否成功
 - 说明: 用于执行任意的单条SQL语句
@@ -69,10 +69,10 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **sqls** |<font color ='#808000'>**object**</font> |  | 是|要执行的多条SQL语句，用逗号隔开的JSON Array；如['insert into...','insert into...']
-  **isTransaction** |<font color ='#808000'>**Boolean**</font> | false | 是|设置是否支持事务，默认false为不支持
+  **sqls** |<font color ='#808000'>**object**</font> | 是 | |要执行的多条SQL语句，用逗号隔开的JSON Array；如['insert into...','insert into...']
+  **isTransaction** |<font color ='#808000'>**Boolean**</font> | 是 | false|设置是否支持事务，默认false为不支持
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前影响行数
 - 说明: 用于执行任意的多条SQL语句
@@ -89,10 +89,10 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **sql** |<font color ='#808000'>**string**</font> |  | 是|
-  **bind** |<font color ='#808000'>**object**</font> |  | 否|是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
+  **sql** |<font color ='#808000'>**string**</font> | 是 | |
+  **bind** |<font color ='#808000'>**object**</font> | 否 | |是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的每一个元素都是json node，node的每一个节点都是column名比如[ {column1:'value1',clolumn2:'value2'},{column1:'value1',clolumn2:'value2'},...]
 - 说明: 用于执行查询语句的同步方法；使用需谨慎，若查询的数据较多会导致UI卡顿
@@ -111,10 +111,10 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **sql** |<font color ='#808000'>**string**</font> |  | 是|
-  **bind** |<font color ='#808000'>**object**</font> |  | 否|是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
+  **sql** |<font color ='#808000'>**string**</font> | 是 | |
+  **bind** |<font color ='#808000'>**object**</font> | 否 | |是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 执行是否成功
 - 说明: 用于执行任意的单条SQL语句
@@ -131,10 +131,10 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **sqls** |<font color ='#808000'>**object**</font> |  | 是|要执行的多条SQL语句，用逗号隔开的JSON Array；；如['insert into...','insert into...']
-  **isTransaction** |<font color ='#808000'>**Boolean**</font> | false | 是|设置是否支持事务，默认false为不支持
+  **sqls** |<font color ='#808000'>**object**</font> | 是 | |要执行的多条SQL语句，用逗号隔开的JSON Array；；如['insert into...','insert into...']
+  **isTransaction** |<font color ='#808000'>**Boolean**</font> | 是 | false|设置是否支持事务，默认false为不支持
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前影响行数
 - 说明: 用于执行任意的多条SQL语句
@@ -151,10 +151,10 @@ title: do_SQLite 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **sql** |<font color ='#808000'>**string**</font> |  | 是|
-  **bind** |<font color ='#808000'>**object**</font> |  | 否|是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
+  **sql** |<font color ='#808000'>**string**</font> | 是 | |
+  **bind** |<font color ='#808000'>**object**</font> | 否 | |是一个数组，里面每一项对应一个sql语句中的？占位符，支持三种类型：string、Number、Boolean
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的每一个元素都是json node，node的每一个节点都是column名比如[ {column1:'value1',clolumn2:'value2'},{column1:'value1',clolumn2:'value2'},...]
 - 说明: 用于执行查询语句

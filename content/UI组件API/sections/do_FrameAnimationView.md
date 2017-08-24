@@ -15,10 +15,10 @@ title: do_FrameAnimationView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 是|[ {path:'data://2.png',duration:50}, {path:'data://3.png',duration:50} ] ，支持data://, source://路径，其中duration的单位为毫秒
-  **repeat** |<font color ='#808000'>**number**</font> | 1 | 否|帧动画的重复次数，为-1或小于0时表示无限循环，为0时表示没有动画，默认执行一次
+  **data** |<font color ='#808000'>**object**</font> | 是 | |[ {path:'data://2.png',duration:50}, {path:'data://3.png',duration:50} ] ，支持data://, source://路径，其中duration的单位为毫秒
+  **repeat** |<font color ='#808000'>**number**</font> | 否 | 1|帧动画的重复次数，为-1或小于0时表示无限循环，为0时表示没有动画，默认执行一次
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 
@@ -35,10 +35,10 @@ title: do_FrameAnimationView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**string**</font> |  | 是|支持data://, source://路径
-  **repeat** |<font color ='#808000'>**number**</font> | 1 | 否|帧动画的重复次数，为-1或小于0时表示无限循环，为0时表示没有动画，默认执行一次；windows平台不支持设置重复次数，只能循环播放
+  **data** |<font color ='#808000'>**string**</font> | 是 | |支持data://, source://路径
+  **repeat** |<font color ='#808000'>**number**</font> | 否 | 1|帧动画的重复次数，为-1或小于0时表示无限循环，为0时表示没有动画，默认执行一次；windows平台不支持设置重复次数，只能循环播放
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 

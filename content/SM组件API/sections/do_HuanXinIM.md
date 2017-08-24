@@ -15,14 +15,14 @@ title: do_HuanXinIM 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **userID** |<font color ='#808000'>**string**</font> |  | 是|会话用户ID
-  **userNick** |<font color ='#808000'>**string**</font> |  | 是|会话用户昵称
-  **userIcon** |<font color ='#808000'>**string**</font> |  | 否|仅支持网络图片
-  **selfNick** |<font color ='#808000'>**string**</font> |  | 否|仅支持网络图片
-  **selfIcon** |<font color ='#808000'>**string**</font> |  | 否|仅支持网络图片
-  **tag** |<font color ='#808000'>**string**</font> |  | 否|可随消息发送到消息接受者receive监听中
+  **userID** |<font color ='#808000'>**string**</font> | 是 | |会话用户ID
+  **userNick** |<font color ='#808000'>**string**</font> | 是 | |会话用户昵称
+  **userIcon** |<font color ='#808000'>**string**</font> | 否 | |仅支持网络图片
+  **selfNick** |<font color ='#808000'>**string**</font> | 否 | |仅支持网络图片
+  **selfIcon** |<font color ='#808000'>**string**</font> | 否 | |仅支持网络图片
+  **tag** |<font color ='#808000'>**string**</font> | 否 | |可随消息发送到消息接受者receive监听中
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 进入与指定用户发起聊天
@@ -56,10 +56,10 @@ title: do_HuanXinIM 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **username** |<font color ='#808000'>**string**</font> |  | 是|
-  **password** |<font color ='#808000'>**string**</font> |  | 是|
+  **username** |<font color ='#808000'>**string**</font> | 是 | |
+  **password** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 登录是否成功，返回信息为{state:' 0 成功 | 1 失败 ',message:' 回执信息 '}
 - 说明: 使用用户名、密码登录，需先使用环信账户创建一个应用，然后在该应用下创建或通过接口注册IM用户

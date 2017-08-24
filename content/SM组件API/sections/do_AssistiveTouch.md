@@ -15,11 +15,11 @@ title: do_AssistiveTouch 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **location** |<font color ='#808000'>**string**</font> |  | 是|x,y，中间用逗号隔开
-  **image** |<font color ='#808000'>**string**</font> |  | 是|图片地址，支持source://、data://路径
-  **isMove** |<font color ='#808000'>**Boolean**</font> | true | 否|view是否支持移动，缺省支持
+  **location** |<font color ='#808000'>**string**</font> | 是 | |x,y，中间用逗号隔开
+  **image** |<font color ='#808000'>**string**</font> | 是 | |图片地址，支持source://、data://路径
+  **isMove** |<font color ='#808000'>**Boolean**</font> | 否 | true|view是否支持移动，缺省支持
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 可设置view的样式、位置和是否移动

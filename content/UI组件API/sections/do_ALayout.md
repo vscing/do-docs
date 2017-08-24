@@ -54,12 +54,12 @@ title: do_ALayout 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|为了确保ui自身的id属性和父容器里其他子ui的id重复。这个id作为一个在父容器的唯一标识
-  **path** |<font color ='#808000'>**string**</font> |  | 是|插入的UI文件路径，支持data://和source://目录。关于文件格式的说明请参考Storage类
-  **x** |<font color ='#808000'>**string**</font> |  | 否|插入的ui组件相对ALayout的x 坐标,如果没有设置,则x坐标是这个ui文件里指定的x坐标
-  **y** |<font color ='#808000'>**string**</font> |  | 否|插入的ui组件相对ALayout的y 坐标,如果没有设置,则y坐标是这个ui文件里指定的y坐标
+  **id** |<font color ='#808000'>**string**</font> | 是 | |为了确保ui自身的id属性和父容器里其他子ui的id重复。这个id作为一个在父容器的唯一标识
+  **path** |<font color ='#808000'>**string**</font> | 是 | |插入的UI文件路径，支持data://和source://目录。关于文件格式的说明请参考Storage类
+  **x** |<font color ='#808000'>**string**</font> | 否 | |插入的ui组件相对ALayout的x 坐标,如果没有设置,则x坐标是这个ui文件里指定的x坐标
+  **y** |<font color ='#808000'>**string**</font> | 否 | |插入的ui组件相对ALayout的y 坐标,如果没有设置,则y坐标是这个ui文件里指定的y坐标
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回这个ui文件对应的根节点view的地址
 - 说明: 可以在ALayout控件内在用户指定的x,y坐标上动态插入新的ui组件，这个ui文件可以有自己的脚本代码，但是和这个ui的所在Page共享一个脚本环境。

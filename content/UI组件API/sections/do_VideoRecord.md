@@ -15,10 +15,10 @@ title: do_VideoRecord 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **quality** |<font color ='#808000'>**string**</font> | normal | 否|选择录音输出的质量，支持high(1920*1080)、normal(1280*720)、low(640*480),如果手机不支持high,以及normal,默认为low格式
-  **limit** |<font color ='#808000'>**number**</font> | -1 | 否|录制视频的时长限制，以毫秒为单位，-1时表示不限时长
+  **quality** |<font color ='#808000'>**string**</font> | 否 | normal|选择录音输出的质量，支持high(1920*1080)、normal(1280*720)、low(640*480),如果手机不支持high,以及normal,默认为low格式
+  **limit** |<font color ='#808000'>**number**</font> | 否 | -1|录制视频的时长限制，以毫秒为单位，-1时表示不限时长
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 打开录制界面开始录制视频

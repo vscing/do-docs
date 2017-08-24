@@ -15,10 +15,10 @@ title: do_iFlyVoice 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> |  | 是|要读出的文本内容
-  **role** |<font color ='#808000'>**string**</font> | xiaoyan | 否|需要朗读的角色,值列表见http://bbs.deviceone.net/forum.php?mod=viewthread&tid=32&extra=
+  **text** |<font color ='#808000'>**string**</font> | 是 | |要读出的文本内容
+  **role** |<font color ='#808000'>**string**</font> | 否 | xiaoyan|需要朗读的角色,值列表见http://bbs.deviceone.net/forum.php?mod=viewthread&tid=32&extra=
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 开始合成，合成完成自动播放

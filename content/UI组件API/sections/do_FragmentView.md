@@ -78,9 +78,9 @@ title: do_FragmentView 组件
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **data** |<font color ='#808000'>**object**</font> |  | 否|
+  **data** |<font color ='#808000'>**object**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 可绑定listData实例，addData数据内容为JSON字符串，key值分别为：template（主视图），leftTemplate（左侧视图，可选），rightTemplate（右侧视图，可选），value对应templates属性对应UI模板索引值；例如：[{ template:0 ,leftTemplate:1}]

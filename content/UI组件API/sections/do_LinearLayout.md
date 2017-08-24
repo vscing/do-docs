@@ -50,11 +50,11 @@ repeatxy：按原图大小重复填充
 
 - 参数:
 
-  名称 | 类型 |是否必填|缺省值|说明
+  名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **id** |<font color ='#808000'>**string**</font> |  | 是|为了确保ui自身的id属性和父容器里其他子ui的id重复。这个id作为一个在父容器的唯一标识
-  **path** |<font color ='#808000'>**string**</font> |  | 是|插入的ui对应的文件路径，支持data://和source://目录。文件格式说明请参考Storage类。
-  **target** |<font color ='#808000'>**string**</font> |  | 否|要插入目标组件模块的id或者地址，插入的ui加在该组件的右面或者下面，为空时表示加在LinearLayout最上面或左边。
+  **id** |<font color ='#808000'>**string**</font> | 是 | |为了确保ui自身的id属性和父容器里其他子ui的id重复。这个id作为一个在父容器的唯一标识
+  **path** |<font color ='#808000'>**string**</font> | 是 | |插入的ui对应的文件路径，支持data://和source://目录。文件格式说明请参考Storage类。
+  **target** |<font color ='#808000'>**string**</font> | 否 | |要插入目标组件模块的id或者地址，插入的ui加在该组件的右面或者下面，为空时表示加在LinearLayout最上面或左边。
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回这个ui文件对应的根节点view的地址
 - 说明: 可以在LinearLayout控件内动态插入新的ui组件，新的ui组件的脚本环境和LinearLayout所在的环境是一致的
