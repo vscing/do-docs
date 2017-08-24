@@ -5,7 +5,7 @@ title: do_BaiduPanoramaView 组件
 ### do_BaiduPanoramaView 组件
 
  支持平台: iOS7.0,Android4.0
- 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务
+ 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,13 +13,13 @@ title: do_BaiduPanoramaView 组件
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 2
-- 说明 : 设置全景图的缩放级别，默认缩放级别为2级，缩放级别总共分为5级，分别是1-5级，随着级别的增大清晰度逐渐提高
+- 说明 : 设置全景图的缩放级别，默认缩放级别为2级，缩放级别总共分为5级，分别是1-5级，随着级别的增大清晰度逐渐提高。
 
 >###### <font color ='#42b983'>**imageLevel**</font>: 全景图片的显示级别
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 2
-- 说明 : 设置全景图片的显示级别，1为较低清晰度, 2为中等清晰度 , 3为较高清晰度
+- 说明 : 设置全景图片的显示级别，1为较低清晰度, 2为中等清晰度 , 3为较高清晰度。
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -27,20 +27,23 @@ title: do_BaiduPanoramaView 组件
 
 - 参数:
 
-  名称 | 类型 |必填|默认值|说明
-  ---- |-------------  |--------------|--------|------
-  **latitude** |<font color ='#808000'>**string**</font> | 是 | |坐标纬度
-  **longitude** |<font color ='#808000'>**string**</font> | 是 | |坐标经度
+  名称 | 类型 | 必填 | 默认值 | 说明
+  ---- |------|------|------|------
+  **latitude** |<font color ='#808000'>**string**</font> | 是 |     |坐标纬度
+  **longitude** |<font color ='#808000'>**string**</font> | 是 |     |坐标经度
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 根据经纬度显示全景图
 - 示例:
 
   ```javascript
-  ...
+  var do_BaiduPanoramaView = ui("do_BaiduPanoramaView_1");
 
+  //显示全景图
+  do_BaiduPanoramaView.showPanoramaView({"latitude":"41.867335","longitude":"123.90583"});
   ```
-
+ 下图所示是经纬度为123.90583，41.867335的实景图：
+ ![](../../images/realmap.png)
 [回到顶部](#top)
 
 >##### <font color ='#0092db'>**addImageMarkers**</font>: 添加一组缩略图标记
@@ -48,7 +51,7 @@ title: do_BaiduPanoramaView 组件
 - 参数:
 
   名称 | 类型 |必填|默认值|说明
-  ---- |-------------  |--------------|--------|------
+  ---- |------|------|------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |[{id:标记ID,用户自定义标记唯一ID,latitude:纬度,longitude:经度,url:缩略图地址},...]，其中id必须唯一
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: true 成功 false 失败
@@ -56,10 +59,17 @@ title: do_BaiduPanoramaView 组件
 - 示例:
 
   ```javascript
-  ...
+  //添加一组缩略图标记
+ do_BaiduPanoramaView.addImageMarkers([
+	  {"id":"id1","latitude":"41.867335","longitude":"123.90583","url":"source://view/do_BaiduPanoramaView/location.png"},
+	  {"id":"id2","latitude":"41.767335","longitude":"123.90583","url":"source://view/do_BaiduPanoramaView/location.png"},
+	  {"id":"id3","latitude":"41.667335","longitude":"123.90583","url":"source://view/do_BaiduPanoramaView/location.png"},
+	  {"id":"id4","latitude":"41.567335","longitude":"123.90583","url":"source://view/do_BaiduPanoramaView/location.png"}
+ ])
 
   ```
-
+  下图所示是添加一组缩略图标记的实景图：
+  ![](../../images/addimagemarkers.png)
 [回到顶部](#top)
 
 >##### <font color ='#0092db'>**addTextMarkers**</font>: 添加一组文本标记
@@ -67,18 +77,26 @@ title: do_BaiduPanoramaView 组件
 - 参数:
 
   名称 | 类型 |必填|默认值|说明
-  ---- |-------------  |--------------|--------|------
+  ---- |------|------|------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |[{id:标记ID,用户自定义标记唯一ID,latitude:纬度,longitude:经度,text:文字标注的内容,fontColor:字体颜色,fontSize:字体大小},...]，其中id必须唯一
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: true 成功 false 失败
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  //添加一组文本标记
+ do_BaiduPanoramaView.addTextMarkers([
+	  {"id":"01","latitude":"40.767335","longitude":"123.80583","text":"文字标记1","fontColor":"00FF00FF","fontSize":30},
+	  {"id":"02","latitude":"41.667335","longitude":"123.70583","text":"文字标记2","fontColor":"FF0000FF","fontSize":32},
+	  {"id":"03","latitude":"42.567335","longitude":"123.60583","text":"文字标记3","fontColor":"00FF00FF","fontSize":30},
+	  {"id":"04","latitude":"43.467335","longitude":"123.50583","text":"文字标记4","fontColor":"FF8000FF","fontSize":28},
+	  {"id":"05","latitude":"44.367335","longitude":"123.40583","text":"文字标记5","fontColor":"FF0080FF","fontSize":26}
+ ])
 
   ```
-
+  下图所示是添加一组文本标记的实景图：
+  ![](../../images/addtextmarkers.png)
 [回到顶部](#top)
 
 >##### <font color ='#0092db'>**removeMarker**</font>: 移除一组指定标记
@@ -86,7 +104,7 @@ title: do_BaiduPanoramaView 组件
 - 参数:
 
   名称 | 类型 |必填|默认值|说明
-  ---- |-------------  |--------------|--------|------
+  ---- |------|------|------|------
   **ids** |<font color ='#808000'>**object**</font> | 是 | |要移除的标记ID数组
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
@@ -94,7 +112,8 @@ title: do_BaiduPanoramaView 组件
 - 示例:
 
   ```javascript
-  ...
+  //移除一组指定标记
+	do_BaiduPanoramaView.removeMarker({ids:["01","02","03","04","05"]});
 
   ```
 
@@ -109,7 +128,8 @@ title: do_BaiduPanoramaView 组件
 - 示例:
 
   ```javascript
-  ...
+  //移除当前全景图上添加的所有标记
+	do_BaiduPanoramaView.removeAll();
 
   ```
 
@@ -128,10 +148,11 @@ title: do_BaiduPanoramaView 组件
 - 示例:
 
   ```javascript
-  ...
+  //点击标记时触发该事件
+ do_BaiduPanoramaView.on("touchMarker",function(data){
+	  deviceone.print(JSON.stringify(data),"点击标记");
+ })
 
   ```
 
 [回到顶部](#top)
-
-
