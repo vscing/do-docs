@@ -6,8 +6,8 @@ title: do_BaiduPanoramaView 组件
 
  支持平台: iOS7.0,Android4.0
  百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。
- 参考[示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduPanoramaView
-
+ 参考[示例]
+ (" https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduPanoramaView ")
 #### <font color ='#40A977'>**1.**</font> 属性
 
 >###### <font color ='#42b983'>**zoomLevel**</font>: 全景图缩放级别
@@ -46,8 +46,8 @@ title: do_BaiduPanoramaView 组件
   	"longitude" : "123.90583"
   });
   ```
- 下图所示是经度123.90583，纬度41.867335的全景图：
- ![](../../images/realmap.png)
+  下图所示是经度123.90583，纬度41.867335的全景图：
+  ![](../../images/baidupanoramaview_realmap.png)
 [回到顶部](#top)
 
 >##### <font color ='#0092db'>**addImageMarkers**</font>: 添加一组缩略图标记
@@ -61,15 +61,16 @@ title: do_BaiduPanoramaView 组件
 - 返回值描述: true 成功 false 失败
 - 说明: 将一组经纬度用缩略图在百度地图标记出来,缩略图地址为 data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类；iOS8.0以下不支持。参数示例
   ```
-[
-    {
-        id:标记ID,用户自定义标记唯一ID,
-        latitude:纬度,
-        longitude:经度,
-        url:缩略图地址
-    },
-    ...
-]
+
+  [
+      {
+          "id":"标记ID,用户自定义标记唯一ID",
+          "latitude":"纬度",
+          "longitude":"经度",
+          "url":"缩略图地址"
+      },
+      ...
+  ]
   ```
 - 示例:
 
@@ -99,7 +100,7 @@ title: do_BaiduPanoramaView 组件
 
   ```
   下图所示是添加一组缩略图标记的全景图：
-  ![](../../images/addimagemarkers.png)
+  ![](../../images/baidupanoramaview_addimagemarkers.png)
 [回到顶部](#top)
 
 >##### <font color ='#0092db'>**addTextMarkers**</font>: 添加一组文本标记
@@ -112,19 +113,20 @@ title: do_BaiduPanoramaView 组件
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: true 成功 false 失败
 - 说明:参数示例
-```
-[
-    {
-        id:标记ID,用户自定义标记唯一ID,
-        latitude:纬度,
-        longitude:经度,
-        text:文字标注的内容,
-        fontColor:字体颜色,
-        fontSize:字体大小
-    },
-    ...
-]
-```
+  ```
+
+  [
+      {
+          "id":"标记ID,用户自定义标记唯一ID",
+          "latitude":"纬度",
+          "longitude":"经度",
+          "text":"文字标注的内容",
+          "fontColor":"字体颜色",
+          "fontSize":"字体大小"
+      },
+      ...
+  ]
+  ```
 - 示例:
 
   ```javascript
@@ -168,7 +170,7 @@ title: do_BaiduPanoramaView 组件
 
   ```
   下图所示是添加一组文本标记的全景图：
-  ![](../../images/addtextmarkers.png)
+  ![](../../images/baidupanoramaview_addtextmarkers.png)
 [回到顶部](#top)
 
 >##### <font color ='#0092db'>**removeMarker**</font>: 移除一组指定标记
@@ -182,21 +184,23 @@ title: do_BaiduPanoramaView 组件
 - 返回值描述: 无
 - 说明: 移除一组指定标记，参数示例
   ```
-{
-    ids:[
-        "id1",
-        "id2",
-        ...  
-    ]
-}
+
+  {
+      "ids":[
+          "id1",
+          "id2",
+          ...  
+      ]
+  }
   ```
 - 示例:
 
   ```javascript
-  //移除一组指定标记
+
+  //移除一组指定标记，全景图上有对应标记的时候才可以使用
   do_BaiduPanoramaView.removeMarker({
-		ids : [ "01", "02", "03", "04", "05" ]
-	});
+  	  ids : [ "01", "02", "03", "04", "05" ]
+  });
 
   ```
 
@@ -211,9 +215,9 @@ title: do_BaiduPanoramaView 组件
 - 示例:
 
   ```javascript
-  //移除当前全景图上添加的所有标记
-	do_BaiduPanoramaView.removeAll();
 
+  //移除当前全景图上添加的所有标记
+  do_BaiduPanoramaView.removeAll();
   ```
 
 [回到顶部](#top)
@@ -228,18 +232,20 @@ title: do_BaiduPanoramaView 组件
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述:
   ```
-{
-    id:标记ID,用户自定义标记唯一ID,
-    latitude:纬度,
-    longitude:经度,
-    type:ImageMark|TextMark,
-    info:当type为ImageMark时返回缩略图地址|当type为TextMark时返回文字标注内容
-}
+
+  {
+      "id":"标记ID,用户自定义标记唯一ID",
+      "latitude":"纬度",
+      "longitude":"经度",
+      "type":"ImageMark|TextMark",
+      "info":"当type为ImageMark时返回缩略图地址|当type为TextMark时返回文字标注内容"
+  }
   ```
 - 说明: 点击标记时触发
 - 示例:
 
   ```javascript
+
   //点击标记时触发该事件
   do_BaiduPanoramaView.on("touchMarker", function(data) {
   	  deviceone.print(JSON.stringify(data), "点击标记");
