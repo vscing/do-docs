@@ -216,3 +216,17 @@ title: do_ALayout 组件
   ```
 
 [回到顶部](#top)
+#### <font color ='#40A977'>**5.**</font> 常见问题
+- 为什么通过代码修改一个ALayout里的ui的width，height，没有效果了?
+
+  **答**: x,y,width,height这几个属性修改后，需要调用一下redraw方法才能生效。这样设计的好处在于，如果一个ALayout里面有多个子View，每个子View都做了这几个属性的修改，然后再调用ALayout的redraw方法，比每一个组件自动的重新绘制，可以节省很多重绘制的次数，提高效率。另外一些属性的调整，比如visible变化，也有可能需要redraw
+
+  ```javascript
+
+  ui("button1").x = 30;
+  ui("button2").height = 40;
+  layout.redraw();
+
+  ```
+
+[回到顶部](#top)
