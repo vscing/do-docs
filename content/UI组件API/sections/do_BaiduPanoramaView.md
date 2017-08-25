@@ -5,9 +5,7 @@ title: do_BaiduPanoramaView 组件
 ### do_BaiduPanoramaView 组件
 
  支持平台: iOS7.0,Android4.0
- 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。
- 参考[示例]
- (" https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduPanoramaView ")
+ 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。参考[示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduPanoramaView)
 #### <font color ='#40A977'>**1.**</font> 属性
 
 >###### <font color ='#42b983'>**zoomLevel**</font>: 全景图缩放级别
@@ -252,5 +250,11 @@ title: do_BaiduPanoramaView 组件
   });
 
   ```
+
+#### <font color ='#40A977'>**5.**</font> 常见问题
+
+#### <font color ='#40A977'>**6.**</font> 基本配置
+  - 1.使用百度全景图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](  http://doc.deviceone.net/web/doc/detail_course/third_party/baidu_location.htm)
+
 
 [回到顶部](#top)
