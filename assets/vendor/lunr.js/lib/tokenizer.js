@@ -25,10 +25,7 @@ lunr.tokenizer = function (obj) {
   }
 
   return str
-    .split(/(?:\s+|\-)/)
-    .filter(function (token) {
-      return !!token
-    })
+    .split(/\s+/)
     .map(function (token) {
       return token.toLowerCase()
     })

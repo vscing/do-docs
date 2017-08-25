@@ -1,11 +1,11 @@
 /**
- * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 0.5.7
+ * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 0.5.3
  * Copyright (C) 2014 Oliver Nightingale
  * MIT Licensed
  * @license
  */
 
-(function(){
+!function(){
 
 /**
  * Convenience function for instantiating a new lunr index and configuring it
@@ -25,13 +25,13 @@
  *       this.field('title', 10)
  *       this.field('tags', 100)
  *       this.field('body')
- *       
+ *
  *       this.ref('cid')
- *       
+ *
  *       this.pipeline.add(function () {
  *         // some custom pipeline function
  *       })
- *       
+ *
  *     })
  *
  * @param {Function} config A function that will be called with the new instance
@@ -56,7 +56,7 @@ var lunr = function (config) {
   return idx
 }
 
-lunr.version = "0.5.7"
+lunr.version = "0.5.3"
 /*!
  * lunr.utils
  * Copyright (C) 2014 Oliver Nightingale
@@ -177,7 +177,8 @@ lunr.EventEmitter.prototype.hasHandler = function (name) {
  * @returns {Array}
  */
 lunr.tokenizer = function (obj) {
-  if (!arguments.length || obj == null || obj == undefined) return []
+  if (!arguments.length || obj == null || obj == undefined) return [];
+
   if (Array.isArray(obj)) return obj.map(function (t) { return t.toLowerCase() })
 
   var str = obj.toString().replace(/^\s+/, '')
@@ -189,14 +190,14 @@ lunr.tokenizer = function (obj) {
     }
   }
 
-  return str
-    .split(/(?:\s+|\-)/)
-    .filter(function (token) {
-      return !!token
-    })
+
+  var rs= str
+    .split(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\uFE30-\uFFA0|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]+/)
     .map(function (token) {
-      return token.toLowerCase()
-    })
+      return token.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\uFE30-\uFFA0|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g, '').toLowerCase()
+    });
+	return rs;
+
 }
 /*!
  * lunr.Pipeline
@@ -1243,8 +1244,8 @@ lunr.Store.load = function (serialisedData) {
  * @memberOf Store
  */
 lunr.Store.prototype.set = function (id, tokens) {
-  if (!this.has(id)) this.length++
   this.store[id] = tokens
+  this.length = Object.keys(this.store).length
 }
 
 /**
@@ -1355,33 +1356,7 @@ lunr.stemmer = (function(){
     mgr1 = "^(" + C + ")?" + V + C + V + C,       // [C]VCVC... is m>1
     s_v = "^(" + C + ")?" + v;                   // vowel in stem
 
-  var re_mgr0 = new RegExp(mgr0);
-  var re_mgr1 = new RegExp(mgr1);
-  var re_meq1 = new RegExp(meq1);
-  var re_s_v = new RegExp(s_v);
-
-  var re_1a = /^(.+?)(ss|i)es$/;
-  var re2_1a = /^(.+?)([^s])s$/;
-  var re_1b = /^(.+?)eed$/;
-  var re2_1b = /^(.+?)(ed|ing)$/;
-  var re_1b_2 = /.$/;
-  var re2_1b_2 = /(at|bl|iz)$/;
-  var re3_1b_2 = new RegExp("([^aeiouylsz])\\1$");
-  var re4_1b_2 = new RegExp("^" + C + v + "[^aeiouwxy]$");
-
-  var re_1c = /^(.+?[^aeiou])y$/;
-  var re_2 = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/;
-
-  var re_3 = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/;
-
-  var re_4 = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
-  var re2_4 = /^(.+?)(s|t)(ion)$/;
-
-  var re_5 = /^(.+?)e$/;
-  var re_5_1 = /ll$/;
-  var re3_5 = new RegExp("^" + C + v + "[^aeiouwxy]$");
-
-  var porterStemmer = function porterStemmer(w) {
+  return function (w) {
     var   stem,
       suffix,
       firstch,
@@ -1398,39 +1373,39 @@ lunr.stemmer = (function(){
     }
 
     // Step 1a
-    re = re_1a
-    re2 = re2_1a;
+    re = /^(.+?)(ss|i)es$/;
+    re2 = /^(.+?)([^s])s$/;
 
     if (re.test(w)) { w = w.replace(re,"$1$2"); }
     else if (re2.test(w)) { w = w.replace(re2,"$1$2"); }
 
     // Step 1b
-    re = re_1b;
-    re2 = re2_1b;
+    re = /^(.+?)eed$/;
+    re2 = /^(.+?)(ed|ing)$/;
     if (re.test(w)) {
       var fp = re.exec(w);
-      re = re_mgr0;
+      re = new RegExp(mgr0);
       if (re.test(fp[1])) {
-        re = re_1b_2;
+        re = /.$/;
         w = w.replace(re,"");
       }
     } else if (re2.test(w)) {
       var fp = re2.exec(w);
       stem = fp[1];
-      re2 = re_s_v;
+      re2 = new RegExp(s_v);
       if (re2.test(stem)) {
         w = stem;
-        re2 = re2_1b_2;
-        re3 = re3_1b_2;
-        re4 = re4_1b_2;
+        re2 = /(at|bl|iz)$/;
+        re3 = new RegExp("([^aeiouylsz])\\1$");
+        re4 = new RegExp("^" + C + v + "[^aeiouwxy]$");
         if (re2.test(w)) {  w = w + "e"; }
-        else if (re3.test(w)) { re = re_1b_2; w = w.replace(re,""); }
+        else if (re3.test(w)) { re = /.$/; w = w.replace(re,""); }
         else if (re4.test(w)) { w = w + "e"; }
       }
     }
 
     // Step 1c - replace suffix y or Y by i if preceded by a non-vowel which is not the first letter of the word (so cry -> cri, by -> by, say -> say)
-    re = re_1c;
+    re = /^(.+?[^aeiou])y$/;
     if (re.test(w)) {
       var fp = re.exec(w);
       stem = fp[1];
@@ -1438,65 +1413,65 @@ lunr.stemmer = (function(){
     }
 
     // Step 2
-    re = re_2;
+    re = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/;
     if (re.test(w)) {
       var fp = re.exec(w);
       stem = fp[1];
       suffix = fp[2];
-      re = re_mgr0;
+      re = new RegExp(mgr0);
       if (re.test(stem)) {
         w = stem + step2list[suffix];
       }
     }
 
     // Step 3
-    re = re_3;
+    re = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/;
     if (re.test(w)) {
       var fp = re.exec(w);
       stem = fp[1];
       suffix = fp[2];
-      re = re_mgr0;
+      re = new RegExp(mgr0);
       if (re.test(stem)) {
         w = stem + step3list[suffix];
       }
     }
 
     // Step 4
-    re = re_4;
-    re2 = re2_4;
+    re = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
+    re2 = /^(.+?)(s|t)(ion)$/;
     if (re.test(w)) {
       var fp = re.exec(w);
       stem = fp[1];
-      re = re_mgr1;
+      re = new RegExp(mgr1);
       if (re.test(stem)) {
         w = stem;
       }
     } else if (re2.test(w)) {
       var fp = re2.exec(w);
       stem = fp[1] + fp[2];
-      re2 = re_mgr1;
+      re2 = new RegExp(mgr1);
       if (re2.test(stem)) {
         w = stem;
       }
     }
 
     // Step 5
-    re = re_5;
+    re = /^(.+?)e$/;
     if (re.test(w)) {
       var fp = re.exec(w);
       stem = fp[1];
-      re = re_mgr1;
-      re2 = re_meq1;
-      re3 = re3_5;
+      re = new RegExp(mgr1);
+      re2 = new RegExp(meq1);
+      re3 = new RegExp("^" + C + v + "[^aeiouwxy]$");
       if (re.test(stem) || (re2.test(stem) && !(re3.test(stem)))) {
         w = stem;
       }
     }
 
-    re = re_5_1;
-    re2 = re_mgr1;
+    re = /ll$/;
+    re2 = new RegExp(mgr1);
     if (re.test(w) && re2.test(w)) {
-      re = re_1b_2;
+      re = /.$/;
       w = w.replace(re,"");
     }
 
@@ -1507,9 +1482,7 @@ lunr.stemmer = (function(){
     }
 
     return w;
-  };
-
-  return porterStemmer;
+  }
 })();
 
 lunr.Pipeline.registerFunction(lunr.stemmer, 'stemmer')
@@ -1680,11 +1653,22 @@ lunr.Pipeline.registerFunction(lunr.stopWordFilter, 'stopWordFilter')
  * @see lunr.Pipeline
  */
 lunr.trimmer = function (token) {
+//by ming300 check token is chinese then not replace
+	if(isChineseChar(token)){
+		return token;
+	}
   return token
     .replace(/^\W+/, '')
     .replace(/\W+$/, '')
 }
 
+/**
+**check it contains Chinese (including Japanese and Korean)
+*/
+function isChineseChar(str){
+   var reg = /[\u4E00-\u9FA5\uF900-\uFA2D]/;
+   return reg.test(str);
+}
 lunr.Pipeline.registerFunction(lunr.trimmer, 'trimmer')
 /*!
  * lunr.stemmer
@@ -1881,7 +1865,7 @@ lunr.TokenStore.prototype.toJSON = function () {
 
 
   /**
-   * export the module via AMD, CommonJS or as a browser global
+   * export the module via AMD, CommonnJS or as a browser global
    * Export code from https://github.com/umdjs/umd/blob/master/returnExports.js
    */
   ;(function (root, factory) {
@@ -1907,4 +1891,4 @@ lunr.TokenStore.prototype.toJSON = function () {
      */
     return lunr
   }))
-})()
+}();
