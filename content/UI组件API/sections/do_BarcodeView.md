@@ -5,7 +5,9 @@ title: do_BarcodeView 组件
 ### do_BarcodeView 组件
 
  支持平台: iOS7.0,Android4.0
- 条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行。参考[示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BarcodeView)
+ 条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行。参考[示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BarcodeView)     
+ 下图为扫描区域跟组件大小一样的效果图
+ ![](../../images/barcodeview_scan.png)  
 #### <font color ='#40A977'>**1.**</font> 属性
 
 >###### <font color ='#42b983'>**scanArea**</font>: 扫描的区域
@@ -14,7 +16,6 @@ title: do_BarcodeView 组件
 - 默认值 :
 - 说明 : 设置扫描区域的位置和宽高，x,y,width,height，中间用逗号隔开；扫描区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示，修改后必须重新调start方法才会生效。
 - 示例:
-
   ```javascript
 
   var do_BarcodeView = ui("do_BarcodeView_1");
@@ -27,8 +28,9 @@ title: do_BarcodeView 组件
   });
 
   ```
-  上图为扫描区域跟组件大小一样的效果图，下图为代码设置扫描区域为"150,150,300,300"的效果图：
-  ![](../../images/barcodeview_scan.png)  ![](../../images/barcodeview_setscanarea.png)
+  下图为代码设置扫描区域为"150,150,300,300"的效果图：
+  ![](../../images/barcodeview_setscanarea.png)
+
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
 >##### <font color ='#0092db'>**flash**</font>: 开关闪光灯
@@ -42,7 +44,6 @@ title: do_BarcodeView 组件
 - 返回值描述: 无
 - 说明: 开关手机系统闪光灯
 - 示例:
-
   ```javascript
 
   //开启闪光灯
@@ -62,7 +63,6 @@ title: do_BarcodeView 组件
 - 返回值描述: 返回data是一个JSON对象类型
 - 说明: 条码扫描成功后会自动停止并执行异步回调，将扫描结果返回，如需再次扫描需重新调用该方法
 - 示例:
-
   ```javascript
 
   // 启动扫描

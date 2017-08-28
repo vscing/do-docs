@@ -12,9 +12,22 @@ title: do_BorderView 组件
 >###### <font color ='#42b983'>**items**</font>: BorderView显示内容
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
-- 说明 : 设置BorderView显示内容（必须是一个Object），例如：
-{"rightView":{"template":0,"image":"source://1.jpg"},"centerView":{"template":2,"title":"content","image":"source://1.jpg"}}，其中rightView与centerView表示数据指定给BorderView的具体View，必须为topView、rightView、bottomView、leftView、centerView的其中一个
+- 默认值 :
+- 说明 : 设置BorderView显示内容（必须是一个Object），例如：item格式如下，其中rightView与centerView表示数据指定给BorderView的具体View，必须为topView、rightView、bottomView、leftView、centerView的其中一个
+  ```
+
+  {
+      "rightView":{
+          "template":0,
+          "image":"source://1.jpg"
+      },
+      "centerView":{
+          "template":2,
+          "title":"content",
+          "image":"source://1.jpg"
+      }
+  }
+  ```
 
 >###### <font color ='#42b983'>**centerFillParent**</font>: 居中子视图填充父容器
 
@@ -25,31 +38,31 @@ title: do_BorderView 组件
 >###### <font color ='#42b983'>**topView**</font>: 居上子视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的居上子视图ui文件路径，有改动需要调UI组件的基类方法redraw才能生效
 
 >###### <font color ='#42b983'>**rightView**</font>: 居右子视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的居右子视图ui文件路径，有改动需要调UI组件的基类方法redraw才能生效
 
 >###### <font color ='#42b983'>**bottomView**</font>: 居下子视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的居下子视图ui文件路径，有改动需要调UI组件的基类方法redraw才能生效
 
 >###### <font color ='#42b983'>**leftView**</font>: 居左子视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的居左子视图视图ui文件路径，有改动需要调UI组件的基类方法redraw才能生效
 
 >###### <font color ='#42b983'>**centerView**</font>: 居中子视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的居中子视图视图ui文件路径，有改动需要调UI组件的基类方法redraw才能生效
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -77,5 +90,3 @@ title: do_BorderView 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-

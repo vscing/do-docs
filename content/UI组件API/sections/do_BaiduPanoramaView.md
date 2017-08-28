@@ -34,7 +34,6 @@ title: do_BaiduPanoramaView 组件
 - 返回值描述: 无
 - 说明: 根据经纬度显示全景图
 - 示例:
-
   ```javascript
   var do_BaiduPanoramaView = ui("do_BaiduPanoramaView_1");
 
@@ -54,24 +53,23 @@ title: do_BaiduPanoramaView 组件
 
   名称 | 类型 |必填|默认值|说明
   ---- |------|------|------|------
-  **data** |<font color ='#808000'>**object**</font> | 是 | |[{id:标记ID,用户自定义标记唯一ID,latitude:纬度,longitude:经度,url:缩略图地址},...]，其中id必须唯一
+  **data** |<font color ='#808000'>**object**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: true 成功 false 失败
-- 说明: 将一组经纬度用缩略图在百度地图标记出来,缩略图地址为 data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类；iOS8.0以下不支持。参数示例
+- 说明: 将一组经纬度用缩略图在百度地图标记出来,缩略图地址为 data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类；iOS8.0以下不支持。参数示例，其中标记ID必须唯一
   ```
 
   [
       {
-          "id":"标记ID,用户自定义标记唯一ID",
-          "latitude":"纬度",
-          "longitude":"经度",
-          "url":"缩略图地址"
+          "id":标记ID,用户自定义标记唯一ID,
+          "latitude":纬度,
+          "longitude":经度,
+          "url":缩略图地址
       },
       ...
   ]
   ```
 - 示例:
-
   ```javascript
   //添加一组缩略图标记
   do_BaiduPanoramaView.addImageMarkers([ {
@@ -107,26 +105,25 @@ title: do_BaiduPanoramaView 组件
 
   名称 | 类型 |必填|默认值|说明
   ---- |------|------|------|------
-  **data** |<font color ='#808000'>**object**</font> | 是 | |[{id:标记ID,用户自定义标记唯一ID,latitude:纬度,longitude:经度,text:文字标注的内容,fontColor:字体颜色,fontSize:字体大小},...]，其中id必须唯一
+  **data** |<font color ='#808000'>**object**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: true 成功 false 失败
-- 说明:参数示例
+- 说明:参数示例，其中标记ID必须唯一
   ```
 
   [
       {
-          "id":"标记ID,用户自定义标记唯一ID",
-          "latitude":"纬度",
-          "longitude":"经度",
-          "text":"文字标注的内容",
-          "fontColor":"字体颜色",
-          "fontSize":"字体大小"
+          "id":标记ID,用户自定义标记唯一ID,
+          "latitude":纬度,
+          "longitude":经度,
+          "text":文字标注的内容,
+          "fontColor":字体颜色,
+          "fontSize":字体大小
       },
       ...
   ]
   ```
 - 示例:
-
   ```javascript
   //添加一组文本标记
   do_BaiduPanoramaView.addTextMarkers([ {
@@ -192,7 +189,6 @@ title: do_BaiduPanoramaView 组件
   }
   ```
 - 示例:
-
   ```javascript
 
   //移除一组指定标记，全景图上有对应标记的时候才可以使用
@@ -201,8 +197,6 @@ title: do_BaiduPanoramaView 组件
   });
 
   ```
-
-[回到顶部](#top)
 
 >##### <font color ='#0092db'>**removeAll**</font>: 移除所有标记
 
@@ -232,16 +226,15 @@ title: do_BaiduPanoramaView 组件
   ```
 
   {
-      "id":"标记ID,用户自定义标记唯一ID",
-      "latitude":"纬度",
-      "longitude":"经度",
-      "type":"ImageMark|TextMark",
-      "info":"当type为ImageMark时返回缩略图地址|当type为TextMark时返回文字标注内容"
+      "id":标记ID,用户自定义标记唯一ID,
+      "latitude":纬度,
+      "longitude":经度,
+      "type":ImageMark|TextMark,
+      "info":当type为ImageMark时返回缩略图地址|当type为TextMark时返回文字标注内容
   }
   ```
 - 说明: 点击标记时触发
 - 示例:
-
   ```javascript
 
   //点击标记时触发该事件
@@ -254,7 +247,7 @@ title: do_BaiduPanoramaView 组件
 #### <font color ='#40A977'>**5.**</font> 常见问题
 
 #### <font color ='#40A977'>**6.**</font> 基本配置
-  - 1.使用百度全景图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](  http://doc.deviceone.net/web/doc/detail_course/third_party/baidu_location.htm)
+  - 1.使用百度全景图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](/UI组件API/sections/百度定位相关配置/)
 
 
 [回到顶部](#top)
