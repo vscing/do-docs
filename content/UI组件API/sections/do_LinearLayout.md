@@ -5,14 +5,28 @@ title: do_LinearLayout 组件
 ### do_LinearLayout 组件
 
  支持平台: iOS7.0,Android4.0
+  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_LinearLayout)
  线性布局，是DeviceOne提供的最基础的布局组件之一.
  意思就是里面的组件按线性排列，可以上下，可以左右排列。里面所有的子view的x，y没有意义，因为它们是一个接一个，无缝的拼接在一起。
  LinearLayout很少设置固定的高度和宽度，它最大的优势是可以动态根据内容来变化width和height,自适应大小，强制性地使视图扩展以便显示其全部内容，当height=-1时，表示自动高度，整个layout的高度是所有内部子控件的高之和。如果是横向布局的话，当width=-1时，所有内部组件横向方向顺序排列，宽度是所有子控件宽度之和.
  ![](../../images/linearlayout.png)
 
+#### <font color ='#40A977'>**0.**</font> 目录
+
+      | ID | 说明
+ ---- |------|------|
+ <font color ='#42b983'>属性</font>  |[direction](#direction)| 布局方向
+ <font color ='#42b983'>属性</font>  |[padding](#padding)| 内边距
+ <font color ='#42b983'>属性</font>  |[enabled](#enabled)| 是否可点击
+ <font color ='#42b983'>属性</font>  |[bgImage](#bgImage)| 背景图片
+ <font color ='#42b983'>属性</font>  |[bgImageFillType](#bgImageFillType)| 背景图片填充方式
+ <font color ='#0092db'>同步方法</font>  |[add](#add)| 插入一个UI
+ <font color ='#0092db'>同步方法</font>  |[getChildren](#getChildren)| 获取子view的id
+ <font color ='#e96900'>事件</font>  |[touch](#touch)| 点击触发
+
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**direction**</font>: 布局方向
+>###### <span id=direction><font color ='#42b983'>**direction**</font></span>: 布局方向
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : vertical
@@ -20,7 +34,7 @@ title: do_LinearLayout 组件
   * horizontal：横向布局,从左到右布局
   * vertical：纵向布局,从上到下布局
 
->###### <font color ='#42b983'>**padding**</font>: 内边距
+>###### <span id=direction><font color ='#42b983'>**padding**</font></span>: 内边距
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 0,0,0,0
@@ -29,19 +43,19 @@ margin是所有ui都具有的公共属性，但是它只能在Linearlayout里有
 padding就是在LinearLayout的内边距，margin就是LinearLayout里的一个子view和相邻的组件的距离，比如：
 ![](../../images/margin_padding.png)
 
->###### <font color ='#42b983'>**enabled**</font>: 是否可点击
+>###### <span id=enabled><font color ='#42b983'>**enabled**</font></span>: 是否可点击
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : true
 - 说明 : 缺省为'true'，如果enable为true，则Layout是可以点击的，touch事件才有意义，否则不可点击
 
->###### <font color ='#42b983'>**bgImage**</font>: 背景图片
+>###### <span id=bgImage><font color ='#42b983'>**bgImage**</font></span>: 背景图片
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
 - 说明 : 可设置本地文件：支持data://和source://两种方式。文件格式说明参考[文件管理](../../../应用开发/sections/文件管理)
 
->###### <font color ='#42b983'>**bgImageFillType**</font>: 背景图片填充方式
+>###### <span id=bgImageFillType><font color ='#42b983'>**bgImageFillType**</font></span>: 背景图片填充方式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : fillxy
@@ -51,7 +65,7 @@ padding就是在LinearLayout的内边距，margin就是LinearLayout里的一个�
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**add**</font>: 插入一个UI
+>##### <span id=add><font color ='#0092db'>**add**</font></span>: 插入一个UI
 
 - 参数:
 
@@ -93,7 +107,7 @@ padding就是在LinearLayout的内边距，margin就是LinearLayout里的一个�
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getChildren**</font>: 获取子view的id
+>##### <span id=getChildren><font color ='#0092db'>**getChildren**</font></span>: 获取子view的id
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -116,7 +130,7 @@ padding就是在LinearLayout的内边距，margin就是LinearLayout里的一个�
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**touch**</font>: 点击触发
+>###### <span id=touch><font color ='#e96900'>**touch**</font></span>: 点击触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
