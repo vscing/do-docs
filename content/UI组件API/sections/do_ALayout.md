@@ -4,27 +4,44 @@ title: do_ALayout 组件
 
 ### do_ALayout 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_ALayout)
  UI组件，绝对布局(Absolute Layout),通过设置x,y来设置控件的绝对位置。这是DeviceOne平台提供的一个核心组件也是最重要的组件之一。
  绝对布局使用很简单，它内部的所有组件的布局都是绝对坐标值，不过这个坐标值是相对ALayout来说的，不是相对整个屏幕。
  如下图，按钮的x，y坐标都是100，是相对于按钮所在的ALayout的左上角
  ![](../../images/alayout.png)
 
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[enabled](#enabled)| 是否可点击
+<font color ='#42b983'>属性</font>  |[bgImage](#bgImage)| 背景图片
+<font color ='#42b983'>属性</font>  |[bgImageFillType](#bgImageFillType)| 背景图片填充方式
+<font color ='#42b983'>属性</font>  |[isStretch](#isStretch)| 是否自动拉伸
+<font color ='#42b983'>属性</font>  |[layoutAlign](#layoutAlign)| 对齐方式
+<font color ='#0092db'>同步方法</font>  |[add](#add)| 插入一个UI
+<font color ='#0092db'>同步方法</font>  |[getChildren](#getChildren)| 获取子view的id
+<font color ='#e96900'>事件</font>  |[touch](#touch)|点击事件
+<font color ='#e96900'>事件</font>  |[touchDown](#touchDown)| 按下事件
+<font color ='#e96900'>事件</font>  |[touchUp](#touchUp)| 弹起事件
+<font color ='#e96900'>事件</font>  |[longTouch](#longTouch)| 长按事件
+
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**enabled**</font>: 是否可点击
+>###### <span id="enabled"><font color ='#42b983'>**enabled**</font></span>: 是否可点击
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : true
 - 说明 : 缺省为true，如果enable为true，则ALayout是可以点击的;否则不可点击,相应的事件也都不会触发.
 
->###### <font color ='#42b983'>**bgImage**</font>: 背景图片
+>###### <span id="bgImage"><font color ='#42b983'>**bgImage**</font></span>: 背景图片
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
 - 说明 : 设置layout的背景图片，支持data://和source://两种方式；文件格式说明参考[文件管理](../../../应用开发/sections/文件管理)
 
->###### <font color ='#42b983'>**bgImageFillType**</font>: 背景图片填充方式
+>###### <span id="bgImageFillType"><font color ='#42b983'>**bgImageFillType**</font></span>: 背景图片填充方式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : fillxy
@@ -32,13 +49,13 @@ title: do_ALayout 组件
     * fillxy:表示无论图片大小，图片会自动拉伸平铺满整个layout
     * repeatxy:表示图片不会有任何自动拉伸，根据layout大小会重复很多个图片
 
->###### <font color ='#42b983'>**isStretch**</font>: 是否自动拉伸
+>###### <span id="isStretch"><font color ='#42b983'>**isStretch**</font></span>: 是否自动拉伸
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : true
 - 说明 : 通常ALayout包括ALayout内的所有组件都是按照设计器里设计的分辨率映射到手机屏幕的分辨率，按比例缩放的。为了确保不变形，可以通过设置这个属性来控制。详细可参考[屏幕适配](../../../应用开发/sections/屏幕适配)
 
->###### <font color ='#42b983'>**layoutAlign**</font>: 对齐方式
+>###### <span id="enabled"><font color ='#42b983'>**layoutAlign**</font></span>: 对齐方式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : MiddelCenter
@@ -55,7 +72,7 @@ title: do_ALayout 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**add**</font>: 插入一个UI
+>##### <span id="add"><font color ='#0092db'>**add**</font></span>: 插入一个UI
 
 - 参数:
 
@@ -117,7 +134,7 @@ title: do_ALayout 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getChildren**</font>: 获取子view的id
+>##### <span id="getChildren"><font color ='#0092db'>**getChildren**</font></span>: 获取子view的id
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -141,7 +158,7 @@ title: do_ALayout 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**touch**</font>: 点击事件
+>###### <span id="touch"><font color ='#e96900'>**touch**</font></span>: 点击事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
@@ -157,7 +174,7 @@ title: do_ALayout 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**touchDown**</font>: 按下事件
+>###### <span id="touchDown"><font color ='#e96900'>**touchDown**</font></span>: 按下事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
@@ -177,7 +194,7 @@ title: do_ALayout 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**touchUp**</font>: 弹起事件
+>###### <span id="touchUp"><font color ='#e96900'>**touchUp**</font></span>: 弹起事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
@@ -197,7 +214,7 @@ title: do_ALayout 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**longTouch**</font>: 长按事件
+>###### <span id="longTouch"><font color ='#e96900'>**longTouch**</font></span>: 长按事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述:
