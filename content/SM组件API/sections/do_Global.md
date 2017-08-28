@@ -4,14 +4,34 @@ title: do_Global 组件
 
 ### do_Global 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Global)
  Global组件表示手机上的移动应用App的概念，但是和我们的定义的App组件有差别，一个Global下至少包含一个DeviceOne的App组件，但是有可能有多个App组件。这个组件负责一些应用全局的事件，负责应用全局范围内数据的交互和设置。
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getTime](#getTime)| 获取当前设备时间
+<font color ='#0092db'>同步方法</font>  |[getWakeupID](#getWakeupID)| 获取应用唤醒ID
+<font color ='#0092db'>同步方法</font>  |[getVersion](#getVersion)| 获取应用安装包的版本号
+<font color ='#0092db'>同步方法</font>  |[getMemory](#getMemory)| 获取全局变量值
+<font color ='#0092db'>同步方法</font>  |[setMemory](#setMemory)| 设置全局变量值
+<font color ='#0092db'>同步方法</font>  |[exit](#exit)| 退出应用
+<font color ='#0092db'>同步方法</font>  |[setToPasteboard](#setToPasteboard)| 拷贝到粘贴板
+<font color ='#0092db'>同步方法</font>  |[getFromPasteboard](#getFromPasteboard)| 从粘贴板取出内容
+<font color ='#0092db'>同步方法</font>  |[getSignatureInfo](#getSignatureInfo)| 获取签名证书信息
+<font color ='#0092db'>异步方法</font>  |[install](#install)| 安装升级包
+<font color ='#e96900'>事件</font>  |[background](#background)| 通常是按手机的home键应用进到后台会触发这个事件
+<font color ='#e96900'>事件</font>  |[foreground](#foreground)| 应用从后台回到前台会触发这个事件
+<font color ='#e96900'>事件</font>  |[launch](#launch)| 应用被启动会触发这个事件，三种情况 1. 正常点击应用图标启动 2. 被启动应用通过唤醒ID被其他应用唤醒启动 3. 通过点击推送过来的消息来启动 这个事件只能在程序入口脚本代码中订阅才有意义，比如app.lua ,app.js
+<font color ='#e96900'>事件</font>  |[broadcast](#broadcast)| android原生系统广播会触发这个事件，当然只有android系统才支持
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getTime**</font>: 获取当前设备时间
+>##### <span id=getTime><font color ='#0092db'>**getTime**</font></span>: 获取当前设备时间
 
 - 参数:
 
@@ -30,7 +50,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getWakeupID**</font>: 获取应用唤醒ID
+>##### <span id=getWakeupID><font color ='#0092db'>**getWakeupID**</font></span>: 获取应用唤醒ID
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
@@ -45,7 +65,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getVersion**</font>: 获取应用安装包的版本号
+>##### <span id=getVersion><font color ='#0092db'>**getVersion**</font></span>: 获取应用安装包的版本号
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -65,7 +85,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getMemory**</font>: 获取全局变量值
+>##### <span id=getMemory><font color ='#0092db'>**getMemory**</font></span>: 获取全局变量值
 
 - 参数:
 
@@ -84,7 +104,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setMemory**</font>: 设置全局变量值
+>##### <span id=setMemory><font color ='#0092db'>**setMemory**</font></span>: 设置全局变量值
 
 - 参数:
 
@@ -104,7 +124,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**exit**</font>: 退出应用
+>##### <span id=exit><font color ='#0092db'>**exit**</font></span>: 退出应用
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -119,7 +139,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setToPasteboard**</font>: 拷贝到粘贴板
+>##### <span id=setToPasteboard><font color ='#0092db'>**setToPasteboard**</font></span>: 拷贝到粘贴板
 
 - 参数:
 
@@ -138,7 +158,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getFromPasteboard**</font>: 从粘贴板取出内容
+>##### <span id=getFromPasteboard><font color ='#0092db'>**getFromPasteboard**</font></span>: 从粘贴板取出内容
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
@@ -153,7 +173,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getSignatureInfo**</font>: 获取签名证书信息
+>##### <span id=getSignatureInfo><font color ='#0092db'>**getSignatureInfo**</font></span>: 获取签名证书信息
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -182,7 +202,7 @@ title: do_Global 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**install**</font>: 安装升级包
+>##### <span id=install><font color ='#0092db'>**install**</font></span>: 安装升级包
 
 - 参数:
 
@@ -204,7 +224,7 @@ title: do_Global 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**background**</font>: 通常是按手机的home键应用进到后台会触发这个事件
+>###### <span id=background><font color ='#e96900'>**background**</font></span>: 通常是按手机的home键应用进到后台会触发这个事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -218,7 +238,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**foreground**</font>: 应用从后台回到前台会触发这个事件
+>###### <span id=foreground><font color ='#e96900'>**foreground**</font></span>: 应用从后台回到前台会触发这个事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -232,7 +252,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**launch**</font>: 应用被启动会触发这个事件，三种情况 1. 正常点击应用图标启动 2. 被启动应用通过唤醒ID被其他应用唤醒启动 3. 通过点击推送过来的消息来启动 这个事件只能在程序入口脚本代码中订阅才有意义，比如app.lua ,app.js
+>###### <span id=launch><font color ='#e96900'>**launch**</font></span>: 应用被启动会触发这个事件，三种情况 1. 正常点击应用图标启动 2. 被启动应用通过唤醒ID被其他应用唤醒启动 3. 通过点击推送过来的消息来启动 这个事件只能在程序入口脚本代码中订阅才有意义，比如app.lua ,app.js
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 这是一个JSON格式的数据，包含type和data2个节点，格式如下{ 'type':'启动的类型', 'data':'启动被传递的数据' }其中type有4种情况1. 正常启动，该值为空；2. 被其他应用唤醒，该值为'wakeup' 3. 被推送消息启动，该值为'notification'；4. 被本地通知消息启动，该值为'locaLNotification'；而data有3种情况1. 正常启动：这个值为空 2. 被其他应用唤醒：这个值为第三方传递，可以咨询第三方 ，其中andoid需要和第三方约定，唤醒应用的第三方的原生代码里intent需要putStringExtra('data','必须要有值'); 如果第三方也是do平台的应用，可以通过External的openApp方法，方法里的data参数必须要有值3. 被推送消息启动：这个值的格式可以参考我们的推送类
@@ -246,7 +266,7 @@ title: do_Global 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**broadcast**</font>: android原生系统广播会触发这个事件，当然只有android系统才支持
+>###### <span id=broadcast><font color ='#e96900'>**broadcast**</font></span>: android原生系统广播会触发这个事件，当然只有android系统才支持
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回广播类型type和应用包名content，{type:'PACKAGE_ADDED',content:''}，其中type为PACKAGE_ADDED（安装应用）、PACKAGE_REMOVED（卸载应用）、0（开屏、点亮屏幕）、1（锁屏）、2（解锁）这几种枚举值之一

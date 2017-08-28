@@ -4,8 +4,16 @@ title: do_Alipay1 组件
 
 ### do_Alipay1 组件
 
- 支持平台: iOS,Android14
+ 支持平台: iOS,Android14 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Alipay1)
  调用手机支付宝客户端，完成支付功能，如果没装支付宝，则会调起H5的支付界面
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[pay](#pay)| 支付
+<font color ='#0092db'>异步方法</font>  |[auth](#auth)| 授权登录
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +21,7 @@ title: do_Alipay1 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**pay**</font>: 支付
+>##### <span id=pay><font color ='#0092db'>**pay**</font></span>: 支付
 
 - 参数:
 
@@ -32,7 +40,7 @@ title: do_Alipay1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**auth**</font>: 授权登录
+>##### <span id=auth><font color ='#0092db'>**auth**</font></span>: 授权登录
 
 - 参数:
 

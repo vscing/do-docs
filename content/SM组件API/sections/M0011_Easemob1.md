@@ -4,14 +4,54 @@ title: M0011_Easemob1 组件
 
 ### M0011_Easemob1 组件
 
- 支持平台: iOS7,Android16
+ 支持平台: iOS7,Android16 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/M0011_Easemob1)
  环信即时通讯IM
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[makeVoiceCall](#makeVoiceCall)| 拨打语音通话
+<font color ='#0092db'>同步方法</font>  |[logoff](#logoff)| 注销用户
+<font color ='#0092db'>同步方法</font>  |[createGroup](#createGroup)| 创建群组
+<font color ='#0092db'>同步方法</font>  |[fetchGroupInfo](#fetchGroupInfo)| 获取群组信息
+<font color ='#0092db'>同步方法</font>  |[inviteToGroup](#inviteToGroup)| 邀请用户加入群组
+<font color ='#0092db'>同步方法</font>  |[acceptInvitationFromGroup](#acceptInvitationFromGroup)| 接受入群邀请
+<font color ='#0092db'>同步方法</font>  |[declineInvitationFromGroup](#declineInvitationFromGroup)| 拒绝入群邀请
+<font color ='#0092db'>同步方法</font>  |[applyJoinToGroup](#applyJoinToGroup)| 发送进群申请
+<font color ='#0092db'>同步方法</font>  |[acceptJoinApplication](#acceptJoinApplication)| 同意加入群组的申请
+<font color ='#0092db'>同步方法</font>  |[declineJoinApplication](#declineJoinApplication)| 拒绝加入群组的申请
+<font color ='#0092db'>同步方法</font>  |[leaveGroup](#leaveGroup)| 主动退群
+<font color ='#0092db'>同步方法</font>  |[destroyGroup](#destroyGroup)| 解散群组
+<font color ='#0092db'>同步方法</font>  |[changeGroupSubject](#changeGroupSubject)| 修改群
+<font color ='#0092db'>同步方法</font>  |[removeOccupants](#removeOccupants)| 踢出群组成员
+<font color ='#0092db'>异步方法</font>  |[revokeMessage](#revokeMessage)| 撤回消息
+<font color ='#0092db'>异步方法</font>  |[login](#login)| IM用户登录
+<font color ='#0092db'>异步方法</font>  |[sendTextMessage](#sendTextMessage)| 发送文本消息
+<font color ='#0092db'>异步方法</font>  |[sendLocationMessage](#sendLocationMessage)| 发送位置消息
+<font color ='#0092db'>异步方法</font>  |[sendMediaMessage](#sendMediaMessage)| 发送多媒体消息
+<font color ='#0092db'>异步方法</font>  |[getAllConversations](#getAllConversations)| 获取所有会话
+<font color ='#0092db'>异步方法</font>  |[deleteConversation](#deleteConversation)| 删除会话
+<font color ='#0092db'>异步方法</font>  |[getConversation](#getConversation)| 获取单个会话
+<font color ='#0092db'>异步方法</font>  |[unreadMessagesCount](#unreadMessagesCount)| 获取会话未读消息数
+<font color ='#0092db'>异步方法</font>  |[getPublicGroups](#getPublicGroups)| 获取公开群组
+<font color ='#e96900'>事件</font>  |[messages](#messages)| 接收到新消息触发事件
+<font color ='#e96900'>事件</font>  |[joinGroup](#joinGroup)| 收到进群申请
+<font color ='#e96900'>事件</font>  |[leavedGroup](#leavedGroup)| 用户被动离开群组，群组被Owner解散或者用户被从群组中移除
+<font color ='#e96900'>事件</font>  |[groupInvitation](#groupInvitation)| 接收到邀请进群的申请
+<font color ='#e96900'>事件</font>  |[autoLogin](#autoLogin)| 若登录时设置自动登录，则下次进入自动登录时触发
+<font color ='#e96900'>事件</font>  |[connectionStateChanged](#connectionStateChanged)| 连接服务器的状态变化时会接收到该回调，有以下几种情况，会触发该事件：1. 登录成功后，手机无法上网时；2. 登录成功后，网络状态变化时
+<font color ='#e96900'>事件</font>  |[logout](#logout)| 被动退出登录：1. 正在登录的账号在另一台设备上登录；2. 正在登录的账号被从服务器端删除。主动调用退出方法不会触发
+<font color ='#e96900'>事件</font>  |[invitationAccpted](#invitationAccpted)| 进群邀请被接受
+<font color ='#e96900'>事件</font>  |[invitationDeclined](#invitationDeclined)| 进群邀请被拒绝
+<font color ='#e96900'>事件</font>  |[revoke](#revoke)| 对方撤回消息
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**makeVoiceCall**</font>: 拨打语音通话
+>##### <span id=makeVoiceCall><font color ='#0092db'>**makeVoiceCall**</font></span>: 拨打语音通话
 
 - 参数:
 
@@ -30,7 +70,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**logoff**</font>: 注销用户
+>##### <span id=logoff><font color ='#0092db'>**logoff**</font></span>: 注销用户
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -45,7 +85,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**createGroup**</font>: 创建群组
+>##### <span id=createGroup><font color ='#0092db'>**createGroup**</font></span>: 创建群组
 
 - 参数:
 
@@ -69,7 +109,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**fetchGroupInfo**</font>: 获取群组信息
+>##### <span id=fetchGroupInfo><font color ='#0092db'>**fetchGroupInfo**</font></span>: 获取群组信息
 
 - 参数:
 
@@ -89,7 +129,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**inviteToGroup**</font>: 邀请用户加入群组
+>##### <span id=inviteToGroup><font color ='#0092db'>**inviteToGroup**</font></span>: 邀请用户加入群组
 
 - 参数:
 
@@ -110,7 +150,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**acceptInvitationFromGroup**</font>: 接受入群邀请
+>##### <span id=acceptInvitationFromGroup><font color ='#0092db'>**acceptInvitationFromGroup**</font></span>: 接受入群邀请
 
 - 参数:
 
@@ -130,7 +170,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**declineInvitationFromGroup**</font>: 拒绝入群邀请
+>##### <span id=declineInvitationFromGroup><font color ='#0092db'>**declineInvitationFromGroup**</font></span>: 拒绝入群邀请
 
 - 参数:
 
@@ -150,7 +190,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**applyJoinToGroup**</font>: 发送进群申请
+>##### <span id=applyJoinToGroup><font color ='#0092db'>**applyJoinToGroup**</font></span>: 发送进群申请
 
 - 参数:
 
@@ -170,7 +210,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**acceptJoinApplication**</font>: 同意加入群组的申请
+>##### <span id=acceptJoinApplication><font color ='#0092db'>**acceptJoinApplication**</font></span>: 同意加入群组的申请
 
 - 参数:
 
@@ -191,7 +231,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**declineJoinApplication**</font>: 拒绝加入群组的申请
+>##### <span id=declineJoinApplication><font color ='#0092db'>**declineJoinApplication**</font></span>: 拒绝加入群组的申请
 
 - 参数:
 
@@ -212,7 +252,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**leaveGroup**</font>: 主动退群
+>##### <span id=leaveGroup><font color ='#0092db'>**leaveGroup**</font></span>: 主动退群
 
 - 参数:
 
@@ -231,7 +271,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**destroyGroup**</font>: 解散群组
+>##### <span id=destroyGroup><font color ='#0092db'>**destroyGroup**</font></span>: 解散群组
 
 - 参数:
 
@@ -250,7 +290,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**changeGroupSubject**</font>: 修改群
+>##### <span id=changeGroupSubject><font color ='#0092db'>**changeGroupSubject**</font></span>: 修改群
 
 - 参数:
 
@@ -271,7 +311,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeOccupants**</font>: 踢出群组成员
+>##### <span id=removeOccupants><font color ='#0092db'>**removeOccupants**</font></span>: 踢出群组成员
 
 - 参数:
 
@@ -294,7 +334,7 @@ title: M0011_Easemob1 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**revokeMessage**</font>: 撤回消息
+>##### <span id=revokeMessage><font color ='#0092db'>**revokeMessage**</font></span>: 撤回消息
 
 - 参数:
 
@@ -314,7 +354,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**login**</font>: IM用户登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: IM用户登录
 
 - 参数:
 
@@ -335,7 +375,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**sendTextMessage**</font>: 发送文本消息
+>##### <span id=sendTextMessage><font color ='#0092db'>**sendTextMessage**</font></span>: 发送文本消息
 
 - 参数:
 
@@ -356,7 +396,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**sendLocationMessage**</font>: 发送位置消息
+>##### <span id=sendLocationMessage><font color ='#0092db'>**sendLocationMessage**</font></span>: 发送位置消息
 
 - 参数:
 
@@ -379,7 +419,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**sendMediaMessage**</font>: 发送多媒体消息
+>##### <span id=sendMediaMessage><font color ='#0092db'>**sendMediaMessage**</font></span>: 发送多媒体消息
 
 - 参数:
 
@@ -402,7 +442,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getAllConversations**</font>: 获取所有会话
+>##### <span id=getAllConversations><font color ='#0092db'>**getAllConversations**</font></span>: 获取所有会话
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -417,7 +457,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**deleteConversation**</font>: 删除会话
+>##### <span id=deleteConversation><font color ='#0092db'>**deleteConversation**</font></span>: 删除会话
 
 - 参数:
 
@@ -436,7 +476,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getConversation**</font>: 获取单个会话
+>##### <span id=getConversation><font color ='#0092db'>**getConversation**</font></span>: 获取单个会话
 
 - 参数:
 
@@ -458,7 +498,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**unreadMessagesCount**</font>: 获取会话未读消息数
+>##### <span id=unreadMessagesCount><font color ='#0092db'>**unreadMessagesCount**</font></span>: 获取会话未读消息数
 
 - 参数:
 
@@ -478,7 +518,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getPublicGroups**</font>: 获取公开群组
+>##### <span id=getPublicGroups><font color ='#0092db'>**getPublicGroups**</font></span>: 获取公开群组
 
 - 参数:
 
@@ -501,7 +541,7 @@ title: M0011_Easemob1 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**messages**</font>: 接收到新消息触发事件
+>###### <span id=messages><font color ='#e96900'>**messages**</font></span>: 接收到新消息触发事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"chatType":"消息类型,包括Chat(单聊),GroupChat(群聊)","messageId": "消息的唯一标识符","conversationId": "所属会话的唯一标识符","from": "发送方","to": "接收方","timestamp": "时间戳","body":{"type":"消息体类型，包括，0.Text(文本),1.Image(图片),2.Location(位置),3.Voice(语音),4.Video(视频),5.File(文件)","text（type为0）": "消息内容","remotePath（type为1）": "大图remote路径","localPath（type为1）": "大图local路径","thumbnailRemotePath（type为1）": "小图remote路径","thumbnailLocalPath（type为1）": "小图local路径","latitude（type为2）": "纬度","longitude（type为2）": "经度","address（type为2）": "地址","remotePath（type为3）": "音频remote路径","localPath（type为3）": "音频local路径","fileLength（type为3）": "音频文件大小","duration（type为3）":"音频的时间长度","remotePath（type为4）": "视频remote路径","localPath（type为4）": "视频local路径","thumbnailRemotePath（type为4）": "第一帧缩略图remote路径","thumbnailLocalPath（type为4）": "第一帧缩略图local路径","fileLength（type为4）": "视频文件大小","duration（type为4）": "视频的时间长度","remotePath（type为5）": "文件remote路径","localPath（type为5）": "文件local路径","fileLength（type为5）": "文件文件大小"}}
@@ -515,7 +555,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**joinGroup**</font>: 收到进群申请
+>###### <span id=joinGroup><font color ='#e96900'>**joinGroup**</font></span>: 收到进群申请
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 只有用户申请进JoinNeedApproval公开群，Owner收到进群申请，才会触发该事件，{"groupId":"群组id","groupName":"群组名称","applicant":"申请者","reason":"申请者的附属信息"}
@@ -529,7 +569,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**leavedGroup**</font>: 用户被动离开群组，群组被Owner解散或者用户被从群组中移除
+>###### <span id=leavedGroup><font color ='#e96900'>**leavedGroup**</font></span>: 用户被动离开群组，群组被Owner解散或者用户被从群组中移除
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"groupId":"群组id","groupName":"群组名称","reason":"踢出原因"}
@@ -543,7 +583,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**groupInvitation**</font>: 接收到邀请进群的申请
+>###### <span id=groupInvitation><font color ='#e96900'>**groupInvitation**</font></span>: 接收到邀请进群的申请
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {"groupId":"群组id","inviter":"邀请者","reason":"邀请者的附属信息"}
@@ -557,7 +597,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**autoLogin**</font>: 若登录时设置自动登录，则下次进入自动登录时触发
+>###### <span id=autoLogin><font color ='#e96900'>**autoLogin**</font></span>: 若登录时设置自动登录，则下次进入自动登录时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -571,7 +611,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**connectionStateChanged**</font>: 连接服务器的状态变化时会接收到该回调，有以下几种情况，会触发该事件：1. 登录成功后，手机无法上网时；2. 登录成功后，网络状态变化时
+>###### <span id=connectionStateChanged><font color ='#e96900'>**connectionStateChanged**</font></span>: 连接服务器的状态变化时会接收到该回调，有以下几种情况，会触发该事件：1. 登录成功后，手机无法上网时；2. 登录成功后，网络状态变化时
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {state:0 登录成功后，手机无法上网时 | 1 登录成功后，网络状态变化时}
@@ -585,7 +625,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**logout**</font>: 被动退出登录：1. 正在登录的账号在另一台设备上登录；2. 正在登录的账号被从服务器端删除。主动调用退出方法不会触发
+>###### <span id=logout><font color ='#e96900'>**logout**</font></span>: 被动退出登录：1. 正在登录的账号在另一台设备上登录；2. 正在登录的账号被从服务器端删除。主动调用退出方法不会触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {state:0 显示帐号已经被移除 | 1 显示帐号在其他设备登陆}
@@ -599,7 +639,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**invitationAccpted**</font>: 进群邀请被接受
+>###### <span id=invitationAccpted><font color ='#e96900'>**invitationAccpted**</font></span>: 进群邀请被接受
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {groupId:当前邀请群组,invitee:被邀请人,reason:接受原因}
@@ -613,7 +653,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**invitationDeclined**</font>: 进群邀请被拒绝
+>###### <span id=invitationDeclined><font color ='#e96900'>**invitationDeclined**</font></span>: 进群邀请被拒绝
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {groupId:当前邀请群组,invitee:被邀请人,reason:拒绝原因}
@@ -627,7 +667,7 @@ title: M0011_Easemob1 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**revoke**</font>: 对方撤回消息
+>###### <span id=revoke><font color ='#e96900'>**revoke**</font></span>: 对方撤回消息
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 对方撤回消息时会触发该事件

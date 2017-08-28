@@ -4,14 +4,28 @@ title: do_SQLite 组件
 
 ### do_SQLite 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_SQLite)
  提供SQLite3数据库的访问接口
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[open](#open)| 打开数据库
+<font color ='#0092db'>同步方法</font>  |[close](#close)| 关闭数据库
+<font color ='#0092db'>同步方法</font>  |[executeSync](#executeSync)| 同步执行SQL语句
+<font color ='#0092db'>同步方法</font>  |[executeSync1](#executeSync1)| 同步执行SQL语句
+<font color ='#0092db'>同步方法</font>  |[querySync](#querySync)| 执行SQL查询语句
+<font color ='#0092db'>异步方法</font>  |[execute](#execute)| 异步执行SQL语句
+<font color ='#0092db'>异步方法</font>  |[execute1](#execute1)| 异步执行SQL语句
+<font color ='#0092db'>异步方法</font>  |[query](#query)| 执行SQL查询语句
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**open**</font>: 打开数据库
+>##### <span id=open><font color ='#0092db'>**open**</font></span>: 打开数据库
 
 - 参数:
 
@@ -30,7 +44,7 @@ title: do_SQLite 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**close**</font>: 关闭数据库
+>##### <span id=close><font color ='#0092db'>**close**</font></span>: 关闭数据库
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
@@ -45,7 +59,7 @@ title: do_SQLite 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**executeSync**</font>: 同步执行SQL语句
+>##### <span id=executeSync><font color ='#0092db'>**executeSync**</font></span>: 同步执行SQL语句
 
 - 参数:
 
@@ -65,7 +79,7 @@ title: do_SQLite 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**executeSync1**</font>: 同步执行SQL语句
+>##### <span id=executeSync1><font color ='#0092db'>**executeSync1**</font></span>: 同步执行SQL语句
 
 - 参数:
 
@@ -85,7 +99,7 @@ title: do_SQLite 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**querySync**</font>: 执行SQL查询语句
+>##### <span id=querySync><font color ='#0092db'>**querySync**</font></span>: 执行SQL查询语句
 
 - 参数:
 
@@ -107,7 +121,7 @@ title: do_SQLite 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**execute**</font>: 异步执行SQL语句
+>##### <span id=execute><font color ='#0092db'>**execute**</font></span>: 异步执行SQL语句
 
 - 参数:
 
@@ -127,7 +141,7 @@ title: do_SQLite 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**execute1**</font>: 异步执行SQL语句
+>##### <span id=execute1><font color ='#0092db'>**execute1**</font></span>: 异步执行SQL语句
 
 - 参数:
 
@@ -147,7 +161,7 @@ title: do_SQLite 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**query**</font>: 执行SQL查询语句
+>##### <span id=query><font color ='#0092db'>**query**</font></span>: 执行SQL查询语句
 
 - 参数:
 

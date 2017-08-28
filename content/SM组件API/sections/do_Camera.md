@@ -4,9 +4,16 @@ title: do_Camera 组件
 
 ### do_Camera 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Camera)
  启动系统的相机拍照获取照片
 
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[capture](#capture)| 拍照、获取照片
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -14,7 +21,7 @@ title: do_Camera 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**capture**</font>: 拍照、获取照片
+>##### <span id=capture><font color ='#0092db'>**capture**</font></span>: 拍照、获取照片
 
 - 参数:
 

@@ -4,14 +4,21 @@ title: LePlayerLive 组件
 
 ### LePlayerLive 组件
 
- 支持平台: iOS7,Android4.0
+ 支持平台: iOS7,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/LePlayerLive)
  
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[connActionLive](#connActionLive)| 直播活动
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**connActionLive**</font>: 直播活动
+>##### <span id=connActionLive><font color ='#0092db'>**connActionLive**</font></span>: 直播活动
 
 - 参数:
 

@@ -4,12 +4,31 @@ title: do_VideoView 组件
 
 ### do_VideoView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_VideoView)
  一个简单的播放视频的UI组件，能支持播放本地和网络视频，可支持mp4格式，可以通过点击全屏按钮切换到全屏播放
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[path](#path)| 播放文件源路径
+<font color ='#0092db'>同步方法</font>  |[play](#play)| 开始播放
+<font color ='#0092db'>同步方法</font>  |[pause](#pause)| 暂停播放
+<font color ='#0092db'>同步方法</font>  |[resume](#resume)| 继续播放
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 停止播放
+<font color ='#0092db'>同步方法</font>  |[isPlaying](#isPlaying)| 当前视频是否正在播放
+<font color ='#0092db'>同步方法</font>  |[getCurrentPosition](#getCurrentPosition)| 视频当前播放的时间
+<font color ='#0092db'>同步方法</font>  |[expand](#expand)| 全屏播放
+<font color ='#0092db'>同步方法</font>  |[setControlVisible](#setControlVisible)| 设置控制按钮是否显示
+<font color ='#0092db'>异步方法</font>  |[getFrameAsImage](#getFrameAsImage)| 保存为图片
+<font color ='#0092db'>异步方法</font>  |[getFrameAsBitmap](#getFrameAsBitmap)| 保存为Bitmap
+<font color ='#e96900'>事件</font>  |[finished](#finished)| 视频播放完后触发
+<font color ='#e96900'>事件</font>  |[error](#error)| 视频播放异常时触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**path**</font>: 播放文件源路径
+>###### <span id=path><font color ='#42b983'>**path**</font></span>: 播放文件源路径
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
@@ -17,7 +36,7 @@ title: do_VideoView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**play**</font>: 开始播放
+>##### <span id=play><font color ='#0092db'>**play**</font></span>: 开始播放
 
 - 参数:
 
@@ -36,7 +55,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**pause**</font>: 暂停播放
+>##### <span id=pause><font color ='#0092db'>**pause**</font></span>: 暂停播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -51,7 +70,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**resume**</font>: 继续播放
+>##### <span id=resume><font color ='#0092db'>**resume**</font></span>: 继续播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -66,7 +85,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止播放
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -81,7 +100,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**isPlaying**</font>: 当前视频是否正在播放
+>##### <span id=isPlaying><font color ='#0092db'>**isPlaying**</font></span>: 当前视频是否正在播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
@@ -96,7 +115,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getCurrentPosition**</font>: 视频当前播放的时间
+>##### <span id=getCurrentPosition><font color ='#0092db'>**getCurrentPosition**</font></span>: 视频当前播放的时间
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
@@ -111,7 +130,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**expand**</font>: 全屏播放
+>##### <span id=expand><font color ='#0092db'>**expand**</font></span>: 全屏播放
 
 - 参数:
 
@@ -130,7 +149,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setControlVisible**</font>: 设置控制按钮是否显示
+>##### <span id=setControlVisible><font color ='#0092db'>**setControlVisible**</font></span>: 设置控制按钮是否显示
 
 - 参数:
 
@@ -151,7 +170,7 @@ title: do_VideoView 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getFrameAsImage**</font>: 保存为图片
+>##### <span id=getFrameAsImage><font color ='#0092db'>**getFrameAsImage**</font></span>: 保存为图片
 
 - 参数:
 
@@ -173,7 +192,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getFrameAsBitmap**</font>: 保存为Bitmap
+>##### <span id=getFrameAsBitmap><font color ='#0092db'>**getFrameAsBitmap**</font></span>: 保存为Bitmap
 
 - 参数:
 
@@ -196,7 +215,7 @@ title: do_VideoView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**finished**</font>: 视频播放完后触发
+>###### <span id=finished><font color ='#e96900'>**finished**</font></span>: 视频播放完后触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -210,7 +229,7 @@ title: do_VideoView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**error**</font>: 视频播放异常时触发
+>###### <span id=error><font color ='#e96900'>**error**</font></span>: 视频播放异常时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 

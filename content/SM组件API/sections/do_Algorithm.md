@@ -4,14 +4,31 @@ title: do_Algorithm 组件
 
 ### do_Algorithm 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Algorithm)
  包含一些常用的算法实现，包括md5算法、3DES算法、sha1安全哈希算法和Base64算法
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[base64Sync](#base64Sync)| Base64算法
+<font color ='#0092db'>同步方法</font>  |[des3Sync](#des3Sync)| 3DES算法
+<font color ='#0092db'>同步方法</font>  |[md5Sync](#md5Sync)| md5算法
+<font color ='#0092db'>同步方法</font>  |[sha1Sync](#sha1Sync)| 安全哈希算法
+<font color ='#0092db'>异步方法</font>  |[md5](#md5)| md5算法
+<font color ='#0092db'>异步方法</font>  |[des3](#des3)| 3DES算法
+<font color ='#0092db'>异步方法</font>  |[sha1](#sha1)| 安全哈希算法
+<font color ='#0092db'>异步方法</font>  |[base64](#base64)| Base64算法
+<font color ='#0092db'>异步方法</font>  |[hex2Str](#hex2Str)| 十六进制转字符串
+<font color ='#0092db'>异步方法</font>  |[hex2Binary](#hex2Binary)| 十六进制转二进制
+<font color ='#0092db'>异步方法</font>  |[xml2Json](#xml2Json)| xml转Json
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**base64Sync**</font>: Base64算法
+>##### <span id=base64Sync><font color ='#0092db'>**base64Sync**</font></span>: Base64算法
 
 - 参数:
 
@@ -31,7 +48,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**des3Sync**</font>: 3DES算法
+>##### <span id=des3Sync><font color ='#0092db'>**des3Sync**</font></span>: 3DES算法
 
 - 参数:
 
@@ -52,7 +69,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**md5Sync**</font>: md5算法
+>##### <span id=md5Sync><font color ='#0092db'>**md5Sync**</font></span>: md5算法
 
 - 参数:
 
@@ -71,7 +88,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**sha1Sync**</font>: 安全哈希算法
+>##### <span id=sha1Sync><font color ='#0092db'>**sha1Sync**</font></span>: 安全哈希算法
 
 - 参数:
 
@@ -93,7 +110,7 @@ title: do_Algorithm 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**md5**</font>: md5算法
+>##### <span id=md5><font color ='#0092db'>**md5**</font></span>: md5算法
 
 - 参数:
 
@@ -113,7 +130,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**des3**</font>: 3DES算法
+>##### <span id=des3><font color ='#0092db'>**des3**</font></span>: 3DES算法
 
 - 参数:
 
@@ -134,7 +151,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**sha1**</font>: 安全哈希算法
+>##### <span id=sha1><font color ='#0092db'>**sha1**</font></span>: 安全哈希算法
 
 - 参数:
 
@@ -154,7 +171,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**base64**</font>: Base64算法
+>##### <span id=base64><font color ='#0092db'>**base64**</font></span>: Base64算法
 
 - 参数:
 
@@ -175,7 +192,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**hex2Str**</font>: 十六进制转字符串
+>##### <span id=hex2Str><font color ='#0092db'>**hex2Str**</font></span>: 十六进制转字符串
 
 - 参数:
 
@@ -195,7 +212,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**hex2Binary**</font>: 十六进制转二进制
+>##### <span id=hex2Binary><font color ='#0092db'>**hex2Binary**</font></span>: 十六进制转二进制
 
 - 参数:
 
@@ -215,7 +232,7 @@ title: do_Algorithm 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**xml2Json**</font>: xml转Json
+>##### <span id=xml2Json><font color ='#0092db'>**xml2Json**</font></span>: xml转Json
 
 - 参数:
 

@@ -4,14 +4,29 @@ title: do_BaiduLocation 组件
 
 ### do_BaiduLocation 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduLocation)
  利用设备当前的GPS信息（GPS定位），基站信息（基站定位）和Wi-Fi信息（Wi-Fi定位）完成定位，根据设备当前的实际情况（如是否开启GPS，是否连接网络，是否扫描到Wi-Fi信息等）进行定位
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getDistance](#getDistance)| 获取实际距离
+<font color ='#0092db'>同步方法</font>  |[start](#start)| 开启定位
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 停止定位
+<font color ='#0092db'>同步方法</font>  |[startScan](#startScan)| 开启定位扫描
+<font color ='#0092db'>同步方法</font>  |[stopScan](#stopScan)| 停止定位扫描
+<font color ='#0092db'>异步方法</font>  |[locate](#locate)| 定位
+<font color ='#0092db'>异步方法</font>  |[geoCode](#geoCode)| 正向地图编码
+<font color ='#0092db'>异步方法</font>  |[reverseGeoCode](#reverseGeoCode)| 反向地图编码
+<font color ='#e96900'>事件</font>  |[result](#result)| 接收到定位/更新定位时候触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getDistance**</font>: 获取实际距离
+>##### <span id=getDistance><font color ='#0092db'>**getDistance**</font></span>: 获取实际距离
 
 - 参数:
 
@@ -31,7 +46,7 @@ title: do_BaiduLocation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**start**</font>: 开启定位
+>##### <span id=start><font color ='#0092db'>**start**</font></span>: 开启定位
 
 - 参数:
 
@@ -51,7 +66,7 @@ title: do_BaiduLocation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止定位
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止定位
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -66,7 +81,7 @@ title: do_BaiduLocation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startScan**</font>: 开启定位扫描
+>##### <span id=startScan><font color ='#0092db'>**startScan**</font></span>: 开启定位扫描
 
 - 参数:
 
@@ -86,7 +101,7 @@ title: do_BaiduLocation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stopScan**</font>: 停止定位扫描
+>##### <span id=stopScan><font color ='#0092db'>**stopScan**</font></span>: 停止定位扫描
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -103,7 +118,7 @@ title: do_BaiduLocation 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**locate**</font>: 定位
+>##### <span id=locate><font color ='#0092db'>**locate**</font></span>: 定位
 
 - 参数:
 
@@ -122,7 +137,7 @@ title: do_BaiduLocation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**geoCode**</font>: 正向地图编码
+>##### <span id=geoCode><font color ='#0092db'>**geoCode**</font></span>: 正向地图编码
 
 - 参数:
 
@@ -142,7 +157,7 @@ title: do_BaiduLocation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**reverseGeoCode**</font>: 反向地图编码
+>##### <span id=reverseGeoCode><font color ='#0092db'>**reverseGeoCode**</font></span>: 反向地图编码
 
 - 参数:
 
@@ -165,7 +180,7 @@ title: do_BaiduLocation 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**result**</font>: 接收到定位/更新定位时候触发
+>###### <span id=result><font color ='#e96900'>**result**</font></span>: 接收到定位/更新定位时候触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {latitude:'纬度​'，longitude:'经度', address:'北京市海淀区'}

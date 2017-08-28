@@ -4,24 +4,37 @@ title: do_UdpSocket 组件
 
 ### do_UdpSocket 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_UdpSocket)
  通过Socket建立网络连接，遵循UDP协议，进行通信
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[localPort](#localPort)| 本地端口号
+<font color ='#42b983'>属性</font>  |[serverIP](#serverIP)| 服务端地址
+<font color ='#42b983'>属性</font>  |[serverPort](#serverPort)| 服务端端口号
+<font color ='#0092db'>同步方法</font>  |[open](#open)| 打开连接
+<font color ='#0092db'>同步方法</font>  |[close](#close)| 关闭连接
+<font color ='#0092db'>异步方法</font>  |[send](#send)| 发送数据
+<font color ='#e96900'>事件</font>  |[receive](#receive)| 接收数据
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**localPort**</font>: 本地端口号
+>###### <span id=localPort><font color ='#42b983'>**localPort**</font></span>: 本地端口号
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 8888
 - 说明 : 跟服务端交互使用,服务端发送消息会根据客户端的ip和端口号发送,客户端根据端口号生成socket实例
 
->###### <font color ='#42b983'>**serverIP**</font>: 服务端地址
+>###### <span id=serverIP><font color ='#42b983'>**serverIP**</font></span>: 服务端地址
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : 
 
->###### <font color ='#42b983'>**serverPort**</font>: 服务端端口号
+>###### <span id=serverPort><font color ='#42b983'>**serverPort**</font></span>: 服务端端口号
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
@@ -29,7 +42,7 @@ title: do_UdpSocket 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**open**</font>: 打开连接
+>##### <span id=open><font color ='#0092db'>**open**</font></span>: 打开连接
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -44,7 +57,7 @@ title: do_UdpSocket 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**close**</font>: 关闭连接
+>##### <span id=close><font color ='#0092db'>**close**</font></span>: 关闭连接
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -61,7 +74,7 @@ title: do_UdpSocket 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**send**</font>: 发送数据
+>##### <span id=send><font color ='#0092db'>**send**</font></span>: 发送数据
 
 - 参数:
 
@@ -84,7 +97,7 @@ title: do_UdpSocket 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**receive**</font>: 接收数据
+>###### <span id=receive><font color ='#e96900'>**receive**</font></span>: 接收数据
 
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 接收到的16进制数据

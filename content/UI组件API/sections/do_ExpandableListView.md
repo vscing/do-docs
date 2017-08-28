@@ -4,42 +4,65 @@ title: do_ExpandableListView 组件
 
 ### do_ExpandableListView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_ExpandableListView)
  一个可分组可展开的List视图
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[allExpanded](#allExpanded)| 是否全部展开
+<font color ='#42b983'>属性</font>  |[canScrollToTop](#canScrollToTop)| 是否滚动到屏幕顶部
+<font color ='#42b983'>属性</font>  |[groupTemplate](#groupTemplate)| 组模板UI文件
+<font color ='#42b983'>属性</font>  |[childTemplate](#childTemplate)| 子项模板UI文件
+<font color ='#42b983'>属性</font>  |[selectedColor](#selectedColor)| 按下cell显示的背景色
+<font color ='#42b983'>属性</font>  |[isShowbar](#isShowbar)| 是否支持显示滚动条效果
+<font color ='#0092db'>同步方法</font>  |[bindItems](#bindItems)| 绑定item的数据
+<font color ='#0092db'>同步方法</font>  |[refreshItems](#refreshItems)| 刷新item数据
+<font color ='#0092db'>同步方法</font>  |[refreshSpecifiedItems](#refreshSpecifiedItems)| 刷新指定组数据
+<font color ='#0092db'>同步方法</font>  |[expandGroup](#expandGroup)| 展开组
+<font color ='#0092db'>同步方法</font>  |[collapseGroup](#collapseGroup)| 收缩组
+<font color ='#0092db'>同步方法</font>  |[scrollToPosition](#scrollToPosition)| 平滑地滚动到特定位置
+<font color ='#e96900'>事件</font>  |[groupTouch](#groupTouch)| 点击group中的cell触发
+<font color ='#e96900'>事件</font>  |[childTouch](#childTouch)| 点击child中的cell触发
+<font color ='#e96900'>事件</font>  |[groupExpand](#groupExpand)| group展开触发
+<font color ='#e96900'>事件</font>  |[groupCollapse](#groupCollapse)| group收缩触发
+<font color ='#e96900'>事件</font>  |[scroll](#scroll)| 滑动事件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**allExpanded**</font>: 是否全部展开
+>###### <span id=allExpanded><font color ='#42b983'>**allExpanded**</font></span>: 是否全部展开
 
 - 数据类型 : <font color ='#808000'>**Boolean**</font>
 - 默认值 : false
 - 说明 : 控制组件初始化时所有group是否全部展开
 
->###### <font color ='#42b983'>**canScrollToTop**</font>: 是否滚动到屏幕顶部
+>###### <span id=canScrollToTop><font color ='#42b983'>**canScrollToTop**</font></span>: 是否滚动到屏幕顶部
 
 - 数据类型 : <font color ='#808000'>**Boolean**</font>
 - 默认值 : true
 - 说明 : 属性设置成true时可以通过点击手机状态栏返回内容的顶部；仅支持iOS平台
 
->###### <font color ='#42b983'>**groupTemplate**</font>: 组模板UI文件
+>###### <span id=groupTemplate><font color ='#42b983'>**groupTemplate**</font></span>: 组模板UI文件
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : group对应的模板UI文件,如： source://view/group.ui，支持多模版
 
->###### <font color ='#42b983'>**childTemplate**</font>: 子项模板UI文件
+>###### <span id=childTemplate><font color ='#42b983'>**childTemplate**</font></span>: 子项模板UI文件
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : child对应的模板UI文件,如： source://view/child.ui，支持多模版
 
->###### <font color ='#42b983'>**selectedColor**</font>: 按下cell显示的背景色
+>###### <span id=selectedColor><font color ='#42b983'>**selectedColor**</font></span>: 按下cell显示的背景色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : ffffff00
 - 说明 : 
 
->###### <font color ='#42b983'>**isShowbar**</font>: 是否支持显示滚动条效果
+>###### <span id=isShowbar><font color ='#42b983'>**isShowbar**</font></span>: 是否支持显示滚动条效果
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : true
@@ -47,7 +70,7 @@ title: do_ExpandableListView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**bindItems**</font>: 绑定item的数据
+>##### <span id=bindItems><font color ='#0092db'>**bindItems**</font></span>: 绑定item的数据
 
 - 参数:
 
@@ -67,7 +90,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**refreshItems**</font>: 刷新item数据
+>##### <span id=refreshItems><font color ='#0092db'>**refreshItems**</font></span>: 刷新item数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -82,7 +105,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**refreshSpecifiedItems**</font>: 刷新指定组数据
+>##### <span id=refreshSpecifiedItems><font color ='#0092db'>**refreshSpecifiedItems**</font></span>: 刷新指定组数据
 
 - 参数:
 
@@ -101,7 +124,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**expandGroup**</font>: 展开组
+>##### <span id=expandGroup><font color ='#0092db'>**expandGroup**</font></span>: 展开组
 
 - 参数:
 
@@ -120,7 +143,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**collapseGroup**</font>: 收缩组
+>##### <span id=collapseGroup><font color ='#0092db'>**collapseGroup**</font></span>: 收缩组
 
 - 参数:
 
@@ -139,7 +162,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**scrollToPosition**</font>: 平滑地滚动到特定位置
+>##### <span id=scrollToPosition><font color ='#0092db'>**scrollToPosition**</font></span>: 平滑地滚动到特定位置
 
 - 参数:
 
@@ -165,7 +188,7 @@ title: do_ExpandableListView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**groupTouch**</font>: 点击group中的cell触发
+>###### <span id=groupTouch><font color ='#e96900'>**groupTouch**</font></span>: 点击group中的cell触发
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前cell的索引值
@@ -179,7 +202,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**childTouch**</font>: 点击child中的cell触发
+>###### <span id=childTouch><font color ='#e96900'>**childTouch**</font></span>: 点击child中的cell触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前group的索引值和cell的索引值,如：{'groupIndex':1,'childIndex':5}
@@ -193,7 +216,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**groupExpand**</font>: group展开触发
+>###### <span id=groupExpand><font color ='#e96900'>**groupExpand**</font></span>: group展开触发
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前group中cell的索引值
@@ -207,7 +230,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**groupCollapse**</font>: group收缩触发
+>###### <span id=groupCollapse><font color ='#e96900'>**groupCollapse**</font></span>: group收缩触发
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 当前group中cell的索引值
@@ -221,7 +244,7 @@ title: do_ExpandableListView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**scroll**</font>: 滑动事件
+>###### <span id=scroll><font color ='#e96900'>**scroll**</font></span>: 滑动事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: Android平台返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置；iOS和windows平台返回offset表示滚动的位移

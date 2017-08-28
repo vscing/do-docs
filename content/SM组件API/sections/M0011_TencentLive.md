@@ -4,14 +4,27 @@ title: M0011_TencentLive 组件
 
 ### M0011_TencentLive 组件
 
- 支持平台: iOS,Android
+ 支持平台: iOS,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/M0011_TencentLive)
  必须配合服务端使用，服务端文档详见https://www.qcloud.com/document/product/454/6808#2..E4.BF.AE.E6.94.B9.E5.9C.A8.E7.BA.BF.E7.8A.B6.E6.80.81，前端数据以put方式发送
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[startPlay](#startPlay)| 进入直播
+<font color ='#0092db'>同步方法</font>  |[startPush](#startPush)| 开始直播
+<font color ='#0092db'>异步方法</font>  |[uploadFrontcover](#uploadFrontcover)| 上传封面
+<font color ='#0092db'>异步方法</font>  |[fetchList](#fetchList)| 拉取房间列表
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 登录
+<font color ='#e96900'>事件</font>  |[C2P](#C2P)| 组件触发事件跳到指定的业务逻辑界面
+<font color ='#e96900'>事件</font>  |[ShareEvent](#ShareEvent)| 组件触发事件跳到指定的业务逻辑界面
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**startPlay**</font>: 进入直播
+>##### <span id=startPlay><font color ='#0092db'>**startPlay**</font></span>: 进入直播
 
 - 参数:
 
@@ -33,7 +46,7 @@ title: M0011_TencentLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startPush**</font>: 开始直播
+>##### <span id=startPush><font color ='#0092db'>**startPush**</font></span>: 开始直播
 
 - 参数:
 
@@ -56,7 +69,7 @@ title: M0011_TencentLive 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**uploadFrontcover**</font>: 上传封面
+>##### <span id=uploadFrontcover><font color ='#0092db'>**uploadFrontcover**</font></span>: 上传封面
 
 - 参数:
 
@@ -76,7 +89,7 @@ title: M0011_TencentLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**fetchList**</font>: 拉取房间列表
+>##### <span id=fetchList><font color ='#0092db'>**fetchList**</font></span>: 拉取房间列表
 
 - 参数:
 
@@ -98,7 +111,7 @@ title: M0011_TencentLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**login**</font>: 登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 登录
 
 - 参数:
 
@@ -125,7 +138,7 @@ title: M0011_TencentLive 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**C2P**</font>: 组件触发事件跳到指定的业务逻辑界面
+>###### <span id=C2P><font color ='#e96900'>**C2P**</font></span>: 组件触发事件跳到指定的业务逻辑界面
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回参数类型{type:''},type=1标示充值,type=2标示登陆
@@ -139,7 +152,7 @@ title: M0011_TencentLive 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**ShareEvent**</font>: 组件触发事件跳到指定的业务逻辑界面
+>###### <span id=ShareEvent><font color ='#e96900'>**ShareEvent**</font></span>: 组件触发事件跳到指定的业务逻辑界面
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {content: '内容',image: '封面地址',scene: '0表示分享给微信好友;1表示分享到朋友圈',title: '标题',url: '直播地址'}

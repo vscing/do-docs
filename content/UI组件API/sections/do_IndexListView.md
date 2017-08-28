@@ -4,24 +4,37 @@ title: do_IndexListView 组件
 
 ### do_IndexListView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_IndexListView)
  IndexListView实际上是一个界面右边带索引的ListView，可以绑定一个HashData数据源，按下滑动右边的索引，可以快速定位到该索引下的首条数据，主要应用于通讯录，歌曲播放器等界面
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[indexBarColors](#indexBarColors)| 索引颜色
+<font color ='#42b983'>属性</font>  |[selectedColor](#selectedColor)| Cell选中的背景颜色
+<font color ='#42b983'>属性</font>  |[templates](#templates)| Cell对应的模板UI文件组
+<font color ='#0092db'>同步方法</font>  |[bindItems](#bindItems)| 绑定item的数据
+<font color ='#0092db'>同步方法</font>  |[refreshItems](#refreshItems)| 刷新item数据
+<font color ='#e96900'>事件</font>  |[touch](#touch)| 点击cell触发
+<font color ='#e96900'>事件</font>  |[longTouch](#longTouch)| 长按cell触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**indexBarColors**</font>: 索引颜色
+>###### <span id=indexBarColors><font color ='#42b983'>**indexBarColors**</font></span>: 索引颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 00000000,C0C0C0,000000,00000000
 - 说明 : 包含四个颜色，分别是索引列表背景色、按下索引背景色、索引文本颜色、滑块颜色，中间用逗号隔开，仅android平台支持
 
->###### <font color ='#42b983'>**selectedColor**</font>: Cell选中的背景颜色
+>###### <span id=selectedColor><font color ='#42b983'>**selectedColor**</font></span>: Cell选中的背景颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : ffffff00
 - 说明 : 设置IndexListView 的按下选择颜色，如果在模板中设置rootLayout背景颜色，将不起作用
 
->###### <font color ='#42b983'>**templates**</font>: Cell对应的模板UI文件组
+>###### <span id=templates><font color ='#42b983'>**templates**</font></span>: Cell对应的模板UI文件组
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
@@ -29,7 +42,7 @@ title: do_IndexListView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**bindItems**</font>: 绑定item的数据
+>##### <span id=bindItems><font color ='#0092db'>**bindItems**</font></span>: 绑定item的数据
 
 - 参数:
 
@@ -49,7 +62,7 @@ title: do_IndexListView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**refreshItems**</font>: 刷新item数据
+>##### <span id=refreshItems><font color ='#0092db'>**refreshItems**</font></span>: 刷新item数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -69,7 +82,7 @@ title: do_IndexListView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**touch**</font>: 点击cell触发
+>###### <span id=touch><font color ='#e96900'>**touch**</font></span>: 点击cell触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']
@@ -83,7 +96,7 @@ title: do_IndexListView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**longTouch**</font>: 长按cell触发
+>###### <span id=longTouch><font color ='#e96900'>**longTouch**</font></span>: 长按cell触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']

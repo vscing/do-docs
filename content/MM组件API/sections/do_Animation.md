@@ -4,12 +4,23 @@ title: do_Animation 组件
 
 ### do_Animation 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Animation)
  所有UI组件缩放，移动，透明度变化，旋转都支持动画效果。这个类就是用来定义动画所有属性值的集合，作为UI的animate方法的参数
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[fillAfter](#fillAfter)| 是否保持动画的最后一帧在View上面
+<font color ='#0092db'>同步方法</font>  |[alpha](#alpha)| 透明度动画
+<font color ='#0092db'>同步方法</font>  |[transfer](#transfer)| 位移动画
+<font color ='#0092db'>同步方法</font>  |[scale](#scale)| 缩放动画
+<font color ='#0092db'>同步方法</font>  |[rotate](#rotate)| 旋转动画
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**fillAfter**</font>: 是否保持动画的最后一帧在View上面
+>###### <span id=fillAfter><font color ='#42b983'>**fillAfter**</font></span>: 是否保持动画的最后一帧在View上面
 
 - 数据类型 : <font color ='#808000'>**Boolean**</font>
 - 默认值 : 
@@ -17,7 +28,7 @@ title: do_Animation 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**alpha**</font>: 透明度动画
+>##### <span id=alpha><font color ='#0092db'>**alpha**</font></span>: 透明度动画
 
 - 参数:
 
@@ -48,7 +59,7 @@ title: do_Animation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**transfer**</font>: 位移动画
+>##### <span id=transfer><font color ='#0092db'>**transfer**</font></span>: 位移动画
 
 - 参数:
 
@@ -79,7 +90,7 @@ title: do_Animation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**scale**</font>: 缩放动画
+>##### <span id=scale><font color ='#0092db'>**scale**</font></span>: 缩放动画
 
 - 参数:
 
@@ -114,7 +125,7 @@ title: do_Animation 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**rotate**</font>: 旋转动画
+>##### <span id=rotate><font color ='#0092db'>**rotate**</font></span>: 旋转动画
 
 - 参数:
 

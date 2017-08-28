@@ -4,14 +4,25 @@ title: do_DataCache 组件
 
 ### do_DataCache 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_DataCache)
  缓存一些数据到本地文件，即使程序退出再进入还能获取到值，要确保设置的value值不要过大
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[saveData](#saveData)| 写数据
+<font color ='#0092db'>同步方法</font>  |[hasData](#hasData)| 是否有数据
+<font color ='#0092db'>同步方法</font>  |[removeData](#removeData)| 删除数据
+<font color ='#0092db'>同步方法</font>  |[loadData](#loadData)| 读数据
+<font color ='#0092db'>同步方法</font>  |[removeAll](#removeAll)| 删除全部数据
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**saveData**</font>: 写数据
+>##### <span id=saveData><font color ='#0092db'>**saveData**</font></span>: 写数据
 
 - 参数:
 
@@ -31,7 +42,7 @@ title: do_DataCache 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**hasData**</font>: 是否有数据
+>##### <span id=hasData><font color ='#0092db'>**hasData**</font></span>: 是否有数据
 
 - 参数:
 
@@ -50,7 +61,7 @@ title: do_DataCache 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeData**</font>: 删除数据
+>##### <span id=removeData><font color ='#0092db'>**removeData**</font></span>: 删除数据
 
 - 参数:
 
@@ -69,7 +80,7 @@ title: do_DataCache 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**loadData**</font>: 读数据
+>##### <span id=loadData><font color ='#0092db'>**loadData**</font></span>: 读数据
 
 - 参数:
 
@@ -88,7 +99,7 @@ title: do_DataCache 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeAll**</font>: 删除全部数据
+>##### <span id=removeAll><font color ='#0092db'>**removeAll**</font></span>: 删除全部数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>

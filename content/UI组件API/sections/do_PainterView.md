@@ -4,18 +4,30 @@ title: do_PainterView 组件
 
 ### do_PainterView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_PainterView)
  手势滑动时会在view中留下移动痕迹
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[brushWidth](#brushWidth)| 画笔宽度
+<font color ='#42b983'>属性</font>  |[brushColor](#brushColor)| 画笔颜色
+<font color ='#0092db'>同步方法</font>  |[undo](#undo)| 回退操作
+<font color ='#0092db'>同步方法</font>  |[clear](#clear)| 清空画板
+<font color ='#0092db'>异步方法</font>  |[saveAsImage](#saveAsImage)| 保存为图片
+<font color ='#0092db'>异步方法</font>  |[saveAsBitmap](#saveAsBitmap)| 保存为Bitmap
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**brushWidth**</font>: 画笔宽度
+>###### <span id=brushWidth><font color ='#42b983'>**brushWidth**</font></span>: 画笔宽度
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 3
 - 说明 : 宽度最小为1，表示1像素宽度
 
->###### <font color ='#42b983'>**brushColor**</font>: 画笔颜色
+>###### <span id=brushColor><font color ='#42b983'>**brushColor**</font></span>: 画笔颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : FF0000FF
@@ -23,7 +35,7 @@ title: do_PainterView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**undo**</font>: 回退操作
+>##### <span id=undo><font color ='#0092db'>**undo**</font></span>: 回退操作
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -38,7 +50,7 @@ title: do_PainterView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**clear**</font>: 清空画板
+>##### <span id=clear><font color ='#0092db'>**clear**</font></span>: 清空画板
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -55,7 +67,7 @@ title: do_PainterView 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**saveAsImage**</font>: 保存为图片
+>##### <span id=saveAsImage><font color ='#0092db'>**saveAsImage**</font></span>: 保存为图片
 
 - 参数:
 
@@ -76,7 +88,7 @@ title: do_PainterView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**saveAsBitmap**</font>: 保存为Bitmap
+>##### <span id=saveAsBitmap><font color ='#0092db'>**saveAsBitmap**</font></span>: 保存为Bitmap
 
 - 参数:
 

@@ -4,30 +4,44 @@ title: do_CoverFlowView 组件
 
 ### do_CoverFlowView 组件
 
- 支持平台: iOS7.0,Android14
+ 支持平台: iOS7.0,Android14 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_CoverFlowView)
  这个UI组件包含多个子视图，实现多个子视图之间左右平缓滑动效果；该组件支持设置多个模板视图，要求多个模板大小相同
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[looping](#looping)| 左右无限滑动
+<font color ='#42b983'>属性</font>  |[spacing](#spacing)| 间距
+<font color ='#42b983'>属性</font>  |[index](#index)| 当前滑动View索引
+<font color ='#42b983'>属性</font>  |[templates](#templates)| 显示视图对应UI模板文件
+<font color ='#0092db'>同步方法</font>  |[bindItems](#bindItems)| 绑定视图模板数据
+<font color ='#0092db'>同步方法</font>  |[refreshItems](#refreshItems)| 刷新数据
+<font color ='#e96900'>事件</font>  |[indexChanged](#indexChanged)| 滑动显示当前视图后触发该事件
+<font color ='#e96900'>事件</font>  |[touch](#touch)| 点击cell触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**looping**</font>: 左右无限滑动
+>###### <span id=looping><font color ='#42b983'>**looping**</font></span>: 左右无限滑动
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : false
 - 说明 : 左右无限循环滑动视图，设置值为true表示支持无限循环滑动，默认为false，windows平台不支持
 
->###### <font color ='#42b983'>**spacing**</font>: 间距
+>###### <span id=spacing><font color ='#42b983'>**spacing**</font></span>: 间距
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 30
 - 说明 : 页间距
 
->###### <font color ='#42b983'>**index**</font>: 当前滑动View索引
+>###### <span id=index><font color ='#42b983'>**index**</font></span>: 当前滑动View索引
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 0
 - 说明 : 设置滑动视图索引值，默认为0
 
->###### <font color ='#42b983'>**templates**</font>: 显示视图对应UI模板文件
+>###### <span id=templates><font color ='#42b983'>**templates**</font></span>: 显示视图对应UI模板文件
 
 - 数据类型 : <font color ='#808000'>**object**</font>
 - 默认值 : 
@@ -37,7 +51,7 @@ title: do_CoverFlowView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**bindItems**</font>: 绑定视图模板数据
+>##### <span id=bindItems><font color ='#0092db'>**bindItems**</font></span>: 绑定视图模板数据
 
 - 参数:
 
@@ -56,7 +70,7 @@ title: do_CoverFlowView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**refreshItems**</font>: 刷新数据
+>##### <span id=refreshItems><font color ='#0092db'>**refreshItems**</font></span>: 刷新数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -76,7 +90,7 @@ title: do_CoverFlowView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**indexChanged**</font>: 滑动显示当前视图后触发该事件
+>###### <span id=indexChanged><font color ='#e96900'>**indexChanged**</font></span>: 滑动显示当前视图后触发该事件
 
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回当前index
@@ -90,7 +104,7 @@ title: do_CoverFlowView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**touch**</font>: 点击cell触发
+>###### <span id=touch><font color ='#e96900'>**touch**</font></span>: 点击cell触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前cell的index值

@@ -4,14 +4,23 @@ title: do_Notification 组件
 
 ### do_Notification 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Notification)
  各种方式提醒和通知用户
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[toast](#toast)| 弹出toast窗口
+<font color ='#0092db'>异步方法</font>  |[alert](#alert)| 弹出alert窗口
+<font color ='#0092db'>异步方法</font>  |[confirm](#confirm)| 弹出confirm窗口
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**toast**</font>: 弹出toast窗口
+>##### <span id=toast><font color ='#0092db'>**toast**</font></span>: 弹出toast窗口
 
 - 参数:
 
@@ -34,7 +43,7 @@ title: do_Notification 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**alert**</font>: 弹出alert窗口
+>##### <span id=alert><font color ='#0092db'>**alert**</font></span>: 弹出alert窗口
 
 - 参数:
 
@@ -55,7 +64,7 @@ title: do_Notification 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**confirm**</font>: 弹出confirm窗口
+>##### <span id=confirm><font color ='#0092db'>**confirm**</font></span>: 弹出confirm窗口
 
 - 参数:
 

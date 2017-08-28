@@ -4,14 +4,23 @@ title: do_FingerPrintRecognition 组件
 
 ### do_FingerPrintRecognition 组件
 
- 支持平台: iOS8.0,Android6.0
+ 支持平台: iOS8.0,Android6.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_FingerPrintRecognition)
  指纹识别组件,iOS为基于系统touchID和密码识别验证,需要iPhone5s设备搭载iOS8以上系统,IOS touchID识别策略(系统原生框架识别策略,不可修改,可以对照支付宝查看。警告！：touchID验证为设备公用功能(设备解锁和所有app)，不要随意故意错误验证，多次错误验证失败后，设备将会被锁，而且锁定时间越来越长，最终可能导致设备永久锁定!!!。): Android系统要求大于6.0. Android是连续验证失败5次之后30秒内不能继续验证.
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[startRecognize](#startRecognize)| 启动识别
+<font color ='#e96900'>事件</font>  |[localizedFallbackButtonClick](#localizedFallbackButtonClick)| 验证过程中，验证弹框自定义验证按钮点击事件(仅iOS有效，订阅该事件，用户处理自定义验证逻辑步骤)
+<font color ='#e96900'>事件</font>  |[recognizeResult](#recognizeResult)| 验证事件(startRecognize方法的识别结果从该事件返回值取)
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**startRecognize**</font>: 启动识别
+>##### <span id=startRecognize><font color ='#0092db'>**startRecognize**</font></span>: 启动识别
 
 - 参数:
 
@@ -37,7 +46,7 @@ title: do_FingerPrintRecognition 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**localizedFallbackButtonClick**</font>: 验证过程中，验证弹框自定义验证按钮点击事件(仅iOS有效，订阅该事件，用户处理自定义验证逻辑步骤)
+>###### <span id=localizedFallbackButtonClick><font color ='#e96900'>**localizedFallbackButtonClick**</font></span>: 验证过程中，验证弹框自定义验证按钮点击事件(仅iOS有效，订阅该事件，用户处理自定义验证逻辑步骤)
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -51,7 +60,7 @@ title: do_FingerPrintRecognition 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**recognizeResult**</font>: 验证事件(startRecognize方法的识别结果从该事件返回值取)
+>###### <span id=recognizeResult><font color ='#e96900'>**recognizeResult**</font></span>: 验证事件(startRecognize方法的识别结果从该事件返回值取)
 
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
 - 返回值描述: 

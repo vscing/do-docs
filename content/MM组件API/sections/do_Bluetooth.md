@@ -4,14 +4,33 @@ title: do_Bluetooth 组件
 
 ### do_Bluetooth 组件
 
- 支持平台: iOS,Android
+ 支持平台: iOS,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Bluetooth)
  使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；不支持windows平台，iOS系统必须8.0以上
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[stopScan](#stopScan)| 停止扫描
+<font color ='#0092db'>同步方法</font>  |[close](#close)| 关闭蓝牙连接
+<font color ='#0092db'>同步方法</font>  |[enable](#enable)| 打开手机蓝牙
+<font color ='#0092db'>同步方法</font>  |[disable](#disable)| 关闭手机蓝牙
+<font color ='#0092db'>异步方法</font>  |[open](#open)| 打开蓝牙连接
+<font color ='#0092db'>异步方法</font>  |[startScan](#startScan)| 开始扫描
+<font color ='#0092db'>异步方法</font>  |[connect](#connect)| 连接外围设备
+<font color ='#0092db'>异步方法</font>  |[write](#write)| 写入数据
+<font color ='#0092db'>异步方法</font>  |[read](#read)| 读取数据
+<font color ='#0092db'>异步方法</font>  |[registerListener](#registerListener)| 注册监听
+<font color ='#e96900'>事件</font>  |[characteristicChanged](#characteristicChanged)| 特征改变
+<font color ='#e96900'>事件</font>  |[scan](#scan)| 搜索外围设备
+<font color ='#e96900'>事件</font>  |[connectionStateChange](#connectionStateChange)| 连接状态改变
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**stopScan**</font>: 停止扫描
+>##### <span id=stopScan><font color ='#0092db'>**stopScan**</font></span>: 停止扫描
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -26,7 +45,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**close**</font>: 关闭蓝牙连接
+>##### <span id=close><font color ='#0092db'>**close**</font></span>: 关闭蓝牙连接
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -41,7 +60,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**enable**</font>: 打开手机蓝牙
+>##### <span id=enable><font color ='#0092db'>**enable**</font></span>: 打开手机蓝牙
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -56,7 +75,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**disable**</font>: 关闭手机蓝牙
+>##### <span id=disable><font color ='#0092db'>**disable**</font></span>: 关闭手机蓝牙
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -73,7 +92,7 @@ title: do_Bluetooth 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**open**</font>: 打开蓝牙连接
+>##### <span id=open><font color ='#0092db'>**open**</font></span>: 打开蓝牙连接
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -88,7 +107,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startScan**</font>: 开始扫描
+>##### <span id=startScan><font color ='#0092db'>**startScan**</font></span>: 开始扫描
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -103,7 +122,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**connect**</font>: 连接外围设备
+>##### <span id=connect><font color ='#0092db'>**connect**</font></span>: 连接外围设备
 
 - 参数:
 
@@ -122,7 +141,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**write**</font>: 写入数据
+>##### <span id=write><font color ='#0092db'>**write**</font></span>: 写入数据
 
 - 参数:
 
@@ -145,7 +164,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**read**</font>: 读取数据
+>##### <span id=read><font color ='#0092db'>**read**</font></span>: 读取数据
 
 - 参数:
 
@@ -165,7 +184,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**registerListener**</font>: 注册监听
+>##### <span id=registerListener><font color ='#0092db'>**registerListener**</font></span>: 注册监听
 
 - 参数:
 
@@ -188,7 +207,7 @@ title: do_Bluetooth 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**characteristicChanged**</font>: 特征改变
+>###### <span id=characteristicChanged><font color ='#e96900'>**characteristicChanged**</font></span>: 特征改变
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 收到BLE终端服务特征写入数据时触发该事件{特征uuid:'28923DE7-2E5D-4E81-8264-86BE1B9C4B51',value:'hello'}
@@ -202,7 +221,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**scan**</font>: 搜索外围设备
+>###### <span id=scan><font color ='#e96900'>**scan**</font></span>: 搜索外围设备
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 搜索到外围设备触发该事件，{address:'Android(设备MAC B4:99:4C:25:29:51)'/'IOS(设备UUID)',name:'device1',RSSI:'接收的信号强度指示,单位dBm,127是保留值，标示无效'}
@@ -216,7 +235,7 @@ title: do_Bluetooth 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**connectionStateChange**</font>: 连接状态改变
+>###### <span id=connectionStateChange><font color ='#e96900'>**connectionStateChange**</font></span>: 连接状态改变
 
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 监听连接状态，当连接状态发生变化触发该事件，0：断开、1：连接

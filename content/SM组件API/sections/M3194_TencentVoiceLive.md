@@ -4,14 +4,29 @@ title: M3194_TencentVoiceLive 组件
 
 ### M3194_TencentVoiceLive 组件
 
- 支持平台: iOS8.0,Android4.0
+ 支持平台: iOS8.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/M3194_TencentVoiceLive)
  
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[logout](#logout)| 登出
+<font color ='#0092db'>同步方法</font>  |[enableSpeaker](#enableSpeaker)| 打开/关闭扬声器
+<font color ='#0092db'>同步方法</font>  |[enableMic](#enableMic)| 打开/关闭麦
+<font color ='#0092db'>同步方法</font>  |[getVolume](#getVolume)| 获取麦克风的音量
+<font color ='#0092db'>同步方法</font>  |[getDynamicVolume](#getDynamicVolume)| 获取麦克风的实时音量
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 登录
+<font color ='#0092db'>异步方法</font>  |[createRoom](#createRoom)| 创建房间
+<font color ='#0092db'>异步方法</font>  |[joinRoom](#joinRoom)| 加入房间
+<font color ='#0092db'>异步方法</font>  |[quitRoom](#quitRoom)| 退出房间
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**logout**</font>: 登出
+>##### <span id=logout><font color ='#0092db'>**logout**</font></span>: 登出
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -26,7 +41,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**enableSpeaker**</font>: 打开/关闭扬声器
+>##### <span id=enableSpeaker><font color ='#0092db'>**enableSpeaker**</font></span>: 打开/关闭扬声器
 
 - 参数:
 
@@ -45,7 +60,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**enableMic**</font>: 打开/关闭麦
+>##### <span id=enableMic><font color ='#0092db'>**enableMic**</font></span>: 打开/关闭麦
 
 - 参数:
 
@@ -64,7 +79,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getVolume**</font>: 获取麦克风的音量
+>##### <span id=getVolume><font color ='#0092db'>**getVolume**</font></span>: 获取麦克风的音量
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -79,7 +94,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getDynamicVolume**</font>: 获取麦克风的实时音量
+>##### <span id=getDynamicVolume><font color ='#0092db'>**getDynamicVolume**</font></span>: 获取麦克风的实时音量
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -96,7 +111,7 @@ title: M3194_TencentVoiceLive 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**login**</font>: 登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 登录
 
 - 参数:
 
@@ -118,7 +133,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**createRoom**</font>: 创建房间
+>##### <span id=createRoom><font color ='#0092db'>**createRoom**</font></span>: 创建房间
 
 - 参数:
 
@@ -138,7 +153,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**joinRoom**</font>: 加入房间
+>##### <span id=joinRoom><font color ='#0092db'>**joinRoom**</font></span>: 加入房间
 
 - 参数:
 
@@ -158,7 +173,7 @@ title: M3194_TencentVoiceLive 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**quitRoom**</font>: 退出房间
+>##### <span id=quitRoom><font color ='#0092db'>**quitRoom**</font></span>: 退出房间
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>

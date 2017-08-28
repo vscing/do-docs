@@ -4,14 +4,27 @@ title: do_Bitmap 组件
 
 ### do_Bitmap 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Bitmap)
  图片的处理组件，通过加载source对应路径的图片到内存中，不再需要使用该位图资源必须调用MM组件基类方法release()来释放该使用内存，Android平台仅支持jpg和JEPG格式
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getExif](#getExif)| 获取图片拍摄信息
+<font color ='#0092db'>异步方法</font>  |[addWatermark](#addWatermark)| 添加水印
+<font color ='#0092db'>异步方法</font>  |[loadFile](#loadFile)| 加载位图
+<font color ='#0092db'>异步方法</font>  |[save](#save)| 保存位图
+<font color ='#0092db'>异步方法</font>  |[toGrayScale](#toGrayScale)| 转成灰色位图
+<font color ='#0092db'>异步方法</font>  |[toFrostedGlass](#toFrostedGlass)| 转成毛玻璃位图
+<font color ='#0092db'>异步方法</font>  |[toRoundCorner](#toRoundCorner)| 添加圆角
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getExif**</font>: 获取图片拍摄信息
+>##### <span id=getExif><font color ='#0092db'>**getExif**</font></span>: 获取图片拍摄信息
 
 - 参数:
 
@@ -32,7 +45,7 @@ title: do_Bitmap 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**addWatermark**</font>: 添加水印
+>##### <span id=addWatermark><font color ='#0092db'>**addWatermark**</font></span>: 添加水印
 
 - 参数:
 
@@ -58,7 +71,7 @@ title: do_Bitmap 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**loadFile**</font>: 加载位图
+>##### <span id=loadFile><font color ='#0092db'>**loadFile**</font></span>: 加载位图
 
 - 参数:
 
@@ -77,7 +90,7 @@ title: do_Bitmap 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**save**</font>: 保存位图
+>##### <span id=save><font color ='#0092db'>**save**</font></span>: 保存位图
 
 - 参数:
 
@@ -98,7 +111,7 @@ title: do_Bitmap 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**toGrayScale**</font>: 转成灰色位图
+>##### <span id=toGrayScale><font color ='#0092db'>**toGrayScale**</font></span>: 转成灰色位图
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
@@ -113,7 +126,7 @@ title: do_Bitmap 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**toFrostedGlass**</font>: 转成毛玻璃位图
+>##### <span id=toFrostedGlass><font color ='#0092db'>**toFrostedGlass**</font></span>: 转成毛玻璃位图
 
 - 参数:
 
@@ -132,7 +145,7 @@ title: do_Bitmap 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**toRoundCorner**</font>: 添加圆角
+>##### <span id=toRoundCorner><font color ='#0092db'>**toRoundCorner**</font></span>: 添加圆角
 
 - 参数:
 

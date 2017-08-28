@@ -4,8 +4,15 @@ title: do_Unionpay 组件
 
 ### do_Unionpay 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Unionpay)
  接入银联SDK，完成支付功能
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[startPay](#startPay)| 支付
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +20,7 @@ title: do_Unionpay 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**startPay**</font>: 支付
+>##### <span id=startPay><font color ='#0092db'>**startPay**</font></span>: 支付
 
 - 参数:
 

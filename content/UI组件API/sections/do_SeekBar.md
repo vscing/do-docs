@@ -4,18 +4,27 @@ title: do_SeekBar 组件
 
 ### do_SeekBar 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_SeekBar)
  可以拖动的进度条，取值范围为0~100
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[progress](#progress)| 第一进度值
+<font color ='#42b983'>属性</font>  |[secondaryProgress](#secondaryProgress)| 第二进度值
+<font color ='#e96900'>事件</font>  |[progressChanged](#progressChanged)| 第一进度值变化时候触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**progress**</font>: 第一进度值
+>###### <span id=progress><font color ='#42b983'>**progress**</font></span>: 第一进度值
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 
 - 说明 : 设置第一进度值，支持手势拖动
 
->###### <font color ='#42b983'>**secondaryProgress**</font>: 第二进度值
+>###### <span id=secondaryProgress><font color ='#42b983'>**secondaryProgress**</font></span>: 第二进度值
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 
@@ -28,7 +37,7 @@ title: do_SeekBar 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**progressChanged**</font>: 第一进度值变化时候触发
+>###### <span id=progressChanged><font color ='#e96900'>**progressChanged**</font></span>: 第一进度值变化时候触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 

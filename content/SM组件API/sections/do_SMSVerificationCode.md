@@ -4,8 +4,16 @@ title: do_SMSVerificationCode 组件
 
 ### do_SMSVerificationCode 组件
 
- 支持平台: iOS8.0,Android
+ 支持平台: iOS8.0,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_SMSVerificationCode)
  短信验证码组件,给用户手机号码发送验证码并验证
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[getSMSVerificationCode](#getSMSVerificationCode)| 根据手机号获取短信验证码
+<font color ='#0092db'>异步方法</font>  |[verifySMSVerificationCode](#verifySMSVerificationCode)| 验证短信验证码
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +21,7 @@ title: do_SMSVerificationCode 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getSMSVerificationCode**</font>: 根据手机号获取短信验证码
+>##### <span id=getSMSVerificationCode><font color ='#0092db'>**getSMSVerificationCode**</font></span>: 根据手机号获取短信验证码
 
 - 参数:
 
@@ -32,7 +40,7 @@ title: do_SMSVerificationCode 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**verifySMSVerificationCode**</font>: 验证短信验证码
+>##### <span id=verifySMSVerificationCode><font color ='#0092db'>**verifySMSVerificationCode**</font></span>: 验证短信验证码
 
 - 参数:
 

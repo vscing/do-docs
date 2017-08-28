@@ -4,8 +4,16 @@ title: do_QRCode 组件
 
 ### do_QRCode 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_QRCode)
  二维码的生成和识别；其中iOS平台的二维码识别功能系统需要iOS8级以上的系统，设备需要5S及以上产品
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[create](#create)| 生成二维码
+<font color ='#0092db'>异步方法</font>  |[recognition](#recognition)| 识别二维码
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +21,7 @@ title: do_QRCode 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**create**</font>: 生成二维码
+>##### <span id=create><font color ='#0092db'>**create**</font></span>: 生成二维码
 
 - 参数:
 
@@ -35,7 +43,7 @@ title: do_QRCode 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**recognition**</font>: 识别二维码
+>##### <span id=recognition><font color ='#0092db'>**recognition**</font></span>: 识别二维码
 
 - 参数:
 

@@ -4,14 +4,24 @@ title: do_VideoRecord 组件
 
 ### do_VideoRecord 组件
 
- 支持平台: iOS7.0,Android
+ 支持平台: iOS7.0,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_VideoRecord)
  录制视频，输出MP4格式
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[start](#start)| 开始录制视频
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 停止录制视频
+<font color ='#e96900'>事件</font>  |[error](#error)| 录制出错事件
+<font color ='#e96900'>事件</font>  |[finish](#finish)| 完成录制
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**start**</font>: 开始录制视频
+>##### <span id=start><font color ='#0092db'>**start**</font></span>: 开始录制视频
 
 - 参数:
 
@@ -31,7 +41,7 @@ title: do_VideoRecord 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止录制视频
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止录制视频
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -51,7 +61,7 @@ title: do_VideoRecord 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**error**</font>: 录制出错事件
+>###### <span id=error><font color ='#e96900'>**error**</font></span>: 录制出错事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -65,7 +75,7 @@ title: do_VideoRecord 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**finish**</font>: 完成录制
+>###### <span id=finish><font color ='#e96900'>**finish**</font></span>: 完成录制
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{path:'data://temp/do_VideoRecord/20160101101010111.mp4',size:'232342'}，其中path为保存视频的路径，文件名是日期+精确到毫秒时间；size为视频大小，单位为KB

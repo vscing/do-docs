@@ -4,8 +4,16 @@ title: do_Album 组件
 
 ### do_Album 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Album)
  可以通过打开手机的系统相册选择图片然后保存在本地目录下，且可以指定保存过后图片的质量，宽高；也支持一张本地的图片收藏到系统相册
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[select](#select)| 从系统相册选择照片
+<font color ='#0092db'>异步方法</font>  |[save](#save)| 收藏图片到系统相册
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +21,7 @@ title: do_Album 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**select**</font>: 从系统相册选择照片
+>##### <span id=select><font color ='#0092db'>**select**</font></span>: 从系统相册选择照片
 
 - 参数:
 
@@ -57,7 +65,7 @@ album.select({maxCount:1, width:188, height:-1, quality:100, iscut:true}, functi
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**save**</font>: 收藏图片到系统相册
+>##### <span id=save><font color ='#0092db'>**save**</font></span>: 收藏图片到系统相册
 
 - 参数:
 

@@ -4,14 +4,26 @@ title: do_App 组件
 
 ### do_App 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_App)
  这个是DeviceOne提供的基本应用类，通常在DeviceOne里开发的一个工程项目就是一个App实例。这个类负责页面Page的基本跳转，和App作用域内的数据共享等。
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getAppID](#getAppID)| 当前App的唯一ID
+<font color ='#0092db'>异步方法</font>  |[openPage](#openPage)| 弹出新的页面
+<font color ='#0092db'>异步方法</font>  |[closePage](#closePage)| 关闭最上层页面
+<font color ='#0092db'>异步方法</font>  |[closePageToID](#closePageToID)| 关闭指定页面
+<font color ='#0092db'>异步方法</font>  |[update](#update)| 更新页面数据
+<font color ='#e96900'>事件</font>  |[loaded](#loaded)| App启动完成时触发，通常这个事件是整个程序的入口。
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getAppID**</font>: 当前App的唯一ID
+>##### <span id=getAppID><font color ='#0092db'>**getAppID**</font></span>: 当前App的唯一ID
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
@@ -28,7 +40,7 @@ title: do_App 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**openPage**</font>: 弹出新的页面
+>##### <span id=openPage><font color ='#0092db'>**openPage**</font></span>: 弹出新的页面
 
 - 参数:
 
@@ -71,7 +83,7 @@ title: do_App 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**closePage**</font>: 关闭最上层页面
+>##### <span id=closePage><font color ='#0092db'>**closePage**</font></span>: 关闭最上层页面
 
 - 参数:
 
@@ -106,7 +118,7 @@ winphone8不支持该动画效果，android和ios支持。
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**closePageToID**</font>: 关闭指定页面
+>##### <span id=closePageToID><font color ='#0092db'>**closePageToID**</font></span>: 关闭指定页面
 
 - 参数:
 
@@ -141,7 +153,7 @@ winphone8不支持该动画效果，android和ios支持。
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**update**</font>: 更新页面数据
+>##### <span id=update><font color ='#0092db'>**update**</font></span>: 更新页面数据
 
 - 参数:
 
@@ -164,7 +176,7 @@ winphone8不支持该动画效果，android和ios支持。
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**loaded**</font>: App启动完成时触发，通常这个事件是整个程序的入口。
+>###### <span id=loaded><font color ='#e96900'>**loaded**</font></span>: App启动完成时触发，通常这个事件是整个程序的入口。
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 

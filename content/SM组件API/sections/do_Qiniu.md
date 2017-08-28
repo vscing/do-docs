@@ -4,8 +4,17 @@ title: do_Qiniu 组件
 
 ### do_Qiniu 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Qiniu)
  七牛云自主研发的分布式对象存储服务，提供高可靠、强安全、低成本、可扩展的存储服务，满足各类存储需求
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[upload](#upload)| 上传文件
+<font color ='#0092db'>异步方法</font>  |[download](#download)| 从七牛云下载文件
+<font color ='#e96900'>事件</font>  |[progress](#progress)| 响应进度事件,文件大小和当前上传或者下载的进度
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +22,7 @@ title: do_Qiniu 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**upload**</font>: 上传文件
+>##### <span id=upload><font color ='#0092db'>**upload**</font></span>: 上传文件
 
 - 参数:
 
@@ -36,7 +45,7 @@ title: do_Qiniu 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**download**</font>: 从七牛云下载文件
+>##### <span id=download><font color ='#0092db'>**download**</font></span>: 从七牛云下载文件
 
 - 参数:
 
@@ -62,7 +71,7 @@ title: do_Qiniu 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**progress**</font>: 响应进度事件,文件大小和当前上传或者下载的进度
+>###### <span id=progress><font color ='#e96900'>**progress**</font></span>: 响应进度事件,文件大小和当前上传或者下载的进度
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{fileSize:'23234245',percent:'20'}单位分别为kB和%

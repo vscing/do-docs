@@ -4,14 +4,31 @@ title: do_External 组件
 
 ### do_External 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_External)
  启动外部应用或系统的一些应用，比如浏览器，短信等
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[openSystemSetting](#openSystemSetting)| 打开系统设置界面
+<font color ='#0092db'>同步方法</font>  |[openApp](#openApp)| 启动第三方应用
+<font color ='#0092db'>同步方法</font>  |[openURL](#openURL)| 调用系统默认浏览器
+<font color ='#0092db'>同步方法</font>  |[openDial](#openDial)| 打开拨号界面
+<font color ='#0092db'>同步方法</font>  |[openContact](#openContact)| 打开系统通讯录界面
+<font color ='#0092db'>同步方法</font>  |[openMail](#openMail)| 打开发送邮件界面
+<font color ='#0092db'>同步方法</font>  |[openSMS](#openSMS)| 打开发送短信界面
+<font color ='#0092db'>同步方法</font>  |[bulkSMS](#bulkSMS)| 打开发送短信界面，支持群发短信
+<font color ='#0092db'>同步方法</font>  |[installApp](#installApp)| 安装app
+<font color ='#0092db'>同步方法</font>  |[openFile](#openFile)| 打开外部文档
+<font color ='#0092db'>同步方法</font>  |[existApp](#existApp)| 应用是否安装
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**openSystemSetting**</font>: 打开系统设置界面
+>##### <span id=openSystemSetting><font color ='#0092db'>**openSystemSetting**</font></span>: 打开系统设置界面
 
 - 参数:
 
@@ -30,7 +47,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openApp**</font>: 启动第三方应用
+>##### <span id=openApp><font color ='#0092db'>**openApp**</font></span>: 启动第三方应用
 
 - 参数:
 
@@ -50,7 +67,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openURL**</font>: 调用系统默认浏览器
+>##### <span id=openURL><font color ='#0092db'>**openURL**</font></span>: 调用系统默认浏览器
 
 - 参数:
 
@@ -69,7 +86,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openDial**</font>: 打开拨号界面
+>##### <span id=openDial><font color ='#0092db'>**openDial**</font></span>: 打开拨号界面
 
 - 参数:
 
@@ -88,7 +105,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openContact**</font>: 打开系统通讯录界面
+>##### <span id=openContact><font color ='#0092db'>**openContact**</font></span>: 打开系统通讯录界面
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -103,7 +120,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openMail**</font>: 打开发送邮件界面
+>##### <span id=openMail><font color ='#0092db'>**openMail**</font></span>: 打开发送邮件界面
 
 - 参数:
 
@@ -124,7 +141,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openSMS**</font>: 打开发送短信界面
+>##### <span id=openSMS><font color ='#0092db'>**openSMS**</font></span>: 打开发送短信界面
 
 - 参数:
 
@@ -144,7 +161,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**bulkSMS**</font>: 打开发送短信界面，支持群发短信
+>##### <span id=bulkSMS><font color ='#0092db'>**bulkSMS**</font></span>: 打开发送短信界面，支持群发短信
 
 - 参数:
 
@@ -164,7 +181,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**installApp**</font>: 安装app
+>##### <span id=installApp><font color ='#0092db'>**installApp**</font></span>: 安装app
 
 - 参数:
 
@@ -183,7 +200,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openFile**</font>: 打开外部文档
+>##### <span id=openFile><font color ='#0092db'>**openFile**</font></span>: 打开外部文档
 
 - 参数:
 
@@ -202,7 +219,7 @@ title: do_External 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**existApp**</font>: 应用是否安装
+>##### <span id=existApp><font color ='#0092db'>**existApp**</font></span>: 应用是否安装
 
 - 参数:
 

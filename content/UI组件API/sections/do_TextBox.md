@@ -4,78 +4,101 @@ title: do_TextBox 组件
 
 ### do_TextBox 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_TextBox)
  通常只能输入多行数据，当高度设置为-1时，默认会显示一行文字的高度
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[cursorColor](#cursorColor)| 光标颜色
+<font color ='#42b983'>属性</font>  |[enabled](#enabled)| 是否可编辑
+<font color ='#42b983'>属性</font>  |[text](#text)| 文本内容
+<font color ='#42b983'>属性</font>  |[fontColor](#fontColor)| 字体颜色
+<font color ='#42b983'>属性</font>  |[fontSize](#fontSize)| 字体大小
+<font color ='#42b983'>属性</font>  |[fontStyle](#fontStyle)| 字体风格
+<font color ='#42b983'>属性</font>  |[textFlag](#textFlag)| 字体标示
+<font color ='#42b983'>属性</font>  |[hint](#hint)| text为空提示文本
+<font color ='#42b983'>属性</font>  |[hintColor](#hintColor)| 提示信息字体颜色
+<font color ='#42b983'>属性</font>  |[maxLength](#maxLength)| 可允许输入的最大长度
+<font color ='#42b983'>属性</font>  |[maxLines](#maxLines)| 最大行数
+<font color ='#42b983'>属性</font>  |[inputType](#inputType)| 输入类型
+<font color ='#0092db'>同步方法</font>  |[setFocus](#setFocus)| 设置焦点
+<font color ='#0092db'>同步方法</font>  |[setSelection](#setSelection)| 设置光标位置
+<font color ='#e96900'>事件</font>  |[textChanged](#textChanged)| 文字变化时触发
+<font color ='#e96900'>事件</font>  |[focusIn](#focusIn)| 进入编辑状态
+<font color ='#e96900'>事件</font>  |[focusOut](#focusOut)| 离开编辑状态
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**cursorColor**</font>: 光标颜色
+>###### <span id=cursorColor><font color ='#42b983'>**cursorColor**</font></span>: 光标颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 000000FF
 - 说明 : 修改输入框光标颜色，暂只支持iOS平台
 
->###### <font color ='#42b983'>**enabled**</font>: 是否可编辑
+>###### <span id=enabled><font color ='#42b983'>**enabled**</font></span>: 是否可编辑
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : true
 - 说明 : 控制文本框是否为可编辑状态，为false时不可编辑
 
->###### <font color ='#42b983'>**text**</font>: 文本内容
+>###### <span id=text><font color ='#42b983'>**text**</font></span>: 文本内容
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : 获取或设置与此控件关联的文本
 
->###### <font color ='#42b983'>**fontColor**</font>: 字体颜色
+>###### <span id=fontColor><font color ='#42b983'>**fontColor**</font></span>: 字体颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 000000FF
 - 说明 : 设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF
 
->###### <font color ='#42b983'>**fontSize**</font>: 字体大小
+>###### <span id=fontSize><font color ='#42b983'>**fontSize**</font></span>: 字体大小
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 17
 - 说明 : 
 
->###### <font color ='#42b983'>**fontStyle**</font>: 字体风格
+>###### <span id=fontStyle><font color ='#42b983'>**fontStyle**</font></span>: 字体风格
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : normal
 - 说明 : 包含4种类型：normal：常规；bold：粗体；italic：斜体；bold_italic：粗斜体
 
->###### <font color ='#42b983'>**textFlag**</font>: 字体标示
+>###### <span id=textFlag><font color ='#42b983'>**textFlag**</font></span>: 字体标示
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : normal
 - 说明 : 包含3种类型：normal：常规；underline：下划线；strikethrough ：删除线
 
->###### <font color ='#42b983'>**hint**</font>: text为空提示文本
+>###### <span id=hint><font color ='#42b983'>**hint**</font></span>: text为空提示文本
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : 
 
->###### <font color ='#42b983'>**hintColor**</font>: 提示信息字体颜色
+>###### <span id=hintColor><font color ='#42b983'>**hintColor**</font></span>: 提示信息字体颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 808080FF
 - 说明 : text为空时显示的文字提示信息字体颜色，windows平台不支持
 
->###### <font color ='#42b983'>**maxLength**</font>: 可允许输入的最大长度
+>###### <span id=maxLength><font color ='#42b983'>**maxLength**</font></span>: 可允许输入的最大长度
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 100
 - 说明 : 
 
->###### <font color ='#42b983'>**maxLines**</font>: 最大行数
+>###### <span id=maxLines><font color ='#42b983'>**maxLines**</font></span>: 最大行数
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 0
 - 说明 : 最大行数，说明：此属性只有组件高度为-1时才生效；设置文本内容输入最大行数，如输入文本超过了最大行值则行数不再继续增加，同时可以通过上下滚动来查看输入的内容；当小于0时表示不限制行数；Windows平台不支持
 
->###### <font color ='#42b983'>**inputType**</font>: 输入类型
+>###### <span id=inputType><font color ='#42b983'>**inputType**</font></span>: 输入类型
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : ENG
@@ -92,7 +115,7 @@ title: do_TextBox 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**setFocus**</font>: 设置焦点
+>##### <span id=setFocus><font color ='#0092db'>**setFocus**</font></span>: 设置焦点
 
 - 参数:
 
@@ -111,7 +134,7 @@ title: do_TextBox 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setSelection**</font>: 设置光标位置
+>##### <span id=setSelection><font color ='#0092db'>**setSelection**</font></span>: 设置光标位置
 
 - 参数:
 
@@ -135,7 +158,7 @@ title: do_TextBox 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**textChanged**</font>: 文字变化时触发
+>###### <span id=textChanged><font color ='#e96900'>**textChanged**</font></span>: 文字变化时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -149,7 +172,7 @@ title: do_TextBox 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**focusIn**</font>: 进入编辑状态
+>###### <span id=focusIn><font color ='#e96900'>**focusIn**</font></span>: 进入编辑状态
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回键盘高度，{keybordHeight:'25'}
@@ -163,7 +186,7 @@ title: do_TextBox 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**focusOut**</font>: 离开编辑状态
+>###### <span id=focusOut><font color ='#e96900'>**focusOut**</font></span>: 离开编辑状态
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 

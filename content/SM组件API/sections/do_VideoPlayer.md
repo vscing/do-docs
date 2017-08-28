@@ -4,14 +4,21 @@ title: do_VideoPlayer 组件
 
 ### do_VideoPlayer 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_VideoPlayer)
  支持边下边播，视频播放宽高比例为16:9，自动横屏
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[play](#play)| 播放视频
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**play**</font>: 播放视频
+>##### <span id=play><font color ='#0092db'>**play**</font></span>: 播放视频
 
 - 参数:
 

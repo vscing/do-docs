@@ -4,8 +4,19 @@ title: do_TencentQQ 组件
 
 ### do_TencentQQ 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_TencentQQ)
  提供QQ登录和分享相关的功能
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 使用QQ登录
+<font color ='#0092db'>异步方法</font>  |[getUserInfo](#getUserInfo)| 获取用户信息
+<font color ='#0092db'>异步方法</font>  |[logout](#logout)| 注销
+<font color ='#0092db'>异步方法</font>  |[shareToQQ](#shareToQQ)| 分享到QQ好友
+<font color ='#0092db'>异步方法</font>  |[shareToQzone](#shareToQzone)| 分享到QQ空间
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +24,7 @@ title: do_TencentQQ 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**login**</font>: 使用QQ登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 使用QQ登录
 
 - 参数:
 
@@ -32,7 +43,7 @@ title: do_TencentQQ 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getUserInfo**</font>: 获取用户信息
+>##### <span id=getUserInfo><font color ='#0092db'>**getUserInfo**</font></span>: 获取用户信息
 
 - 参数:
 
@@ -53,7 +64,7 @@ title: do_TencentQQ 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**logout**</font>: 注销
+>##### <span id=logout><font color ='#0092db'>**logout**</font></span>: 注销
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
@@ -68,7 +79,7 @@ title: do_TencentQQ 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**shareToQQ**</font>: 分享到QQ好友
+>##### <span id=shareToQQ><font color ='#0092db'>**shareToQQ**</font></span>: 分享到QQ好友
 
 - 参数:
 
@@ -94,7 +105,7 @@ title: do_TencentQQ 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**shareToQzone**</font>: 分享到QQ空间
+>##### <span id=shareToQzone><font color ='#0092db'>**shareToQzone**</font></span>: 分享到QQ空间
 
 - 参数:
 

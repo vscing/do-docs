@@ -4,14 +4,24 @@ title: do_TencentWX 组件
 
 ### do_TencentWX 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_TencentWX)
  接入微信开放平台，可使用微信登录、分享和支付功能
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[isWXAppInstalled](#isWXAppInstalled)| 微信APP是否安装
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 微信登录
+<font color ='#0092db'>异步方法</font>  |[pay](#pay)| 微信支付
+<font color ='#0092db'>异步方法</font>  |[share](#share)| 微信分享
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**isWXAppInstalled**</font>: 微信APP是否安装
+>##### <span id=isWXAppInstalled><font color ='#0092db'>**isWXAppInstalled**</font></span>: 微信APP是否安装
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -28,7 +38,7 @@ title: do_TencentWX 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**login**</font>: 微信登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 微信登录
 
 - 参数:
 
@@ -54,7 +64,7 @@ country	微信用户当前国家信息
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**pay**</font>: 微信支付
+>##### <span id=pay><font color ='#0092db'>**pay**</font></span>: 微信支付
 
 - 参数:
 
@@ -79,7 +89,7 @@ country	微信用户当前国家信息
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**share**</font>: 微信分享
+>##### <span id=share><font color ='#0092db'>**share**</font></span>: 微信分享
 
 - 参数:
 

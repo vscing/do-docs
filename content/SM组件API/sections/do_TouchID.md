@@ -4,8 +4,15 @@ title: do_TouchID 组件
 
 ### do_TouchID 组件
 
- 支持平台: iOS8.0,Android
+ 支持平台: iOS8.0,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_TouchID)
  iPhone 5s以后版本的手机特有的指纹识别功能，调用此模块可实现用户指纹输入验证登陆app 。使用本模块需要支持指纹识别的手机和ios8.0以上的操作系统
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[evaluate](#evaluate)| 指纹验证
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +20,7 @@ title: do_TouchID 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**evaluate**</font>: 指纹验证
+>##### <span id=evaluate><font color ='#0092db'>**evaluate**</font></span>: 指纹验证
 
 - 参数:
 

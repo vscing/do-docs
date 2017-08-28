@@ -4,14 +4,23 @@ title: do_FrameAnimationView 组件
 
 ### do_FrameAnimationView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_FrameAnimationView)
  加载gif动图的视图，也可以将多张图片组合设置为动图效果；gifSource:和imagesSource属性不会同时起作用，两个属性同时设置时以imagesSource为准
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[startImages](#startImages)| 开始动画
+<font color ='#0092db'>同步方法</font>  |[startGif](#startGif)| 开始动画
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 结束动画
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**startImages**</font>: 开始动画
+>##### <span id=startImages><font color ='#0092db'>**startImages**</font></span>: 开始动画
 
 - 参数:
 
@@ -31,7 +40,7 @@ title: do_FrameAnimationView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startGif**</font>: 开始动画
+>##### <span id=startGif><font color ='#0092db'>**startGif**</font></span>: 开始动画
 
 - 参数:
 
@@ -51,7 +60,7 @@ title: do_FrameAnimationView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 结束动画
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 结束动画
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>

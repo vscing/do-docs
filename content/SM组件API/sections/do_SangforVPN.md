@@ -4,8 +4,16 @@ title: do_SangforVPN 组件
 
 ### do_SangforVPN 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_SangforVPN)
  使用深信服科技公司提供的VPN服务访问服务器资源，提供VPN登录，VPN注销登录的功能，仅支持android平台
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 登录VPN
+<font color ='#0092db'>异步方法</font>  |[logout](#logout)| 注销VPN
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +21,7 @@ title: do_SangforVPN 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**login**</font>: 登录VPN
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 登录VPN
 
 - 参数:
 
@@ -35,7 +43,7 @@ title: do_SangforVPN 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**logout**</font>: 注销VPN
+>##### <span id=logout><font color ='#0092db'>**logout**</font></span>: 注销VPN
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>

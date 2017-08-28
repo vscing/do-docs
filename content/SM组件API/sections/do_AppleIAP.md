@@ -4,14 +4,22 @@ title: do_AppleIAP 组件
 
 ### do_AppleIAP 组件
 
- 支持平台: iOS,Android
+ 支持平台: iOS,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_AppleIAP)
  用户通过传入商品ID，数量可以调起Apple支付界面，同时支持商品重复购买更新
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[restoreProduct](#restoreProduct)| 恢复购买
+<font color ='#0092db'>异步方法</font>  |[purchase](#purchase)| 购买商品
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**restoreProduct**</font>: 恢复购买
+>##### <span id=restoreProduct><font color ='#0092db'>**restoreProduct**</font></span>: 恢复购买
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -28,7 +36,7 @@ title: do_AppleIAP 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**purchase**</font>: 购买商品
+>##### <span id=purchase><font color ='#0092db'>**purchase**</font></span>: 购买商品
 
 - 参数:
 

@@ -4,8 +4,18 @@ title: do_SysCalendar 组件
 
 ### do_SysCalendar 组件
 
- 支持平台: iOS7,Android14
+ 支持平台: iOS7,Android14 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_SysCalendar)
  可以获取系统日历的日程以及添加日程,修改和删除日程
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[getAll](#getAll)| 根据所有日程信息
+<font color ='#0092db'>异步方法</font>  |[add](#add)| 添加日程
+<font color ='#0092db'>异步方法</font>  |[update](#update)| 根据id修改对应的日程
+<font color ='#0092db'>异步方法</font>  |[delete](#delete)| 根据id删除对应的日程
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +23,7 @@ title: do_SysCalendar 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getAll**</font>: 根据所有日程信息
+>##### <span id=getAll><font color ='#0092db'>**getAll**</font></span>: 根据所有日程信息
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -28,7 +38,7 @@ title: do_SysCalendar 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**add**</font>: 添加日程
+>##### <span id=add><font color ='#0092db'>**add**</font></span>: 添加日程
 
 - 参数:
 
@@ -54,7 +64,7 @@ title: do_SysCalendar 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**update**</font>: 根据id修改对应的日程
+>##### <span id=update><font color ='#0092db'>**update**</font></span>: 根据id修改对应的日程
 
 - 参数:
 
@@ -78,7 +88,7 @@ title: do_SysCalendar 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**delete**</font>: 根据id删除对应的日程
+>##### <span id=delete><font color ='#0092db'>**delete**</font></span>: 根据id删除对应的日程
 
 - 参数:
 

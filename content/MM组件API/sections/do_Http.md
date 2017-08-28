@@ -4,42 +4,67 @@ title: do_Http 组件
 
 ### do_Http 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Http)
  支持http/https请求服务
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[method](#method)| 请求方式
+<font color ='#42b983'>属性</font>  |[url](#url)| 地址
+<font color ='#42b983'>属性</font>  |[timeout](#timeout)| 请求超时
+<font color ='#42b983'>属性</font>  |[contentType](#contentType)| 内容类型
+<font color ='#42b983'>属性</font>  |[body](#body)| 请求数据
+<font color ='#42b983'>属性</font>  |[responseEncoding](#responseEncoding)| 字符集格式
+<font color ='#0092db'>同步方法</font>  |[request](#request)| 发送请求
+<font color ='#0092db'>同步方法</font>  |[download](#download)| 下载
+<font color ='#0092db'>同步方法</font>  |[download1](#download1)| 下载
+<font color ='#0092db'>同步方法</font>  |[stopDownload](#stopDownload)| 停止下载
+<font color ='#0092db'>同步方法</font>  |[upload](#upload)| 上传
+<font color ='#0092db'>同步方法</font>  |[setRequestHeader](#setRequestHeader)| 设置请求头
+<font color ='#0092db'>同步方法</font>  |[getResponseHeader](#getResponseHeader)| 获取请求头
+<font color ='#0092db'>同步方法</font>  |[form](#form)| 上传表单
+<font color ='#0092db'>同步方法</font>  |[setRedirect](#setRedirect)| 设置重定向
+<font color ='#e96900'>事件</font>  |[progress](#progress)| 响应请求事件
+<font color ='#e96900'>事件</font>  |[success](#success)| 请求成功事件
+<font color ='#e96900'>事件</font>  |[fail](#fail)| 请求出错事件
+<font color ='#e96900'>事件</font>  |[result](#result)| 请求结束事件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**method**</font>: 请求方式
+>###### <span id=method><font color ='#42b983'>**method**</font></span>: 请求方式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : get
 - 说明 : http请求方式 GET/POST/PUT/PATCH/DELETE
 
->###### <font color ='#42b983'>**url**</font>: 地址
+>###### <span id=url><font color ='#42b983'>**url**</font></span>: 地址
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : 发送服务器请求地址
 
->###### <font color ='#42b983'>**timeout**</font>: 请求超时
+>###### <span id=timeout><font color ='#42b983'>**timeout**</font></span>: 请求超时
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 5000
 - 说明 : 请求服务器超时时间,单位是毫秒
 
->###### <font color ='#42b983'>**contentType**</font>: 内容类型
+>###### <span id=contentType><font color ='#42b983'>**contentType**</font></span>: 内容类型
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : application/x-www-form-urlencoded
 - 说明 : request时该属性默认值为application/x-www-form-urlencoded，upload和form时的默认值为multipart/form-data
 
->###### <font color ='#42b983'>**body**</font>: 请求数据
+>###### <span id=body><font color ='#42b983'>**body**</font></span>: 请求数据
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : 
 - 说明 : 请求数据，method为get、delete时不支持
 
->###### <font color ='#42b983'>**responseEncoding**</font>: 字符集格式
+>###### <span id=responseEncoding><font color ='#42b983'>**responseEncoding**</font></span>: 字符集格式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : utf-8
@@ -47,7 +72,7 @@ title: do_Http 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**request**</font>: 发送请求
+>##### <span id=request><font color ='#0092db'>**request**</font></span>: 发送请求
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -62,7 +87,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**download**</font>: 下载
+>##### <span id=download><font color ='#0092db'>**download**</font></span>: 下载
 
 - 参数:
 
@@ -81,7 +106,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**download1**</font>: 下载
+>##### <span id=download1><font color ='#0092db'>**download1**</font></span>: 下载
 
 - 参数:
 
@@ -102,7 +127,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stopDownload**</font>: 停止下载
+>##### <span id=stopDownload><font color ='#0092db'>**stopDownload**</font></span>: 停止下载
 
 - 参数:
 
@@ -121,7 +146,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**upload**</font>: 上传
+>##### <span id=upload><font color ='#0092db'>**upload**</font></span>: 上传
 
 - 参数:
 
@@ -142,7 +167,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setRequestHeader**</font>: 设置请求头
+>##### <span id=setRequestHeader><font color ='#0092db'>**setRequestHeader**</font></span>: 设置请求头
 
 - 参数:
 
@@ -162,7 +187,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getResponseHeader**</font>: 获取请求头
+>##### <span id=getResponseHeader><font color ='#0092db'>**getResponseHeader**</font></span>: 获取请求头
 
 - 参数:
 
@@ -181,7 +206,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**form**</font>: 上传表单
+>##### <span id=form><font color ='#0092db'>**form**</font></span>: 上传表单
 
 - 参数:
 
@@ -200,7 +225,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setRedirect**</font>: 设置重定向
+>##### <span id=setRedirect><font color ='#0092db'>**setRedirect**</font></span>: 设置重定向
 
 - 参数:
 
@@ -224,7 +249,7 @@ title: do_Http 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**progress**</font>: 响应请求事件
+>###### <span id=progress><font color ='#e96900'>**progress**</font></span>: 响应请求事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含五个节点{currentSize:'1221',totalSize:'23234245',currentFileSize:'',index:'',taskId:''}单位为kB，其中currentFileSize和index只有调用form方法时返回，分别为当前正在上传文件大小和所在files数据数组中索引，除断点下载其他请求不会返回tastID，断点下载不返回index
@@ -238,7 +263,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**success**</font>: 请求成功事件
+>###### <span id=success><font color ='#e96900'>**success**</font></span>: 请求成功事件
 
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回http接收到的数据
@@ -252,7 +277,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**fail**</font>: 请求出错事件
+>###### <span id=fail><font color ='#e96900'>**fail**</font></span>: 请求出错事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{status:'http错误码' ,message:'错误的信息'}
@@ -266,7 +291,7 @@ title: do_Http 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**result**</font>: 请求结束事件
+>###### <span id=result><font color ='#e96900'>**result**</font></span>: 请求结束事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包含两个节点{status:'http状态码' ,data:'服务端返回信息',taskId:''}，除断点下载其他请求不会返回tastID

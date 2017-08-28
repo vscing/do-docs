@@ -4,18 +4,33 @@ title: do_DataTable 组件
 
 ### do_DataTable 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_DataTable)
  类似于Excel表格，展示对应的二维数据表，可以支持自定义的样式设置,可支持上下左右滑动查看，也可支持固定列的锁定。当表头列数与数据列数无法匹配时，确定显示列数的顺序为：1.HeaderData、2.HeaderStyle、3.RowData
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[isHeaderVisible](#isHeaderVisible)| 是否显示表头
+<font color ='#42b983'>属性</font>  |[freezeColumn](#freezeColumn)| 冻结的列个数
+<font color ='#0092db'>同步方法</font>  |[setHeaderStyle](#setHeaderStyle)| 设置表头样式
+<font color ='#0092db'>同步方法</font>  |[setHeaderData](#setHeaderData)| 设置表头数据
+<font color ='#0092db'>同步方法</font>  |[setRowStyle](#setRowStyle)| 设置数据样式
+<font color ='#0092db'>同步方法</font>  |[setRowData](#setRowData)| 设置表格数据
+<font color ='#0092db'>同步方法</font>  |[setCellDatas](#setCellDatas)| 设置单元格属性
+<font color ='#e96900'>事件</font>  |[longTouch](#longTouch)| 长按单元格触发
+<font color ='#e96900'>事件</font>  |[touch](#touch)| 点击单元格触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**isHeaderVisible**</font>: 是否显示表头
+>###### <span id=isHeaderVisible><font color ='#42b983'>**isHeaderVisible**</font></span>: 是否显示表头
 
 - 数据类型 : <font color ='#808000'>**boolean**</font>
 - 默认值 : true
 - 说明 : 如果显示表头的话，表头是不会随表格上下滑动的时候滑动的
 
->###### <font color ='#42b983'>**freezeColumn**</font>: 冻结的列个数
+>###### <span id=freezeColumn><font color ='#42b983'>**freezeColumn**</font></span>: 冻结的列个数
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 1
@@ -23,7 +38,7 @@ title: do_DataTable 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**setHeaderStyle**</font>: 设置表头样式
+>##### <span id=setHeaderStyle><font color ='#0092db'>**setHeaderStyle**</font></span>: 设置表头样式
 
 - 参数:
 
@@ -48,7 +63,7 @@ title: do_DataTable 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setHeaderData**</font>: 设置表头数据
+>##### <span id=setHeaderData><font color ='#0092db'>**setHeaderData**</font></span>: 设置表头数据
 
 - 参数:
 
@@ -67,7 +82,7 @@ title: do_DataTable 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setRowStyle**</font>: 设置数据样式
+>##### <span id=setRowStyle><font color ='#0092db'>**setRowStyle**</font></span>: 设置数据样式
 
 - 参数:
 
@@ -91,7 +106,7 @@ title: do_DataTable 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setRowData**</font>: 设置表格数据
+>##### <span id=setRowData><font color ='#0092db'>**setRowData**</font></span>: 设置表格数据
 
 - 参数:
 
@@ -110,7 +125,7 @@ title: do_DataTable 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setCellDatas**</font>: 设置单元格属性
+>##### <span id=setCellDatas><font color ='#0092db'>**setCellDatas**</font></span>: 设置单元格属性
 
 - 参数:
 
@@ -134,7 +149,7 @@ title: do_DataTable 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**longTouch**</font>: 长按单元格触发
+>###### <span id=longTouch><font color ='#e96900'>**longTouch**</font></span>: 长按单元格触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前单元格的位置（不含表头）{row:第几行,column:第几列}
@@ -148,7 +163,7 @@ title: do_DataTable 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**touch**</font>: 点击单元格触发
+>###### <span id=touch><font color ='#e96900'>**touch**</font></span>: 点击单元格触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前单元格的位置（不含表头）{row:第几行,column:第几列}

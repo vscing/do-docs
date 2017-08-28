@@ -4,14 +4,23 @@ title: do_3DTouch 组件
 
 ### do_3DTouch 组件
 
- 支持平台: iOS,Android
+ 支持平台: iOS,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_3DTouch)
  目前支持桌面快捷菜单，最多只能添加4个；因苹果特性，该功能只有在第二次启动App时生效
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[addShortcutItem](#addShortcutItem)| 添加桌面快捷菜单
+<font color ='#0092db'>同步方法</font>  |[removeShortcutItem](#removeShortcutItem)| 删除桌面快捷菜单
+<font color ='#e96900'>事件</font>  |[touch](#touch)| 点击item触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**addShortcutItem**</font>: 添加桌面快捷菜单
+>##### <span id=addShortcutItem><font color ='#0092db'>**addShortcutItem**</font></span>: 添加桌面快捷菜单
 
 - 参数:
 
@@ -34,7 +43,7 @@ title: do_3DTouch 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeShortcutItem**</font>: 删除桌面快捷菜单
+>##### <span id=removeShortcutItem><font color ='#0092db'>**removeShortcutItem**</font></span>: 删除桌面快捷菜单
 
 - 参数:
 
@@ -58,7 +67,7 @@ title: do_3DTouch 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**touch**</font>: 点击item触发
+>###### <span id=touch><font color ='#e96900'>**touch**</font></span>: 点击item触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值包括，{'id':'','title':'','subTitle':'','userInfo':''}

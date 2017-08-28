@@ -4,14 +4,30 @@ title: do_Polyv 组件
 
 ### do_Polyv 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Polyv)
  保利威视提供网络播放、本地播放、视频下载、视频上传、视频拍摄等功能，不支持windows平台
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[play](#play)| 播放视频
+<font color ='#0092db'>同步方法</font>  |[getState](#getState)| 获取视频状态
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 停止播放
+<font color ='#0092db'>同步方法</font>  |[getCurrentTime](#getCurrentTime)| 获取当前视频播放时间
+<font color ='#0092db'>同步方法</font>  |[download](#download)| 下载视频
+<font color ='#0092db'>异步方法</font>  |[getList](#getList)| 获取视频列表
+<font color ='#0092db'>异步方法</font>  |[getInfo](#getInfo)| 获取视频信息
+<font color ='#e96900'>事件</font>  |[downloadProgress](#downloadProgress)| 下载进度事件
+<font color ='#e96900'>事件</font>  |[success](#success)| 请求成功事件
+<font color ='#e96900'>事件</font>  |[fail](#fail)| 请求出错事件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**play**</font>: 播放视频
+>##### <span id=play><font color ='#0092db'>**play**</font></span>: 播放视频
 
 - 参数:
 
@@ -33,7 +49,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getState**</font>: 获取视频状态
+>##### <span id=getState><font color ='#0092db'>**getState**</font></span>: 获取视频状态
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -48,7 +64,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止播放
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -63,7 +79,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getCurrentTime**</font>: 获取当前视频播放时间
+>##### <span id=getCurrentTime><font color ='#0092db'>**getCurrentTime**</font></span>: 获取当前视频播放时间
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -78,7 +94,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**download**</font>: 下载视频
+>##### <span id=download><font color ='#0092db'>**download**</font></span>: 下载视频
 
 - 参数:
 
@@ -100,7 +116,7 @@ title: do_Polyv 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getList**</font>: 获取视频列表
+>##### <span id=getList><font color ='#0092db'>**getList**</font></span>: 获取视频列表
 
 - 参数:
 
@@ -120,7 +136,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getInfo**</font>: 获取视频信息
+>##### <span id=getInfo><font color ='#0092db'>**getInfo**</font></span>: 获取视频信息
 
 - 参数:
 
@@ -142,7 +158,7 @@ title: do_Polyv 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**downloadProgress**</font>: 下载进度事件
+>###### <span id=downloadProgress><font color ='#e96900'>**downloadProgress**</font></span>: 下载进度事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前下载进度百分比{progress:20}表示20%
@@ -156,7 +172,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**success**</font>: 请求成功事件
+>###### <span id=success><font color ='#e96900'>**success**</font></span>: 请求成功事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值{type:0}，type表示事件类型，0表示下载事件
@@ -170,7 +186,7 @@ title: do_Polyv 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**fail**</font>: 请求出错事件
+>###### <span id=fail><font color ='#e96900'>**fail**</font></span>: 请求出错事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回值{type:0}，type表示事件类型，0表示下载事件

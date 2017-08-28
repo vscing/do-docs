@@ -4,8 +4,34 @@ title: M3242_NVDeviceView 组件
 
 ### M3242_NVDeviceView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/M3242_NVDeviceView)
  广州宏视流媒体(一个可以远程访问摄像头进行实时监控的组件)
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[loginDevice](#loginDevice)| 登陆当前设备(要登录的设备为属性设置的当前设备),其余方法必须在登录成功之后方可执行
+<font color ='#0092db'>异步方法</font>  |[reset](#reset)| 重置搜索参数，也可以用来中断搜索
+<font color ='#0092db'>异步方法</font>  |[stopSmartConnection](#stopSmartConnection)| 终止快速配置
+<font color ='#0092db'>异步方法</font>  |[startSmartConnection](#startSmartConnection)| 设备的快速网络配置
+<font color ='#0092db'>异步方法</font>  |[getLocalDeviceFromLan](#getLocalDeviceFromLan)| 搜索局域网内设备
+<font color ='#0092db'>异步方法</font>  |[getInfo](#getInfo)| 根据传入的类型获取当前设备相关信息
+<font color ='#0092db'>异步方法</font>  |[setAccountInfo](#setAccountInfo)| 设置账户信息
+<font color ='#0092db'>异步方法</font>  |[setDateInfo](#setDateInfo)| 设置日期信息
+<font color ='#0092db'>异步方法</font>  |[startPlay](#startPlay)| 开始播放实时预览，其他功能需要在登录方法返回true的情况下才能操作
+<font color ='#0092db'>异步方法</font>  |[stop](#stop)| 停止播放实时预览
+<font color ='#0092db'>异步方法</font>  |[startSpeak](#startSpeak)| 开启对讲
+<font color ='#0092db'>异步方法</font>  |[stopSpeak](#stopSpeak)| 停止对讲
+<font color ='#0092db'>异步方法</font>  |[setAudioParam](#setAudioParam)| 音频播放开关
+<font color ='#0092db'>异步方法</font>  |[setImageOrientation](#setImageOrientation)| 屏幕倒置设置
+<font color ='#0092db'>异步方法</font>  |[screenShot](#screenShot)| 截取当前监控区域显示内容
+<font color ='#0092db'>异步方法</font>  |[getRecordFiles](#getRecordFiles)| 根据开始和结束的时间区间获取录制视频列表
+<font color ='#0092db'>异步方法</font>  |[startPlayBack](#startPlayBack)| 开始播放录像文件
+<font color ='#0092db'>异步方法</font>  |[setPTZAction](#setPTZAction)| 云台控制
+<font color ='#0092db'>异步方法</font>  |[callPTZXLocationID](#callPTZXLocationID)| 调用预置位定位
+<font color ='#0092db'>异步方法</font>  |[setPTZXLocationID](#setPTZXLocationID)| 设定预置位
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +39,7 @@ title: M3242_NVDeviceView 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**loginDevice**</font>: 登陆当前设备(要登录的设备为属性设置的当前设备),其余方法必须在登录成功之后方可执行
+>##### <span id=loginDevice><font color ='#0092db'>**loginDevice**</font></span>: 登陆当前设备(要登录的设备为属性设置的当前设备),其余方法必须在登录成功之后方可执行
 
 - 参数:
 
@@ -38,7 +64,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**reset**</font>: 重置搜索参数，也可以用来中断搜索
+>##### <span id=reset><font color ='#0092db'>**reset**</font></span>: 重置搜索参数，也可以用来中断搜索
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -53,7 +79,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stopSmartConnection**</font>: 终止快速配置
+>##### <span id=stopSmartConnection><font color ='#0092db'>**stopSmartConnection**</font></span>: 终止快速配置
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -68,7 +94,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startSmartConnection**</font>: 设备的快速网络配置
+>##### <span id=startSmartConnection><font color ='#0092db'>**startSmartConnection**</font></span>: 设备的快速网络配置
 
 - 参数:
 
@@ -89,7 +115,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getLocalDeviceFromLan**</font>: 搜索局域网内设备
+>##### <span id=getLocalDeviceFromLan><font color ='#0092db'>**getLocalDeviceFromLan**</font></span>: 搜索局域网内设备
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -104,7 +130,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getInfo**</font>: 根据传入的类型获取当前设备相关信息
+>##### <span id=getInfo><font color ='#0092db'>**getInfo**</font></span>: 根据传入的类型获取当前设备相关信息
 
 - 参数:
 
@@ -123,7 +149,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setAccountInfo**</font>: 设置账户信息
+>##### <span id=setAccountInfo><font color ='#0092db'>**setAccountInfo**</font></span>: 设置账户信息
 
 - 参数:
 
@@ -143,7 +169,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setDateInfo**</font>: 设置日期信息
+>##### <span id=setDateInfo><font color ='#0092db'>**setDateInfo**</font></span>: 设置日期信息
 
 - 参数:
 
@@ -165,7 +191,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startPlay**</font>: 开始播放实时预览，其他功能需要在登录方法返回true的情况下才能操作
+>##### <span id=startPlay><font color ='#0092db'>**startPlay**</font></span>: 开始播放实时预览，其他功能需要在登录方法返回true的情况下才能操作
 
 - 参数:
 
@@ -186,7 +212,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止播放实时预览
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止播放实时预览
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -201,7 +227,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startSpeak**</font>: 开启对讲
+>##### <span id=startSpeak><font color ='#0092db'>**startSpeak**</font></span>: 开启对讲
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -216,7 +242,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stopSpeak**</font>: 停止对讲
+>##### <span id=stopSpeak><font color ='#0092db'>**stopSpeak**</font></span>: 停止对讲
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -231,7 +257,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setAudioParam**</font>: 音频播放开关
+>##### <span id=setAudioParam><font color ='#0092db'>**setAudioParam**</font></span>: 音频播放开关
 
 - 参数:
 
@@ -250,7 +276,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setImageOrientation**</font>: 屏幕倒置设置
+>##### <span id=setImageOrientation><font color ='#0092db'>**setImageOrientation**</font></span>: 屏幕倒置设置
 
 - 参数:
 
@@ -269,7 +295,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**screenShot**</font>: 截取当前监控区域显示内容
+>##### <span id=screenShot><font color ='#0092db'>**screenShot**</font></span>: 截取当前监控区域显示内容
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
@@ -284,7 +310,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getRecordFiles**</font>: 根据开始和结束的时间区间获取录制视频列表
+>##### <span id=getRecordFiles><font color ='#0092db'>**getRecordFiles**</font></span>: 根据开始和结束的时间区间获取录制视频列表
 
 - 参数:
 
@@ -313,7 +339,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startPlayBack**</font>: 开始播放录像文件
+>##### <span id=startPlayBack><font color ='#0092db'>**startPlayBack**</font></span>: 开始播放录像文件
 
 - 参数:
 
@@ -332,7 +358,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setPTZAction**</font>: 云台控制
+>##### <span id=setPTZAction><font color ='#0092db'>**setPTZAction**</font></span>: 云台控制
 
 - 参数:
 
@@ -355,7 +381,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**callPTZXLocationID**</font>: 调用预置位定位
+>##### <span id=callPTZXLocationID><font color ='#0092db'>**callPTZXLocationID**</font></span>: 调用预置位定位
 
 - 参数:
 
@@ -374,7 +400,7 @@ title: M3242_NVDeviceView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setPTZXLocationID**</font>: 设定预置位
+>##### <span id=setPTZXLocationID><font color ='#0092db'>**setPTZXLocationID**</font></span>: 设定预置位
 
 - 参数:
 

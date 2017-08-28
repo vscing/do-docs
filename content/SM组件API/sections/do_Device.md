@@ -4,14 +4,34 @@ title: do_Device 组件
 
 ### do_Device 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Device)
  设备辅助功能，获取设备系统相关信息、提示音、震动、闪光灯、截屏等
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[vibrate](#vibrate)| 振动
+<font color ='#0092db'>同步方法</font>  |[beep](#beep)| 系统通知提示音
+<font color ='#0092db'>同步方法</font>  |[flash](#flash)| 开关闪光灯
+<font color ='#0092db'>同步方法</font>  |[getInfo](#getInfo)| 获取设备信息
+<font color ='#0092db'>同步方法</font>  |[getAllAppInfo](#getAllAppInfo)| 获取应用信息
+<font color ='#0092db'>同步方法</font>  |[getLocale](#getLocale)| 获取系统环境
+<font color ='#0092db'>同步方法</font>  |[home](#home)| 应用退到后台
+<font color ='#0092db'>同步方法</font>  |[setScreenAutoDarken](#setScreenAutoDarken)| 控制锁屏
+<font color ='#0092db'>同步方法</font>  |[getBattery](#getBattery)| 获取电量
+<font color ='#0092db'>同步方法</font>  |[getLocationPermission](#getLocationPermission)| 获取当前应用的位置权限
+<font color ='#0092db'>异步方法</font>  |[screenShot](#screenShot)| 截屏
+<font color ='#0092db'>异步方法</font>  |[srceenShotAsBitmap](#srceenShotAsBitmap)| 截屏
+<font color ='#0092db'>异步方法</font>  |[getGPSInfo](#getGPSInfo)| 获取设备GPS信息
+<font color ='#0092db'>异步方法</font>  |[getRingerMode](#getRingerMode)| 获取设备声音状态
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**vibrate**</font>: 振动
+>##### <span id=vibrate><font color ='#0092db'>**vibrate**</font></span>: 振动
 
 - 参数:
 
@@ -30,7 +50,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**beep**</font>: 系统通知提示音
+>##### <span id=beep><font color ='#0092db'>**beep**</font></span>: 系统通知提示音
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -45,7 +65,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**flash**</font>: 开关闪光灯
+>##### <span id=flash><font color ='#0092db'>**flash**</font></span>: 开关闪光灯
 
 - 参数:
 
@@ -64,7 +84,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getInfo**</font>: 获取设备信息
+>##### <span id=getInfo><font color ='#0092db'>**getInfo**</font></span>: 获取设备信息
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -79,7 +99,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getAllAppInfo**</font>: 获取应用信息
+>##### <span id=getAllAppInfo><font color ='#0092db'>**getAllAppInfo**</font></span>: 获取应用信息
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -94,7 +114,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getLocale**</font>: 获取系统环境
+>##### <span id=getLocale><font color ='#0092db'>**getLocale**</font></span>: 获取系统环境
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -109,7 +129,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**home**</font>: 应用退到后台
+>##### <span id=home><font color ='#0092db'>**home**</font></span>: 应用退到后台
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -124,7 +144,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setScreenAutoDarken**</font>: 控制锁屏
+>##### <span id=setScreenAutoDarken><font color ='#0092db'>**setScreenAutoDarken**</font></span>: 控制锁屏
 
 - 参数:
 
@@ -143,7 +163,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getBattery**</font>: 获取电量
+>##### <span id=getBattery><font color ='#0092db'>**getBattery**</font></span>: 获取电量
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -158,7 +178,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getLocationPermission**</font>: 获取当前应用的位置权限
+>##### <span id=getLocationPermission><font color ='#0092db'>**getLocationPermission**</font></span>: 获取当前应用的位置权限
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -175,7 +195,7 @@ title: do_Device 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**screenShot**</font>: 截屏
+>##### <span id=screenShot><font color ='#0092db'>**screenShot**</font></span>: 截屏
 
 - 参数:
 
@@ -194,7 +214,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**srceenShotAsBitmap**</font>: 截屏
+>##### <span id=srceenShotAsBitmap><font color ='#0092db'>**srceenShotAsBitmap**</font></span>: 截屏
 
 - 参数:
 
@@ -214,7 +234,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getGPSInfo**</font>: 获取设备GPS信息
+>##### <span id=getGPSInfo><font color ='#0092db'>**getGPSInfo**</font></span>: 获取设备GPS信息
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -229,7 +249,7 @@ title: do_Device 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getRingerMode**</font>: 获取设备声音状态
+>##### <span id=getRingerMode><font color ='#0092db'>**getRingerMode**</font></span>: 获取设备声音状态
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>

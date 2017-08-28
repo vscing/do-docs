@@ -4,14 +4,31 @@ title: do_RongCloud 组件
 
 ### do_RongCloud 组件
 
- 支持平台: iOS7,Android14
+ 支持平台: iOS7,Android14 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_RongCloud)
  融云即时通信
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[setTitleBarColor](#setTitleBarColor)| 设置标题栏颜色,不调用此方法默认标题栏颜色为蓝色
+<font color ='#0092db'>同步方法</font>  |[setTitleColor](#setTitleColor)| 设置标题颜色,不调用此方法默认标题颜色为白色
+<font color ='#0092db'>同步方法</font>  |[logout](#logout)| 退出登录
+<font color ='#0092db'>同步方法</font>  |[getLatestMessage](#getLatestMessage)| 获取会话列表最新一条消息
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 用户登录
+<font color ='#0092db'>异步方法</font>  |[openConversation](#openConversation)| 打开单个会话
+<font color ='#0092db'>异步方法</font>  |[openConversationList](#openConversationList)| 打开会话列表
+<font color ='#0092db'>异步方法</font>  |[openGroupConversation](#openGroupConversation)| 打开群聊会话
+<font color ='#0092db'>异步方法</font>  |[setUserInfo](#setUserInfo)| 设置当前用户信息
+<font color ='#e96900'>事件</font>  |[message](#message)| 接收到新消息触发事件
+<font color ='#e96900'>事件</font>  |[userPortraitClick](#userPortraitClick)| 头像点击事件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**setTitleBarColor**</font>: 设置标题栏颜色,不调用此方法默认标题栏颜色为蓝色
+>##### <span id=setTitleBarColor><font color ='#0092db'>**setTitleBarColor**</font></span>: 设置标题栏颜色,不调用此方法默认标题栏颜色为蓝色
 
 - 参数:
 
@@ -30,7 +47,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setTitleColor**</font>: 设置标题颜色,不调用此方法默认标题颜色为白色
+>##### <span id=setTitleColor><font color ='#0092db'>**setTitleColor**</font></span>: 设置标题颜色,不调用此方法默认标题颜色为白色
 
 - 参数:
 
@@ -49,7 +66,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**logout**</font>: 退出登录
+>##### <span id=logout><font color ='#0092db'>**logout**</font></span>: 退出登录
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -64,7 +81,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getLatestMessage**</font>: 获取会话列表最新一条消息
+>##### <span id=getLatestMessage><font color ='#0092db'>**getLatestMessage**</font></span>: 获取会话列表最新一条消息
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -81,7 +98,7 @@ title: do_RongCloud 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**login**</font>: 用户登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 用户登录
 
 - 参数:
 
@@ -102,7 +119,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openConversation**</font>: 打开单个会话
+>##### <span id=openConversation><font color ='#0092db'>**openConversation**</font></span>: 打开单个会话
 
 - 参数:
 
@@ -123,7 +140,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openConversationList**</font>: 打开会话列表
+>##### <span id=openConversationList><font color ='#0092db'>**openConversationList**</font></span>: 打开会话列表
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -138,7 +155,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**openGroupConversation**</font>: 打开群聊会话
+>##### <span id=openGroupConversation><font color ='#0092db'>**openGroupConversation**</font></span>: 打开群聊会话
 
 - 参数:
 
@@ -158,7 +175,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setUserInfo**</font>: 设置当前用户信息
+>##### <span id=setUserInfo><font color ='#0092db'>**setUserInfo**</font></span>: 设置当前用户信息
 
 - 参数:
 
@@ -181,7 +198,7 @@ title: do_RongCloud 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**message**</font>: 接收到新消息触发事件
+>###### <span id=message><font color ='#e96900'>**message**</font></span>: 接收到新消息触发事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的信息为{ conversationType : '所属会话类型', messageId : '消息的唯一id', fromUserId:'发送者id', sendTime : '发送时间', receiveTime : '接收时间' , messageType : '消息类型(text,location,file,image,voice)', messageContent : '消息内容'  }
@@ -195,7 +212,7 @@ title: do_RongCloud 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**userPortraitClick**</font>: 头像点击事件
+>###### <span id=userPortraitClick><font color ='#e96900'>**userPortraitClick**</font></span>: 头像点击事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回的信息为{ conversationType : '当前所属会话类型', userId : '所点击头像的用户id',userName : '所点击头像的用户昵称'  }

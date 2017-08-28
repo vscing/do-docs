@@ -4,14 +4,27 @@ title: do_MultiAudio 组件
 
 ### do_MultiAudio 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_MultiAudio)
  多音频播放，能支持播放mp3、amr（iOS平台不支持）、aac格式的本地和网络音频
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[play](#play)| 开始播放
+<font color ='#0092db'>同步方法</font>  |[pause](#pause)| 暂停播放
+<font color ='#0092db'>同步方法</font>  |[resume](#resume)| 继续播放
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 停止播放
+<font color ='#e96900'>事件</font>  |[playFinished](#playFinished)| 音频播放结束后触发
+<font color ='#e96900'>事件</font>  |[error](#error)| 音频播放错误时触发
+<font color ='#e96900'>事件</font>  |[playProgress](#playProgress)| 
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**play**</font>: 开始播放
+>##### <span id=play><font color ='#0092db'>**play**</font></span>: 开始播放
 
 - 参数:
 
@@ -31,7 +44,7 @@ title: do_MultiAudio 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**pause**</font>: 暂停播放
+>##### <span id=pause><font color ='#0092db'>**pause**</font></span>: 暂停播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -46,7 +59,7 @@ title: do_MultiAudio 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**resume**</font>: 继续播放
+>##### <span id=resume><font color ='#0092db'>**resume**</font></span>: 继续播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -61,7 +74,7 @@ title: do_MultiAudio 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止播放
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止播放
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -81,7 +94,7 @@ title: do_MultiAudio 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**playFinished**</font>: 音频播放结束后触发
+>###### <span id=playFinished><font color ='#e96900'>**playFinished**</font></span>: 音频播放结束后触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -95,7 +108,7 @@ title: do_MultiAudio 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**error**</font>: 音频播放错误时触发
+>###### <span id=error><font color ='#e96900'>**error**</font></span>: 音频播放错误时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 
@@ -109,7 +122,7 @@ title: do_MultiAudio 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**playProgress**</font>: 
+>###### <span id=playProgress><font color ='#e96900'>**playProgress**</font></span>: 
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回音频总时间和当前播放时间{currentTime,totalTime}，单位为毫秒

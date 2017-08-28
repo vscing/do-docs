@@ -4,14 +4,29 @@ title: M0011_TXLiveView 组件
 
 ### M0011_TXLiveView 组件
 
- 支持平台: iOS,Android
+ 支持平台: iOS,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/M0011_TXLiveView)
  详细文档请见https://www.qcloud.com/document/product/267/7977
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[startPush](#startPush)| 开始直播(主播)
+<font color ='#0092db'>同步方法</font>  |[startPlay](#startPlay)| 观看直播(观众)
+<font color ='#0092db'>同步方法</font>  |[stop](#stop)| 停止推流
+<font color ='#0092db'>同步方法</font>  |[pause](#pause)| 暂停推流
+<font color ='#0092db'>同步方法</font>  |[resume](#resume)| 恢复推流
+<font color ='#0092db'>同步方法</font>  |[switchCamera](#switchCamera)| 切换摄像头
+<font color ='#0092db'>同步方法</font>  |[setBeauty](#setBeauty)| 设置美颜美白
+<font color ='#0092db'>同步方法</font>  |[toggleTorch](#toggleTorch)| 闪光灯
+<font color ='#0092db'>同步方法</font>  |[setMute](#setMute)| 设置是否静音
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**startPush**</font>: 开始直播(主播)
+>##### <span id=startPush><font color ='#0092db'>**startPush**</font></span>: 开始直播(主播)
 
 - 参数:
 
@@ -30,7 +45,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startPlay**</font>: 观看直播(观众)
+>##### <span id=startPlay><font color ='#0092db'>**startPlay**</font></span>: 观看直播(观众)
 
 - 参数:
 
@@ -50,7 +65,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**stop**</font>: 停止推流
+>##### <span id=stop><font color ='#0092db'>**stop**</font></span>: 停止推流
 
 - 参数:
 
@@ -69,7 +84,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**pause**</font>: 暂停推流
+>##### <span id=pause><font color ='#0092db'>**pause**</font></span>: 暂停推流
 
 - 参数:
 
@@ -88,7 +103,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**resume**</font>: 恢复推流
+>##### <span id=resume><font color ='#0092db'>**resume**</font></span>: 恢复推流
 
 - 参数:
 
@@ -107,7 +122,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**switchCamera**</font>: 切换摄像头
+>##### <span id=switchCamera><font color ='#0092db'>**switchCamera**</font></span>: 切换摄像头
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -122,7 +137,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setBeauty**</font>: 设置美颜美白
+>##### <span id=setBeauty><font color ='#0092db'>**setBeauty**</font></span>: 设置美颜美白
 
 - 参数:
 
@@ -142,7 +157,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**toggleTorch**</font>: 闪光灯
+>##### <span id=toggleTorch><font color ='#0092db'>**toggleTorch**</font></span>: 闪光灯
 
 - 参数:
 
@@ -161,7 +176,7 @@ title: M0011_TXLiveView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setMute**</font>: 设置是否静音
+>##### <span id=setMute><font color ='#0092db'>**setMute**</font></span>: 设置是否静音
 
 - 参数:
 

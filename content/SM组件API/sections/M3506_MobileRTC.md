@@ -4,14 +4,38 @@ title: M3506_MobileRTC 组件
 
 ### M3506_MobileRTC 组件
 
- 支持平台: iOS7.0,Android
+ 支持平台: iOS7.0,Android 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/M3506_MobileRTC)
  集成了zoom的MobileRTC的视频会议组件
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getMeetingState](#getMeetingState)| 获取会议状态
+<font color ='#0092db'>同步方法</font>  |[isMeetingHost](#isMeetingHost)| 是否为会议主持人
+<font color ='#0092db'>同步方法</font>  |[isMeetingLocked](#isMeetingLocked)| 会议是否被锁定
+<font color ='#0092db'>同步方法</font>  |[isNoMeetingAudio](#isNoMeetingAudio)| 音频不存在
+<font color ='#0092db'>同步方法</font>  |[joinMeetingWithDictionary](#joinMeetingWithDictionary)| 加入会议
+<font color ='#0092db'>同步方法</font>  |[joinMeetingWithMeetingNoAndDisplayName](#joinMeetingWithMeetingNoAndDisplayName)| 加入会议
+<font color ='#0092db'>同步方法</font>  |[leaveMeetingWithCmd](#leaveMeetingWithCmd)| 离开会议
+<font color ='#0092db'>同步方法</font>  |[loginWithEmailAndPassword](#loginWithEmailAndPassword)| 使用邮箱密码登陆
+<font color ='#0092db'>同步方法</font>  |[logoutRTC](#logoutRTC)| 登出
+<font color ='#0092db'>同步方法</font>  |[pauseMeetingAudio](#pauseMeetingAudio)| 暂停／恢复会议音频
+<font color ='#0092db'>同步方法</font>  |[startMeetingWithDictionary](#startMeetingWithDictionary)| 开始会议
+<font color ='#e96900'>事件</font>  |[MeetingError](#MeetingError)| Designated for Meeting Error message.
+<font color ='#e96900'>事件</font>  |[MeetingReturn](#MeetingReturn)| Designated for Meeting Response.
+<font color ='#e96900'>事件</font>  |[MeetingStateChange](#MeetingStateChange)| Designated for Meeting State Change.
+<font color ='#e96900'>事件</font>  |[MobileRTCAuthReturn](#MobileRTCAuthReturn)| Designated for MobileRTC Auth response.
+<font color ='#e96900'>事件</font>  |[MobileRTCLoginReturn](#MobileRTCLoginReturn)| Designated for MobileRTC Login response.
+<font color ='#e96900'>事件</font>  |[MobileRTCLogoutReturn](#MobileRTCLogoutReturn)| Designated for MobileRTC Logout response.
+<font color ='#e96900'>事件</font>  |[onMeetingReady](#onMeetingReady)| Designated for Meeting has been ready.
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getMeetingState**</font>: 获取会议状态
+>##### <span id=getMeetingState><font color ='#0092db'>**getMeetingState**</font></span>: 获取会议状态
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -32,7 +56,7 @@ title: M3506_MobileRTC 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**isMeetingHost**</font>: 是否为会议主持人
+>##### <span id=isMeetingHost><font color ='#0092db'>**isMeetingHost**</font></span>: 是否为会议主持人
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -47,7 +71,7 @@ title: M3506_MobileRTC 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**isMeetingLocked**</font>: 会议是否被锁定
+>##### <span id=isMeetingLocked><font color ='#0092db'>**isMeetingLocked**</font></span>: 会议是否被锁定
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -62,7 +86,7 @@ title: M3506_MobileRTC 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**isNoMeetingAudio**</font>: 音频不存在
+>##### <span id=isNoMeetingAudio><font color ='#0092db'>**isNoMeetingAudio**</font></span>: 音频不存在
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -77,7 +101,7 @@ title: M3506_MobileRTC 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**joinMeetingWithDictionary**</font>: 加入会议
+>##### <span id=joinMeetingWithDictionary><font color ='#0092db'>**joinMeetingWithDictionary**</font></span>: 加入会议
 
 - 参数:
 
@@ -127,7 +151,7 @@ title: M3506_MobileRTC 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**joinMeetingWithMeetingNoAndDisplayName**</font>: 加入会议
+>##### <span id=joinMeetingWithMeetingNoAndDisplayName><font color ='#0092db'>**joinMeetingWithMeetingNoAndDisplayName**</font></span>: 加入会议
 
 - 参数:
 
@@ -181,7 +205,7 @@ typedef enum {
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**leaveMeetingWithCmd**</font>: 离开会议
+>##### <span id=leaveMeetingWithCmd><font color ='#0092db'>**leaveMeetingWithCmd**</font></span>: 离开会议
 
 - 参数:
 
@@ -200,7 +224,7 @@ typedef enum {
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**loginWithEmailAndPassword**</font>: 使用邮箱密码登陆
+>##### <span id=loginWithEmailAndPassword><font color ='#0092db'>**loginWithEmailAndPassword**</font></span>: 使用邮箱密码登陆
 
 - 参数:
 
@@ -220,7 +244,7 @@ typedef enum {
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**logoutRTC**</font>: 登出
+>##### <span id=logoutRTC><font color ='#0092db'>**logoutRTC**</font></span>: 登出
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**boolean**</font>
@@ -235,7 +259,7 @@ typedef enum {
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**pauseMeetingAudio**</font>: 暂停／恢复会议音频
+>##### <span id=pauseMeetingAudio><font color ='#0092db'>**pauseMeetingAudio**</font></span>: 暂停／恢复会议音频
 
 - 参数:
 
@@ -254,7 +278,7 @@ typedef enum {
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startMeetingWithDictionary**</font>: 开始会议
+>##### <span id=startMeetingWithDictionary><font color ='#0092db'>**startMeetingWithDictionary**</font></span>: 开始会议
 
 - 参数:
 
@@ -308,7 +332,7 @@ MobileRTCMeetError_Unknown                    = 102,
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**MeetingError**</font>: Designated for Meeting Error message.
+>###### <span id=MeetingError><font color ='#e96900'>**MeetingError**</font></span>: Designated for Meeting Error message.
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: error, internal error code.
@@ -323,7 +347,7 @@ message, the message for meeting error.
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**MeetingReturn**</font>: Designated for Meeting Response.
+>###### <span id=MeetingReturn><font color ='#e96900'>**MeetingReturn**</font></span>: Designated for Meeting Response.
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: error, tell client related to this meeting event.
@@ -369,7 +393,7 @@ internalError, internal error code
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**MeetingStateChange**</font>: Designated for Meeting State Change.
+>###### <span id=MeetingStateChange><font color ='#e96900'>**MeetingStateChange**</font></span>: Designated for Meeting State Change.
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: tell client meeting state chagne.
@@ -389,7 +413,7 @@ internalError, internal error code
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**MobileRTCAuthReturn**</font>: Designated for MobileRTC Auth response.
+>###### <span id=MobileRTCAuthReturn><font color ='#e96900'>**MobileRTCAuthReturn**</font></span>: Designated for MobileRTC Auth response.
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: //Auth Success 
@@ -414,7 +438,7 @@ internalError, internal error code
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**MobileRTCLoginReturn**</font>: Designated for MobileRTC Login response.
+>###### <span id=MobileRTCLoginReturn><font color ='#e96900'>**MobileRTCLoginReturn**</font></span>: Designated for MobileRTC Login response.
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: returnValue tell user when the login state changed.
@@ -428,7 +452,7 @@ internalError, internal error code
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**MobileRTCLogoutReturn**</font>: Designated for MobileRTC Logout response.
+>###### <span id=MobileRTCLogoutReturn><font color ='#e96900'>**MobileRTCLogoutReturn**</font></span>: Designated for MobileRTC Logout response.
 
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: returnValue tell user whether the logout success or not.
@@ -442,7 +466,7 @@ internalError, internal error code
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**onMeetingReady**</font>: Designated for Meeting has been ready.
+>###### <span id=onMeetingReady><font color ='#e96900'>**onMeetingReady**</font></span>: Designated for Meeting has been ready.
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 

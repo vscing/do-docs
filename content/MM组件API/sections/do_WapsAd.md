@@ -4,14 +4,23 @@ title: do_WapsAd 组件
 
 ### do_WapsAd 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_WapsAd)
  支持条幅广告，不支持windows平台
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[show](#show)| 显示广告
+<font color ='#0092db'>同步方法</font>  |[getHeight](#getHeight)| 获取广告高度
+<font color ='#0092db'>同步方法</font>  |[close](#close)| 关闭广告
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**show**</font>: 显示广告
+>##### <span id=show><font color ='#0092db'>**show**</font></span>: 显示广告
 
 - 参数:
 
@@ -30,7 +39,7 @@ title: do_WapsAd 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getHeight**</font>: 获取广告高度
+>##### <span id=getHeight><font color ='#0092db'>**getHeight**</font></span>: 获取广告高度
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -45,7 +54,7 @@ title: do_WapsAd 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**close**</font>: 关闭广告
+>##### <span id=close><font color ='#0092db'>**close**</font></span>: 关闭广告
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>

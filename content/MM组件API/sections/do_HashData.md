@@ -4,14 +4,29 @@ title: do_HashData 组件
 
 ### do_HashData 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_HashData)
  HashData作为一个内存数据源，可以给UIModule作为bindData的数据源。可以参考UIModule的bindData方法。它本质上是一个可变key-value键值对,可以增删改查.
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getCount](#getCount)| 获取元素个数
+<font color ='#0092db'>同步方法</font>  |[addOne](#addOne)| 增加一条数据
+<font color ='#0092db'>同步方法</font>  |[addData](#addData)| 增加数据
+<font color ='#0092db'>同步方法</font>  |[getOne](#getOne)| 获取某一行数据
+<font color ='#0092db'>同步方法</font>  |[getData](#getData)| 获取数据
+<font color ='#0092db'>同步方法</font>  |[getAll](#getAll)| 获取全部数据
+<font color ='#0092db'>同步方法</font>  |[removeOne](#removeOne)| 删除某一行数据
+<font color ='#0092db'>同步方法</font>  |[removeData](#removeData)| 根据keys删除多条数据
+<font color ='#0092db'>同步方法</font>  |[removeAll](#removeAll)| 清空数据
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getCount**</font>: 获取元素个数
+>##### <span id=getCount><font color ='#0092db'>**getCount**</font></span>: 获取元素个数
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
@@ -26,7 +41,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**addOne**</font>: 增加一条数据
+>##### <span id=addOne><font color ='#0092db'>**addOne**</font></span>: 增加一条数据
 
 - 参数:
 
@@ -46,7 +61,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**addData**</font>: 增加数据
+>##### <span id=addData><font color ='#0092db'>**addData**</font></span>: 增加数据
 
 - 参数:
 
@@ -65,7 +80,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getOne**</font>: 获取某一行数据
+>##### <span id=getOne><font color ='#0092db'>**getOne**</font></span>: 获取某一行数据
 
 - 参数:
 
@@ -84,7 +99,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getData**</font>: 获取数据
+>##### <span id=getData><font color ='#0092db'>**getData**</font></span>: 获取数据
 
 - 参数:
 
@@ -103,7 +118,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getAll**</font>: 获取全部数据
+>##### <span id=getAll><font color ='#0092db'>**getAll**</font></span>: 获取全部数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -118,7 +133,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeOne**</font>: 删除某一行数据
+>##### <span id=removeOne><font color ='#0092db'>**removeOne**</font></span>: 删除某一行数据
 
 - 参数:
 
@@ -137,7 +152,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeData**</font>: 根据keys删除多条数据
+>##### <span id=removeData><font color ='#0092db'>**removeData**</font></span>: 根据keys删除多条数据
 
 - 参数:
 
@@ -156,7 +171,7 @@ title: do_HashData 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeAll**</font>: 清空数据
+>##### <span id=removeAll><font color ='#0092db'>**removeAll**</font></span>: 清空数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>

@@ -4,14 +4,21 @@ title: do_Animator 组件
 
 ### do_Animator 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Animator)
  控制UI组件动画的状态变化，每个状态点都支持对应5种属性的变化:x, y, width,height,bgColor；也支持修改透明值alpha，如50表示半透明，若同时用bgColor的后两位和alpha修改了透明值，以alpha为主，若alpha为父容器，则里面的子组件的透明值也随着改变
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[append](#append)| 创建属性动画
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**append**</font>: 创建属性动画
+>##### <span id=append><font color ='#0092db'>**append**</font></span>: 创建属性动画
 
 - 参数:
 

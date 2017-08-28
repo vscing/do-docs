@@ -4,8 +4,15 @@ title: do_Alipay 组件
 
 ### do_Alipay 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Alipay)
  调用手机支付宝客户端，完成支付功能
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[pay](#pay)| 支付
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +20,7 @@ title: do_Alipay 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**pay**</font>: 支付
+>##### <span id=pay><font color ='#0092db'>**pay**</font></span>: 支付
 
 - 参数:
 

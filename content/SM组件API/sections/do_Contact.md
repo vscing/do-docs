@@ -4,8 +4,19 @@ title: do_Contact 组件
 
 ### do_Contact 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Contact)
  针对通讯录的增删查改
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[getDataById](#getDataById)| 获取通讯录联系人信息
+<font color ='#0092db'>异步方法</font>  |[getData](#getData)| 获取通讯录联系人信息
+<font color ='#0092db'>异步方法</font>  |[addData](#addData)| 添加联系人信息
+<font color ='#0092db'>异步方法</font>  |[updateData](#updateData)| 修改联系人信息
+<font color ='#0092db'>异步方法</font>  |[deleteData](#deleteData)| 删除联系人信息
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +24,7 @@ title: do_Contact 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getDataById**</font>: 获取通讯录联系人信息
+>##### <span id=getDataById><font color ='#0092db'>**getDataById**</font></span>: 获取通讯录联系人信息
 
 - 参数:
 
@@ -32,7 +43,7 @@ title: do_Contact 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getData**</font>: 获取通讯录联系人信息
+>##### <span id=getData><font color ='#0092db'>**getData**</font></span>: 获取通讯录联系人信息
 
 - 参数:
 
@@ -52,7 +63,7 @@ title: do_Contact 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**addData**</font>: 添加联系人信息
+>##### <span id=addData><font color ='#0092db'>**addData**</font></span>: 添加联系人信息
 
 - 参数:
 
@@ -71,7 +82,7 @@ title: do_Contact 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**updateData**</font>: 修改联系人信息
+>##### <span id=updateData><font color ='#0092db'>**updateData**</font></span>: 修改联系人信息
 
 - 参数:
 
@@ -91,7 +102,7 @@ title: do_Contact 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**deleteData**</font>: 删除联系人信息
+>##### <span id=deleteData><font color ='#0092db'>**deleteData**</font></span>: 删除联系人信息
 
 - 参数:
 

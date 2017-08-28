@@ -4,14 +4,21 @@ title: LePlayerVod 组件
 
 ### LePlayerVod 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/LePlayerVod)
  乐视云提供的视频点播功能，http://www.lecloud.com/zh-cn/product/vod.html
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[playByID](#playByID)| 根据视频的uuid播放视频
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**playByID**</font>: 根据视频的uuid播放视频
+>##### <span id=playByID><font color ='#0092db'>**playByID**</font></span>: 根据视频的uuid播放视频
 
 - 参数:
 

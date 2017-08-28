@@ -4,8 +4,16 @@ title: do_GestureCipher 组件
 
 ### do_GestureCipher 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_GestureCipher)
  可以创建九宫格手势密码并且验证是否正确
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[set](#set)| 设置手势密码
+<font color ='#0092db'>异步方法</font>  |[validate](#validate)| 验证手势密码
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +21,7 @@ title: do_GestureCipher 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**set**</font>: 设置手势密码
+>##### <span id=set><font color ='#0092db'>**set**</font></span>: 设置手势密码
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
@@ -28,7 +36,7 @@ title: do_GestureCipher 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**validate**</font>: 验证手势密码
+>##### <span id=validate><font color ='#0092db'>**validate**</font></span>: 验证手势密码
 
 - 参数:
 

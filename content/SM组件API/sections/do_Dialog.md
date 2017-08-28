@@ -4,14 +4,23 @@ title: do_Dialog 组件
 
 ### do_Dialog 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Dialog)
  显示在屏幕上的窗口
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[getData](#getData)| 获取数据
+<font color ='#0092db'>同步方法</font>  |[close](#close)| 关闭窗口
+<font color ='#0092db'>异步方法</font>  |[open](#open)| 打开窗口
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**getData**</font>: 获取数据
+>##### <span id=getData><font color ='#0092db'>**getData**</font></span>: 获取数据
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
@@ -26,7 +35,7 @@ title: do_Dialog 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**close**</font>: 关闭窗口
+>##### <span id=close><font color ='#0092db'>**close**</font></span>: 关闭窗口
 
 - 参数:
 
@@ -47,7 +56,7 @@ title: do_Dialog 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**open**</font>: 打开窗口
+>##### <span id=open><font color ='#0092db'>**open**</font></span>: 打开窗口
 
 - 参数:
 

@@ -4,14 +4,35 @@ title: do_Storage 组件
 
 ### do_Storage 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Storage)
  DeviceOne定义了自己的文件URI，用户可以利用Storage类来处理各种文件操作，用户可对data://目录进行读写操作（缺省为utf-8格式）。目前暂时不支持中文目录和中文文件名
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[dirExist](#dirExist)| 判断目录是否存在
+<font color ='#0092db'>同步方法</font>  |[fileExist](#fileExist)| 判断文件是否存在
+<font color ='#0092db'>同步方法</font>  |[readFileSync](#readFileSync)| 读取文件内容
+<font color ='#0092db'>同步方法</font>  |[getFileSize](#getFileSize)| 获取文件大小
+<font color ='#0092db'>异步方法</font>  |[getFiles](#getFiles)| 获取文件列表
+<font color ='#0092db'>异步方法</font>  |[getDirs](#getDirs)| 获取目录列表
+<font color ='#0092db'>异步方法</font>  |[deleteDir](#deleteDir)| 删除目录
+<font color ='#0092db'>异步方法</font>  |[deleteFile](#deleteFile)| 删除文件
+<font color ='#0092db'>异步方法</font>  |[readFile](#readFile)| 读取文件内容
+<font color ='#0092db'>异步方法</font>  |[writeFile](#writeFile)| 写文件
+<font color ='#0092db'>异步方法</font>  |[zip](#zip)| 压缩文件或目录
+<font color ='#0092db'>异步方法</font>  |[zipFiles](#zipFiles)| 压缩多个文件
+<font color ='#0092db'>异步方法</font>  |[unzip](#unzip)| 解压缩文件
+<font color ='#0092db'>异步方法</font>  |[copy](#copy)| 拷贝文件
+<font color ='#0092db'>异步方法</font>  |[copyFile](#copyFile)| 拷贝文件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**dirExist**</font>: 判断目录是否存在
+>##### <span id=dirExist><font color ='#0092db'>**dirExist**</font></span>: 判断目录是否存在
 
 - 参数:
 
@@ -30,7 +51,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**fileExist**</font>: 判断文件是否存在
+>##### <span id=fileExist><font color ='#0092db'>**fileExist**</font></span>: 判断文件是否存在
 
 - 参数:
 
@@ -49,7 +70,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**readFileSync**</font>: 读取文件内容
+>##### <span id=readFileSync><font color ='#0092db'>**readFileSync**</font></span>: 读取文件内容
 
 - 参数:
 
@@ -70,7 +91,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getFileSize**</font>: 获取文件大小
+>##### <span id=getFileSize><font color ='#0092db'>**getFileSize**</font></span>: 获取文件大小
 
 - 参数:
 
@@ -91,7 +112,7 @@ title: do_Storage 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getFiles**</font>: 获取文件列表
+>##### <span id=getFiles><font color ='#0092db'>**getFiles**</font></span>: 获取文件列表
 
 - 参数:
 
@@ -110,7 +131,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getDirs**</font>: 获取目录列表
+>##### <span id=getDirs><font color ='#0092db'>**getDirs**</font></span>: 获取目录列表
 
 - 参数:
 
@@ -129,7 +150,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**deleteDir**</font>: 删除目录
+>##### <span id=deleteDir><font color ='#0092db'>**deleteDir**</font></span>: 删除目录
 
 - 参数:
 
@@ -148,7 +169,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**deleteFile**</font>: 删除文件
+>##### <span id=deleteFile><font color ='#0092db'>**deleteFile**</font></span>: 删除文件
 
 - 参数:
 
@@ -167,7 +188,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**readFile**</font>: 读取文件内容
+>##### <span id=readFile><font color ='#0092db'>**readFile**</font></span>: 读取文件内容
 
 - 参数:
 
@@ -188,7 +209,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**writeFile**</font>: 写文件
+>##### <span id=writeFile><font color ='#0092db'>**writeFile**</font></span>: 写文件
 
 - 参数:
 
@@ -211,7 +232,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**zip**</font>: 压缩文件或目录
+>##### <span id=zip><font color ='#0092db'>**zip**</font></span>: 压缩文件或目录
 
 - 参数:
 
@@ -231,7 +252,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**zipFiles**</font>: 压缩多个文件
+>##### <span id=zipFiles><font color ='#0092db'>**zipFiles**</font></span>: 压缩多个文件
 
 - 参数:
 
@@ -251,7 +272,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**unzip**</font>: 解压缩文件
+>##### <span id=unzip><font color ='#0092db'>**unzip**</font></span>: 解压缩文件
 
 - 参数:
 
@@ -271,7 +292,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**copy**</font>: 拷贝文件
+>##### <span id=copy><font color ='#0092db'>**copy**</font></span>: 拷贝文件
 
 - 参数:
 
@@ -291,7 +312,7 @@ title: do_Storage 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**copyFile**</font>: 拷贝文件
+>##### <span id=copyFile><font color ='#0092db'>**copyFile**</font></span>: 拷贝文件
 
 - 参数:
 

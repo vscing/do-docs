@@ -4,24 +4,50 @@ title: do_BaiduMapView 组件
 
 ### do_BaiduMapView 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduMapView)
  集成百度地图，实现基本的地图功能，包括设置中心点，添加标记等
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[mapScene](#mapScene)| 地图场景
+<font color ='#42b983'>属性</font>  |[mapType](#mapType)| 地图类型
+<font color ='#42b983'>属性</font>  |[zoomLevel](#zoomLevel)| 地图缩放等级
+<font color ='#0092db'>同步方法</font>  |[addMarkers](#addMarkers)| 添加一组标记
+<font color ='#0092db'>同步方法</font>  |[addOverlay](#addOverlay)| 添加集合图形
+<font color ='#0092db'>同步方法</font>  |[getDistance](#getDistance)| 获取实际距离
+<font color ='#0092db'>同步方法</font>  |[pauseDownload](#pauseDownload)| 暂停下载离线地图
+<font color ='#0092db'>同步方法</font>  |[removeAll](#removeAll)| 移除所有标记
+<font color ='#0092db'>同步方法</font>  |[removeDownload](#removeDownload)| 移除下载离线地图
+<font color ='#0092db'>同步方法</font>  |[removeMarker](#removeMarker)| 移除一组指定标记
+<font color ='#0092db'>同步方法</font>  |[removeOverlay](#removeOverlay)| 移除一组图形集合
+<font color ='#0092db'>同步方法</font>  |[setCenter](#setCenter)| 设置地图中心点
+<font color ='#0092db'>异步方法</font>  |[getHotCityList](#getHotCityList)| 获得所有热门城市
+<font color ='#0092db'>异步方法</font>  |[poiSearch](#poiSearch)| 搜索服务
+<font color ='#0092db'>异步方法</font>  |[routePlanSearch](#routePlanSearch)| 路线检索
+<font color ='#0092db'>异步方法</font>  |[startDownload](#startDownload)| 开始下载离线地图
+<font color ='#e96900'>事件</font>  |[download](#download)| 下载离线地图触发的事件
+<font color ='#e96900'>事件</font>  |[regionChange](#regionChange)| 地图区域改变完成后会触发，返回地图区域的中心点坐标
+<font color ='#e96900'>事件</font>  |[touchMap](#touchMap)| 点击地图时触发
+<font color ='#e96900'>事件</font>  |[touchMarker](#touchMarker)| 点击标记时触发，iOS平台只有第一次点击mark会触发该事件，之后需要点击弹出的缩略图触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**mapScene**</font>: 地图场景
+>###### <span id=mapScene><font color ='#42b983'>**mapScene**</font></span>: 地图场景
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 0
 - 说明 : 地图场景，场景目前支持两种：0表示当前同一个page里面包含VideoView等视频组件的场景（解决会互相覆盖的问题），1表示不包含，1的渲染效果比0好，若不同时在地图页面使用视频组件，建议选1。iOS平台不支持
 
->###### <font color ='#42b983'>**mapType**</font>: 地图类型
+>###### <span id=mapType><font color ='#42b983'>**mapType**</font></span>: 地图类型
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : standard
 - 说明 : 地图类型，支持标准地图standard和卫星地图satellite
 
->###### <font color ='#42b983'>**zoomLevel**</font>: 地图缩放等级
+>###### <span id=zoomLevel><font color ='#42b983'>**zoomLevel**</font></span>: 地图缩放等级
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 10
@@ -29,7 +55,7 @@ title: do_BaiduMapView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**addMarkers**</font>: 添加一组标记
+>##### <span id=addMarkers><font color ='#0092db'>**addMarkers**</font></span>: 添加一组标记
 
 - 参数:
 
@@ -48,7 +74,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**addOverlay**</font>: 添加集合图形
+>##### <span id=addOverlay><font color ='#0092db'>**addOverlay**</font></span>: 添加集合图形
 
 - 参数:
 
@@ -73,7 +99,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getDistance**</font>: 获取实际距离
+>##### <span id=getDistance><font color ='#0092db'>**getDistance**</font></span>: 获取实际距离
 
 - 参数:
 
@@ -93,7 +119,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**pauseDownload**</font>: 暂停下载离线地图
+>##### <span id=pauseDownload><font color ='#0092db'>**pauseDownload**</font></span>: 暂停下载离线地图
 
 - 参数:
 
@@ -112,7 +138,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeAll**</font>: 移除所有标记
+>##### <span id=removeAll><font color ='#0092db'>**removeAll**</font></span>: 移除所有标记
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -127,7 +153,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeDownload**</font>: 移除下载离线地图
+>##### <span id=removeDownload><font color ='#0092db'>**removeDownload**</font></span>: 移除下载离线地图
 
 - 参数:
 
@@ -146,7 +172,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeMarker**</font>: 移除一组指定标记
+>##### <span id=removeMarker><font color ='#0092db'>**removeMarker**</font></span>: 移除一组指定标记
 
 - 参数:
 
@@ -165,7 +191,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeOverlay**</font>: 移除一组图形集合
+>##### <span id=removeOverlay><font color ='#0092db'>**removeOverlay**</font></span>: 移除一组图形集合
 
 - 参数:
 
@@ -184,7 +210,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setCenter**</font>: 设置地图中心点
+>##### <span id=setCenter><font color ='#0092db'>**setCenter**</font></span>: 设置地图中心点
 
 - 参数:
 
@@ -206,7 +232,7 @@ title: do_BaiduMapView 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**getHotCityList**</font>: 获得所有热门城市
+>##### <span id=getHotCityList><font color ='#0092db'>**getHotCityList**</font></span>: 获得所有热门城市
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -221,7 +247,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**poiSearch**</font>: 搜索服务
+>##### <span id=poiSearch><font color ='#0092db'>**poiSearch**</font></span>: 搜索服务
 
 - 参数:
 
@@ -244,7 +270,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**routePlanSearch**</font>: 路线检索
+>##### <span id=routePlanSearch><font color ='#0092db'>**routePlanSearch**</font></span>: 路线检索
 
 - 参数:
 
@@ -267,7 +293,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**startDownload**</font>: 开始下载离线地图
+>##### <span id=startDownload><font color ='#0092db'>**startDownload**</font></span>: 开始下载离线地图
 
 - 参数:
 
@@ -289,7 +315,7 @@ title: do_BaiduMapView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**download**</font>: 下载离线地图触发的事件
+>###### <span id=download><font color ='#e96900'>**download**</font></span>: 下载离线地图触发的事件
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {'cityID':城市id,'cityName':城市名称,'ratio':下载进度（0~100）100表示下载完成}
@@ -303,7 +329,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**regionChange**</font>: 地图区域改变完成后会触发，返回地图区域的中心点坐标
+>###### <span id=regionChange><font color ='#e96900'>**regionChange**</font></span>: 地图区域改变完成后会触发，返回地图区域的中心点坐标
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: {latitude:'', longitude:''}
@@ -317,7 +343,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**touchMap**</font>: 点击地图时触发
+>###### <span id=touchMap><font color ='#e96900'>**touchMap**</font></span>: 点击地图时触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 返回当前点击的位置坐标{"latitude":"纬度","longitude":"经度"}
@@ -331,7 +357,7 @@ title: do_BaiduMapView 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**touchMarker**</font>: 点击标记时触发，iOS平台只有第一次点击mark会触发该事件，之后需要点击弹出的缩略图触发
+>###### <span id=touchMarker><font color ='#e96900'>**touchMarker**</font></span>: 点击标记时触发，iOS平台只有第一次点击mark会触发该事件，之后需要点击弹出的缩略图触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 

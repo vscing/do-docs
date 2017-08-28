@@ -4,14 +4,23 @@ title: do_ImageBrowser 组件
 
 ### do_ImageBrowser 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_ImageBrowser)
  这个组件用于浏览大量网络或本地图片，图片路径可以http://链接或本地data://、source://、initdata://目录，支持放大后缩放原图，多图片支持左右滑动预览，进入浏览界面单击一下屏幕退出
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[show](#show)| 预览
+<font color ='#e96900'>事件</font>  |[longTouch](#longTouch)| 长按预览图片触发
+<font color ='#e96900'>事件</font>  |[result](#result)| 点击关闭预览时触发
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**show**</font>: 预览
+>##### <span id=show><font color ='#0092db'>**show**</font></span>: 预览
 
 - 参数:
 
@@ -36,7 +45,7 @@ title: do_ImageBrowser 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**longTouch**</font>: 长按预览图片触发
+>###### <span id=longTouch><font color ='#e96900'>**longTouch**</font></span>: 长按预览图片触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前图片的索引值和图片的source，如['index':'','source':'']
@@ -50,7 +59,7 @@ title: do_ImageBrowser 组件
 
 [回到顶部](#top)
 
->###### <font color ='#e96900'>**result**</font>: 点击关闭预览时触发
+>###### <span id=result><font color ='#e96900'>**result**</font></span>: 点击关闭预览时触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述: 当前预览图片的索引{'index':''}

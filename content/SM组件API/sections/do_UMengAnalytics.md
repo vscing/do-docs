@@ -4,14 +4,28 @@ title: do_UMengAnalytics 组件
 
 ### do_UMengAnalytics 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_UMengAnalytics)
  关于计数事件与计算事件的详细文档http://dev.umeng.com/analytics/functions/numekv#1_1_1
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>同步方法</font>  |[beginPageLog](#beginPageLog)| 进入页面的统计
+<font color ='#0092db'>同步方法</font>  |[endPageLog](#endPageLog)| 离开页面的统计
+<font color ='#0092db'>同步方法</font>  |[eventLog](#eventLog)| 单次事件统计
+<font color ='#0092db'>同步方法</font>  |[eventValueLog](#eventValueLog)| 单次事件计算
+<font color ='#0092db'>同步方法</font>  |[readConfig](#readConfig)| 读取在线参数
+<font color ='#0092db'>同步方法</font>  |[setEncryptLog](#setEncryptLog)| 是否加密传输日志
+<font color ='#0092db'>同步方法</font>  |[setBackgroundTask](#setBackgroundTask)| 是否支持后台模式
+<font color ='#0092db'>同步方法</font>  |[setCrashReportEnabled](#setCrashReportEnabled)| 是否统计后异常信息
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**beginPageLog**</font>: 进入页面的统计
+>##### <span id=beginPageLog><font color ='#0092db'>**beginPageLog**</font></span>: 进入页面的统计
 
 - 参数:
 
@@ -30,7 +44,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**endPageLog**</font>: 离开页面的统计
+>##### <span id=endPageLog><font color ='#0092db'>**endPageLog**</font></span>: 离开页面的统计
 
 - 参数:
 
@@ -49,7 +63,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**eventLog**</font>: 单次事件统计
+>##### <span id=eventLog><font color ='#0092db'>**eventLog**</font></span>: 单次事件统计
 
 - 参数:
 
@@ -69,7 +83,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**eventValueLog**</font>: 单次事件计算
+>##### <span id=eventValueLog><font color ='#0092db'>**eventValueLog**</font></span>: 单次事件计算
 
 - 参数:
 
@@ -90,7 +104,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**readConfig**</font>: 读取在线参数
+>##### <span id=readConfig><font color ='#0092db'>**readConfig**</font></span>: 读取在线参数
 
 - 参数:
 
@@ -109,7 +123,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setEncryptLog**</font>: 是否加密传输日志
+>##### <span id=setEncryptLog><font color ='#0092db'>**setEncryptLog**</font></span>: 是否加密传输日志
 
 - 参数:
 
@@ -128,7 +142,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setBackgroundTask**</font>: 是否支持后台模式
+>##### <span id=setBackgroundTask><font color ='#0092db'>**setBackgroundTask**</font></span>: 是否支持后台模式
 
 - 参数:
 
@@ -147,7 +161,7 @@ title: do_UMengAnalytics 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**setCrashReportEnabled**</font>: 是否统计后异常信息
+>##### <span id=setCrashReportEnabled><font color ='#0092db'>**setCrashReportEnabled**</font></span>: 是否统计后异常信息
 
 - 参数:
 

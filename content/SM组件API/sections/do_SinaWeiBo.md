@@ -4,8 +4,18 @@ title: do_SinaWeiBo 组件
 
 ### do_SinaWeiBo 组件
 
- 支持平台: iOS7.0,Android4.0
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_SinaWeiBo)
  提供sina微博用户登录和分享相关功能
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#0092db'>异步方法</font>  |[login](#login)| 使用sina微博登录
+<font color ='#0092db'>异步方法</font>  |[getUserInfo](#getUserInfo)| 获取用户信息
+<font color ='#0092db'>异步方法</font>  |[logout](#logout)| 注销
+<font color ='#0092db'>异步方法</font>  |[share](#share)| 分享到新浪微博
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
@@ -13,7 +23,7 @@ title: do_SinaWeiBo 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**login**</font>: 使用sina微博登录
+>##### <span id=login><font color ='#0092db'>**login**</font></span>: 使用sina微博登录
 
 - 参数:
 
@@ -32,7 +42,7 @@ title: do_SinaWeiBo 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**getUserInfo**</font>: 获取用户信息
+>##### <span id=getUserInfo><font color ='#0092db'>**getUserInfo**</font></span>: 获取用户信息
 
 - 参数:
 
@@ -54,7 +64,7 @@ title: do_SinaWeiBo 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**logout**</font>: 注销
+>##### <span id=logout><font color ='#0092db'>**logout**</font></span>: 注销
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
@@ -69,7 +79,7 @@ title: do_SinaWeiBo 组件
 
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**share**</font>: 分享到新浪微博
+>##### <span id=share><font color ='#0092db'>**share**</font></span>: 分享到新浪微博
 
 - 参数:
 
