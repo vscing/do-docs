@@ -4,17 +4,32 @@ title: do_BaiduPanoramaView 组件
 
 ### do_BaiduPanoramaView 组件
 
- 支持平台: iOS7.0,Android4.0
- 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。参考[示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduPanoramaView)
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduPanoramaView)
+ 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+      | ID | 说明
+ ---- |------|------|
+ <font color ='#42b983'>属性</font>  |[zoomLevel](#zoomLevel)| 全景图缩放级别
+ <font color ='#42b983'>属性</font>  |[imageLevel](#imageLevel)| 全景图片的显示级别
+ <font color ='#0092db'>同步方法</font>  |[showPanoramaView](#showPanoramaView)| 显示全景图
+ <font color ='#0092db'>同步方法</font>  |[addImageMarkers](#addImageMarkers)| 添加一组缩略图标记
+ <font color ='#0092db'>同步方法</font>  |[addTextMarkers](#addTextMarkers)| 添加一组文本标记
+ <font color ='#0092db'>同步方法</font>  |[removeMarker](#removeMarker)| 移除一组指定标记
+ <font color ='#0092db'>同步方法</font>  |[removeAll](#removeAll)| 移除所有标记
+ <font color ='#e96900'>事件</font>  |[touchMarker](#touchMarker)| 点击标记时触发
+
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**zoomLevel**</font>: 全景图缩放级别
+>###### <span id="zoomLevel"><font color ='#42b983'>**zoomLevel**</font>: 全景图缩放级别
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 2
 - 说明 : 设置全景图的缩放级别，默认缩放级别为2级，缩放级别总共分为5级，分别是1-5级，随着级别的增大清晰度逐渐提高。
 
->###### <font color ='#42b983'>**imageLevel**</font>: 全景图片的显示级别
+>###### <span id="imageLevel"><font color ='#42b983'>**imageLevel**</font>: 全景图片的显示级别
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 2
@@ -22,7 +37,7 @@ title: do_BaiduPanoramaView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**showPanoramaView**</font>: 显示全景图
+>##### <span id="showPanoramaView"><font color ='#0092db'>**showPanoramaView**</font>: 显示全景图
 
 - 参数:
 
@@ -44,10 +59,11 @@ title: do_BaiduPanoramaView 组件
   });
   ```
   下图所示是经度123.90583，纬度41.867335的全景图：
-  ![](../../images/baidupanoramaview_realmap.png)
+  <img src="../../images/baidupanoramaview_realmap.png" width="50%" height="50%" />
+
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**addImageMarkers**</font>: 添加一组缩略图标记
+>##### <span id="addImageMarkers"><font color ='#0092db'>**addImageMarkers**</font>: 添加一组缩略图标记
 
 - 参数:
 
@@ -96,10 +112,11 @@ title: do_BaiduPanoramaView 组件
 
   ```
   下图所示是添加一组缩略图标记的全景图：
-  ![](../../images/baidupanoramaview_addimagemarkers.png)
+  <img src="../../images/baidupanoramaview_addimagemarkers.png" width="50%" height="50%" />
+
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**addTextMarkers**</font>: 添加一组文本标记
+>##### <span id="addTextMarkers"><font color ='#0092db'>**addTextMarkers**</font>: 添加一组文本标记
 
 - 参数:
 
@@ -164,11 +181,12 @@ title: do_BaiduPanoramaView 组件
  } ])
 
   ```
-  下图所示是添加一组文本标记的全景图：
-  ![](../../images/baidupanoramaview_addtextmarkers.png)
+  下图所示是添加一组文本标记的全景图：       
+  <img src="../../images/baidupanoramaview_addtextmarkers.png" width="50%" height="50%" />
+
 [回到顶部](#top)
 
->##### <font color ='#0092db'>**removeMarker**</font>: 移除一组指定标记
+>##### <span id="removeMarker"><font color ='#0092db'>**removeMarker**</font>: 移除一组指定标记
 
 - 参数:
 
@@ -198,7 +216,7 @@ title: do_BaiduPanoramaView 组件
 
   ```
 
->##### <font color ='#0092db'>**removeAll**</font>: 移除所有标记
+>##### <span id="removeAll"><font color ='#0092db'>**removeAll**</font>: 移除所有标记
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -219,7 +237,7 @@ title: do_BaiduPanoramaView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <font color ='#e96900'>**touchMarker**</font>: 点击标记时触发
+>###### <span id="touchMarker"><font color ='#e96900'>**touchMarker**</font>: 点击标记时触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述:
@@ -248,6 +266,5 @@ title: do_BaiduPanoramaView 组件
 
 #### <font color ='#40A977'>**6.**</font> 基本配置
   - 1.使用百度全景图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](/UI组件API/sections/百度定位相关配置/)
-
 
 [回到顶部](#top)

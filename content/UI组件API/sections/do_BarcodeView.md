@@ -4,13 +4,23 @@ title: do_BarcodeView 组件
 
 ### do_BarcodeView 组件
 
- 支持平台: iOS7.0,Android4.0
- 条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行。参考[示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BarcodeView)     
- 下图为扫描区域跟组件大小一样的效果图
- ![](../../images/barcodeview_scan.png)  
+ 支持平台: iOS7.0,Android4.0 以上
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BarcodeView)
+ 条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行。
+ 下图为扫描区域跟组件大小一样的效果图：
+ <img src="../../images/barcodeview_scan.png" width="50%" height="50%" />
+
+#### <font color ='#40A977'>**0.**</font> 目录
+
+     | ID | 说明
+---- |------|------|
+<font color ='#42b983'>属性</font>  |[scanArea](#scanArea)| 扫描的区域
+<font color ='#0092db'>同步方法</font>  |[flash](#flash)| 开关闪光灯
+<font color ='#0092db'>异步方法</font>  |[start](#start)| 启动扫描
+
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <font color ='#42b983'>**scanArea**</font>: 扫描的区域
+>###### <span id="scanArea"><font color ='#42b983'>**scanArea**</font>: 扫描的区域
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
@@ -28,12 +38,12 @@ title: do_BarcodeView 组件
   });
 
   ```
-  下图为代码设置扫描区域为"150,150,300,300"的效果图：
-  ![](../../images/barcodeview_setscanarea.png)
+  下图是组件宽高为600,600设置扫描区域为"150,150,300,300"的效果图：    
+  <img src="../../images/barcodeview_setscanarea.png" width="50%" height="50%" />
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <font color ='#0092db'>**flash**</font>: 开关闪光灯
+>##### <span id="flash"><font color ='#0092db'>**flash**</font>: 开关闪光灯
 
 - 参数:
 
@@ -56,7 +66,7 @@ title: do_BarcodeView 组件
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <font color ='#0092db'>**start**</font>: 启动扫描
+>##### <span id="start"><font color ='#0092db'>**start**</font>: 启动扫描
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
