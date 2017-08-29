@@ -35,7 +35,7 @@ title: do_BaiduMapView 组件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <span id="mapScene"><font color ='#42b983'>**mapScene**</font>: 地图场景
+>###### <span id="mapScene"><font color ='#42b983'>**mapScene**</font></span>: 地图场景
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 0
@@ -46,15 +46,22 @@ title: do_BaiduMapView 组件
   注：iOS平台不支持。
 
 - 如下图，图一为mapScene设置成0时的显示效果。图二为mapScene设置成1时的显示效果。
- ![](../../images/baidumapview_mapScene_0.png)![](../../images/baidumapview_mapScene_1.png)
 
->###### <span id="mapType"><font color ='#42b983'>**mapType**</font>: 地图类型
+<div align="center">
+<img src="../../images/baidumapview_mapScene_0.png" height="380" width="330" >
+
+<img src="../../images/baidumapview_mapScene_1.png" height="380" width="330" >
+
+ </div>
+
+>###### <span id="mapType"><font color ='#42b983'>**mapType**</font></span>: 地图类型
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : standard
 - 说明 : 地图类型，支持标准地图standard和卫星地图satellite。
 
 - 示例:
+
    ```javascript
 
    //标准地图standard
@@ -66,7 +73,13 @@ title: do_BaiduMapView 组件
      ```
 
 如下图，图一为mapType设置成standard时的显示效果。图二为mapType设置成satellite时的显示效果.
- ![](../../images/baidumapview_mapType_standard.png)![](../../images/baidumapview_mapType_satellite.png)
+
+<div align="center">
+<img src="../../images/baidumapview_mapType_standard.png" height="380" width="330" >
+
+<img src="../../images/baidumapview_mapType_satellite.png" height="380" width="330" >
+
+ </div>
 
 >###### <span id="zoomLevel"><font color ='#42b983'>**zoomLevel**</font>: 地图缩放等级
 
@@ -83,7 +96,13 @@ title: do_BaiduMapView 组件
 
      ```
 如下图，图一为zoomLevel设置成10时的显示效果。图二为zoomLevel设置成13时的显示效果。
-![](../../images/baidumapview_mapType_standard.png)![](../../images/baidumapview_zoomLevel_13.png)
+
+<div align="center">
+<img src="../../images/baidumapview_mapType_standard.png" height="380" width="330" >
+
+<img src="../../images/baidumapview_zoomLevel_13.png" height="380" width="330" >
+
+ </div>
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -145,7 +164,11 @@ title: do_BaiduMapView 组件
 
   ```
   下图为上面示例代码显示效果。
-   ![](../../images/baidumapview_addmarks1.png)
+
+  <div align="center">
+  <img src="../../images/baidumapview_addmarks1.png" height="380" width="330" >
+
+  </div>
 
 [回到顶部](#top)
 >##### <span id="addOverlay"><font color ='#0092db'>**addOverlay**</font>: 添加集合图形
@@ -280,8 +303,18 @@ do_BaiduMapView.addOverlay({
   ```
 
 下图分别为以上示例代码的展示效果。
-![](../../images/baidumapview_addOverlay_type0.png)![](../../images/baidumapview_addOverlay_type1.png)
-![](../../images/baidumapview_addOverlay_type2.png)![](../../images/baidumapview_addOverlay_type3.png)
+
+<div align="center">
+<img src="../../images/baidumapview_addOverlay_type0.png" height="380" width="330" >
+
+<img src="../../images/baidumapview_addOverlay_type1.png" height="380" width="330" >
+
+<img src="../../images/baidumapview_addOverlay_type2.png" height="380" width="330" >
+
+<img src="../../images/baidumapview_addOverlay_type3.png" height="380" width="330" >
+
+ </div>
+
 [回到顶部](#top)
 
 >##### <span id="getDistance"><font color ='#0092db'>**getDistance**</font>: 获取实际距离
@@ -322,6 +355,7 @@ do_BaiduMapView.addOverlay({
 - 示例:
 
   ```javascript
+
   //ids要和添加标记的自定义标记唯一ID对应上，否则报错
   var removeMarker = do_BaiduMapView.removeMarker(["01"]);
 
