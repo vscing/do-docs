@@ -44,7 +44,6 @@ Chapters:
     - do_BarcodeView
     - do_BorderView
     - do_Button
-    - do_Calendar
     - do_Canvas
     - do_CheckBox
     - do_ComboBox
