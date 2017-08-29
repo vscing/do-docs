@@ -8,7 +8,7 @@ title: do_BarcodeView 组件
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BarcodeView)
  条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行。
  下图为扫描区域跟组件大小一样的效果图：
- <img src="../../images/barcodeview_scan.png" width="50%" height="50%" />
+ <img src="../../images/barcodeview_scan.png" width="330" height="380" />
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
@@ -39,7 +39,7 @@ title: do_BarcodeView 组件
 
   ```
   下图是组件宽高为600,600设置扫描区域为"150,150,300,300"的效果图：    
-  <img src="../../images/barcodeview_setscanarea.png" width="50%" height="50%" />
+  <img src="../../images/barcodeview_setscanarea.png" width="330" height="380" />
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -92,8 +92,8 @@ title: do_BarcodeView 组件
 
 #### <font color ='#40A977'>**5.**</font> 常见问题
 
-  - 1. IOS二维码生成时选择定位区域图形,不规则图形导致的无法扫描成功。   
-       原因： iOS使用的是原生的框架，如果扫描失败就无法识别了
+- 1. IOS二维码生成时选择定位区域图形,不规则图形导致的无法扫描成功。   
+     原因： iOS使用的是原生的框架，如果扫描失败就无法识别了
 
 #### <font color ='#40A977'>**6.**</font> 基本配置
 

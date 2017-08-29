@@ -59,7 +59,7 @@ title: do_BaiduPanoramaView 组件
   });
   ```
   下图所示是经度123.90583，纬度41.867335的全景图：
-  <img src="../../images/baidupanoramaview_realmap.png" width="50%" height="50%" />
+  <img src="../../images/baidupanoramaview_realmap.png" width="330" height="380" />
 
 [回到顶部](#top)
 
@@ -112,7 +112,7 @@ title: do_BaiduPanoramaView 组件
 
   ```
   下图所示是添加一组缩略图标记的全景图：
-  <img src="../../images/baidupanoramaview_addimagemarkers.png" width="50%" height="50%" />
+  <img src="../../images/baidupanoramaview_addimagemarkers.png" width="330" height="380" />
 
 [回到顶部](#top)
 
@@ -144,45 +144,45 @@ title: do_BaiduPanoramaView 组件
   ```javascript
   //添加一组文本标记
   do_BaiduPanoramaView.addTextMarkers([ {
- 	"id" : "01",
- 	"latitude" : "40.767335",
- 	"longitude" : "123.80583",
- 	"text" : "文字标记1",
- 	"fontColor" : "000000FF",
- 	"fontSize" : 30
- }, {
- 	"id" : "02",
- 	"latitude" : "40.667335",
- 	"longitude" : "124.70583",
- 	"text" : "文字标记2",
- 	"fontColor" : "FF0000FF",
- 	"fontSize" : 30
- }, {
- 	"id" : "03",
- 	"latitude" : "40.567335",
- 	"longitude" : "125.60583",
- 	"text" : "文字标记3",
- 	"fontColor" : "00FF00FF",
- 	"fontSize" : 20
- }, {
- 	"id" : "04",
- 	"latitude" : "40.467335",
- 	"longitude" : "126.50583",
- 	"text" : "文字标记4",
- 	"fontColor" : "FF8000FF",
- 	"fontSize" : 20
- }, {
- 	"id" : "05",
- 	"latitude" : "40.367335",
- 	"longitude" : "127.40583",
- 	"text" : "文字标记5",
- 	"fontColor" : "FF0080FF",
- 	"fontSize" : 20
- } ])
+   	"id" : "01",
+   	"latitude" : "40.767335",
+   	"longitude" : "123.80583",
+   	"text" : "文字标记1",
+   	"fontColor" : "000000FF",
+   	"fontSize" : 30
+   }, {
+   	"id" : "02",
+   	"latitude" : "40.667335",
+   	"longitude" : "124.70583",
+   	"text" : "文字标记2",
+   	"fontColor" : "FF0000FF",
+   	"fontSize" : 30
+   }, {
+   	"id" : "03",
+   	"latitude" : "40.567335",
+   	"longitude" : "125.60583",
+   	"text" : "文字标记3",
+   	"fontColor" : "00FF00FF",
+   	"fontSize" : 20
+   }, {
+   	"id" : "04",
+   	"latitude" : "40.467335",
+   	"longitude" : "126.50583",
+   	"text" : "文字标记4",
+   	"fontColor" : "FF8000FF",
+   	"fontSize" : 20
+   }, {
+   	"id" : "05",
+   	"latitude" : "40.367335",
+   	"longitude" : "127.40583",
+   	"text" : "文字标记5",
+   	"fontColor" : "FF0080FF",
+   	"fontSize" : 20
+   } ])
 
   ```
   下图所示是添加一组文本标记的全景图：       
-  <img src="../../images/baidupanoramaview_addtextmarkers.png" width="50%" height="50%" />
+  <img src="../../images/baidupanoramaview_addtextmarkers.png" width="330" height="380" />
 
 [回到顶部](#top)
 
