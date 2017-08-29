@@ -23,13 +23,13 @@ title: do_BaiduPanoramaView 组件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <span id="zoomLevel"><font color ='#42b983'>**zoomLevel**</font>: 全景图缩放级别
+>###### <span id="zoomLevel"><font color ='#42b983'>**zoomLevel**</font></span>: 全景图缩放级别
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 2
 - 说明 : 设置全景图的缩放级别，默认缩放级别为2级，缩放级别总共分为5级，分别是1-5级，随着级别的增大清晰度逐渐提高。
 
->###### <span id="imageLevel"><font color ='#42b983'>**imageLevel**</font>: 全景图片的显示级别
+>###### <span id="imageLevel"><font color ='#42b983'>**imageLevel**</font></span>: 全景图片的显示级别
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 2
@@ -37,7 +37,7 @@ title: do_BaiduPanoramaView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <span id="showPanoramaView"><font color ='#0092db'>**showPanoramaView**</font>: 显示全景图
+>##### <span id="showPanoramaView"><font color ='#0092db'>**showPanoramaView**</font></span>: 显示全景图
 
 - 参数:
 
@@ -50,6 +50,7 @@ title: do_BaiduPanoramaView 组件
 - 说明: 根据经纬度显示全景图
 - 示例:
   ```javascript
+  
   var do_BaiduPanoramaView = ui("do_BaiduPanoramaView_1");
 
   //显示全景图
@@ -63,7 +64,7 @@ title: do_BaiduPanoramaView 组件
 
 [回到顶部](#top)
 
->##### <span id="addImageMarkers"><font color ='#0092db'>**addImageMarkers**</font>: 添加一组缩略图标记
+>##### <span id="addImageMarkers"><font color ='#0092db'>**addImageMarkers**</font></span>: 添加一组缩略图标记
 
 - 参数:
 
@@ -84,31 +85,34 @@ title: do_BaiduPanoramaView 组件
       },
       ...
   ]
+
   ```
 - 示例:
   ```javascript
+
   //添加一组缩略图标记
   do_BaiduPanoramaView.addImageMarkers([ {
-  	"id" : "id1",
-  	"latitude" : "41.867335",
-  	"longitude" : "123.90583",
-  	"url" : "source://view/do_BaiduPanoramaView/location.png"
-  }, {
-  	"id" : "id2",
-  	"latitude" : "41.857335",
-  	"longitude" : "123.90583",
-  	"url" : "source://view/do_BaiduPanoramaView/location.png"
-  }, {
-  	"id" : "id3",
-  	"latitude" : "41.847335",
-  	"longitude" : "123.90583",
-  	"url" : "source://view/do_BaiduPanoramaView/location.png"
-  }, {
-  	"id" : "id4",
-  	"latitude" : "41.837335",
-  	"longitude" : "123.90583",
-  	"url" : "source://view/do_BaiduPanoramaView/location.png"
-  } ])
+      	"id" : "id1",
+      	"latitude" : "41.867335",
+      	"longitude" : "123.90583",
+      	"url" : "source://view/do_BaiduPanoramaView/location.png"
+      }, {
+      	"id" : "id2",
+      	"latitude" : "41.857335",
+      	"longitude" : "123.90583",
+      	"url" : "source://view/do_BaiduPanoramaView/location.png"
+      }, {
+      	"id" : "id3",
+      	"latitude" : "41.847335",
+      	"longitude" : "123.90583",
+      	"url" : "source://view/do_BaiduPanoramaView/location.png"
+      }, {
+      	"id" : "id4",
+      	"latitude" : "41.837335",
+      	"longitude" : "123.90583",
+      	"url" : "source://view/do_BaiduPanoramaView/location.png"
+      }
+  ])
 
   ```
   下图所示是添加一组缩略图标记的全景图：
@@ -116,7 +120,7 @@ title: do_BaiduPanoramaView 组件
 
 [回到顶部](#top)
 
->##### <span id="addTextMarkers"><font color ='#0092db'>**addTextMarkers**</font>: 添加一组文本标记
+>##### <span id="addTextMarkers"><font color ='#0092db'>**addTextMarkers**</font></span>: 添加一组文本标记
 
 - 参数:
 
@@ -139,45 +143,47 @@ title: do_BaiduPanoramaView 组件
       },
       ...
   ]
+
   ```
 - 示例:
   ```javascript
+
   //添加一组文本标记
   do_BaiduPanoramaView.addTextMarkers([ {
-   	"id" : "01",
-   	"latitude" : "40.767335",
-   	"longitude" : "123.80583",
-   	"text" : "文字标记1",
-   	"fontColor" : "000000FF",
-   	"fontSize" : 30
-   }, {
-   	"id" : "02",
-   	"latitude" : "40.667335",
-   	"longitude" : "124.70583",
-   	"text" : "文字标记2",
-   	"fontColor" : "FF0000FF",
-   	"fontSize" : 30
-   }, {
-   	"id" : "03",
-   	"latitude" : "40.567335",
-   	"longitude" : "125.60583",
-   	"text" : "文字标记3",
-   	"fontColor" : "00FF00FF",
-   	"fontSize" : 20
-   }, {
-   	"id" : "04",
-   	"latitude" : "40.467335",
-   	"longitude" : "126.50583",
-   	"text" : "文字标记4",
-   	"fontColor" : "FF8000FF",
-   	"fontSize" : 20
-   }, {
-   	"id" : "05",
-   	"latitude" : "40.367335",
-   	"longitude" : "127.40583",
-   	"text" : "文字标记5",
-   	"fontColor" : "FF0080FF",
-   	"fontSize" : 20
+     	 "id" : "01",
+     	 "latitude" : "40.767335",
+     	 "longitude" : "123.80583",
+     	 "text" : "文字标记1",
+     	 "fontColor" : "000000FF",
+     	 "fontSize" : 30
+      }, {
+     	 "id" : "02",
+      	"latitude" : "40.667335",
+     	 "longitude" : "124.70583",
+      	"text" : "文字标记2",
+      	"fontColor" : "FF0000FF",
+      	"fontSize" : 30
+      }, {
+     	 "id" : "03",
+       "latitude" : "40.567335",
+       "longitude" : "125.60583",
+       "text" : "文字标记3",
+       "fontColor" : "00FF00FF",
+       "fontSize" : 20
+      }, {
+     	 "id" : "04",
+     	 "latitude" : "40.467335",
+     	 "longitude" : "126.50583",
+     	 "text" : "文字标记4",
+     	 "fontColor" : "FF8000FF",
+     	 "fontSize" : 20
+      }, {
+       "id" : "05",
+     	 "latitude" : "40.367335",
+     	 "longitude" : "127.40583",
+     	 "text" : "文字标记5",
+     	 "fontColor" : "FF0080FF",
+     	 "fontSize" : 20
    } ])
 
   ```
@@ -186,7 +192,7 @@ title: do_BaiduPanoramaView 组件
 
 [回到顶部](#top)
 
->##### <span id="removeMarker"><font color ='#0092db'>**removeMarker**</font>: 移除一组指定标记
+>##### <span id="removeMarker"><font color ='#0092db'>**removeMarker**</font></span>: 移除一组指定标记
 
 - 参数:
 
@@ -205,6 +211,7 @@ title: do_BaiduPanoramaView 组件
           ...  
       ]
   }
+
   ```
 - 示例:
   ```javascript
@@ -216,7 +223,7 @@ title: do_BaiduPanoramaView 组件
 
   ```
 
->##### <span id="removeAll"><font color ='#0092db'>**removeAll**</font>: 移除所有标记
+>##### <span id="removeAll"><font color ='#0092db'>**removeAll**</font></span>: 移除所有标记
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -237,7 +244,7 @@ title: do_BaiduPanoramaView 组件
 
 #### <font color ='#40A977'>**4.**</font> 事件
 
->###### <span id="touchMarker"><font color ='#e96900'>**touchMarker**</font>: 点击标记时触发
+>###### <span id="touchMarker"><font color ='#e96900'>**touchMarker**</font></span>: 点击标记时触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
 - 返回值描述:

@@ -28,9 +28,10 @@ title: do_BorderView 组件
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
-- 说明 : 设置BorderView显示内容（必须是一个Object，然后将Object转成string类型）。item格式如下：其中rightView与centerView表示数据指定给BorderView的具体View，必须为topView、rightView、bottomView、leftView、centerView五个子视图中一个。
+- 说明 : 设置BorderView显示内容（必须是一个Object，然后将Object转成string类型）。item格式如下：
   ```
-
+  
+  //其中rightView与centerView表示数据指定给BorderView的具体View，必须为topView、rightView、bottomView、leftView、centerView五个子视图中一个。
   {
       "rightView":{
           "template":"source://view/do_BorderView/rightView.ui",
@@ -42,6 +43,7 @@ title: do_BorderView 组件
           "image":"source://1.jpg"
       }
   }
+
   ```
 - 示例:
   ```javascript
@@ -60,6 +62,7 @@ title: do_BorderView 组件
   		}
 	}
   do_BorderView.items = JSON.stringify(items);
+
   ```
   下图为对items赋值，对topview和centerview两个子视图赋值之后的效果图：
   <img src="../../images/borderview_items.png" width="350" height="580" />
@@ -84,6 +87,7 @@ title: do_BorderView 组件
   //对topview属性赋值
   do_BorderView.topView = "source://view/do_BorderView/topView.ui";
   do_BorderView.redraw();
+
   ```
 
 >###### <span id=rightView><font color ='#42b983'>**rightView**</font></span>: 居右子视图
@@ -97,6 +101,7 @@ title: do_BorderView 组件
   //对rightView属性赋值
   do_BorderView.rightView = "source://view/do_BorderView/rightView.ui";
   do_BorderView.redraw();
+
   ```
 
 >###### <span id=bottomView><font color ='#42b983'>**bottomView**</font></span>: 居下子视图
@@ -110,6 +115,7 @@ title: do_BorderView 组件
   //对bottomView属性赋值
   do_BorderView.bottomView = "source://view/do_BorderView/bottomView.ui";
   do_BorderView.redraw();
+
   ```
 
 >###### <span id=leftView><font color ='#42b983'>**leftView**</font></span>: 居左子视图
@@ -123,6 +129,7 @@ title: do_BorderView 组件
   //对leftView属性赋值
   do_BorderView.leftView = "source://view/do_BorderView/leftView.ui";
   do_BorderView.redraw();
+
   ```
 
 >###### <span id=centerView><font color ='#42b983'>**centerView**</font></span>: 居中子视图
@@ -136,6 +143,7 @@ title: do_BorderView 组件
   //对centerView属性赋值
   do_BorderView.centerView = "source://view/do_BorderView/centerView.ui";
   do_BorderView.redraw();
+
   ```
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -151,8 +159,8 @@ title: do_BorderView 组件
 - 返回值描述: 子组件地址
 - 说明: 获取子组件地址
 - 示例:
-
   ```javascript
+
   //	获取topView视图的内存地址
 	var ui_address = do_BorderView.getView({direction:"top"});
 	deviceone.print(ui_address,"获取的子组件地址");

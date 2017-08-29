@@ -20,7 +20,7 @@ title: do_BarcodeView 组件
 
 #### <font color ='#40A977'>**1.**</font> 属性
 
->###### <span id="scanArea"><font color ='#42b983'>**scanArea**</font>: 扫描的区域
+>###### <span id="scanArea"><font color ='#42b983'>**scanArea**</font></span>: 扫描的区域
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
@@ -43,7 +43,7 @@ title: do_BarcodeView 组件
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
->##### <span id="flash"><font color ='#0092db'>**flash**</font>: 开关闪光灯
+>##### <span id="flash"><font color ='#0092db'>**flash**</font></span>: 开关闪光灯
 
 - 参数:
 
@@ -60,13 +60,14 @@ title: do_BarcodeView 组件
   do_BarcodeView.flash("on");
   //关闭闪光灯
   do_BarcodeView.flash("off");
+
   ```
 
 [回到顶部](#top)
 
 #### <font color ='#40A977'>**3.**</font> 异步方法
 
->##### <span id="start"><font color ='#0092db'>**start**</font>: 启动扫描
+>##### <span id="start"><font color ='#0092db'>**start**</font></span>: 启动扫描
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
@@ -86,6 +87,7 @@ title: do_BarcodeView 组件
       "code":"QR_CODE",
       "value":"http://www.deviceone.net"
   }
+  
   ```
 
 #### <font color ='#40A977'>**4.**</font> 事件

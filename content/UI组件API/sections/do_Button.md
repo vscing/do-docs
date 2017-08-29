@@ -93,6 +93,7 @@ title: do_Button 组件
 - 示例:
 
   ```javascript
+
   var do_Button = ui("do_Button_1");
 
   // 触发touch事件，按下并在按钮范围抬起，触发该事件
@@ -106,6 +107,7 @@ title: do_Button 组件
     	// 设置fontStyle属性,包含4种类型：normal：常规; bold：粗体; italic：斜体; bold_italic：粗斜体（iOS平台不支持）
     	do_Button.fontStyle = "italic";
   })
+
   ```
 
 [回到顶部](#top)
@@ -118,6 +120,7 @@ title: do_Button 组件
 - 示例:
 
   ```javascript
+
   //触发touchDown事件，按钮范围内按下即可触发
   do_Button.on("touchDown",function(){
   	 do_Button.text = "触发touchDown事件";   //设置按钮的text属性
@@ -136,6 +139,7 @@ title: do_Button 组件
 - 示例:
 
   ```javascript
+  
   //触发touchDown事件，按钮范围内按下即可触发
   do_Button.on("touchUp",function(){
   	 do_Button.text = "触发touchUp事件";   //设置按钮的text属性
