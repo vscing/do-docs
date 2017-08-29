@@ -165,10 +165,7 @@ title: do_BaiduMapView 组件
   ```
   下图为上面示例代码显示效果。
 
-  <div align="center">
-  <img src="../../images/baidumapview_addmarks1.png" height="380" width="330" >
-
-  </div>
+ ![](../../images/baidumapview_addmarks1.png)
 
 [回到顶部](#top)
 >##### <span id="addOverlay"><font color ='#0092db'>**addOverlay**</font>: 添加集合图形
