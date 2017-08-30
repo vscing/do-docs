@@ -2,7 +2,7 @@
 title: do_Alipay 组件
 ---
 
-### do_Alipay 组件
+### <SPAN style="TEXT-DECORATION: line-through">do_Alipay 组件</SPAN>(已废弃,请使用do_Alipay1)
 
  支持平台: iOS7.0,Android4.0 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Alipay)
@@ -54,5 +54,3 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
