@@ -6,8 +6,7 @@ title: do_BorderView 组件
 
  支持平台: iOS7.0,Android4.0 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BorderView)
- 这个UI组件包含多个子视图(UI文件），里面最多能放五个子视图，分别停靠在上、右、下、左、中五条边线，组件绘制顺序为上右下左中，子视图之间不会重叠，若某一方向的子视图过大，造成下一顺序的子视图没有可用空间绘制则不显示下一顺序的子视图。效果图如下：
- <img src="../../images/borderview_normal.png" width="350" height="580" />
+ 这个UI组件包含多个子视图(UI文件），里面最多能放五个子视图，分别停靠在上、右、下、左、中五条边线，组件绘制顺序为上右下左中，子视图之间不会重叠，若某一方向的子视图过大，造成下一顺序的子视图没有可用空间绘制则不显示下一顺序的子视图。
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
@@ -30,7 +29,7 @@ title: do_BorderView 组件
 - 默认值 :
 - 说明 : 设置BorderView显示内容（必须是一个Object，然后将Object转成string类型）。item格式如下：
   ```
-  
+
   //其中rightView与centerView表示数据指定给BorderView的具体View，必须为topView、rightView、bottomView、leftView、centerView五个子视图中一个。
   {
       "rightView":{
@@ -65,7 +64,7 @@ title: do_BorderView 组件
 
   ```
   下图为对items赋值，对topview和centerview两个子视图赋值之后的效果图：
-  <img src="../../images/borderview_items.png" width="350" height="580" />
+  <img src="../../images/borderview_items.png" width="320" height="540" />
 
 >###### <span id=centerFillParent><font color ='#42b983'>**centerFillParent**</font></span>: 居中子视图填充父容器
 
@@ -73,8 +72,14 @@ title: do_BorderView 组件
 - 默认值 : false
 - 编辑类型 : 只允许设计区内修改
 - 说明 : 居中的子视图是否向四周填充，为false时不填充，此时居中子视图会居中显示；为true时填充上、右、下、左子视图（若存在）绘制完成后的中间剩余部分。
-  下图为对上、右、下、左、中子视图都赋值并且centerFillParent值为true时的效果图：     
-  <img src="../../images/borderview_centerfill.png" width="350" height="580" />
+  如下图，左图为centerFillParent值为true时的效果图，右图为centerFillParent值为false时的效果图。
+
+   <div>
+  <img src="../../images/borderview_centerfill.png" height="540" width="320" >
+
+  <img src="../../images/borderview_normal.png" height="540" width="320" >
+
+   </div>
 
 >###### <span id=topView><font color ='#42b983'>**topView**</font></span>: 居上子视图
 

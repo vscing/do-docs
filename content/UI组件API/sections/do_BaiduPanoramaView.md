@@ -50,7 +50,7 @@ title: do_BaiduPanoramaView 组件
 - 说明: 根据经纬度显示全景图
 - 示例:
   ```javascript
-  
+
   var do_BaiduPanoramaView = ui("do_BaiduPanoramaView_1");
 
   //显示全景图
@@ -235,6 +235,7 @@ title: do_BaiduPanoramaView 组件
 
   //移除当前全景图上添加的所有标记
   do_BaiduPanoramaView.removeAll();
+
   ```
 
 [回到顶部](#top)
@@ -257,6 +258,7 @@ title: do_BaiduPanoramaView 组件
       "type":ImageMark|TextMark,
       "info":当type为ImageMark时返回缩略图地址|当type为TextMark时返回文字标注内容
   }
+  
   ```
 - 说明: 点击标记时触发
 - 示例:
