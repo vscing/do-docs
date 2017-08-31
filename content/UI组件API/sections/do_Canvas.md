@@ -461,7 +461,7 @@ title: do_Canvas 组件
 
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |bitmap对象
+  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |Bitmap对象
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 将整个view保存为一个Bitmap
@@ -469,10 +469,18 @@ title: do_Canvas 组件
 
   ```javascript
 
+  //定义一个bitmap1对象
   var bitmap1 = mm("do_Bitmap");
-  do_Canvas.saveAsBitmap(bitmap1, function(data, e) {
-      deviceone.print(JSON.stringify(data))
-  })
+	do_Canvas.saveAsBitmap(bitmap1, function(data, e) {           //将画布上的内容保存为bitmap1
+  		var _image = "data://save/" + global.getTime() + ".png";
+      //将bitmap1保存为png格式的图片到手机data文件夹下
+  		bitmap1.save("PNG", 100, _image, function(bitmap_image, e) {             
+    			if (bitmap_image) {
+              sm("do_Notification").toast("保存成功");
+				      deviceone.print(bitmap_image,"图片路径");
+    			}
+  		})
+	})
 
   ```
 
