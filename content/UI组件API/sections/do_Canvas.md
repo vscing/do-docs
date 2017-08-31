@@ -2,11 +2,11 @@
 title: do_Canvas 组件
 ---
 
-### do_Canvas 组件
+  ### do_Canvas 组件
 
  支持平台: iOS7.0,Android4.0 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Canvas)
- 支持2D图形处理，可以画点，线，多边形，文字，图片。样式的修改必须在定义图形之前才会生效
+ 支持2D图形处理，可以画点，线，多边形，文字，图片。样式的修改必须在定义图形之前才会生效。
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
@@ -40,7 +40,7 @@ title: do_Canvas 组件
 
   var do_Canvas = ui("do_Canvas_1");
 
-  do_Canvas.strokeColor = "D869D5FF";    //设置do_Canvas的strokeColor画笔颜色为紫色
+  do_Canvas.strokeColor = "D869D5FF";    //设置do_Canvas的画笔颜色为紫色
 
   ```
 
@@ -52,10 +52,10 @@ title: do_Canvas 组件
 
   ```javascript
 
-  do_Canvas.strokeWidth = 15;    //设置do_Canvas的strokeWidth画笔宽度为15
+  do_Canvas.strokeWidth = 15;    //设置do_Canvas的画笔宽度为15
 
   ```
-  左图为画笔宽度为5的效果图，右图为画笔颜色是紫色、宽度是15的效果图：
+  左图为画笔颜色是黑色、宽度是5的效果图，右图为画笔颜色是紫色、宽度是15的效果图：
   <div>
   <img src="../../images/canvas_strokeColor.png" height="380" width="320" >
 
@@ -67,11 +67,11 @@ title: do_Canvas 组件
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 0
-- 说明 : 支持0：正方形,1：圆，默认值为0
+- 说明 : 支持0：正方形，1：圆，默认值为0
 
   ```javascript
 
-  do_Canvas.strokeCap = 1;    //设置do_Canvas的strokeCap笔触样式为圆
+  do_Canvas.strokeCap = 1;    //设置do_Canvas的笔触样式为圆
 
   ```
   左图为笔触样式是正方形的效果图，右图为笔触样式是圆的效果图：
@@ -112,7 +112,7 @@ title: do_Canvas 组件
   **points** |<font color ='#808000'>**object**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 传入点的坐标，支持画多个点。支持点的集合，示例：
+- 说明: 传入点的坐标，支持画多个点。参数示例：
   ```
 
   [
@@ -133,7 +133,7 @@ title: do_Canvas 组件
 
   ```javascript
 
-  //定义画的图形是多个点
+  //定义画的多个点
   do_Canvas.definePoint({
   	  points : [ {
     		x : 400,
@@ -155,7 +155,7 @@ title: do_Canvas 组件
     		y : 430
     	} ]
   });    
-  do_Canvas.paint(); //调用paint方法之后才可以把点画到画板上
+  do_Canvas.paint(); //调用paint方法把点画到画板上
 
   ```
   效果图如下：
@@ -178,7 +178,7 @@ title: do_Canvas 组件
 
   ```javascript
 
-  //定义画的是线
+  //定义画的线
   do_Canvas.defineLine({
     	start : {
     		x : 180,
@@ -207,12 +207,12 @@ title: do_Canvas 组件
   **radius** |<font color ='#808000'>**number**</font> | 是 | |半径
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明:传入中心点坐标，画一个以point坐标为圆心radius值为半径的圆。
+- 说明:传入圆心坐标，画一个以point坐标为圆心radius值为半径的圆。
 - 示例:
 
   ```javascript
 
-  //定义画的图形为圆形
+  //定义画的圆形
   do_Canvas.defineCircle({
     	point : {
     		x : 350,
@@ -243,7 +243,7 @@ title: do_Canvas 组件
 
   ```javascript
 
-  //定义画的图形为椭圆
+  //定义画的椭圆
   do_Canvas.defineOval({
     	start : {
     		x : 220,
@@ -270,17 +270,17 @@ title: do_Canvas 组件
   ---- |-------------  |--------------|--------|------
   **start** |<font color ='#808000'>**object**</font> | 是 | |左上坐标，如：{x:x坐标,y:y坐标}
   **end** |<font color ='#808000'>**object**</font> | 是 | |右下坐标，如：{x:x坐标,y:y坐标}
-  **startAngle** |<font color ='#808000'>**number**</font> | 否 | 0|如果为0默认与x轴重合
+  **startAngle** |<font color ='#808000'>**number**</font> | 否 | 0|起始角度，0表示与x轴重合
   **sweepAngle** |<font color ='#808000'>**number**</font> | 否 | 90|默认为90，以起始角度开始，顺时针扫描90度
   **useCenter** |<font color ='#808000'>**boolean**</font> | 否 | true|如果为true，这个弧的区域就会包含中心点
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 画一个以左上坐标和右下坐标连线的中点为圆心的弧，startAngle是弧绕坐标原点（弧的中心点）顺时针旋转偏离x轴的度数，weepAngle是弧顺时针扫描的角度（即弧的圆心角度数）
+- 返回值描述: 画一个以左上坐标和右下坐标连线的中点为圆心的弧，startAngle是弧绕坐标原点（弧的圆心）顺时针旋转偏离x轴的度数，weepAngle是弧顺时针扫描的角度（即弧的圆心角度数）
 - 说明:
 - 示例:
 
   ```javascript
 
-  //定义画的图形为弧
+  //定义画的弧
   do_Canvas.defineArc({
     	start : {
     		x : 2,
@@ -322,7 +322,7 @@ title: do_Canvas 组件
 
   ```javascript
 
-  //定义画的图形为矩形
+  //定义画的矩形
   do_Canvas.defineRect({
   		start : {
   			x : 200,
@@ -347,13 +347,13 @@ title: do_Canvas 组件
 
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **text** |<font color ='#808000'>**string**</font> | 是 | |
+  **text** |<font color ='#808000'>**string**</font> | 是 | |画出来的文字内容
   **coord** |<font color ='#808000'>**object**</font> | 否 | {x:0,y:0}|从此坐标开始画，如：{x:x坐标,y:y坐标}
-  **fontStyle** |<font color ='#808000'>**string**</font> | 否 | normal|包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）
-  **textFlag** |<font color ='#808000'>**string**</font> | 否 | normal|包含3种类型：normal：常规underline ：下划线strikethrough ：删除线
+  **fontStyle** |<font color ='#808000'>**string**</font> | 否 | normal|包含4种类型：normal：常规，bold：粗体，italic：斜体，bold_italic：粗斜体（iOS平台不支持）
+  **textFlag** |<font color ='#808000'>**string**</font> | 否 | normal|包含3种类型：normal：常规，underline ：下划线，strikethrough ：删除线
   **fontSize** |<font color ='#808000'>**number**</font> | 否 | 17|
-  **textAlign** |<font color ='#808000'>**string**</font> | 否 | left|对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。
-  **angle** |<font color ='#808000'>**number**</font> | 否 | 0|如果为0默认与x轴重合
+  **textAlign** |<font color ='#808000'>**string**</font> | 否 | left|对齐方式为以下3种：left 左对齐（默认），center 居中，right 右对齐。
+  **angle** |<font color ='#808000'>**number**</font> | 否 | 0|绕坐标原点顺时针旋转偏离x轴的角度，0表示与x轴重合
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 画出传入参数对应样式的文字
 - 说明:
@@ -361,18 +361,18 @@ title: do_Canvas 组件
 
   ```javascript
 
-  //定义画的图形为矩形
+  //定义画的文字
   do_Canvas.defineText({
   		text : "定义文字啦啦",
   		coord : {
-  			x : 200,
+  			x : 250,
   			y : 300
   		},
   		fontStyle : "italic",
   		textFlag : "strikethrough",
-  		fontSize : 35,
+  		fontSize : 40,
   		textAlign : "left",
-  		angle : 0
+  		angle : 50
 	});
   do_Canvas.paint();
 
@@ -388,7 +388,7 @@ title: do_Canvas 组件
 
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **source** |<font color ='#808000'>**string**</font> | 是 | |支持do_Bitmap对象或data://开头的路径的图片地址
+  **source** |<font color ='#808000'>**string**</font> | 是 | |支持do_Bitmap对象或data://开头的图片路径
   **coord** |<font color ='#808000'>**object**</font> | 否 | {x:0,y:0}|从此坐标开始画，如：{x:x坐标,y:y坐标}
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 设置一张图片作为背景
@@ -397,7 +397,7 @@ title: do_Canvas 组件
 
   ```javascript
 
-  // 定义画的是图片
+  // 定义画的do_Bitmap图片
   var bitmap = mm("do_Bitmap");
   bitmap.loadFile({
   	source : "http://photocdn.sohu.com/20161128/Img474303098.jpg"
@@ -429,7 +429,7 @@ title: do_Canvas 组件
   ```javascript
 
   //将当前do_Canvas定义的图形画出来，可以定义多个图形调用paint时会把已定义的图形都画出来
-  //注意：如果先定义图形后定义画笔颜色、画笔宽度等属性则画出来的图形设置的属性不起作用
+  //注意：先定义样式后定义图形，画出来的图形才会有对应的样式
   do_Canvas.paint();
 
   ```
@@ -461,7 +461,7 @@ title: do_Canvas 组件
 
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
-  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |
+  **bitmap** |<font color ='#808000'>**string**</font> | 是 | |bitmap对象
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: 将整个view保存为一个Bitmap
@@ -480,8 +480,8 @@ title: do_Canvas 组件
 
 #### <font color ='#40A977'>**5.**</font> 常见问题
 
-- 1. 设置下划线或者删除线，同时设置align为right的时下划线和删除线会跑偏。  
-     原因：魅族手机原生就有这个问题，原生无法修复。
+- 1. 魅族手机设置下划线或者删除线，同时设置align为right的时下划线和删除线会跑偏。  
+     原因：魅族手机原生就有这个问题，无法修复。
 
 #### <font color ='#40A977'>**6.**</font> 基本配置
 

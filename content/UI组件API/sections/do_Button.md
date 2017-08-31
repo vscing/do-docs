@@ -8,7 +8,7 @@ title: do_Button 组件
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Button)
  按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。
  下图为设置了背景色、字体颜色、边框、字体风格、字体标示的效果图：
- <img src="../../images/button.png" width="330" height="380" />
+ <img src="../../images/button.png" width="330" height="340" />
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
@@ -20,7 +20,7 @@ title: do_Button 组件
 <font color ='#42b983'>属性</font>  |[fontSize](#fontSize)| 字体大小
 <font color ='#42b983'>属性</font>  |[fontStyle](#fontStyle)| 字体风格
 <font color ='#42b983'>属性</font>  |[textFlag](#textFlag)| 字体标示
-<font color ='#42b983'>属性</font>  |[radius](#radius)| 圆角半径
+<font color ='#42b983'>属性</font>  |<span style="TEXT-DECORATION: line-through">[radius](#radius)</span>| 圆角半径
 <font color ='#42b983'>属性</font>  |[bgImage](#bgImage)| 背景图片
 <font color ='#e96900'>事件</font>  |[touch](#touch)| 按下并在按钮范围抬起，触发该事件
 <font color ='#e96900'>事件</font>  |[touchDown](#touchDown)| 按钮范围内按下即可触发
@@ -65,12 +65,12 @@ title: do_Button 组件
 - 编辑类型 : 只允许设计区内修改
 - 说明 : 包含3种类型：normal：常规underline ：下划线strikethrough ：删除线
 
->###### <span id=radius><font color ='#42b983'>**radius**</font></span>: 圆角半径
+>###### <span id=radius> <span style="TEXT-DECORATION: line-through"><font color ='#42b983'>**radius**</font></span></span>: 圆角半径(已废弃，建议使用UI的基础属性border)
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 0
 - 编辑类型 : 只允许设计区内修改
-- 说明 : 像素值，为0时表示不是圆角按钮；@deprecated，该属性为不建议使用，建议使用UI的基础属性border来替代
+- 说明 : 像素值，为0时表示不是圆角按钮
 
 >###### <span id=bgImage><font color ='#42b983'>**bgImage**</font></span>: 背景图片
 
@@ -139,7 +139,7 @@ title: do_Button 组件
 - 示例:
 
   ```javascript
-  
+
   //触发touchDown事件，按钮范围内按下即可触发
   do_Button.on("touchUp",function(){
   	 do_Button.text = "触发touchUp事件";   //设置按钮的text属性
