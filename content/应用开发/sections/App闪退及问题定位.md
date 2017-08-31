@@ -1,94 +1,58 @@
 ---
-title: Atom Packages
+title: App闪退及问题定位
 ---
-### Atom Packages
+### App闪退及问题定位
 
-First we'll start with the Atom package system. As we mentioned previously, Atom itself is a very basic core of functionality that ships with a number of useful packages that add new features like the [Tree View](https://github.com/atom/tree-view) and the [Settings View](https://github.com/atom/settings-view).
 
-In fact, there are more than 90 packages that comprise all of the functionality that is available in Atom by default. For example, the [Welcome screen](https://github.com/atom/welcome) that you see when you first start Atom, the [spell checker](https://github.com/atom/spell-check), the [themes](https://github.com/atom/one-dark-ui) and the [Fuzzy Finder](https://github.com/atom/fuzzy-finder) are all packages that are separately maintained and all use the same APIs that you have access to, as we'll see in great detail in [Hacking Atom](/hacking-atom/).
+Do开发的App因为经过很长时间的和很多用户的打磨，闪退已经很少发生了，但是不可能绝对杜绝。
+<mark>闪退是App最严重的问题，我们会第一时间和你一起定位和解决闪退问题。</mark>
 
-This means that packages can be incredibly powerful and can change everything from the very look and feel of the entire interface to the basic operation of even core functionality.
+### 概述
+应用崩溃有多种情况和原因，有一些情况的是可以记录下崩溃日志的，你可以检查日志来定位问题，或者把日志发给官方来帮忙解决。
 
-In order to install a new package, you can use the Install tab in the now familiar Settings View. Open up the Settings View using <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd>, click on the "Install" tab and type your search query into the box under Install Packages.
+> 1.调试版本的崩溃日志可以通过Logger来查看，App闪退后，再重新打开，就能在Logger里查看到。
+>	2.发布版本的崩溃日志可以通过在手机里的文件系统中找到，大概目录结构是 'sdcard/包名/应用ID/Log/crashLog.text'
 
-The packages listed here have been published to http://atom.io/packages which is the official registry for Atom packages. Searching on the Settings View will go to the Atom package registry and pull in anything that matches your search terms.
+下面是分平台介绍常见崩溃情况和尝试解决方法
 
-![Package install screen](../../images/packages-install.png "Package install screen")
+### Android
+Android常见的崩溃有三种情况：
 
-All of the packages will come up with an "Install" button. Clicking that will download the package and install it. Your editor will now have the functionality that the package provides.
+> 1.发布版一启动就闪退或调试版本点击“进入”后马上闪退。
+> 2.发布版和调试版本在正常运行一段时间后提示“很抱歉，xxx已停止运行",然后点击“确定”后就退出了
+> 3.发布版和调试版本在正常运行一段时间后逐渐变慢，UI卡住，然后会提示“xxx已无响应，是否等待”，然后会退出等。
 
-#### Package Settings
+对应这三种情况的原因和解决办法大概是：
 
-Once a package is installed in Atom, it will show up in the Settings View under the "Packages" tab, along with all the preinstalled packages that come with Atom. To filter the list in order to find one, you can type into search box directly under the "Installed Packages" heading.
+#### <font color ='#40A977'>**1.**</font> 缺少组件或版本过低，这个在Logger里可能会看到错误提示“xxx组件 undefined"。通常添加相应的组件，或更新核心的几个组件（do_Page,do_App,do_Global)再重新打包就能解决
 
-![Package settings screen](../../images/package-specific-settings.png "Package settings screen")
+#### <font color ='#40A977'>**2.**</font> 这种情况通常是有闪退日志的，发生的原因有二种:
 
-Clicking on the "Settings" button for a package will give you the settings screen for that package specifically. Here you have the option of changing some of the default variables for the package, seeing what all the command keybindings are, disabling the package temporarily, looking at the source code, seeing the current version of the package, reporting issues and uninstalling the package.
+>可能是某个函数的参数格式不对或数据不对，数组越界之类的，可以通过查看日志，修改参数之类的来解决。但是即使自己解决了，也麻烦把问题反馈给我们官方，我们官方有义务规避这种闪退。
+>内存outofmemory，Android的图片高分辨率占用内存非常多，如果你一个页面里太多大图片来不及释放就会闪退，图片使用的原则是尽量使用和imageview大小差不多分辨率的图片，比如listview里每一行的iamgeview通常都只有100*100左右大，那么里面加载的图片也弄成100*100，而不是加载1000*1000的图片。
 
-If a new version of any of your packages is released, Atom will automatically detect it and you can upgrade the package from either this screen or from the "Updates" tab. This helps you easily keep all your installed packages up to date.
+#### <font color ='#40A977'>**3.**</font> 通常是在ui线程里做太多操作，比如js代码做太多循环或其它耗时操作。Do提供了很多异步方法来处理耗时，而不是用同步方法。
 
-#### Atom Themes
 
-You can also find and install new themes for Atom from the Settings View. These can be either UI themes or syntax themes and you can search for them from the "Install" tab, just like searching for new packages. Make sure to press the "Themes" toggle next to the search box.
+### IOS
+IOS常见的崩溃现象有二种情况：
 
-![Theme search screen](../../images/themes.png "Theme search screen")
+> 1.发布版和调试版本在在某一个固定的页面固定的操作下固定的闪退
+> 2.发布版和调试版本在正常运行一段时间，随机在某个位置或操作闪退
 
-Clicking on the theme title will take you to a profile page for the theme on atom.io, which often has a screenshot of the theme. This way you can see what it looks like before installing it.
+对应这二种情况的原因和解决办法大概是：
 
-Clicking on "Install" will install the theme and make it available in the Theme dropdowns as we saw in [Changing the Theme](/getting-started/sections/atom-basics/#changing-the-theme).
+#### <font color ='#40A977'>**1.**</font> 这种情况通常是有闪退日志的，发生的原因有可能是某个函数的参数格式不对或数据不对，数组越界之类的，可以通过查看日志，修改参数之类的来解决。但是即使自己解决了，也麻烦把问题反馈给我们官方，我们官方有义务规避这种闪退。
 
-![Example of the Unity UI theme with Monokai syntax theme](../../images/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
+#### <font color ='#40A977'>**2.**</font> 内存outofmemory，通常也是图片导致，如果你一个页面里太多大图片来不及释放就会闪退，图片使用的原则是尽量使用和imageview大小差不多分辨率的图片，比如listview里每一行的iamgeview通常都只有100*100左右大，那么里面加载的图片也弄成100*100，而不是加载1000*1000的图片。
 
-#### Command Line
+### 最佳实践
+以下列出一些闪退的可能性：
 
-You can also install packages or themes from the command line using `apm`.
+> 参数格式不对(api 定义的是个数组，用户传了个字符串)
+> 内存问题，（a,图片过大，占用内存，b,快速来回打开，或者关闭page 导致内存无法及时释放，如传个器，timer 没有调用stop方法）
+> 文件路径问题，如模板参数为"cell/c1.ui",代码中写成了"cell/c2.ui"，路径没写对可能闪退
+> 数组越界，如多模板，template 定义了一个模板，用listdata 赋值的时候，template的值写了大于1的值
+> 某个组件内存占用，长期无法释放（不常见）
 
-{{#tip}}
-
-Check that you have `apm` installed by running the following command in your terminal:
-
-``` command-line
-$ apm help install
-```
-
-You should see a message print out with details about the `apm install` command.
-
-If you do not, see the [Installing Atom section](/getting-started/sections/installing-atom) for instructions on how to install the `atom` and `apm` commands for your system.
-
-{{/tip}}
-
-You can also install packages by using the `apm install` command:
-
-* `apm install <package_name>` to install the latest version.
-* `apm install <package_name>@<package_version>` to install a specific version.
-
-For example `apm install emmet@0.1.5` installs the `0.1.5` release of the [Emmet](https://github.com/atom/emmet) package.
-
-You can also use `apm` to find new packages to install. If you run `apm search`, you can search the package registry for a search term.
-
-``` command-line
-$ apm search coffee
-> Search Results For 'coffee' (29)
-> ├── build-coffee Atom Build provider for coffee, compiles CoffeeScript (1160 downloads, 2 stars)
-> ├── scallahan-coffee-syntax A coffee inspired theme from the guys over at S.CALLAHAN (183 downloads, 0 stars)
-> ├── coffee-paste Copy/Paste As : Js ➤ Coffee / Coffee ➤ Js (902 downloads, 4 stars)
-> ├── atom-coffee-repl Coffee REPL for Atom Editor (894 downloads, 2 stars)
-> ├── coffee-navigator Code navigation panel for Coffee Script (3493 downloads, 22 stars)
-> ...
-> ├── language-iced-coffeescript Iced coffeescript for atom (202 downloads, 1 star)
-> └── slontech-syntax Dark theme for web developers ( HTML, CSS/LESS, PHP, MYSQL, javascript, AJAX, coffee, JSON ) (2018 downloads, 3 stars)
-```
-
-You can use `apm view` to see more information about a specific package.
-
-``` command-line
-$ apm view build-coffee
-> build-coffee
-> ├── 0.6.4
-> ├── https://github.com/idleberg/atom-build-coffee
-> ├── Atom Build provider for coffee, compiles CoffeeScript
-> ├── 1152 downloads
-> └── 2 stars
-> 
-> Run `apm install build-coffee` to install this package.
-```
+[回到顶部](#top)

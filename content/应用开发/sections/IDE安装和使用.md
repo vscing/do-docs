@@ -3,92 +3,117 @@ title: IDE安装和使用
 ---
 ### IDE安装和使用
 
-First we'll start with the Atom package system. As we mentioned previously, Atom itself is a very basic core of functionality that ships with a number of useful packages that add new features like the [Tree View](https://github.com/atom/tree-view) and the [Settings View](https://github.com/atom/settings-view).
 
-In fact, there are more than 90 packages that comprise all of the functionality that is available in Atom by default. For example, the [Welcome screen](https://github.com/atom/welcome) that you see when you first start Atom, the [spell checker](https://github.com/atom/spell-check), the [themes](https://github.com/atom/one-dark-ui) and the [Fuzzy Finder](https://github.com/atom/fuzzy-finder) are all packages that are separately maintained and all use the same APIs that you have access to, as we'll see in great detail in [Hacking Atom](/hacking-atom/).
+### IDE的安装和启动
+设计器是基于Eclipse RCP开发的，如果熟悉Eclipse的同学可能比较容易上手，常见问题都能自己解决。不熟悉的同学可能会碰到不少问题，这里总结一下一些常见问题。
 
-This means that packages can be incredibly powerful and can change everything from the very look and feel of the entire interface to the basic operation of even core functionality.
+#### 安装
+下载和安装基本上没有什么问题，都是zip，免安装的。安装包大小都是大概140左右 .安装有可能碰到的问题就是解压提示错误 <mark>路径和文件名总长度必须不能超过 260 个字符</mark>
+解决的方法有2种：
 
-In order to install a new package, you can use the Install tab in the now familiar Settings View. Open up the Settings View using <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd>, click on the "Install" tab and type your search query into the box under Install Packages.
+	不要用winrar去解压，用系统winzip或者7z之类的工具解压
+    解压到一个不是很深的根目录
 
-The packages listed here have been published to http://atom.io/packages which is the official registry for Atom packages. Searching on the Settings View will go to the Atom package registry and pull in anything that matches your search terms.
+#### 启动
+启动碰到的问题总体来说以java jdk/jre环境的问题居多.因为是Eclipse的常用问题，可以百度搜索，也可以看下面的介绍。
 
-![Package install screen](../../images/packages-install.png "Package install screen")
+#### --Windows
+#### <font color ='#40A977'>**1.**</font>  没有安装jdk，一般提示的界面如下：
+ ![](../../images/ide001.png)
+解决的方法就是[下载安装JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)，注意如果你的操作系统
 
-All of the packages will come up with an "Install" button. Clicking that will download the package and install it. Your editor will now have the functionality that the package provides.
+		是64位的就安装Java SE Development Kit 8u74 Windows x64 版本
+		是32位的就安装Java SE Development Kit 8u74 Windows x86 版本
 
-#### Package Settings
+#### <font color ='#40A977'>**2.**</font>  提示JDK版本太低
+do平台的IDE需要至少JDK1.7及以上。查看JDK的版本就是在CMD下执行java -version
+ ![](../../images/ide002.png)
+>注意：这个命令也可以看你当前JDK是64位还是32位，64位会提示 `Java Hot-Spot(TM) 64-Bit`
 
-Once a package is installed in Atom, it will show up in the Settings View under the "Packages" tab, along with all the preinstalled packages that come with Atom. To filter the list in order to find one, you can type into search box directly under the "Installed Packages" heading.
+#### <font color ='#40A977'>**3.**</font> JDK的版本和操作系统的版本还有do平台的设计器的版本没对上，这个版本指64位还是32位的差别。一般会报下面的错误
+ ![](../../images/ide003.png)
+解决的方法就是最好按照这个规则：
+		64位操作系统--->64位JDK--->设计器64位(Eclipse IDE for Windows x64)
+		32位操作系统--->32位JDK--->设计器32位(Eclipse IDE for Windows x86)
 
-![Package settings screen](../../images/package-specific-settings.png "Package settings screen")
+#### <font color ='#40A977'>**4.**</font> IDE里登陆用户密码没有反应，但是同样的用户密码通过浏览器访问后台是没有问题的，一般是因为360之类的阻止了，有时候切换一个网络，比如用手机做热点，就能弹出这个提示框，选择同意就可以了。
+ ![](../../images/ide004.png)
 
-Clicking on the "Settings" button for a package will give you the settings screen for that package specifically. Here you have the option of changing some of the default variables for the package, seeing what all the command keybindings are, disabling the package temporarily, looking at the source code, seeing the current version of the package, reporting issues and uninstalling the package.
 
-If a new version of any of your packages is released, Atom will automatically detect it and you can upgrade the package from either this screen or from the "Updates" tab. This helps you easily keep all your installed packages up to date.
+#### --MAC
+#### <font color ='#40A977'>**1.**</font> 没有安装JDK或者java版本太低，低于1.7
+一般ios会报这个错误，如下图：
+ ![](../../images/ide005.png)
+解决的方法就是下载安装JDK 安装[MAC OS x64版本](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-#### Atom Themes
+#### <font color ='#40A977'>**2.**</font> mac的应用权限问题导致下载的IDE不能打开，提示已破坏 ，问题的截图一般是如下：
+ ![](../../images/ide006.png)
+原因是MAC系统安装非Appstore软件的限制。解决方法参考http://www.pc6.com/edu/66419.html
 
-You can also find and install new themes for Atom from the Settings View. These can be either UI themes or syntax themes and you can search for them from the "Install" tab, just like searching for new packages. Make sure to press the "Themes" toggle next to the search box.
+#### <font color ='#40A977'>**3.**</font> 最新的mac系统找不到“信任所有来源的选项”，从而无法安装，可以尝试在命令行执行：
 
-![Theme search screen](../../images/themes.png "Theme search screen")
+		打开「终端」：应用程序->实用工具->终端；
+		粘贴下面的命令后，按回车，输入你的系统密码；sudo spctl --master-disable
+		再次打开安全设置选项，就会发现「任何来源」选项回来了
+-------------------------------
 
-Clicking on the theme title will take you to a profile page for the theme on atom.io, which often has a screenshot of the theme. This way you can see what it looks like before installing it.
+### IDE的使用
+ ![](../../images/ide007.png)
+上图是整个IDE的基本结构图。
+IDE是基于Eclipse的基础，大部分功能和Eclipse完全一致，我们简单再介绍一些常用功能点：
 
-Clicking on "Install" will install the theme and make it available in the Theme dropdowns as we saw in [Changing the Theme](/getting-started/sections/atom-basics/#changing-the-theme).
+	应用工程管理：包含新建项目，导入项目等
+	工程代码管理：包含新建各种类型代码文件，文件导航删除等
+	UI设计：包含组件管理，组件同步，拖拽组件，设置组件属性等
+	代码编辑：包含常用代码编辑器的一些基本功能
+	真机联调：包含调试服务，调试日志等
+	应用打包：主要是云打包功能
+	辅助功能：包含帮助，工具，设置等
 
-![Example of the Unity UI theme with Monokai syntax theme](../../images/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
+#### 应用工程管理
+#### <font color ='#40A977'>**1.**</font> **新建应用**：打开设计器，第一步就是新建应用，我们支持javascript或lua应用。新建应用的操作细节我们可以参考[入门教程](http://doc.deviceone.net/web/doc/basic_course/helloworld.htm)
 
-#### Command Line
+#### <font color ='#40A977'>**2.**</font> **导入应用**：如果我们想要打开和研究别人开发的一个应用的源代码，我们需要使用`import`功能。导入功能使用Eclipse标准的右键导入，会把别人的应用打开。注意这里选择是导入`Deviceone`下的`Existing Projects into Workspace`
+ ![](../../images/ide008.png)
+ ![](../../images/ide009.png)
 
-You can also install packages or themes from the command line using `apm`.
+#### 工程代码管理
+#### <font color ='#40A977'>**1.**</font> **文件导航**：标准的树状结构管理一个工程下的所有代码和数据文件
+ ![](../../images/ide010.png)
 
-{{#tip}}
+#### <font color ='#40A977'>**2.**</font> **新建文件**：右键一个目录节点，新建文件菜单打开新建文件窗口，设计器支持多种格式的文件类型，文件类型的详细说明可以参考[项目文件结构](http://doc.deviceone.net/web/doc/detail_course/project_structure.htm)
 
-Check that you have `apm` installed by running the following command in your terminal:
+#### <font color ='#40A977'>**3.**</font> **文件操作**：包括其它常用的文件删除，目录相关的一些操作，都是在文件节点和目录节点右键菜单里，这些都是标准的Eclipse操作。
 
-``` command-line
-$ apm help install
-```
+#### UI设计
+#### <font color ='#40A977'>**1.**</font> **组件列表**：在导航树上双击一个ui文件，就可以打开UI设计界面，在组件列表里可以看到这个应用能使用的UI组件，可以通过拖拽方式，把组件拖拽到设计区。新建一个应用我们会有缺省的10多个ui组件，如果需要更多组件，需要点击`应用配置`按钮，然后添加更多的组件。添加结束后，还需要点击`应用同步`按钮.详细可以参考[添加组件的文档](http://doc.deviceone.net/web/doc/detail_course/add_comp.htm)
+ ![](../../images/ide011.png)
 
-You should see a message print out with details about the `apm install` command.
+#### <font color ='#40A977'>**2.**</font> UI结构树(`Outline`)：ui文件内的组件构成一个结构树，从根节点RootView开始，包含子节点，如果子节点是容器内节点，还可以再包含子节点。另外节点右键有菜单，可删除，复制，粘帖等常用功能。如果节点是容器节点，右键菜单还有“增加”功能，增加一个子组件到这个容器下。另外还支持鼠标拖拽功能。
+ ![](../../images/ide012.png)
 
-If you do not, see the [Installing Atom section](/getting-started/sections/installing-atom) for instructions on how to install the `atom` and `apm` commands for your system.
+#### <font color ='#40A977'>**3.**</font> 属性设置：在设计区或者视图结构树上选取一个UI组件对象，可以修改它的基础属性和特有属性，其中基础属性是所有UI都具有的属性，特有属性是每个独立的UI组件特有的属性。很多属性（不是所有的)一修改马上就能在设计区实时看到修改后的效果。
+ ![](../../images/ide013.png)
 
-{{/tip}}
+#### 代码编辑
+#### <font color ='#40A977'>**1.**</font> 编辑器基础功能：设计器提供了常用编辑器的基本功能，包括双击js或lua文件打开对应的文本编辑页面，双击页签关闭分页。工具栏里的功能包括Eclipse常用的编辑器功能.
+ ![](../../images/ide014.png)
 
-You can also install packages by using the `apm install` command:
+#### <font color ='#40A977'>**2.**</font> 自动提示：编辑器提供了好几种代码自动提示功能，比如补全变量名，补全ui的id，提示属性，事件，方法，回车补全函数参数集合等，快捷键的设置也和Eclipse标准一致。
+ ![](../../images/ide015.png)
+ ![](../../images/ide016.png)
 
-* `apm install <package_name>` to install the latest version.
-* `apm install <package_name>@<package_version>` to install a specific version.
+#### 真机调试
+#### <font color ='#40A977'>**1.**</font> 调试服务:调试的过程可以参考[入门教程](../../../起步/sections/Hello World)
+#### <font color ='#40A977'>**2.**</font> 调试日志：设计器能接受到手机端发送的调试日志，包括运行时的异常，包括用户调用`deviceone.print`方法传过来的自定义日志，需确保手机上的调试终端把`调试开关`打开。
+ ![](../../images/ide017.png)
+当前还不支持单步断点调试，除了print外，用户还可以通过调用do_Notification.alert和toast来弹出提示窗口来调试数据。
 
-For example `apm install emmet@0.1.5` installs the `0.1.5` release of the [Emmet](https://github.com/atom/emmet) package.
+#### 云打包
 
-You can also use `apm` to find new packages to install. If you run `apm search`, you can search the package registry for a search term.
+#### <font color ='#40A977'>**1.**</font>. 调试终端打包：用户调试的时候可以选择自己想要的组件，定制化生成调试终端安装包。点击菜单的`调试版本`按钮。
 
-``` command-line
-$ apm search coffee
-> Search Results For 'coffee' (29)
-> ├── build-coffee Atom Build provider for coffee, compiles CoffeeScript (1160 downloads, 2 stars)
-> ├── scallahan-coffee-syntax A coffee inspired theme from the guys over at S.CALLAHAN (183 downloads, 0 stars)
-> ├── coffee-paste Copy/Paste As : Js ➤ Coffee / Coffee ➤ Js (902 downloads, 4 stars)
-> ├── atom-coffee-repl Coffee REPL for Atom Editor (894 downloads, 2 stars)
-> ├── coffee-navigator Code navigation panel for Coffee Script (3493 downloads, 22 stars)
-> ...
-> ├── language-iced-coffeescript Iced coffeescript for atom (202 downloads, 1 star)
-> └── slontech-syntax Dark theme for web developers ( HTML, CSS/LESS, PHP, MYSQL, javascript, AJAX, coffee, JSON ) (2018 downloads, 3 stars)
-```
+#### <font color ='#40A977'>**2.**</font> 应用开发基本上都是在用调试终端调试代码，一旦应用功能完后需要通过打成一个正式的安装包，有自己的图标，名称，签名等等，可以上传官方的Appstore，可以给最终用户下载使用。只需点击设计器中的`发布版本`按钮
+ ![](../../images/ide018.png)
 
-You can use `apm view` to see more information about a specific package.
-
-``` command-line
-$ apm view build-coffee
-> build-coffee
-> ├── 0.6.4
-> ├── https://github.com/idleberg/atom-build-coffee
-> ├── Atom Build provider for coffee, compiles CoffeeScript
-> ├── 1152 downloads
-> └── 2 stars
->
-> Run `apm install build-coffee` to install this package.
-```
+[回到顶部](#top)
