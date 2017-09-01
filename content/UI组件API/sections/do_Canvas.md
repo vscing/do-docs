@@ -2,7 +2,7 @@
 title: do_Canvas 组件
 ---
 
-  ### do_Canvas 组件
+### do_Canvas 组件
 
  支持平台: iOS7.0,Android4.0 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Canvas)
@@ -471,14 +471,14 @@ title: do_Canvas 组件
 
   //定义一个bitmap1对象
   var bitmap1 = mm("do_Bitmap");
-	do_Canvas.saveAsBitmap(bitmap1, function(data, e) {           //将画布上的内容保存为bitmap1
+	do_Canvas.saveAsBitmap(bitmap1, function(data, e) {//将画布上的内容保存为bitmap1
   		var _image = "data://save/" + global.getTime() + ".png";
       //将bitmap1保存为png格式的图片到手机data文件夹下
   		bitmap1.save("PNG", 100, _image, function(bitmap_image, e) {             
-    			if (bitmap_image) {
+          if (bitmap_image) {
               sm("do_Notification").toast("保存成功");
-				      deviceone.print(bitmap_image,"图片路径");
-    			}
+              deviceone.print(bitmap_image,"图片路径");
+          }
   		})
 	})
 
