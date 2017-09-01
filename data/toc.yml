@@ -50,7 +50,7 @@ Chapters:
     - do_CountDownLabel
     - do_CoverFlowView
     - do_DataTable
-    - do_DraggableGridView
+    # - do_DraggableGridView
     - do_ExpandableListView
     - M0011_ExtBarcodeView
     - do_FragmentView
