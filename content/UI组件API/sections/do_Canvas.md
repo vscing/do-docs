@@ -6,6 +6,7 @@ title: do_Canvas 组件
 
  支持平台: iOS7.0,Android4.0 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Canvas)
+ [利用do_Canvas实现的细泡生命游戏示例](https://github.com/do-project/code4do/tree/master/ToBeOrNotToBe)
  支持2D图形处理，可以画点，线，多边形，文字，图片。样式的修改必须在定义图形之前才会生效。
 
 #### <font color ='#40A977'>**0.**</font> 目录
