@@ -66,13 +66,12 @@ title: do_BaiduMapView 组件
 
    //标准地图standard
    ui("do_BaiduMapView").mapType = "standard";   
-   //卫星地图satellite。
+   //卫星地图satellite
    ui("do_BaiduMapView").mapType = "satellite";  
-   //标准地图standard
 
      ```
 
-如下图，图一为mapType设置成standard时的显示效果。图二为mapType设置成satellite时的显示效果.
+如下图，图一为mapType设置成standard时的显示效果。图二为mapType设置成satellite时的显示效果。
 
 <div align="center">
 <img src="../../images/baidumapview_mapType_standard.png" height="380" width="330" >
@@ -833,5 +832,6 @@ do_BaiduMapView.addOverlay({
   - 1.do_BaiduMapView-iOSaddMark时，add多个initpopupvisibal为true，popup为true的地标，只能显示一个，这个原生的，不存在多个都显示
 
 #### <font color ='#40A977'>**6.**</font> 基本配置
-  - 1.使用百度地图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](/UI组件API/sections/百度定位相关配置/)
+  - 1.使用百度地图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](/UI组件API/sections/百度定位相关配置/)               
+  
 [回到顶部](#top)
