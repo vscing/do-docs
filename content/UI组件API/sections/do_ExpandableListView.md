@@ -323,7 +323,7 @@ title: do_ExpandableListView 组件
   ```javascript
 
   //收缩第一组和第二组数据
-	do_ExpandableListView.collapseGroup([0,1]);
+  do_ExpandableListView.collapseGroup([0,1]);
 
   ```
 
@@ -345,7 +345,7 @@ title: do_ExpandableListView 组件
 
   ```javascript
 
-  //平滑的滚动到第二组第三条数那一行
+  //平滑的滚动到第二组第三行数据
   do_ExpandableListView.scrollToPosition({groupIndex:1,childIndex:2,isSmooth:true});
 
   ```

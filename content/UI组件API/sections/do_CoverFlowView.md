@@ -6,7 +6,7 @@ title: do_CoverFlowView 组件
 
  支持平台: iOS7.0,Android14 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_CoverFlowView)
- 这个UI组件包含多个子视图，实现多个子视图之间左右平缓滑动效果；该组件支持设置多个模板视图，要求多个模板大小相同。
+ 画廊视图，这个UI组件包含多个子视图，实现多个子视图之间左右平缓滑动效果；该组件支持设置多个模板视图，要求多个模板大小相同。
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
