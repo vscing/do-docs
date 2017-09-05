@@ -2,7 +2,7 @@
 title: do_FrameAnimationView 组件
 ---
 
-  ### do_FrameAnimationView 组件
+### do_FrameAnimationView 组件
 
  支持平台: iOS7.0,Android4.0以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_FrameAnimationView)
@@ -27,7 +27,7 @@ title: do_FrameAnimationView 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |
-  **repeat** |<font color ='#808000'>**number**</font> | 否 | 1|帧动画的重复次数，默认值为1执行一次动画效果，为-1或小于0时表示无限循环，为0时表示没有动画效果
+  **repeat** |<font color ='#808000'>**number**</font> | 否 | 1|默认值为1执行一次动画效果，小于0时表示无限循环，为0时表示没有动画效果,大于0表示动画效果重复的次数
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明:data参数示例如下   
@@ -51,29 +51,42 @@ title: do_FrameAnimationView 组件
 
   //1.开始动画,支持source://路径下的图片
   var imgs = [];
-	for (var i = 1; i <= 8; i++) {
-		  imgs.push({path: "source://view/do_FrameAnimationView/image/" + i + ".png", duration: 100});         
-	}
-	do_FrameAnimationView.startImages({data:imgs, repeat:-1});   //repeat为-1表示无限循环                
+  for (var i = 1; i <= 8; i++) {
+  	imgs.push({
+  		path : "source://view/do_FrameAnimationView/image/" + i + ".png",
+  		duration : 100
+  	});
+  }
+  do_FrameAnimationView.startImages({data:imgs, repeat:-1}); //repeat值为-1表示无限循环           
 
 
   //2.开始动画,支持data://路径下的图片
-  var source_images = [],target_images = [];
+  var source_images = [], target_images = [];
 	for (var i = 1; i <= 12; i++) {
-		  source_images.push("initdata://" + i + ".png");
+		source_images.push("initdata://" + i + ".png");
 	}
 	for (var i = 1; i <= 12; i++) {
-		  target_images.push({path: "data://gif/image/" + i + ".png", duration: 100});                                                      
+		target_images.push({
+			path : "data://gif/image/" + i + ".png",
+			duration : 100
+		});
 	}
-	if (!sm("do_Storage").fileExist("data://gif/image/12.png")){                                      
-      //data://gif/image/下不存在图片，先copy到data文件夹下                 
-  		sm("do_InitData").copy(source_images, "data://gif/image/", function(_d, e) {                                                     
-    			if (_d) {  //拷贝文件成功
-    				   do_FrameAnimationView.startImages({data:target_images, repeat:-1});                                                    
-    			}
-  		})
-	} else {   //data文件夹下已存在文件可以直接开始动画
-		  do_FrameAnimationView.startImages({data:target_images, repeat:-1});
+	if (!sm("do_Storage").fileExist("data://gif/image/12.png")) {
+    // data://gif/image/下不存在图片先拷贝图片
+		sm("do_InitData").copy(source_images, "data://gif/image/",
+			function(_d, e) {
+				if (_d) { // 拷贝文件成功
+					do_FrameAnimationView.startImages({
+						data : target_images,
+						repeat : -1
+					});
+				}
+			})
+	} else {
+		do_FrameAnimationView.startImages({
+			data : target_images,
+			repeat : -1
+		});
 	}
 
   ```
@@ -94,7 +107,7 @@ title: do_FrameAnimationView 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **data** |<font color ='#808000'>**string**</font> | 是 | |图片支持data://, source://路径
-  **repeat** |<font color ='#808000'>**number**</font> | 否 | 1|帧动画的重复次数，默认值为1执行一次动画效果，为-1或小于0时表示无限循环，为0时表示没有动画效果；windows平台不支持设置重复次数，只能循环播放
+  **repeat** |<font color ='#808000'>**number**</font> | 否 | 1|默认值为1执行一次动画效果，小于0时表示无限循环，为0时表示没有动画效果,大于0表示动画效果重复的次数；windows平台不支持设置重复次数，只能循环播放
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明:
@@ -103,19 +116,28 @@ title: do_FrameAnimationView 组件
   ```javascript
 
   //1.开始动画,支持source://路径下的gif图片
-	do_FrameAnimationView.startGif({data:"source://view/do_FrameAnimationView/image/timg.gif", repeat:-1});
-
+  do_FrameAnimationView.startGif({
+		data : "source://view/do_FrameAnimationView/image/timg.gif",
+		repeat : -1
+	});
 
   //2.开始动画,支持data://路径下的gif图片
-	if (!sm("do_Storage").fileExist("data://gif/pic.gif")){  //data路径下不存在gif图片
-  		sm("do_InitData").copyFile("initdata://pic.gif", "data://gif/pic.gif", function(_d, e) {                
-          //data://下不存在gif图片，先copy到data文件夹下
-          if (_d) {
-    				   do_FrameAnimationView.startGif({data:"data://gif/pic.gif", repeat:-1});
-    			}
-  		})
+  if (!sm("do_Storage").fileExist("data://gif/pic.gif")) {
+    //data路径下不存在gif图片，先拷贝
+    sm("do_InitData").copyFile("initdata://pic.gif",
+			"data://gif/pic.gif", function(_d, e) {
+				if (_d) {
+					do_FrameAnimationView.startGif({
+						data : "data://gif/pic.gif",
+						repeat : -1
+					});
+				}
+			})
 	} else {
-		  do_FrameAnimationView.startGif({data:"data://gif/pic.gif", repeat:-1});
+		do_FrameAnimationView.startGif({
+			data : "data://gif/pic.gif",
+			repeat : -1
+		});
 	}
 
   ```
