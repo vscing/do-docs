@@ -4,7 +4,7 @@ title: do_FragmentView 组件
 
 ### do_FragmentView 组件
 
- 支持平台: iOS7.0,Android14 以上
+ 支持平台: iOS7.0,Android4.0以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_FragmentView)
  多页面滑动视图，支持从最左侧或右侧边缘滑出视图，整体侧滑视图带有缩放和渐变效果；
 
@@ -156,7 +156,7 @@ title: do_FragmentView 组件
 		template : 1,
 		rightTemplate : 2,
 		$leftImage : "source://view/do_FragmentView/image/right.png",
-		middle_title : "刷新数据",
+		middle_title : "主视图刷新数据",
 		$rightImage : "source://view/do_FragmentView/image/default.png"
 	} ]);
 	do_FragmentView.refreshItems(); //刷新当前视图显示数据
