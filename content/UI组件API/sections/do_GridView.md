@@ -37,7 +37,7 @@ title: do_GridView 组件
 >###### <span id=items><font color ='#42b983'>**items**</font></span>: GridView显示内容
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置GridView显示内容（必须是一个数组），例如：
 [{"template":0,"image":"source://1.jpg"},{"template":2,"title":"content","image":"source://1.jpg"}]；设置该属性，会把值传递到每个子View，相当于触发了子View的相关属性的修改
 
@@ -50,8 +50,8 @@ title: do_GridView 组件
 >###### <span id=templates><font color ='#42b983'>**templates**</font></span>: 显示视图对应UI模板文件
 
 - 数据类型 : <font color ='#808000'>**object**</font>
-- 默认值 : 
-- 说明 : 一个GridView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件，这些ui文件没有自己的逻辑代码，和gridview所在的page共用一个脚本环境。
+- 默认值 :
+- 说明 : 一个GridView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件，这些ui文件没有自己的逻辑代码，和gridview所在的page共用一个脚本环境。gridview的模板cell不能是-1,多模版时,模版不能动态,大小必须大小一致。
 这个属性的格式类似如下：
 ["source://view/cell1.ui","source://view/cell2.ui","source://view/cell3.ui]；多模版的大小需要一致
 
@@ -64,20 +64,20 @@ title: do_GridView 组件
 >###### <span id=hSpacing><font color ='#42b983'>**hSpacing**</font></span>: 两列之间的间距
 
 - 数据类型 : <font color ='#808000'>**number**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 两列之间的间距，单位为px
 
 >###### <span id=vSpacing><font color ='#42b983'>**vSpacing**</font></span>: 两行之间的间距
 
 - 数据类型 : <font color ='#808000'>**number**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 两行之间的间距，单位为px
 
 >###### <span id=selectedColor><font color ='#42b983'>**selectedColor**</font></span>: cell选中的背景颜色
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
-- 说明 : 
+- 默认值 :
+- 说明 :
 
 >###### <span id=isShowbar><font color ='#42b983'>**isShowbar**</font></span>: 是否支持显示滚动条效果
 
@@ -94,7 +94,7 @@ title: do_GridView 组件
 >###### <span id=headerView><font color ='#42b983'>**headerView**</font></span>: 表头视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的表头视图地址，不填但isHeaderVisible为true时有缺省样式
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -142,7 +142,7 @@ title: do_GridView 组件
   **indexs** |<font color ='#808000'>**object**</font> | 否 | |要刷新的数据的索引，是一个数组，可以为单个或多个索引。如果不填则为刷新全部数据，仅支持iOS平台
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
@@ -240,5 +240,3 @@ title: do_GridView 组件
   ```
 
 [回到顶部](#top)
-
-
