@@ -20,8 +20,24 @@ title: do_ImageCropView1 组件
 >###### <span id=source><font color ='#42b983'>**source**</font></span>: 图片路径
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 可设置本地文件，支持 data:// source:// 打头
+- 示例:
+
+  ```javascript
+
+  var do_ImageCropView = ui("do_ImageCropView1_1");
+  do_ImageCropView.source = "source://view/do_ImageCropView/image/1.jpg";
+
+  ```
+
+  下图为"拖动"和"缩放"裁剪区域的效果图。
+
+  <div>
+
+  <img src="../../images/imagecropview.png" height="380" width="320" >
+
+  </div>
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -36,7 +52,21 @@ title: do_ImageCropView1 组件
 - 示例:
 
   ```javascript
-  ...
+
+  do_ImageCropView.crop(function(data, e) {
+		deviceone.print(data);
+	})
+
+  ```
+
+  ```
+  以上示例代码返回的data如下:
+
+  ios剪裁后返回的图片路径:
+      data://tmp/do_ImageCropView1/53110008-0292-43F9-8D93-7891F1B1CE30.jpg
+
+  android剪裁后返回的图片路径:
+      data://temp/do_ImageCropView1/201709151546066.png.do
 
   ```
 
@@ -44,5 +74,3 @@ title: do_ImageCropView1 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
