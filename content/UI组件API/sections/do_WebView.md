@@ -82,13 +82,13 @@ title: do_WebView 组件
 >###### <span id=url><font color ='#42b983'>**url**</font></span>: 网页地址
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 支持http://,https://,支持source://,data://文件格式。文件格式的说明可以参考Storage类
 
 >###### <span id=headerView><font color ='#42b983'>**headerView**</font></span>: 表头视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的表头视图地址，不填但isHeaderVisible为true时有缺省样式
 
 >###### <span id=zoom><font color ='#42b983'>**zoom**</font></span>: 手势缩放
@@ -100,7 +100,7 @@ title: do_WebView 组件
 >###### <span id=userAgent><font color ='#42b983'>**userAgent**</font></span>: 浏览器标识
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置浏览器的User-Agent
 
 >###### <span id=allowVideoFullScreenPlayback><font color ='#42b983'>**allowVideoFullScreenPlayback**</font></span>: HTML中的视频是否自动全屏播放
@@ -116,11 +116,11 @@ title: do_WebView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明: 回退到上一个页面
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.back()
 
   ```
 
@@ -131,11 +131,11 @@ title: do_WebView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明: 前进到下一个页面
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.forward()
 
   ```
 
@@ -146,11 +146,11 @@ title: do_WebView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明: 重新加载页面
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.reload()
 
   ```
 
@@ -161,11 +161,11 @@ title: do_WebView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明: 停止刷新页面
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.stop()
 
   ```
 
@@ -176,11 +176,12 @@ title: do_WebView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 返回是否可继续前进
-- 说明: 
+- 说明: 判断页面是否能前进到下一页面
 - 示例:
 
   ```javascript
-  ...
+  var CanForward = do_WebView.canForward()
+  deviceone.print(CanForward,"是否可以继续前进")
 
   ```
 
@@ -191,11 +192,12 @@ title: do_WebView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**Boolean**</font>
 - 返回值描述: 检查是否有可以后退的历史记录
-- 说明: 
+- 说明: 判断页面是否可以后退
 - 示例:
 
   ```javascript
-  ...
+  var CanBack = do_WebView.canBack()
+  deviceone.print(CanBack,"是否可以回退")
 
   ```
 
@@ -210,7 +212,7 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.rebound()
 
   ```
 
@@ -230,7 +232,10 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.setCookie({
+    url:url,
+    value:cookie
+  });
 
   ```
 
@@ -249,7 +254,7 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.setLoadingProgressColor("000000FF")
 
   ```
 
@@ -268,7 +273,7 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.setDefaultEncodingURL(true)
 
   ```
 
@@ -283,7 +288,8 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  var size = do_WebView.getContentSize()
+  deviceone.print(JSON.stringify(size),"网页加载尺寸")
 
   ```
 
@@ -300,11 +306,14 @@ title: do_WebView 组件
   **text** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  var htmlString = "<a href=\"http://www.deviceone.net\">Visit DeviceOne</a>";
+  do_WebView.loadString({text:htmlString}, function(data, e) {
+	  devceone.print(data,"加载结果")
+  })
 
   ```
 
@@ -323,7 +332,13 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  //加载的html网页有function getbtn(val){}
+  do_WebView.url="source://view/do_WebView/abc.html";
+  //通过执行Javascript代码对网页中方法进行调用
+  do_WebView.eval({code:"getbtn('evaltest')"}, function(data, e) {
+	  deviceone.print(data,"加载结果")
+  })
+
 
   ```
 
@@ -340,7 +355,9 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.on("loaded",function(data){
+	  deviceone.print(data,"加载完成返回")
+  })
 
   ```
 
@@ -349,12 +366,14 @@ title: do_WebView 组件
 >###### <span id=start><font color ='#e96900'>**start**</font></span>: 开始加载
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
-- 返回值描述: 返回{url}，其中url表示当前操作的url地址，该地址不一定为网络地址，本地html页面跳转也会触发并返回本地路径
+- 返回值描述: 返回{url}，其中url表示当前操作的url地址，该地址不一定为网络地址，本地html页面跳转也会触发并返回本地路径,因平台限制ios无法在start事件中拿到准确地址
 - 说明: 开始加载
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.on("start",function(data){
+	  deviceone.print(data,"开始加载返回")
+  }
 
   ```
 
@@ -368,7 +387,9 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.on("pull",function(data){
+	   deviceone.print("state属性:"+data.state+"offset属性"+data.offset)
+  })
 
   ```
 
@@ -382,10 +403,10 @@ title: do_WebView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WebView.on("failed",function(data){
+	  deviceone.print(data,"加载失败回调")
+  })
 
   ```
 
 [回到顶部](#top)
-
-
