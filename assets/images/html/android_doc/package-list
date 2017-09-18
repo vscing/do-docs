@@ -1,0 +1,7 @@
+core
+core.helper
+core.helper.cache
+core.helper.cache.libcore.io
+core.interfaces
+core.interfaces.datamodel
+core.object
