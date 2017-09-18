@@ -493,7 +493,8 @@ title: do_Canvas 组件
 
 #### <font color ='#40A977'>**6.**</font> 基本配置
 #### <font color ='#40A977'>**7.**</font> 更多示例
-[细泡生命游戏示例](https://github.com/do-project/code4do/tree/master/ToBeOrNotToBe)
-[算法学习示例](https://github.com/do-project/code4do/tree/master/studyalgorithm)
+  
+  - [细泡生命游戏示例](https://github.com/do-project/code4do/tree/master/ToBeOrNotToBe)
+  - [算法学习示例](https://github.com/do-project/code4do/tree/master/studyalgorithm)
 
 [回到顶部](#top)
