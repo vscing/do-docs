@@ -1,6 +1,4 @@
 ---
-title: Summary
+title: 使用XCode和Object C开发第一个iOS组件
 ---
-### Summary
-
-You should now have a better understanding of some of the core Atom APIs and systems.
+### 使用XCode和Object C开发第一个iOS组件
