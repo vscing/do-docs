@@ -372,7 +372,7 @@ title: do_WebView 组件
 
   ```javascript
   do_WebView.on("start",function(data){
-	  deviceone.print(data,"开始加载返回")
+	  deviceone.print(data)
   }
 
   ```
