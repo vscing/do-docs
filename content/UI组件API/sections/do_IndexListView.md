@@ -105,54 +105,54 @@ title: do_IndexListView 组件
   var do_HashData = mm("do_HashData"); //实例化绑定的HashData数据源
   var index_arr = [];
   var _datas = {  //定义绑定的数组，即bindItems方法里的data参数
-    	"A" : [ {
-    		"template" : 0,
-    		"text" : "A"
-    	}, {
-    		"template" : 1,
-    		"Id" : "admin",
-    		"icon" : "source://view/do_IndexListView/image/default.png",
-    		"_choose" : "source://view/do_IndexListView/image/choose.png",
-    		"text" : "管理员",
-    		"Code" : "admin"
-    	} ],
-    	"B" : [ {
-    		"template" : 0,
-    		"text" : "B"
-    	}, {
-    		"template" : 1,
-    		"Id" : "532c53ccc8ac4a12842436c39c1a1961",
-    		"icon" : "source://view/do_IndexListView/image/default.png",
-    		"_choose" : "source://view/do_IndexListView/image/choose.png",
-    		"text" : "标签1",
-    		"Code" : "12"
-    	} ],
-    	"J" : [ {
-    		"template" : 0,
-    		"text" : "J"
-    	}, {
-    		"template" : 1,
-    		"Id" : "552ae6b3e15443acb89864db790dbab0",
-    		"icon" : "source://view/do_IndexListView/image/default.png",
-    		"_choose" : "source://view/do_IndexListView/image/choose.png",
-    		"text" : "技术2",
-    		"Code" : "6"
-    	}, {
-    		"template" : 1,
-    		"Id" : "58b1149567794a0dac5b6ac15eeb17ef",
-    		"icon" : "source://view/do_IndexListView/image/default.png",
-    		"_choose" : "source://view/do_IndexListView/image/choose.png",
-    		"text" : "技术1",
-    		"Code" : "5"
-    	} ]
-    };
-		for (var key in _datas){
-			index_arr.push(key);   //处理绑定的索引数组即bindItems方法里的indexs参数
-		}
-		do_HashData.removeAll();
-		do_HashData.addData(_datas);
-		ui("do_IndexListView_1").bindItems(do_HashData,index_arr);
-		ui("do_IndexListView_1").refreshItems();  //绑定数据后刷新
+  	"A" : [ {
+  		"template" : 0,
+  		"text" : "A"
+  	}, {
+  		"template" : 1,
+  		"Id" : "admin",
+  		"icon" : "source://view/do_IndexListView/image/default.png",
+  		"_choose" : "source://view/do_IndexListView/image/choose.png",
+  		"text" : "管理员",
+  		"Code" : "admin"
+  	} ],
+  	"B" : [ {
+  		"template" : 0,
+  		"text" : "B"
+  	}, {
+  		"template" : 1,
+  		"Id" : "532c53ccc8ac4a12842436c39c1a1961",
+  		"icon" : "source://view/do_IndexListView/image/default.png",
+  		"_choose" : "source://view/do_IndexListView/image/choose.png",
+  		"text" : "标签1",
+  		"Code" : "12"
+  	} ],
+  	"J" : [ {
+  		"template" : 0,
+  		"text" : "J"
+  	}, {
+  		"template" : 1,
+  		"Id" : "552ae6b3e15443acb89864db790dbab0",
+  		"icon" : "source://view/do_IndexListView/image/default.png",
+  		"_choose" : "source://view/do_IndexListView/image/choose.png",
+  		"text" : "技术2",
+  		"Code" : "6"
+  	}, {
+  		"template" : 1,
+  		"Id" : "58b1149567794a0dac5b6ac15eeb17ef",
+  		"icon" : "source://view/do_IndexListView/image/default.png",
+  		"_choose" : "source://view/do_IndexListView/image/choose.png",
+  		"text" : "技术1",
+  		"Code" : "5"
+  	} ]
+  };
+	for (var key in _datas){
+		index_arr.push(key);   //处理绑定的索引数组即bindItems方法里的indexs参数
+	}
+	do_HashData.removeAll();
+	do_HashData.addData(_datas);
+	ui("do_IndexListView_1").bindItems(do_HashData,index_arr);
+	ui("do_IndexListView_1").refreshItems();  //绑定数据后刷新
 
   ```
   绑定数据刷新后效果图如下：          
@@ -179,7 +179,7 @@ title: do_IndexListView 组件
 >###### <span id=touch><font color ='#e96900'>**touch**</font></span>: 点击cell触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
-- 返回值描述: 返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']
+- 返回值描述: 返回data中的groupID和group下的数据index，比如{'groupID':'A','index':'2'}
 - 说明: 点击cell触发
 - 示例:
 
@@ -201,7 +201,7 @@ title: do_IndexListView 组件
 >###### <span id=longTouch><font color ='#e96900'>**longTouch**</font></span>: 长按cell触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
-- 返回值描述: 返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']
+- 返回值描述: 返回data中的groupID和group下的数据index，比如{'groupID':'A','index':'2'}
 - 说明: 长按cell触发
 - 示例:
 
@@ -217,5 +217,14 @@ title: do_IndexListView 组件
   }
 
   ```
+
+#### <font color ='#40A977'>**5.**</font> 常见问题
+
+
+#### <font color ='#40A977'>**6.**</font> 基本配置
+
+#### <font color ='#40A977'>**7.**</font> 更多示例
+
+  - [仿微信主界面示例](https://github.com/do-project/code4do/tree/master/weixin)
 
 [回到顶部](#top)
