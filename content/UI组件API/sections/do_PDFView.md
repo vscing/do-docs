@@ -24,8 +24,16 @@ title: do_PDFView 组件
 >###### <span id=url><font color ='#42b983'>**url**</font></span>: 打开的pdf文件路径
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 支持data://与source://目录
+- 示例:
+
+  ```javascript
+
+  var do_PDFView = ui("do_PDFView_1");  //实例化
+  do_PDFView.url = "source://view/do_PDFView/text.pdf";
+
+  ```
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -33,12 +41,22 @@ title: do_PDFView 组件
 
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**object**</font>
-- 返回值描述: {'total':100,'current':2}
+- 返回值描述:
+    ```
+
+    {
+      "total": "100",
+      "current":"2"
+    }
+
+    ```
+
 - 说明: 返回总共页数以及当前页数
 - 示例:
 
   ```javascript
-  ...
+
+  do_PDFView.getPageCount();
 
   ```
 
@@ -49,11 +67,12 @@ title: do_PDFView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+
+  do_PDFView.next();
 
   ```
 
@@ -64,11 +83,12 @@ title: do_PDFView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+
+  do_PDFView.prev();
 
   ```
 
@@ -83,11 +103,13 @@ title: do_PDFView 组件
   **page** |<font color ='#808000'>**number**</font> | 否 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+
+  var page_count = 3;   
+  do_PDFView.jump(page_count);    //number类型
 
   ```
 
@@ -101,15 +123,25 @@ title: do_PDFView 组件
 >###### <span id=pageChanged><font color ='#e96900'>**pageChanged**</font></span>: 页面切换时触发
 
 - 返回值类型 : <font color ='#808000'>**object**</font>
-- 返回值描述: {'total':100,'current':2}
+- 返回值描述:
+    ```
+
+    {
+      "total": "100",
+      "current":"2"
+    }
+
+    ```
+
 - 说明: 页面切换时触发
 - 示例:
 
   ```javascript
-  ...
+
+  do_PDFView.on("pageChanged", function(data) {
+  	deviceone.print(JSON.stringify(data));
+  })
 
   ```
 
 [回到顶部](#top)
-
-
