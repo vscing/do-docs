@@ -46,12 +46,12 @@ title: do_ViewShower 组件
   **animationTime** |<font color ='#808000'>**number**</font> | 否 | 300|动画效果持续时间，单位为ms毫秒
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:根据id来切换展示View内容
 - 示例:
 
   ```javascript
-  ...
-
+  //切换显示id为"1"的子view
+  do_ViewShower.showView({id:"1", animationType:"slide_l2r", animationTime:1000});
   ```
 
 [回到顶部](#top)
@@ -65,12 +65,17 @@ title: do_ViewShower 组件
   **data** |<font color ='#808000'>**object**</font> | 是 | |要增加的View的索引，默认值为增加到最后，如果id已经存在，会覆盖之前的View，结构[{ id : '', path : ''},{id :'' , path : ''}, ..... ]
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:增加多个View到ViewShower中
 - 示例:
 
   ```javascript
-  ...
-
+  //定义变量
+  var adata = [
+                { id :"id0", path :"source://view/UI/do_ViewShower/id0.ui"},
+                { id :"id1", path :"source://view/UI/do_ViewShower/id1.ui"}
+              ]
+  //添加到ViewShower
+  do_ViewShower.addViews({data:adata})
   ```
 
 [回到顶部](#top)
@@ -84,11 +89,12 @@ title: do_ViewShower 组件
   **id** |<font color ='#808000'>**string**</font> | 是 | |要删除的View的id
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:根据id来删除某个View
 - 示例:
 
   ```javascript
-  ...
+  //删除掉id为"id0"的子view
+  do_ViewShower.removeView({id:"id0"})
 
   ```
 
@@ -107,8 +113,9 @@ title: do_ViewShower 组件
 - 示例:
 
   ```javascript
-  ...
-
+  //获取id为"id1"的子View的地址
+  var data = do_ViewShower.getView("id1");
+  deviceone.print(data,"id1的地址")
   ```
 
 [回到顶部](#top)
@@ -122,14 +129,14 @@ title: do_ViewShower 组件
 
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回View切换后的id
-- 说明: View切换完成时触发
+- 说明: View切换完成时触发,返回切换后显示View的id
 - 示例:
 
   ```javascript
-  ...
+  do_ViewShower.on("viewChanged",function(data){
+    deviceone.print(data,"切换到的id")
+  })
 
   ```
 
 [回到顶部](#top)
-
-

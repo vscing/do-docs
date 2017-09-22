@@ -83,7 +83,8 @@ title: do_WebView 组件
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
-- 说明 : 支持http://,https://,支持source://,data://文件格式。文件格式的说明可以参考Storage类
+- 说明 : 支持http://,https://,支持source://,data://文件格式。文件格式的说明可以参考Storage类,ios的url里不能有#号或其他特殊服务，如果有需要转码
+
 
 >###### <span id=headerView><font color ='#42b983'>**headerView**</font></span>: 表头视图
 
@@ -408,5 +409,13 @@ title: do_WebView 组件
   })
 
   ```
+
+[回到顶部](#top)
+
+#### <font color ='#40A977'>**5.**</font> 常见问题
+- 安卓下webview加载的页面,点击输入框,页面如何自动上跳?
+
+  **答**: 可以将webview高度设置成自动(-1),或者将页面根ui换为webview.
+
 
 [回到顶部](#top)
