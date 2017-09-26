@@ -35,7 +35,8 @@ title: do_VideoRecord 组件
 - 示例:
 
   ```javascript
-  ...
+  //以high品质录制不限时视频
+  do_VideoRecord.start({quality:"high", limit:-1});
 
   ```
 
@@ -50,7 +51,7 @@ title: do_VideoRecord 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VideoRecord.stop();
 
   ```
 
@@ -64,12 +65,14 @@ title: do_VideoRecord 组件
 >###### <span id=error><font color ='#e96900'>**error**</font></span>: 录制出错事件
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 录制出错事件
 - 示例:
 
   ```javascript
-  ...
+  do_VideoRecord.on("error",function(data){
+    deviceone.print(data,"错误信息")
+  })
 
   ```
 
@@ -83,10 +86,10 @@ title: do_VideoRecord 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VideoRecord.on("finish",function(data){
+    deviceone.print(JSON.parse(data),"视频信息")
+  })
 
   ```
 
 [回到顶部](#top)
-
-
