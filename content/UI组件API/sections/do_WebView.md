@@ -417,5 +417,9 @@ title: do_WebView 组件
 
   **答**: 可以将webview高度设置成自动(-1),或者将页面根ui换为webview.
 
+- 安卓下可滚动页面中的webview加载完成,页面自动滑到webview位置,如何解决?
+
+  **答**: 可以将webview的enabled属性设为false
+
 
 [回到顶部](#top)

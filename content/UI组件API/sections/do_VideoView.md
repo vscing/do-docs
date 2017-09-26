@@ -31,7 +31,7 @@ title: do_VideoView 组件
 >###### <span id=path><font color ='#42b983'>**path**</font></span>: 播放文件源路径
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 支持initdata://、data://、source://和网络地址
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -45,12 +45,11 @@ title: do_VideoView 组件
   **point** |<font color ='#808000'>**number**</font> | 否 | |从视频中的某一点开始播放，毫秒值
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明: 开始播放视频,默认从0开始播放
 - 示例:
 
   ```javascript
-  ...
-
+  do_VideoView.play({point:100})
   ```
 
 [回到顶部](#top)
@@ -60,12 +59,12 @@ title: do_VideoView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 返回当前视频暂停时的位置，毫秒值
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
-
+  var point = do_VideoView.pause()
+  deviceone.print(point,"暂停时间")
   ```
 
 [回到顶部](#top)
@@ -75,11 +74,11 @@ title: do_VideoView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:  
 - 示例:
 
   ```javascript
-  ...
+  do_VideoView.resume()
 
   ```
 
@@ -90,11 +89,11 @@ title: do_VideoView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  do_VideoView.stop()
 
   ```
 
@@ -109,8 +108,8 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
-
+  var data = do_VideoView.isPlaying();
+  deviceone.print(data,"当前视频状态")
   ```
 
 [回到顶部](#top)
@@ -120,7 +119,7 @@ title: do_VideoView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回当前播放的时间，单位为毫秒
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
@@ -139,7 +138,7 @@ title: do_VideoView 组件
   **isFullScreen** |<font color ='#808000'>**Boolean**</font> | 否 | false|为false是表示退出全屏，小窗口播放，若已为小窗口播放则没有变化；为true是表示转为全屏播放，若已为全屏播放则没有变化
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
@@ -218,7 +217,7 @@ title: do_VideoView 组件
 >###### <span id=finished><font color ='#e96900'>**finished**</font></span>: 视频播放完后触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 视频播放完后触发
 - 示例:
 
@@ -232,7 +231,7 @@ title: do_VideoView 组件
 >###### <span id=error><font color ='#e96900'>**error**</font></span>: 视频播放异常时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 视频播放异常时触发
 - 示例:
 
@@ -242,5 +241,3 @@ title: do_VideoView 组件
   ```
 
 [回到顶部](#top)
-
-
