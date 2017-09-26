@@ -123,8 +123,8 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
-
+  var data = do_VideoView.getCurrentPosition()
+  deviceone.print(data,"当前播放时间")
   ```
 
 [回到顶部](#top)
@@ -142,8 +142,10 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
-
+  //进入全屏
+  do_VideoView.expand({isFullScreen:true});
+  //退出全屏
+  do_VideoView.expand({isFullScreen:false})
   ```
 
 [回到顶部](#top)
@@ -161,8 +163,10 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
-
+  //显示按钮
+  do_VideoView.setControlVisible({visible:true})
+  //隐藏按钮
+  do_VideoView.setControlVisible({visible:false})
   ```
 
 [回到顶部](#top)
@@ -185,7 +189,10 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VideoView.getFrameAsImage(
+    {time:5000,format:"PNG",quality:80,outPath:"data://temp/do_VideoView/test/1.png"}, function(data, e) {
+      deviceone.print(data,"图片保存路径")
+    })
 
   ```
 
@@ -205,7 +212,10 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
+  var bitmap1 = mm("do_Bitmap");
+	do_VideoView.getFrameAsBitmap({bitmap:bitmap1,time:5000}, function(data, e) {
+
+  })
 
   ```
 
@@ -222,7 +232,9 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VideoView.on("finish",function(data,e){
+    deviceone.print(data,"结束返回")
+  })
 
   ```
 
@@ -236,7 +248,10 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VideoView.on("error",function(data,e){
+    deviceone.print(data,"结束返回")
+  })
+
 
   ```
 
