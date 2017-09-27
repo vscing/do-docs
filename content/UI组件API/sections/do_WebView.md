@@ -421,5 +421,9 @@ title: do_WebView 组件
 
   **答**: 可以将webview的enabled属性设为false
 
+- IOS对带"#"的url无法识别,如何处理?
+
+  **答**: 设置webView.setDefaultEncodingURL(false)
+
 
 [回到顶部](#top)

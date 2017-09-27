@@ -36,7 +36,7 @@ title: do_VerticalSlideView 组件
 >###### <span id=templates><font color ='#42b983'>**templates**</font></span>: 显示视图对应UI模板文件
 
 - 数据类型 : <font color ='#808000'>**object**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 可以设置一个或多个UI模板文件，值为String类型，多个模板之间分别用“,”分隔，例如：“source://view/temp/t0.ui, source://view/temp/t1.ui”
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -54,7 +54,16 @@ title: do_VerticalSlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  var listData1 = mm("do_ListData");
+  var do_VerticalSlideView = ui("do_VerticalSlideView")
+	var data1 = [
+		          	{template:0,"$text":"5"},
+		          	{template:1,"$text":"6"},
+		          	{template:2,"$text":"7"},
+		          	{template:3,"$text":"8"},
+		          	{template:4,"$text":"9"}
+		          ];
+		do_VerticalSlideView.bindItems({data:listData1});
 
   ```
 
@@ -69,7 +78,7 @@ title: do_VerticalSlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VerticalSlideView.refreshItems()
 
   ```
 
@@ -88,10 +97,10 @@ title: do_VerticalSlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_VerticalSlideView.on("indexChanged",function(data){
+    deviceone.print(data,"切换后的index")
+  })
 
   ```
 
 [回到顶部](#top)
-
-
