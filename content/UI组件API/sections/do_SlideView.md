@@ -55,7 +55,7 @@ title: do_SlideView 组件
 >###### <span id=templates><font color ='#42b983'>**templates**</font></span>: 显示视图对应UI模板文件
 
 - 数据类型 : <font color ='#808000'>**object**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 可以设置一个或多个UI模板文件，值为String类型，多个模板之间分别用“,”分隔，例如：“source://view/temp/t0.ui,source://view/temp/t1.ui”
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -73,7 +73,21 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  var do_SlideView = ui("do_SlideView");
+  var listData0 = mm("do_ListData");
+  //通过template属性来选定模板
+  var data0 = [
+  {template:2,"$text":"index 0","$source":"source://image/3.jpg"},
+  {template:2,"$text":"index 1","$source":"source://image/4.jpg"},
+  {template:0,"$text":"index 2","$source":"source://image/3.jpg"},
+  {template:0,"$text":"index 3","$source":"data://3.png"},
+  {template:1,"$text":"index 4","$source":"data://3.png"},
+  {template:1,"$text":"index 5","$source":"data://4.png"},
+  ];
+  listData0.addData(data0);
+  do_SlideView.bindItems({
+  	data : listData0
+  });
 
   ```
 
@@ -88,7 +102,7 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideView.refreshItems()
 
   ```
 
@@ -107,7 +121,8 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  //设置间隔500毫秒轮播
+  do_SlideView.startLoop({interval : 500});
 
   ```
 
@@ -122,7 +137,7 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideView.stopLoop()
 
   ```
 
@@ -141,7 +156,10 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  //获取第0个子view的地址
+  var data = do_SlideView.getView({
+					index : 0
+				});
 
   ```
 
@@ -160,7 +178,9 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideView.on("indexChanged", function(data, e) {
+    deviceone.print(data,"滑动到第几个视图")
+  })
 
   ```
 
@@ -174,10 +194,10 @@ title: do_SlideView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideView.on("touch", function(data, e) {
+    deviceone.print(data,"点击第几个视图")
+  })
 
   ```
 
 [回到顶部](#top)
-
-
