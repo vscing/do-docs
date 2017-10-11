@@ -63,7 +63,8 @@ title: do_VerticalSlideView 组件
 		          	{template:3,"$text":"8"},
 		          	{template:4,"$text":"9"}
 		          ];
-		do_VerticalSlideView.bindItems({data:listData1});
+  listdata1.addData(data1)
+	do_VerticalSlideView.bindItems({data:listData1});
 
   ```
 

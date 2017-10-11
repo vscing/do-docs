@@ -52,10 +52,10 @@ title: do_SwitchView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SwitchView.on("changed",function(data){
+	deviceone.print(data,"开关发生变化后的状态")
+})
 
   ```
 
 [回到顶部](#top)
-
-
