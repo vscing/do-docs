@@ -65,7 +65,7 @@ title: do_TextField 组件
 >###### <span id=text><font color ='#42b983'>**text**</font></span>: 文本内容
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 获取或设置与此控件关联的文本
 
 >###### <span id=fontColor><font color ='#42b983'>**fontColor**</font></span>: 字体颜色
@@ -98,7 +98,7 @@ strikethrough ：删除线
 >###### <span id=hint><font color ='#42b983'>**hint**</font></span>: 提示信息
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : text为空时显示的文字提示信息
 
 >###### <span id=hintColor><font color ='#42b983'>**hintColor**</font></span>: 提示信息字体颜色
@@ -128,14 +128,14 @@ strikethrough ：删除线
 >###### <span id=clearImg><font color ='#42b983'>**clearImg**</font></span>: 删除标记图片
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 不设置或该属性为空时会显示默认图片，默认为在文本框右侧的一个叉号标记；否则显示设置的图片，支持data://和source://目录；windows平台不支持
 
 >###### <span id=maxLength><font color ='#42b983'>**maxLength**</font></span>: 可允许输入的最大长度
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 100
-- 说明 : 
+- 说明 : 允许输入的最大长度,字符为单位
 
 >###### <span id=textAlign><font color ='#42b983'>**textAlign**</font></span>: 文本对齐方式
 
@@ -158,8 +158,10 @@ strikethrough ：删除线
 - 示例:
 
   ```javascript
-  ...
-
+  //得到焦点,键盘弹出
+  do_TextField.setFocus({value:true})
+  //失去焦点,收起键盘
+  do_TextField.setFocus({value:false})
   ```
 
 [回到顶部](#top)
@@ -173,11 +175,12 @@ strikethrough ：删除线
   **position** |<font color ='#808000'>**number**</font> | 是 | 0|表示在已有字符的第几个位置，从0开始，比如文本框内有5个字符，position设置为3，光标即在第4个字符之前
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  //设置光标在第三个字符之前
+  do_TextField.setSelection({position:2})
 
   ```
 
@@ -191,12 +194,14 @@ strikethrough ：删除线
 >###### <span id=textChanged><font color ='#e96900'>**textChanged**</font></span>: 文字变化时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 文字变化时触发
 - 示例:
 
   ```javascript
-  ...
+  do_TextField.on("textChanged",function(){
+    deviceone.print("do_TextField文字内容变化")
+  })
 
   ```
 
@@ -210,7 +215,9 @@ strikethrough ：删除线
 - 示例:
 
   ```javascript
-  ...
+  do_TextField.on("focusIn",function(data,e){
+    deviceone.print(data,"弹出键盘的高度")
+  })
 
   ```
 
@@ -219,12 +226,14 @@ strikethrough ：删除线
 >###### <span id=focusOut><font color ='#e96900'>**focusOut**</font></span>: 离开编辑状态
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 离开编辑状态
 - 示例:
 
   ```javascript
-  ...
+  do_TextField.on("focusOut",function(){
+    deviceone.print("离开编辑状态,键盘收起")
+  })
 
   ```
 
@@ -233,15 +242,15 @@ strikethrough ：删除线
 >###### <span id=enter><font color ='#e96900'>**enter**</font></span>: 点击键盘右下角按钮时触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 点击键盘右下角按钮时触发
 - 示例:
 
   ```javascript
-  ...
+  do_TextField.on("enter",function(){
+    deviceone.print("点击键盘右下角按钮")
+  })
 
   ```
 
 [回到顶部](#top)
-
-

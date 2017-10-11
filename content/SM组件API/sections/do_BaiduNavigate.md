@@ -6,7 +6,7 @@ title: do_BaiduNavigate 组件
 
  支持平台: iOS7.0,Android4.0 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_BaiduNavigate)
- 百度导航支持语音播报（使用语言播报，需要在http://app.navi.baidu.com/ttsregister/appinfo导航TTS平台中进行注册申请），路线规划及导航
+ 百度导航支持语音播报（使用语言播报，需要在[](http://app.navi.baidu.com/ttsregister/appinfo)导航TTS平台中进行注册申请），路线规划及导航
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
@@ -50,7 +50,7 @@ title: do_BaiduNavigate 组件
 >###### <span id=failed><font color ='#e96900'>**failed**</font></span>: 导航失败时候触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 导航失败时候触发
 - 示例:
 
@@ -64,7 +64,7 @@ title: do_BaiduNavigate 组件
 >###### <span id=begin><font color ='#e96900'>**begin**</font></span>: 开始导航
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 开始导航
 - 示例:
 
@@ -78,7 +78,7 @@ title: do_BaiduNavigate 组件
 >###### <span id=success><font color ='#e96900'>**success**</font></span>: 成功开启导航
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 成功开启导航
 - 示例:
 
@@ -88,5 +88,3 @@ title: do_BaiduNavigate 组件
   ```
 
 [回到顶部](#top)
-
-
