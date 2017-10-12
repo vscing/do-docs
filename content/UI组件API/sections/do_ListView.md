@@ -83,6 +83,7 @@ title: do_ListView 组件
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 :
 - 说明 : 一个ListView可以有多个cell模板，每一个元素都是一个source ui文件。这个属性的格式类似如下： source://view/cell1.ui,source://view/cell2.ui,source://view/cell3.ui
+- 示例:
 
   ```javascript
 
