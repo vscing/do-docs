@@ -129,7 +129,7 @@ title: do_ListView 组件
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明: headerview或footerview复位，通常下拉或上拉刷新处理数据后需要调用这个方法恢复listview状态
-- 示例: 具体使用方法参考pull和push使用时的代码
+- 示例: 具体使用方法参考pull和push事件使用时的代码
 
   ```javascript
 
@@ -237,7 +237,7 @@ title: do_ListView 组件
   	do_ListView.refreshItems(); //更新数据之后需要刷新item数据才能起作用
 
   ```
-  更新并刷新第一条数据之后的效果图如下：
+  更新第一条数据刷新之后的效果图如下：
 
   <div align="center">
 
@@ -254,7 +254,7 @@ title: do_ListView 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **position** |<font color ='#808000'>**number**</font> | 否 | 0|表示listview的第几行，从0开始计数，缺省值是 0
-  **isSmooth** |<font color ='#808000'>**Boolean**</font> | 否 | false|缺省是false表示直接跳转到某一行，没有任何平滑过渡的效果。为true表示平滑到那一行；其中为false的时候是不会触发scroll事件的，为true会触发；windows不支持该效果
+  **isSmooth** |<font color ='#808000'>**boolean**</font> | 否 | false|缺省是false表示直接跳转到某一行，没有任何平滑过渡的效果。为true表示平滑到那一行；其中为false的时候是不会触发scroll事件的，为true会触发；windows不支持该效果
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
 - 说明:
