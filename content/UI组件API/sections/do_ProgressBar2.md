@@ -27,6 +27,7 @@ title: do_ProgressBar2 组件
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : normal
+- 编辑类型 : 只允许设计区内修改
 - 说明 : 进度条样式可以是以下几种类型：normal,cycle
 
   设置进度条样式为normal和cycle的效果图：
