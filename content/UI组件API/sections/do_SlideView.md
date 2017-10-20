@@ -77,12 +77,12 @@ title: do_SlideView 组件
   var listData0 = mm("do_ListData");
   //通过template属性来选定模板
   var data0 = [
-  {template:2,"$text":"index 0","$source":"source://image/3.jpg"},
-  {template:2,"$text":"index 1","$source":"source://image/4.jpg"},
-  {template:0,"$text":"index 2","$source":"source://image/3.jpg"},
-  {template:0,"$text":"index 3","$source":"data://3.png"},
-  {template:1,"$text":"index 4","$source":"data://3.png"},
-  {template:1,"$text":"index 5","$source":"data://4.png"},
+  {template:0,"$text":"index 0"},
+  {template:1,"$text":"index 1"},
+  {template:0,"$text":"index 2"},
+  {template:0,"$text":"index 3"},
+  {template:1,"$text":"index 4"},
+  {template:1,"$text":"index 5"}
   ];
   listData0.addData(data0);
   do_SlideView.bindItems({

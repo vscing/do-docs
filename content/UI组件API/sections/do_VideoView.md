@@ -49,6 +49,7 @@ title: do_VideoView 组件
 - 示例:
 
   ```javascript
+  //从100毫秒开始播放
   do_VideoView.play({point:100})
   ```
 
@@ -249,7 +250,7 @@ title: do_VideoView 组件
 
   ```javascript
   do_VideoView.on("error",function(data,e){
-    deviceone.print(data,"结束返回")
+    deviceone.print(data,"异常返回")
   })
 
 
