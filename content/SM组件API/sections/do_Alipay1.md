@@ -7,6 +7,8 @@ title: do_Alipay1 组件
  支持平台: iOS,Android14 以上
  [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Alipay1)
  调用手机支付宝客户端，完成支付功能，如果没装支付宝，则会调起H5的支付界面
+ 需要平台项目配置唤醒id,唤醒id格式 alipay+appid（appid为阿里支付平台应用id）
+
 
 #### <font color ='#40A977'>**0.**</font> 目录
 
@@ -61,5 +63,3 @@ title: do_Alipay1 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
