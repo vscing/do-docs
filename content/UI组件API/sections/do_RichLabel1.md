@@ -42,49 +42,96 @@ title: do_RichLabel1 组件
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : normal
+- 编辑类型 : 只允许设计区内修改。
 - 说明 : 包含3种类型：normal：常规underline ：下划线strikethrough ：删除线
 
 >###### <span id=fontSize><font color ='#42b983'>**fontSize**</font></span>: 字体大小
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 17
-- 说明 : 
+- 说明 :
 
 >###### <span id=textAlign><font color ='#42b983'>**textAlign**</font></span>: 文本对齐方式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
 - 默认值 : left
+- 编辑类型 : 只允许设计区内修改。
 - 说明 : 对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。
 
 >###### <span id=maxHeight><font color ='#42b983'>**maxHeight**</font></span>: 最大高度
 
 - 数据类型 : <font color ='#808000'>**number**</font>
-- 默认值 : 
+- 默认值 :
+- 编辑类型 : 只允许设计区内修改。
 - 说明 : label的height为－1的时候，label会根据text内容自动适配变高，但是不会高于maxHeight
 
 >###### <span id=maxLines><font color ='#42b983'>**maxLines**</font></span>: 最多行数
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 : 1
+- 编辑类型 : 只允许设计区内修改。
 - 说明 : 最大行数，缺省是1，如果为小于或等于0表示不限行数，说明：设置文本内容显示最大行数，如显示内容超过了最大行值则结尾用省略号...表示；iOS平台不支持
 
 >###### <span id=maxWidth><font color ='#42b983'>**maxWidth**</font></span>: 最大宽度
 
 - 数据类型 : <font color ='#808000'>**number**</font>
-- 默认值 : 
+- 默认值 :
+- 编辑类型 : 只允许设计区内修改。
 - 说明 : 设置文本框显示最大宽度值，只有在设置Width属性值为-1时有效，否则不起作用;
 
 >###### <span id=text><font color ='#42b983'>**text**</font></span>: 文本
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 文本显示内容
+- 示例:
+
+  ```javascript
+
+  var do_RichLabel1_1 = ui("do_RichLabel1_1");
+  do_RichLabel1_1.text = "do_RichLabel1富文本签框，设置字体高亮颜色、字体样式。";
+
+  ```
 
 >###### <span id=span><font color ='#42b983'>**span**</font></span>: 设置区域内显示富文本字体样式
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
-- 说明 : 值格式为：[{},{}]，{}中的内容为1.strMatch，如a，匹配字符串；2.substring，如0,10（开始字符位置，结束字符位置），截取字符串；3.spanStyle，如{fontColor:'FF3030FF',fontStyle:'bold'}，区域内字体显示样式；4.allowTouch，bool型，是否允许点击事件；5.tag，自定义数据
+- 默认值 :
+- 说明 :
+
+  ```
+
+    值格式为：[{},{}]。其中{}中的内容为
+    1.strMatch，如a，匹配字符串；
+    2.substring，如0,10（开始字符位置，结束字符位置），截取字符串；
+    3.spanStyle，如{fontColor:'FF3030FF',fontStyle:'bold'}，区域内字体显示样式；
+    4.allowTouch，bool型，是否允许点击事件；
+    5.tag，自定义数据
+
+  ```
+
+- 示例:
+
+  ```javascript
+
+  do_RichLabel1_1.span = [{
+	  "strMatch":"1",
+    "substring":"0,13",
+    "spanStyle": "{\"fontColor\":\"4782F6FF\",\"fontStyle\":\"normal\"}",
+    "allowTouch": true,
+    "tag":"点我~~"
+  }]
+
+  ```
+
+  下图为以上示例代码的展示效果。
+
+  <div>
+
+  <img src="../../images/richlabel_span.png" height="380" width="330" >
+
+  </div>
+
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -101,10 +148,20 @@ title: do_RichLabel1 组件
 - 示例:
 
   ```javascript
-  ...
+
+  do_RichLabel1_1.on("touch",function(data){
+  	deviceone.print(JSON.stringify(data),"touch事件")
+  })
+
+  ```
+
+  ```
+  以下为点击匹配内容的事件返回的值data：
+    {
+        "content":"do_RichLabel1",
+        "tag":"点我~~"
+    }
 
   ```
 
 [回到顶部](#top)
-
-
