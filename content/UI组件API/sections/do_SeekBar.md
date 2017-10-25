@@ -69,8 +69,8 @@ title: do_SeekBar 组件
 
   ```javascript
 
-  do_SeekBar.on("progressChanged",function(data){
-    
+  do_SeekBar.on("progressChanged",function(){
+
   })
 
   ```
