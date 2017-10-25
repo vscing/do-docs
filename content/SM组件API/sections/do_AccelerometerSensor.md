@@ -31,7 +31,19 @@ title: do_AccelerometerSensor 组件
 - 示例:
 
   ```javascript
-  ...
+
+  var getAccelerometerData = do_AccelerometerSensor.getAccelerometerData();
+  deviceone.print(JSON.stringify(getAccelerometerData),"加速度");
+
+  ```
+
+  ```
+  以下为上述代码返回的数据。
+  {
+    "x":0.6079864501953125,
+    "y":-0.0974884033203125,
+    "z":-0.8350982666015625
+  }
 
   ```
 
@@ -42,11 +54,13 @@ title: do_AccelerometerSensor 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+
+  var do_AccelerometerSensor = sm("do_AccelerometerSensor");
+  do_AccelerometerSensor.start();
 
   ```
 
@@ -57,11 +71,12 @@ title: do_AccelerometerSensor 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+
+  do_AccelerometerSensor.stop();
 
   ```
 
@@ -75,12 +90,26 @@ title: do_AccelerometerSensor 组件
 >###### <span id=shake><font color ='#e96900'>**shake**</font></span>: 摇一摇
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 摇一摇
 - 示例:
 
   ```javascript
-  ...
+
+  do_AccelerometerSensor.on("shake",function(data){
+  	deviceone.print(JSON.stringify(data),"摇一摇");
+  })
+
+  ```
+
+  ```
+
+  以下为上述代码返回的数据。
+  {
+    "x":-2.0285797119140625,
+    "y":-0.52130126953125,
+    "z":-1.1815185546875
+  }
 
   ```
 
@@ -94,10 +123,23 @@ title: do_AccelerometerSensor 组件
 - 示例:
 
   ```javascript
-  ...
+
+  do_AccelerometerSensor.on("change",function(data){
+  	deviceone.print(JSON.stringify(data),"加速度变化触发");
+  })
 
   ```
 
+  ```
+
+  以下为上述代码返回的数据。
+    {
+      "x":0.0597076416015625,
+      "y":-0.1566314697265625,
+      "z":-0.9971771240234375
+    }
+
+  ```
+
+
 [回到顶部](#top)
-
-
