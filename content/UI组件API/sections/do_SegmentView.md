@@ -29,7 +29,7 @@ title: do_SegmentView 组件
 >###### <span id=templates><font color ='#42b983'>**templates**</font></span>: cell对应的模板UI文件组
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 一个SegmentView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件。这个属性的格式类似如下： source://view/cell1.ui,source://view/cell2.ui,source://view/cell3.ui
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -47,7 +47,24 @@ title: do_SegmentView 组件
 - 示例:
 
   ```javascript
-  ...
+  var listData0 = mm("do_ListData");
+   do_SegmentView.bindItems({
+  		data : listData0
+  		});
+   //通过template属性来选定模板
+   var data0 = [
+  	                 	{template:0,"$text":"index 0"},
+  	                 	{template:0,"$text":"index 1"},
+  	                 	{template:1,"$text":"index 2"},
+  	                 	{template:0,"$text":"index 3"},
+  	                 	{template:1,"$text":"index 4"},
+  	                 	{template:1,"$text":"index 5"},
+  	                 	{template:0,"$text":"index 6"},
+  	                 	{template:1,"$text":"index 7"},
+  	                 	{template:1,"$text":"index 8"}
+  	           ];
+  	listData0.addData(data0);
+
 
   ```
 
@@ -58,11 +75,11 @@ title: do_SegmentView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  do_SegmentView.refreshItems()
 
   ```
 
@@ -81,10 +98,10 @@ title: do_SegmentView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SegmentView.on("indexChanged",function(data){
+	deviceone.print(data,"切换view触发")
+  })
 
   ```
 
 [回到顶部](#top)
-
-

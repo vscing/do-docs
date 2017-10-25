@@ -62,7 +62,7 @@ title: do_SlideListView 组件
 >###### <span id=templates><font color ='#42b983'>**templates**</font></span>: Cell对应的模板UI文件组
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件。
 这个属性的格式类似如下：
 ["source://view/cell1.ui","source://view/cell2.ui","source://view/cell3.ui]
@@ -70,13 +70,13 @@ title: do_SlideListView 组件
 >###### <span id=headerView><font color ='#42b983'>**headerView**</font></span>: 表头视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的表头视图ui文件路径，不填但isHeaderVisible为true时有缺省样式
 
 >###### <span id=footerView><font color ='#42b983'>**footerView**</font></span>: 底部视图
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 设置要显示的表头视图ui文件路径，不填但isFooterVisible为true时有缺省样式
 
 >###### <span id=isShowbar><font color ='#42b983'>**isShowbar**</font></span>: 是否支持显示滚动条效果
@@ -96,7 +96,7 @@ title: do_SlideListView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideListView.rebound()
 
   ```
 
@@ -115,7 +115,16 @@ title: do_SlideListView 组件
 - 示例:
 
   ```javascript
-  ...
+  var do_SlideListView = ui("do_SlideListView")
+  //定义一个do_ListData
+  var data2 = mm("do_ListData");
+  do_SlideListView.bindItems(data2);
+  //leftTemplate是左模板,rightTemplate是右模板
+  var datag = [
+	{ template:0,leftTemplate:1,rightTemplate:2,"$1":"111","$3":"确定","$4":"取消"},
+	{ template:0,leftTemplate:1,"$1":"222","$2":"source://image/0.jpg","$3":"确定"},
+  ];
+  data2.addData(datag);
 
   ```
 
@@ -126,11 +135,11 @@ title: do_SlideListView 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  do_SlideListView.refreshItems({});
 
   ```
 
@@ -146,12 +155,14 @@ title: do_SlideListView 组件
   **isSmooth** |<font color ='#808000'>**Boolean**</font> | 否 | false|缺省是false表示直接跳转到某一行，没有任何平滑过渡的效果。为true表示平滑到那一行；其中为false的时候是不会触发scroll事件的，为true会触发；windows不支持该效果
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
-
+  //非平滑的滑动到第7行
+  do_SlideListView.scrollToPosition({position:7,isSmooth:false});
+  //平滑的滑动到第7行
+  do_SlideListView.scrollToPosition({position:7,isSmooth:true});
   ```
 
 [回到顶部](#top)
@@ -165,7 +176,7 @@ title: do_SlideListView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideListView.showHeader()
 
   ```
 
@@ -184,7 +195,9 @@ title: do_SlideListView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideListView.on("touch",function(data){
+      deviceone.print(JSON.stringify(data),"点击cell的position值和绝对位置y")
+  })
 
   ```
 
@@ -198,7 +211,9 @@ title: do_SlideListView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideListView.on("LongTouch",function(data){
+      deviceone.print(JSON.stringify(data),"点击cell的position值和绝对位置y")
+  })
 
   ```
 
@@ -212,7 +227,9 @@ title: do_SlideListView 组件
 - 示例:
 
   ```javascript
-  ...
+  do_SlideListView.on("touch1",fucntion(data){
+    deviceone.print(JSON.stringify(data),"点击cell的position值和绝对位置y")
+  })
 
   ```
 
@@ -273,5 +290,3 @@ title: do_SlideListView 组件
   ```
 
 [回到顶部](#top)
-
-
