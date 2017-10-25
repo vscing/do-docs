@@ -23,12 +23,35 @@ title: do_SeekBar 组件
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 :
 - 说明 : 设置第一进度值，支持手势拖动
+- 示例:
+
+  ```javascript
+
+  var do_SeekBar_1 = ui("do_SeekBar_1");
+  do_SeekBar_1.progress = 50;
+
+  ```
 
 >###### <span id=secondaryProgress><font color ='#42b983'>**secondaryProgress**</font></span>: 第二进度值
 
 - 数据类型 : <font color ='#808000'>**number**</font>
 - 默认值 :
 - 说明 : 设置第二进度值
+- 示例:
+
+  ```javascript
+
+  do_SeekBar_1.secondaryProgress = 90;
+
+  ```
+
+  下图为以上示例代码的展示效果。
+
+  <div>
+
+  <img src="../../images/seekbar.png" height="380" width="330" >
+
+  </div>
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
 
@@ -45,8 +68,9 @@ title: do_SeekBar 组件
 - 示例:
 
   ```javascript
+
   do_SeekBar.on("progressChanged",function(data){
-  	deviceone.print(do_SeekBar.progress,"进度值变化")
+    
   })
 
   ```
