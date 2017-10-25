@@ -75,4 +75,8 @@ title: do_SeekBar 组件
 
   ```
 
+#### <font color ='#40A977'>**5.**</font> 常见问题
+
+#### <font color ='#40A977'>**6.**</font> 基本配置
+
 [回到顶部](#top)
