@@ -87,4 +87,10 @@ title: do_BaiduNavigate 组件
 
   ```
 
+#### <font color ='#40A977'>**5.**</font> 常见问题
+
+
+#### <font color ='#40A977'>**6.**</font> 基本配置
+- 1.使用百度地图时需要给组件配置对应的key,具体key值怎么获取参见[示例文档](/UI组件API/sections/百度定位相关配置/)  
+
 [回到顶部](#top)

@@ -5,7 +5,7 @@ title: do_Animation 组件
 ### do_Animation 组件
 
  支持平台: iOS7.0,Android4.0 以上
- [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Animation)
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/MM/do_Animation)
  所有UI组件缩放，移动，透明度变化，旋转都支持动画效果。这个类就是用来定义动画所有属性值的集合，作为UI的animate方法的参数
 
 #### <font color ='#40A977'>**0.**</font> 目录
@@ -23,7 +23,7 @@ title: do_Animation 组件
 >###### <span id=fillAfter><font color ='#42b983'>**fillAfter**</font></span>: 是否保持动画的最后一帧在View上面
 
 - 数据类型 : <font color ='#808000'>**Boolean**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 是否保持动画的最后一帧在View上面
 
 #### <font color ='#40A977'>**2.**</font> 同步方法
@@ -35,7 +35,7 @@ title: do_Animation 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |这是一个JSON node节点，包含多个参数，参数集合如下：
-{ 
+{
     'delay':'动画延迟时间（毫秒）',
     'duration':'动画过渡时间（毫秒）',
     'curve':'动画曲线类型四种情况：1.'EaseInOut'动画启动时候慢，中间快，结束的时候慢、2.'EaseIn'动画启动的时候慢、3.'EaseOut'动画结束的时候慢、4.'Linear'动画速度不变',
@@ -44,7 +44,7 @@ title: do_Animation 组件
     'alphaFrom':'起始透明值，取值0-1，0表示透明',
     'alphaTo':'结束透明值，取值0-1，0表示透明'
 }
-  
+
 
   **id** |<font color ='#808000'>**string**</font> | 否 | |每次调用这个函数都会创建一个新的动画属性集合，如果动画id一样，则会覆盖旧的动画属性值
 - 返回值类型 : <font color ='#808000'>**无**</font>
@@ -53,7 +53,15 @@ title: do_Animation 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Animation.alpha({
+		delay:300,
+		duration:2000,
+		curve:4,
+		repeatCount:2,
+		autoReverse:true,
+		alphaFrom:1,
+		alphaTo:0
+	}, "_a1");
 
   ```
 
@@ -66,7 +74,7 @@ title: do_Animation 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |这是一个JSON node节点的参数集合，包含以下参数：
-{ 
+{
     'delay':'动画延迟时间（毫秒）',
     'duration':'动画过渡时间（毫秒）',
     'curve':'动画曲线类型四种情况：1.'EaseInOut'动画启动时候慢，中间快，结束的时候慢、2.'EaseIn'动画启动的时候慢、3.'EaseOut'动画结束的时候慢、4.'Linear'动画速度不变',
@@ -84,7 +92,17 @@ title: do_Animation 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Animation.transfer({
+		delay:1000,
+		duration:2000,
+		curve:4,
+		repeatCount:2,
+		autoReverse:true,
+		fromX:0,
+		fromY:60,
+		toX:60,
+		toY:120
+	}, "_t1");
 
   ```
 
@@ -97,7 +115,7 @@ title: do_Animation 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |这是一个JSON node节点的参数集合，包含以下参数：
-{ 
+{
     'delay':'动画延迟时间（毫秒）',
     'duration':'动画过渡时间（毫秒）',
     'curve':'动画曲线类型四种情况：1.'EaseInOut'动画启动时候慢，中间快，结束的时候慢、2.'EaseIn'动画启动的时候慢、3.'EaseOut'动画结束的时候慢、4.'Linear'动画速度不变',
@@ -110,8 +128,8 @@ title: do_Animation 组件
     'pivotX':'缩放起点x坐标，取值0-1',
     'pivotY':'缩放起点y坐标，取值0-1'
 }
-  
-  
+
+
   **id** |<font color ='#808000'>**string**</font> | 否 | |每次调用这个函数都会创建一个新的动画属性集合，如果动画id一样，则会覆盖旧的动画属性值
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
@@ -119,7 +137,19 @@ title: do_Animation 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Animation.scale({
+		delay:300,
+		duration:2000,
+		curve:4,
+		repeatCount:2,
+		autoReverse:true,
+		scaleFromX:1,
+		scaleFromY:1,
+		scaleToX:60,
+		scaleToY:120,
+		pivotX:0.2,
+		pivotY:0.5
+	}, "_s1");
 
   ```
 
@@ -132,7 +162,7 @@ title: do_Animation 组件
   名称 | 类型 |必填|默认值|说明
   ---- |-------------  |--------------|--------|------
   **data** |<font color ='#808000'>**object**</font> | 是 | |这是一个JSON node节点的参数集合，包含以下参数：
-{ 
+{
     'delay':'动画延迟时间（毫秒）',
     'duration':'动画过渡时间（毫秒）',
     'curve':'动画曲线类型四种情况：1.'EaseInOut'动画启动时候慢，中间快，结束的时候慢、2.'EaseIn'动画启动的时候慢、3.'EaseOut'动画结束的时候慢、4.'Linear'动画速度不变',
@@ -150,7 +180,18 @@ title: do_Animation 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Animation.rotate({
+		delay:300,
+		duration:2000,
+		curve:4,
+		repeatCount:2,
+		autoReverse:true,
+		fromDegree:0,
+		fromDegree:60,
+		pivotX:0.5,
+		pivotY:1
+
+	}, "_r1");
 
   ```
 
@@ -160,5 +201,3 @@ title: do_Animation 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
