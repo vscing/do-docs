@@ -5,7 +5,7 @@ title: do_Bitmap 组件
 ### do_Bitmap 组件
 
  支持平台: iOS7.0,Android4.0 以上
- [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Bitmap)
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/MM/do_Bitmap)
  图片的处理组件，通过加载source对应路径的图片到内存中，不再需要使用该位图资源必须调用MM组件基类方法release()来释放该使用内存，Android平台仅支持jpg和JEPG格式
 
 #### <font color ='#40A977'>**0.**</font> 目录
@@ -37,7 +37,8 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
+  var data = do_Bitmap.getExif({source:"source://view/MM/do_Bitmap/1.jpg"});
+	deviceone.print(JSON.stringify(data),"获取信息")
 
   ```
 
@@ -65,7 +66,9 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Bitmap.addWatermark({type:"text", source:"12345abcde", fontColor:"64B1FFFF", fontStyle:"italic", textFlag:"strikethrough", fontSize:"33"}, function(data, e) {
+		deviceone.print(data,"添加结果")
+	})
 
   ```
 
@@ -84,7 +87,9 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Bitmap.loadFile({source:"source://view/MM/do_Bitmap/1.jpg"}, function(data, e) {
+  	deviceone.print(data,"loadFile结果")
+  })
 
   ```
 
@@ -105,7 +110,9 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Bitmap.save({format:"PNG", quality:50, outPath:"source://view/MM/do_Bitmap/1.jpg"}, function(data, e) {
+		do_ImageView_1.source=data
+	})
 
   ```
 
@@ -120,7 +127,9 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Bitmap.toGrayScale(function(data, e) {
+		deviceone.print(data,"转换结果")
+	})
 
   ```
 
@@ -139,8 +148,9 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
-
+  do_Bitmap.toGrayScale(function(data, e) {
+		deviceone.print(data,"转换结果")
+	})
   ```
 
 [回到顶部](#top)
@@ -158,7 +168,9 @@ title: do_Bitmap 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Bitmap.toRoundCorner({radius:250}, function(data, e) {
+		deviceone.print(data,"添加结果")
+	})
 
   ```
 
@@ -166,5 +178,3 @@ title: do_Bitmap 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
