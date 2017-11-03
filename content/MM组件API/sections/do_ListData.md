@@ -55,7 +55,8 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  var data1 = do_ListData.getData()
+  //获取第0,1,2条数据
+  var data1 = do_ListData.getData({indexs:[0,1,2]})
 
   ```
 
@@ -74,7 +75,7 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  var data2 = do_ListData.getone(0)
+  var data2 = do_ListData.getOne({index:0})
 
   ```
 
@@ -114,8 +115,13 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  var data3 = {}
-  do_ListData.addData()
+  var data = [{template:0,"text":"1"},
+  	          {template:0,"text":"2"},
+  	          {template:0,"text":"3"},
+  	          {template:0,"text":"5"},
+  	          {template:0,"text":"6"},
+  	          {template:0,"text":"7"}]
+  	do_ListData.addData({data:data})
 
   ```
 
@@ -135,7 +141,8 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  var dataa = {"text":"8"}
+	do_ListData.addOne({data:dataa})
 
   ```
 
@@ -150,7 +157,7 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  do_ListData.removeAll()
 
   ```
 
@@ -170,7 +177,8 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  //删除从0到6,共7条数据
+  do_ListData.removeRange({fromIndex:0,toIndex:6})
 
   ```
 
@@ -189,7 +197,7 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  do_ListData.removeData({indexs:[0]})
 
   ```
 
@@ -209,7 +217,8 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  datab = {text:"100"}
+	do_ListData.updateOne({index:0,data:datab})
 
   ```
 
