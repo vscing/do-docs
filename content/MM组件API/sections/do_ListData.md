@@ -32,11 +32,11 @@ title: do_ListData 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 元素个数
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  var count = do_ListData.getCount();
 
   ```
 
@@ -55,7 +55,7 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  var data1 = do_ListData.getData()
 
   ```
 
@@ -74,7 +74,7 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  var data2 = do_ListData.getone(0)
 
   ```
 
@@ -94,7 +94,7 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  var datas = do_ListData.getRange({fromIndex:0,toIndex:2})
 
   ```
 
@@ -114,7 +114,8 @@ title: do_ListData 组件
 - 示例:
 
   ```javascript
-  ...
+  var data3 = {}
+  do_ListData.addData()
 
   ```
 
@@ -218,5 +219,3 @@ title: do_ListData 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
