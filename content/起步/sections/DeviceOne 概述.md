@@ -62,6 +62,8 @@ DeviceOne(以下简称**Do**)是一个移动开发的平台或技术，与之对
 QQ官方群（365443130）
 [示例中心](http://source.deviceone.net)
 [示例Github开源](https://github.com/do-project)
-[Android组件Github开源](https://github.com/do-android)
-[iOS组件Github开源](https://github.com/do-ios) 
+[Android Github开源](https://github.com/do-android)
+[iOS Github开源](https://github.com/do-ios) 
+[官方封装js库](https://github.com/do-js) 
+[用户suthony开源的do转html框架](https://github.com/suthony/frame-js) 
 

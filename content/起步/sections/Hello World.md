@@ -3,7 +3,7 @@ title: Hello World
 ---
 ### Hello World介绍
 
-程序员学习新技术都是通过Hello World开始的，我们也不例外。第一课我们简单了解利用do平台开发App的基本流程，能了解到的知识点是：
+程序员学习新技术都是通过Hello World开始的，我们也不例外。这里我们简单了解利用do平台开发App的基本流程：
 
 * [开发环境搭建](#开发环境搭建)
 * [创建开发者账号](#创建开发者账号)
@@ -18,7 +18,7 @@ title: Hello World
 
 do平台的开发的基本开发工作都是围绕**DeviceOne**提供的IDE（`DeviceOne Studio`），我们通常简称为<mark>**设计器**</mark>。
 
-设计器是基于`Eclipse`核心的RCP,熟悉Eclipse的的开发人员应该很熟悉基本的操作。设计器是跨平台的，可以在Windows，Mac下运行。以后可以支持更多，比如Linux。基本的运行条件是需要`Java Development Kit(JDK7)`及以上版本。
+设计器是基于`Eclipse`核心的RCP,熟悉Eclipse的的开发人员应该很熟悉基本的操作。设计器是跨平台的，可以在Windows，Mac下运行。以后可以支持更多，比如Linux。
 
 下载页面是[这里](http://doc.deviceone.net/web/doc/env/ide.htm)
 
