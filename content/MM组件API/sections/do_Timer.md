@@ -5,7 +5,7 @@ title: do_Timer 组件
 ### do_Timer 组件
 
  支持平台: iOS7.0,Android4.0 以上
- [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Timer)
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/MM/do_Timer)
  定时器，功能是在指定的时间间隔内反复触发指定任务事件，应用于“发送验证码倒计时“等记时相关的场景
 
 #### <font color ='#40A977'>**0.**</font> 目录
@@ -44,7 +44,10 @@ title: do_Timer 组件
 - 示例:
 
   ```javascript
-  ...
+  //开始计时器,5秒后触发第一次,之后每2秒触发一次
+  do_Timer.delay = 5000;
+  do_Timer.interval = 2000;
+  do_Timer.start()
 
   ```
 
@@ -59,7 +62,7 @@ title: do_Timer 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Timer.stop()
 
   ```
 
@@ -74,7 +77,8 @@ title: do_Timer 组件
 - 示例:
 
   ```javascript
-  ...
+  var data = do_Timer.isStart();
+	deviceone.print(data,"计时器是否启动")
 
   ```
 
@@ -88,15 +92,15 @@ title: do_Timer 组件
 >###### <span id=tick><font color ='#e96900'>**tick**</font></span>: 固定间隔被调用触发
 
 - 返回值类型 : <font color ='#808000'>**无**</font>
-- 返回值描述: 
+- 返回值描述:
 - 说明: 固定间隔被调用触发
 - 示例:
 
   ```javascript
-  ...
+  do_Timer.on("tick",function(){
+	   deviceone.print("计时器触发")
+  })
 
   ```
 
 [回到顶部](#top)
-
-
