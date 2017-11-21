@@ -33,7 +33,7 @@ title: do_WapsAd 组件
 - 示例:
 
   ```javascript
-  ...
+  do_WapsAd.show({y:800});
 
   ```
 
@@ -44,11 +44,11 @@ title: do_WapsAd 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**number**</font>
 - 返回值描述: 返回广告显示的高度
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  var height = do_WapsAd.getHeight();
 
   ```
 
@@ -59,11 +59,11 @@ title: do_WapsAd 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  do_WapsAd.close()
 
   ```
 
@@ -73,5 +73,3 @@ title: do_WapsAd 组件
 
 
 #### <font color ='#40A977'>**4.**</font> 事件
-
-
