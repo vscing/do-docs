@@ -227,7 +227,8 @@ ImageView和ALayout都有点击事件（touch），为了让用户有更好的�
 
 <a name="数据模板分离">2. 数据模板分离</a>
 `DeviceOne`的数据绑定是采用了MVVM模式的，实现了页面和数据分离，数据通过绑定在不同模板上控制了页面的显示。`DeviceOne`提供了两个数据绑定组件，都是MM类型组件，一个是ListData，它本质上是一个可变数组（支持JSON array），可以增删改查数据；另外一个是HashData，它本质上是一个可变key-value键值对，也可以增删改查。
-这里我们给SegmentView定义一个数据源jsonTabs， ![](../../images/wcxw004.png)
+这里我们给SegmentView定义一个数据源jsonTabs，
+ ![](../../images/wcxw004.png)
 再把这个数据源赋值给数据绑定组件ListData，定义SegmentView的数据模型module。
  ![](../../images/wcxw005.png)
 因为数据绑定组件可以绑定不同的数据源，而一个数据源只能被一个数据绑定组件绑定，是一对多的关系，所以当我们想把相同的数据源作为SlideView的数据模型module时需要复制一份数据源。
