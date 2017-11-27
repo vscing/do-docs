@@ -5,7 +5,7 @@ title: do_Http 组件
 ### do_Http 组件
 
  支持平台: iOS7.0,Android4.0 以上
- [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/do_Http)
+ [组件示例](https://github.com/do-api/docs-example/tree/master/source/view/MM/do_Http)
  支持http/https请求服务
 
 #### <font color ='#40A977'>**0.**</font> 目录
@@ -43,7 +43,7 @@ title: do_Http 组件
 >###### <span id=url><font color ='#42b983'>**url**</font></span>: 地址
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 发送服务器请求地址
 
 >###### <span id=timeout><font color ='#42b983'>**timeout**</font></span>: 请求超时
@@ -61,7 +61,7 @@ title: do_Http 组件
 >###### <span id=body><font color ='#42b983'>**body**</font></span>: 请求数据
 
 - 数据类型 : <font color ='#808000'>**string**</font>
-- 默认值 : 
+- 默认值 :
 - 说明 : 请求数据，method为get、delete时不支持
 
 >###### <span id=responseEncoding><font color ='#42b983'>**responseEncoding**</font></span>: 字符集格式
@@ -77,11 +77,11 @@ title: do_Http 组件
 - 参数: **无**
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  do_Http.request()
 
   ```
 
@@ -100,7 +100,7 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.download("data://xiazai.png");
 
   ```
 
@@ -121,7 +121,7 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.download1({path:"data://download1/http/test1.zip", taskId:"task1", isBreakpoint:"true"});
 
   ```
 
@@ -140,7 +140,7 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.stopDownload({taskId:"task1"});
 
   ```
 
@@ -161,7 +161,10 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  //先将文件从initdata目录复制到data下,再进行upload操作
+  sm("do_InitData").copyFile({source:"initdata://do_Http/a.txt", target:"data://http/a.txt"}, function(data, e) {
+		do_Http.upload({path:"data://http/a.txt", name:"file"});
+	});
 
   ```
 
@@ -177,11 +180,11 @@ title: do_Http 组件
   **value** |<font color ='#808000'>**string**</font> | 是 | |
 - 返回值类型 : <font color ='#808000'>**无**</font>
 - 返回值描述: 无
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  do_Http.setRequestHeader("test","setRequestHeader");
 
   ```
 
@@ -196,11 +199,11 @@ title: do_Http 组件
   **key** |<font color ='#808000'>**string**</font> | 否 | |为空时返回所有的responseHeader
 - 返回值类型 : <font color ='#808000'>**string**</font>
 - 返回值描述: 返回最后一次成功返回的http respose的header里某项或所有属性的值
-- 说明: 
+- 说明:
 - 示例:
 
   ```javascript
-  ...
+  var header = do_Http.getResponseHeader();
 
   ```
 
@@ -219,7 +222,7 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.form({'files':[],'texts':[{'key':'text1','value':'12345'},{'key':'text2','value':'abcde'}]});
 
   ```
 
@@ -238,7 +241,9 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.url = "http://www.baidu.cn";
+	do_Http.setRedirect({isSetRedirect:true});
+	do_Http.request();
 
   ```
 
@@ -257,8 +262,10 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.on("progress",function(data,e){
+	deviceone.print(" 返回值：" + JSON.stringify(data),"progress 事件 ");
 
+})
   ```
 
 [回到顶部](#top)
@@ -271,7 +278,9 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.on("success",function(data,e){
+    deviceone.print(" 返回值：" + JSON.stringify(data), "success 事件 ");
+  })
 
   ```
 
@@ -285,7 +294,9 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.on("fail",function(data,e){
+	   deviceone.print(" 返回值：" + JSON.stringify(data), "fail 事件 ");
+  })
 
   ```
 
@@ -299,10 +310,10 @@ title: do_Http 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Http.on("result",function(data,e){
+	   deviceone.print(" 返回值：" + JSON.stringify(data), "result 事件 ");
+  })
 
   ```
 
 [回到顶部](#top)
-
-
