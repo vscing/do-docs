@@ -31,7 +31,7 @@ title: do_Socket 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Socket.close();
 
   ```
 
@@ -53,7 +53,11 @@ title: do_Socket 组件
 - 示例:
 
   ```javascript
-  ...
+  var ip1 = "text	192.168.0.55";
+  var port1 = "9921";
+  do_Socket.connect(ip1, port1, function(data, e) {
+		deviceone.print(data,"connect");
+	})
 
   ```
 
@@ -73,7 +77,10 @@ title: do_Socket 组件
 - 示例:
 
   ```javascript
-  ...
+  //发送utf_8格式内容
+  do_Socket.send("UTF-8", "你好10", function(data, e) {
+		deviceone.print(data,"发送是否成功");
+	})
 
   ```
 
@@ -90,7 +97,9 @@ title: do_Socket 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Socket.on("receive",function(data,e){
+	   deviceone.print(" 返回值：" + JSON.stringify(data), "receive 事件 ");
+  })
 
   ```
 
@@ -104,10 +113,10 @@ title: do_Socket 组件
 - 示例:
 
   ```javascript
-  ...
+  do_Socket.on("error",function(data,e){
+	   deviceone.print(" 返回值：" + JSON.stringify(data), "error 事件 ");
+  })
 
   ```
 
 [回到顶部](#top)
-
-
